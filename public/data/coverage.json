@@ -2,10 +2,10 @@
   "generatedAt": "2026-08-08T12:09:53Z",
   "mode": "automatic",
   "sources": {
-    "crossref": "ok (36 matched)",
+    "crossref": "unavailable (HTTPError)",
     "openalex": "ok (0 matched)",
     "europe_pmc": "ok (0 matched)",
-    "arxiv": "unavailable (URLError)",
+    "arxiv": "ok (0 matched)",
     "datacite": "ok (17 matched)",
     "bza_official": "ok (21 matched)",
     "github_projects": "ok (7 matched)",

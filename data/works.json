@@ -2090,6 +2090,10 @@
       {
         "label": "Dataset",
         "url": "https://huggingface.co/datasets/Longxiang-ai/TransNormal-Synthetic"
+      },
+      {
+        "label": "Model",
+        "url": "https://huggingface.co/Longxiang-ai/TransNormal"
       }
     ],
     "versions": [
@@ -4933,6 +4937,10 @@
       {
         "label": "Code",
         "url": "https://github.com/longxiang-ai/TSGS"
+      },
+      {
+        "label": "Dataset",
+        "url": "https://huggingface.co/datasets/Longxiang-ai/TransLab"
       }
     ],
     "versions": [
