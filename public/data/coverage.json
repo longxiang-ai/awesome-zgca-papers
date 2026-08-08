@@ -11,7 +11,6 @@
     "github_projects": "ok (7 matched)",
     "semantic_scholar": "optional key",
     "core": "optional key",
-    "lens": "optional key",
-    "arxiv_html_backfill": "local checkpoint 1/10826; 1 exact affiliation matches"
+    "lens": "optional key"
   }
 }

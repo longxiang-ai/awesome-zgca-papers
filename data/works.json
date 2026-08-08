@@ -2560,6 +2560,20 @@
         "matchedText": "Zhongguancun Academy & Zhongguancun Institute of Artificial Intelligence",
         "source": "DataCite",
         "sourceUrl": "https://zenodo.org/doi/10.5281/zenodo.18478480"
+      },
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy & Zhongguancun Institute of Artificial Intelligence",
+        "source": "DataCite",
+        "sourceUrl": "https://zenodo.org/doi/10.5281/zenodo.18478479"
+      },
+      {
+        "level": "structured",
+        "institution": "zgci",
+        "matchedText": "Zhongguancun Academy & Zhongguancun Institute of Artificial Intelligence",
+        "source": "DataCite",
+        "sourceUrl": "https://zenodo.org/doi/10.5281/zenodo.18478479"
       }
     ],
     "sources": [
@@ -2936,6 +2950,20 @@
         "matchedText": "Zhongguancun Institute of Artificial Intelligence",
         "source": "DataCite",
         "sourceUrl": "https://zenodo.org/doi/10.5281/zenodo.21257875"
+      },
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy",
+        "source": "DataCite",
+        "sourceUrl": "https://zenodo.org/doi/10.5281/zenodo.21257874"
+      },
+      {
+        "level": "structured",
+        "institution": "zgci",
+        "matchedText": "Zhongguancun Institute of Artificial Intelligence",
+        "source": "DataCite",
+        "sourceUrl": "https://zenodo.org/doi/10.5281/zenodo.21257874"
       }
     ],
     "sources": [
@@ -3027,6 +3055,13 @@
         "matchedText": "University of Science and Technology of China, Hefei, Anhui, China; Zhongguancun Academy, Beijing, China",
         "source": "DataCite",
         "sourceUrl": "https://zenodo.org/doi/10.5281/zenodo.20594128"
+      },
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "University of Science and Technology of China, Hefei, Anhui, China; Zhongguancun Academy, Beijing, China",
+        "source": "DataCite",
+        "sourceUrl": "https://zenodo.org/doi/10.5281/zenodo.20594127"
       }
     ],
     "sources": [
@@ -3133,7 +3168,6 @@
       "The Chinese University of Hong Kong",
       "Fudan University",
       "Robbyant",
-      "JD TGT<<Alibaba AMAP",
       "Tsinghua University/Microsoft",
       "Microsoft",
       "Huazhong University of Science and Technology",
@@ -3174,6 +3208,13 @@
         "matchedText": "Harbin Institute of Technology & Zhongguancun Academy",
         "source": "DataCite",
         "sourceUrl": "https://zenodo.org/doi/10.5281/zenodo.20336846"
+      },
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "Harbin Institute of Technology & Zhongguancun Academy",
+        "source": "DataCite",
+        "sourceUrl": "https://zenodo.org/doi/10.5281/zenodo.18264213"
       }
     ],
     "sources": [
