@@ -1489,9 +1489,6 @@
       "Tsinghua University/Microsoft",
       "Microsoft",
       "Harbin Institute of Technology & Zhongguancun Academy",
-      "The Chinese University of Hong Kong",
-      "The Chinese University of Hong Kong",
-      "HKUST",
       "SII"
     ],
     "relationType": "affiliation",
@@ -1616,8 +1613,6 @@
     "rawAffiliations": [
       "University of Science,Technology of China, Zhongguancun Academy",
       "Université Paris Cité",
-      "Zhongguancun Academy",
-      "Zhongguancun Academy",
       "Zhongguancun Academy"
     ],
     "relationType": "affiliation",
@@ -1630,7 +1625,6 @@
       "Commutative Algebra (math.AC)",
       "Combinatorics (math.CO)",
       "Category Theory (math.CT)",
-      "FOS: Computer and information sciences",
       "FOS: Computer and information sciences"
     ],
     "abstract": "Large language models (LLMs) have recently achieved remarkable success in generating rigorous mathematical proofs, with \"AI for Math\" emerging as a vibrant field of research (Ju et al., 2026). While these models have mastered competition-level benchmarks like the International Mathematical Olympiad (Huang et al., 2025; Duan et al., 2025) and show promise in research applications through auto-formalization (Wang et al., 2025), their deployment via lightweight, natural-language pipelines for research problems remains underexplored. In this work, we demonstrate that next-generation models (e.g., Gemini 3 Pro, GPT-5.2 Pro), when integrated into a streamlined automated pipeline optimized for citation-based verification, can solve sophisticated research-grade problems. We evaluate our pipeline on two novel datasets: (1) the ICCM (2025) problem sets (comparable to the S.-T. Yau College Student Mathematics Contest) proposed by leading mathematicians (Shanghai Math Challenge, 2026), and (2) the \"First Proof\" problem set (Abouzaid et al., 2026), consisting of previously unpublished research questions. Our pipeline generated candidate proofs for all problems in the first two ICCM sets and the \"First Proof\" set. The solutions for the first two ICCM sets and Problem 4 of the \"First Proof\" set have been fully verified by our team. All generated proofs have been submitted to the official organization, and our generated results are publicly available at https://github.com/ml1301215/question_sets-test_results. We have open-sourced the code and developed a user-friendly UI for this workflow, accessible at https://github.com/ml1301215/research-math-assistant.",
@@ -1685,9 +1679,6 @@
     "rawAffiliations": [
       "Beijing Institute of Technolegy",
       "Zhongguancun Academy",
-      "Renmin University of China",
-      "Zhongguancun Academy",
-      "Beijing Institute of Technolegy",
       "Renmin University of China"
     ],
     "relationType": "affiliation",
@@ -1697,7 +1688,6 @@
     "status": "preprint",
     "topics": [
       "Machine Learning (cs.LG)",
-      "FOS: Computer and information sciences",
       "FOS: Computer and information sciences"
     ],
     "abstract": "Reinforcement Learning from Human Feedback (RLHF) and its variants have emerged as the dominant approaches for aligning Large Language Models with human intent. While empirically effective, the theoretical generalization properties of these methods in high-dimensional settings remain to be explored. To this end, we build the generalization theory on RLHF of LLMs under the linear reward model, through the framework of algorithmic stability. In contrast to the existing works built upon the consistency of maximum likelihood estimations on reward model, our analysis is presented under an end-to-end learning framework, which is consistent with practice. Concretely, we prove that under a key \\textbf{feature coverage} condition, the empirical optima of policy model have a generalization bound of order $\\mathcal{O}(n^{-\\frac{1}{2}})$. Moreover, the results can be extrapolated to parameters obtained by gradient-based learning algorithms, i.e., Gradient Ascent (GA) and Stochastic Gradient Ascent (SGA). Thus, we argue that our results provide new theoretical evidence for the empirically observed generalization of LLMs after RLHF.",
