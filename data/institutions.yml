@@ -1,0 +1,28 @@
+institutions:
+  zgca:
+    name_zh: 北京中关村学院
+    name_en: Zhongguancun Academy
+    aliases:
+      - 北京中关村学院
+      - 中关村学院
+      - Zhongguancun Academy
+      - Beijing Zhongguancun Academy
+    restricted_aliases:
+      - ZGCA
+    homepage: https://www.bza.edu.cn/
+  zgci:
+    name_zh: 中关村人工智能研究院
+    name_en: Zhongguancun Institute of Artificial Intelligence
+    aliases:
+      - 中关村人工智能研究院
+      - Zhongguancun Institute of Artificial Intelligence
+    restricted_aliases:
+      - ZGCI
+    homepage: https://www.zgci.ac.cn/
+exclusions:
+  - Zhongguancun Science Park
+  - Zhongguancun Hospital
+  - Chinese Academy of Sciences
+  - Zhongguancun Laboratory
+  - Zhongguancun High School
+  - Pinggu Agricultural Zhongguancun College

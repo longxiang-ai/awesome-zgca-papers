@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-08T11:35:31Z",
+  "mode": "automatic",
+  "sources": {
+    "arxiv": "available",
+    "core": "optional key",
+    "crossref": "available",
+    "datacite": "available",
+    "europe_pmc": "available",
+    "lens": "optional key",
+    "official_sites": "available",
+    "openalex": "available with key",
+    "semantic_scholar": "optional key"
+  }
+}

@@ -1,0 +1,30 @@
+name: Correct a research record
+description: Report a missing output, false match or metadata error.
+title: "[Correction]: "
+labels: ["data-correction"]
+body:
+  - type: dropdown
+    id: correction
+    attributes:
+      label: Correction type
+      options:
+        - Missing output
+        - False institution match
+        - Metadata error
+        - Broken link
+    validations:
+      required: true
+  - type: input
+    id: work
+    attributes:
+      label: Work title or URL
+      placeholder: DOI, arXiv, publisher or official page
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Institution evidence
+      description: Paste the exact affiliation or official attribution and its source URL.
+    validations:
+      required: true

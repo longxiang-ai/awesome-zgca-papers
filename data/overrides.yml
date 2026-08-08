@@ -1,0 +1,4 @@
+# Manual corrections survive automated refreshes.
+include: []
+exclude: []
+patches: {}

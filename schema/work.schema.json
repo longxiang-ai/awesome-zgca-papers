@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://longxiang-ai.github.io/awesome-zgca-papers/schema/work.schema.json",
+  "title": "Awesome ZGCA Work",
+  "type": "object",
+  "required": ["id", "type", "title", "authors", "institutions", "publishedAt", "year", "venue", "status", "identifiers", "links", "evidence", "sources", "updatedAt"],
+  "properties": {
+    "id": { "type": "string", "minLength": 3 },
+    "type": { "enum": ["article", "conference", "preprint", "dataset", "report", "whitepaper", "patent"] },
+    "title": { "type": "string", "minLength": 1 },
+    "authors": { "type": "array", "items": { "type": "object", "required": ["name"] } },
+    "institutions": { "type": "array", "minItems": 1, "items": { "enum": ["zgca", "zgci"] } },
+    "evidence": { "type": "array", "minItems": 1 },
+    "year": { "type": "integer", "minimum": 2024 },
+    "publishedAt": { "type": "string", "format": "date" },
+    "updatedAt": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": true
+}
