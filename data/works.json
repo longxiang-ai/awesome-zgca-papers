@@ -2059,7 +2059,9 @@
       "zgca"
     ],
     "rawAffiliations": [
-      "1 Zhejiang University, 2 Zhongguancun Academy"
+      "1 Zhejiang University, 2 Zhongguancun Academy",
+      "Mingwei Li 1,2 Hehe Fan 1 Yi Yang 1 , {}^{1,\\text{\\faIcon{envelope}}} 1 Zhejiang University, Hangzhou, China 2 Zhongguancun Academy, Beijing, China {mingweili, hehefan, yangyics}@zju.edu.cn Project page: https://longxiang-ai.github.io/TransNormal",
+      "1 Zhejiang University, Hangzhou, China 2 Zhongguancun Academy, Beijing, China"
     ],
     "relationType": "affiliation",
     "publishedAt": "2026-01-31",
@@ -2094,6 +2096,10 @@
       {
         "label": "Model",
         "url": "https://huggingface.co/Longxiang-ai/TransNormal"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2602.00839v1"
       }
     ],
     "versions": [
@@ -2109,11 +2115,19 @@
         "matchedText": "1 Zhejiang University, 2 Zhongguancun Academy",
         "source": "Official GitHub project README",
         "sourceUrl": "https://github.com/longxiang-ai/TransNormal"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "1 Zhejiang University, Hangzhou, China 2 Zhongguancun Academy, Beijing, China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2602.00839v1"
       }
     ],
     "sources": [
       "arXiv",
-      "Official GitHub project README"
+      "Official GitHub project README",
+      "arXiv HTML"
     ],
     "id": "doi-10-48550-arxiv-2602-00839",
     "updatedAt": "2026-08-08T12:09:53Z"

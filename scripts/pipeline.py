@@ -48,6 +48,7 @@ EXCLUSIONS = [
     "Zhongguancun Hospital",
     "Chinese Academy of Sciences",
     "Zhongguancun Laboratory",
+    "CASIA Zhongguancun Academy",
     "Zhongguancun High School",
     "Pinggu Agricultural Zhongguancun College",
 ]
@@ -150,10 +151,21 @@ def sanitize_links(links: Iterable[dict[str, str]]) -> list[dict[str, str]]:
     return cleaned
 
 
+def contains_markup_noise(value: str) -> bool:
+    return bool(re.search(r"(?:^|\s)(?:class|id|href)=[\"']|[<>]", value, re.I))
+
+
+def evidence_quality(item: dict[str, str]) -> tuple[int, int]:
+    matched = clean_html_text(item.get("matchedText"))
+    return (0 if contains_markup_noise(matched) else 1, -len(matched))
+
+
 def match_institutions(text: str, allow_restricted: bool = False) -> list[tuple[str, str]]:
     """Return institution/alias pairs while rejecting geographic false positives."""
     normalized = normalize_space(text)
     lowered = normalized.lower()
+    if "casia zhongguancun academy" in lowered:
+        return []
     if any(exclusion.lower() in lowered for exclusion in EXCLUSIONS):
         # A true alias may coexist with an excluded institution; only reject when
         # there is no explicit true alias in the same string.
@@ -647,11 +659,16 @@ def merge_record(existing: dict[str, Any], incoming: dict[str, Any]) -> dict[str
     for key in ["institutions", "topics", "sources"]:
         merged[key] = list(dict.fromkeys([*existing.get(key, []), *incoming.get(key, [])]))
     merged["rawAffiliations"] = list(dict.fromkeys(
-        clean_html_text(value) for value in [*existing.get("rawAffiliations", []), *incoming.get("rawAffiliations", [])]
-        if clean_html_text(value)
+        cleaned for value in [*existing.get("rawAffiliations", []), *incoming.get("rawAffiliations", [])]
+        if (cleaned := clean_html_text(value)) and not contains_markup_noise(cleaned) and len(cleaned) <= 600
     ))
-    evidence_keys = {(item.get("institution"), item.get("source"), item.get("matchedText")) for item in existing.get("evidence", [])}
-    merged["evidence"] = [*existing.get("evidence", []), *[item for item in incoming.get("evidence", []) if (item.get("institution"), item.get("source"), item.get("matchedText")) not in evidence_keys]]
+    evidence_by_source: dict[tuple[str | None, str | None, str | None], dict[str, str]] = {}
+    for item in [*existing.get("evidence", []), *incoming.get("evidence", [])]:
+        cleaned_item = {**item, "matchedText": clean_html_text(item.get("matchedText"))}
+        key = (item.get("institution"), item.get("source"), item.get("sourceUrl"))
+        if key not in evidence_by_source or evidence_quality(cleaned_item) > evidence_quality(evidence_by_source[key]):
+            evidence_by_source[key] = cleaned_item
+    merged["evidence"] = list(evidence_by_source.values())
     link_keys = {(item.get("label"), item.get("url")) for item in existing.get("links", [])}
     merged["links"] = sanitize_links([*existing.get("links", []), *[item for item in incoming.get("links", []) if (item.get("label"), item.get("url")) not in link_keys]])
     version_items = [*existing.get("versions", []), *incoming.get("versions", [])]
@@ -824,6 +841,20 @@ npm run dev
 ```
 
 Run networked discovery with `python3 scripts/pipeline.py fetch`. Optional API keys are documented in `.env.example` and should be stored as GitHub Actions secrets.
+
+## Polite arXiv HTML backfill
+
+Historical affiliation discovery uses the partner-university list published by
+[`bjzgcai`](https://github.com/bjzgcai/.github/blob/main/profile/README.md#-partner-universities)
+as a structured prefilter. OpenAlex first selects papers involving those institutions and an arXiv location; only that reduced queue is allowed to request `https://arxiv.org/html/<id>v1`.
+
+```bash
+python3 scripts/arxiv_html_backfill.py prefilter --from 2024-06-01
+python3 scripts/arxiv_html_backfill.py start
+python3 scripts/arxiv_html_backfill.py status
+```
+
+The local SQLite checkpoint is resumable and ignored by Git. arXiv requests are single-connection, at least 3.5 seconds apart by default, take a five-minute rest every 500 requests, and back off automatically after throttling or server errors. Only HTML matches in the author-affiliation region are published automatically; body-text matches remain audit-only associations.
 
 ## Corrections
 

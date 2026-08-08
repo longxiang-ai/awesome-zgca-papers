@@ -27,6 +27,7 @@ class MatchingTests(unittest.TestCase):
             "Beijing Zhongguancun Hospital, China",
             "Zhongguancun Science Park, Beijing",
             "Institute of Computing Technology, Chinese Academy of Sciences, Zhongguancun",
+            "University of Chinese Academy of Sciences, CASIA Zhongguancun Academy, Beijing",
             "Zhongguancun Laboratory, Beijing",
         ]:
             self.assertEqual(pipeline.match_institutions(text), [], text)

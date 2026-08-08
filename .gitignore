@@ -42,3 +42,4 @@ yarn-error.log*
 /.wrangler/
 /outputs/
 /work/
+/var/arxiv-html-scan/

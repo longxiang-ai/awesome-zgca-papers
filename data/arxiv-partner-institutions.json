@@ -1,0 +1,25 @@
+{
+  "source": "https://github.com/bjzgcai/.github/blob/main/profile/README.md#-partner-universities",
+  "updatedAt": "2026-08-08",
+  "institutions": [
+    {"name": "Tsinghua University", "aliases": ["清华大学"]},
+    {"name": "Peking University", "aliases": ["北京大学"]},
+    {"name": "Shanghai Jiao Tong University", "aliases": ["上海交通大学", "Shanghai Jiaotong University"]},
+    {"name": "Chinese Academy of Sciences", "aliases": ["中国科学院"]},
+    {"name": "Beihang University", "aliases": ["北京航空航天大学"]},
+    {"name": "Beijing Institute of Technology", "aliases": ["北京理工大学"]},
+    {"name": "Renmin University of China", "aliases": ["中国人民大学"]},
+    {"name": "University of Science and Technology of China", "aliases": ["中国科学技术大学", "USTC"]},
+    {"name": "Fudan University", "aliases": ["复旦大学"]},
+    {"name": "Zhejiang University", "aliases": ["浙江大学"]},
+    {"name": "Nanjing University", "aliases": ["南京大学"]},
+    {"name": "Tongji University", "aliases": ["同济大学"]},
+    {"name": "Wuhan University", "aliases": ["武汉大学"]},
+    {"name": "Shandong University", "aliases": ["山东大学"]},
+    {"name": "Nankai University", "aliases": ["南开大学"]},
+    {"name": "Southeast University", "aliases": ["东南大学"]},
+    {"name": "East China Normal University", "aliases": ["华东师范大学"]},
+    {"name": "Jilin University", "aliases": ["吉林大学"]},
+    {"name": "Xidian University", "aliases": ["西安电子科技大学"]}
+  ]
+}
