@@ -1,5 +1,576 @@
 [
   {
+    "type": "conference",
+    "title": "TacReasoner: A Dynamic Tactile-Language Framework for Interactive Reasoning in Real-World Scenarios",
+    "authors": [
+      {
+        "name": "Kailin Lyu"
+      },
+      {
+        "name": "Di Wu"
+      },
+      {
+        "name": "Long Xiao"
+      },
+      {
+        "name": "Jianning Zeng"
+      },
+      {
+        "name": "Jianwei He"
+      },
+      {
+        "name": "Chang Lin"
+      },
+      {
+        "name": "Lianyu Hu"
+      },
+      {
+        "name": "Lin Shu"
+      },
+      {
+        "name": "Jie Hao"
+      },
+      {
+        "name": "Ce Hao"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "北京中关村学院官网科研创新页面"
+    ],
+    "relationType": "official-output",
+    "publishedAt": "2026-07-06",
+    "year": 2026,
+    "venue": "IROS 2026",
+    "status": "published",
+    "topics": [
+      "cs.AI"
+    ],
+    "abstract": "Among the five primary human senses, tactile is arguably the most fundamental to survival, as it enables the perception of physical contact and interaction in real-world environments. In this paper, we explore two key challenges of integrating tactile sensing into intelligent systems for multimodal reasoning: (i) insufficient modeling of dynamic tactile signals, which restricts reasoning over temporally evolving properties, and (ii) hallucination in tactile foundation models caused by the absence of explicit reasoning mechanisms, leading to unstable real-world inference. To address these challenges, we propose TacReasoner, a dynamic tactile-language framework for interactive reasoning in real-world scenarios. First, TacReasoner incorporates a Dynamic-aware Tactile Encoder to enhance the perception and representation of dynamic tactile signals. More importantly, we introduce TouchCoT-10k, the first tactile chain-of-thought dataset for structured reasoning over tactile inputs. Upon it, we establish DynTac-Bench to systematically evaluate dynamic tactile perception and real-world commonsense reasoning. Experimental results demonstrate that TacReasoner achieves competitive performance against state-of-the-art models across multiple datasets. Notably, despite using only 7B parameters, TacReasoner outperforms the 14B VTV-LLM model on most subtasks, highlighting its effectiveness and efficiency in tactile commonsense reasoning.",
+    "identifiers": {
+      "arxiv": "2607.05131",
+      "doi": "10.48550/arXiv.2607.05131"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2607.05131"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2607.05131"
+      },
+      {
+        "label": "Official",
+        "url": "https://www.bza.edu.cn/detail/inews_9ag0vqmqfhud5uic6gwle37bsg2yz9hh"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2607.05131v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "official-listing",
+        "institution": "zgca",
+        "matchedText": "北京中关村学院官网科研创新页面",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_9ag0vqmqfhud5uic6gwle37bsg2yz9hh"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "北京中关村学院官网"
+    ],
+    "id": "doi-10-48550-arxiv-2607-05131",
+    "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "conference",
+    "title": "Feeling the Unexpected: ResTacVLA for Contact-Rich Manipulation via Residual Tactile Representation",
+    "authors": [
+      {
+        "name": "Pengwei Zhang"
+      },
+      {
+        "name": "Bin Xie"
+      },
+      {
+        "name": "Xinpan Meng"
+      },
+      {
+        "name": "Xinyu Guo"
+      },
+      {
+        "name": "Ce Hao"
+      },
+      {
+        "name": "Fang Deng"
+      },
+      {
+        "name": "Long Cheng"
+      },
+      {
+        "name": "Tiancai Wang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "北京中关村学院官网科研创新页面"
+    ],
+    "relationType": "official-output",
+    "publishedAt": "2026-07-03",
+    "year": 2026,
+    "venue": "IROS 2026",
+    "status": "published",
+    "topics": [
+      "cs.RO"
+    ],
+    "abstract": "Tactile perception is indispensable for contact-rich manipulation, yet integrating it into Vision-Language-Action (VLA) models often induces modality collapse, where high-bandwidth visual features overshadow sparse tactile cues. Inspired by Predictive Coding, a neural mechanism where the brain attenuates predictable inputs to prioritize surprising stimuli, we propose ResTacVLA. Rather than treating tactile data as raw input, we reformulate it as a Residual Tactile Representation capturing the discrepancy between visual priors and physical sensations. By filtering out visually predictable dynamics, this formulation transforms sparse tactile signals into dense, high-value information gain, thereby inherently resolving the bandwidth mismatch. These residuals are discretized through a Vector Quantized (VQ) bottleneck into Latent Contact Primitives that capture critical events missed by vision. Analogous to the neural surprise signal, we leverage the uncertainty of the visual prior to adaptively gate tactile integration, prioritizing residuals specifically during visually unreliable phases to explicitly prevent visual dominance. Experimental results show that ResTacVLA consistently outperforms all baselines on a diverse set of contact-rich manipulation tasks, while remaining robust to unexpected dynamic disturbances. Project page: https://awilekong.github.io/ResTacVLA/",
+    "identifiers": {
+      "arxiv": "2607.03387",
+      "doi": "10.48550/arXiv.2607.03387"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2607.03387"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2607.03387"
+      },
+      {
+        "label": "Official",
+        "url": "https://www.bza.edu.cn/detail/inews_ho6e7i6am89s329ptxsg21orx8s9qgv2"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2607.03387v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "official-listing",
+        "institution": "zgca",
+        "matchedText": "北京中关村学院官网科研创新页面",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_ho6e7i6am89s329ptxsg21orx8s9qgv2"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "北京中关村学院官网"
+    ],
+    "id": "doi-10-48550-arxiv-2607-03387",
+    "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "conference",
+    "title": "UrbanWell: Benchmarking Multimodal Large Language Models for Spatio-Temporal Urban Wellbeing Analytics",
+    "authors": [
+      {
+        "name": "Yanxin Xi"
+      },
+      {
+        "name": "Xiang Su"
+      },
+      {
+        "name": "Jie Feng"
+      },
+      {
+        "name": "Yu Liu"
+      },
+      {
+        "name": "Sasu Tarkoma"
+      },
+      {
+        "name": "Pan Hui"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "北京中关村学院官网科研创新页面"
+    ],
+    "relationType": "official-output",
+    "publishedAt": "2026-06-14",
+    "year": 2026,
+    "venue": "KDD Datasets and Benchmarks Track 2026",
+    "status": "published",
+    "topics": [
+      "cs.AI"
+    ],
+    "abstract": "Understanding urban wellbeing from multimodal data requires integrating heterogeneous spatial and temporal signals, posing significant challenges for current multimodal large language models (MLLMs). We introduce UrbanWell, a large-scale benchmark designed to systematically evaluate the spatio-temporal reasoning capabilities of MLLMs for urban wellbeing analytics through joint modeling of satellite and street view imagery. UrbanWell spans 38 cities across multiple years and includes diverse indicators covering (1) environmental conditions (CO$_2$, NO$_2$, PM${2.5}$, and Normalized Difference Vegetation Index), (2) spatial accessibility (minimum distance to supermarkets and restaurants), (3) urban form (road length, road density, and land use), (4) urban vitality (population, economic activity diversity, and land use diversity), and (5) subjective perception attributes (e.g., safety, beauty, liveliness, wealth, and quietness). All indicators are aligned at grid level to enable standardized evaluation. Beyond static prediction, UrbanWell defines temporal reasoning tasks, including future value forecasting from historical observations and temporal trend classification. We benchmark 15 state-of-the-art representative MLLMs in a zero-shot setting, providing a comprehensive comparative evaluation across spatial and temporal dimensions. Experimental results indicate that while MLLMs capture salient spatial and perceptual cues, their performance varies substantially across heterogeneous urban indicators spanning environment and subjective perception. UrbanWell serves as a unified benchmark for evaluating multimodal spatial and temporal reasoning in urban wellbeing analytics, offering a standardized testbed for systematic assessment and future research on multimodal urban intelligence. Our codes and datasets are accessible via https://github.com/axin1301/UrbanWell-Benchmark.",
+    "identifiers": {
+      "arxiv": "2606.15890",
+      "doi": "10.48550/arXiv.2606.15890"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.15890"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2606.15890"
+      },
+      {
+        "label": "Official",
+        "url": "https://www.bza.edu.cn/detail/inews_nq1x2ai9mrehwwm692ivxl957r4vvluw"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/axin1301/UrbanWell-Benchmark/"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2606.15890v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "official-listing",
+        "institution": "zgca",
+        "matchedText": "北京中关村学院官网科研创新页面",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_nq1x2ai9mrehwwm692ivxl957r4vvluw"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "北京中关村学院官网"
+    ],
+    "id": "doi-10-48550-arxiv-2606-15890",
+    "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "conference",
+    "title": "SciCustom: A Framework for Custom Evaluation of Scientific Capabilities in Large Language Models",
+    "authors": [
+      {
+        "name": "Yiyang Gu"
+      },
+      {
+        "name": "Junwei Yang"
+      },
+      {
+        "name": "Junyu Luo"
+      },
+      {
+        "name": "Ye Yuan"
+      },
+      {
+        "name": "Bin Feng"
+      },
+      {
+        "name": "Yingce Xia"
+      },
+      {
+        "name": "Shufang Xie"
+      },
+      {
+        "name": "Kaili Liu"
+      },
+      {
+        "name": "Bohan Wu"
+      },
+      {
+        "name": "Qi Shi"
+      },
+      {
+        "name": "Haoran Li"
+      },
+      {
+        "name": "Beier Xiao"
+      },
+      {
+        "name": "Zhiping Xiao"
+      },
+      {
+        "name": "Xiao Luo"
+      },
+      {
+        "name": "Weizhi Zhang"
+      },
+      {
+        "name": "Philip S. Yu"
+      },
+      {
+        "name": "Zequn Liu"
+      },
+      {
+        "name": "Ming Zhang"
+      }
+    ],
+    "institutions": [
+      "zgca",
+      "zgci"
+    ],
+    "rawAffiliations": [
+      "北京中关村学院与中关村人工智能研究院（中关村两院）"
+    ],
+    "relationType": "official-output",
+    "publishedAt": "2026-05-19",
+    "year": 2026,
+    "venue": "ACL 2026",
+    "status": "published",
+    "topics": [
+      "cs.CL"
+    ],
+    "abstract": "Large language models (LLMs) are increasingly applied to scientific research, yet existing evaluations often fail to reflect the fine-grained capabilities required in practice. Most benchmarks are manually curated or domain-generic, limiting scalability and alignment with real scientific use cases. In this paper, we propose a new framework named SciCustom to address the problem. It enables the custom construction of benchmarks from large-scale scientific data to evaluate application-specific scientific capabilities in LLMs. SciCustom first organizes scientific knowledge into ontology-grounded knowledge units with controlled granularity and trains a tagger to map large-scale data instances into this knowledge space. Given a custom requirement, relevant knowledge units are identified via voting-based multi-model consensus. These units enable relevance-aware benchmark retrieval via binary search, followed by proxy subset selection and data-grounded benchmark generation for efficient evaluation. Experiments in chemistry and healthcare demonstrate that SciCustom reveals fine-grained differences in LLM scientific capabilities that standard benchmarks overlook, while requiring neither expert annotation nor synthetic question generation. This work provides a scalable and application-aware foundation for benchmarking scientific capabilities in LLMs. The source code is available at https://github.com/yjwtheonly/SciCustom.",
+    "identifiers": {
+      "arxiv": "2605.19357",
+      "doi": "10.48550/arXiv.2605.19357"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.19357"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.19357"
+      },
+      {
+        "label": "Official",
+        "url": "https://www.bza.edu.cn/detail/inews_y4wg2eznr5f9qipfzk688str4knm80bl"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/yjwtheonly/SciCustom"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.19357v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "official-listing",
+        "institution": "zgca",
+        "matchedText": "北京中关村学院与中关村人工智能研究院（中关村两院）",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_y4wg2eznr5f9qipfzk688str4knm80bl"
+      },
+      {
+        "level": "official-listing",
+        "institution": "zgci",
+        "matchedText": "北京中关村学院与中关村人工智能研究院（中关村两院）",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_y4wg2eznr5f9qipfzk688str4knm80bl"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "北京中关村学院官网"
+    ],
+    "id": "doi-10-48550-arxiv-2605-19357",
+    "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "preprint",
+    "title": "IntentVLA: Short-Horizon Intent Modeling for Aliased Robot Manipulation",
+    "authors": [
+      {
+        "name": "Shijie Lian"
+      },
+      {
+        "name": "Bin Yu"
+      },
+      {
+        "name": "Xiaopeng Lin"
+      },
+      {
+        "name": "Zhaolong Shen"
+      },
+      {
+        "name": "Laurence Tianruo Yang"
+      },
+      {
+        "name": "Yurun Jin"
+      },
+      {
+        "name": "Haishan Liu"
+      },
+      {
+        "name": "Changti Wu"
+      },
+      {
+        "name": "Hang Yuan"
+      },
+      {
+        "name": "Cong Huang"
+      },
+      {
+        "name": "Kai Chen"
+      }
+    ],
+    "institutions": [
+      "zgca",
+      "zgci"
+    ],
+    "rawAffiliations": [
+      "北京中关村学院与中关村人工智能研究院（中关村两院）"
+    ],
+    "relationType": "official-output",
+    "publishedAt": "2026-05-14",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CL",
+      "cs.CV"
+    ],
+    "abstract": "Robot imitation data are often multimodal: similar visual-language observations may be followed by different action chunks because human demonstrators act with different short-horizon intents, task phases, or recent context. Existing frame-conditioned VLA policies infer each chunk from the current observation and instruction alone, so under partial observability they may resample different intents across adjacent replanning steps, leading to inter-chunk conflict and unstable execution. We introduce IntentVLA, a history-conditioned VLA framework that encodes recent visual observations into a compact short-horizon intent representation and uses it to condition chunk generation. We further introduce AliasBench, a 12-task ambiguity-aware benchmark on RoboTwin2 with matched training data and evaluation environments that isolate short-horizon observation aliasing. Across AliasBench, SimplerEnv, LIBERO, and RoboCasa, IntentVLA improves rollout stability and outperforms strong VLA baselines",
+    "identifiers": {
+      "arxiv": "2605.14712",
+      "doi": "10.48550/arXiv.2605.14712"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.14712"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.14712"
+      },
+      {
+        "label": "Official",
+        "url": "https://www.bza.edu.cn/detail/inews_jsml7c2h0u3f1xzkexdvtf9i5fpjwpaq"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.14712v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "official-listing",
+        "institution": "zgca",
+        "matchedText": "北京中关村学院与中关村人工智能研究院（中关村两院）",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_jsml7c2h0u3f1xzkexdvtf9i5fpjwpaq"
+      },
+      {
+        "level": "official-listing",
+        "institution": "zgci",
+        "matchedText": "北京中关村学院与中关村人工智能研究院（中关村两院）",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_jsml7c2h0u3f1xzkexdvtf9i5fpjwpaq"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "北京中关村学院官网"
+    ],
+    "id": "doi-10-48550-arxiv-2605-14712",
+    "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "conference",
+    "title": "PipeSD: An Efficient Cloud-Edge Collaborative Pipeline Inference Framework with Speculative Decoding",
+    "authors": [
+      {
+        "name": "Yunhe Han"
+      },
+      {
+        "name": "Yunqi Gao"
+      },
+      {
+        "name": "Bing Hu"
+      },
+      {
+        "name": "Mahdi Boloursaz Mashhadi"
+      },
+      {
+        "name": "Yitong Duan"
+      },
+      {
+        "name": "Pei Xiao"
+      },
+      {
+        "name": "Yanfeng Zhang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "北京中关村学院官网科研创新页面"
+    ],
+    "relationType": "official-output",
+    "publishedAt": "2026-05-13",
+    "year": 2026,
+    "venue": "ICML 2026",
+    "status": "published",
+    "topics": [
+      "cs.DC"
+    ],
+    "abstract": "Speculative decoding can significantly accelerate LLM inference, especially given that its cloud-edge collaborative deployment offers cloud workload offloading, offline robustness, and privacy enhancement. However, existing collaborative inference frameworks with speculative decoding are constrained by (i) sequential token generation and communication with low resource utilization, and (ii) inflexible cloud non-autoregressive verification (NAV) triggering that induces premature verification or costly rollbacks. In this paper, we propose PipeSD, an efficient cloud-edge collaborative pipeline inference framework with speculative decoding. PipeSD overlaps token generation and communication by a token-batch pipeline scheduling mechanism optimized by dynamic programming, and improves verification flexibility through a dual-threshold NAV triggering mechanism with a lightweight Bayesian optimization autotuner. We implement PipeSD using llama-cpp-python, PyTorch, and FastAPI, and evaluate it on a real-world cloud-edge testbed with two draft-target model pairs across four scenarios. Results show that PipeSD consistently outperforms state-of-the-art baselines, achieving 1.16x-2.16x speedup and reducing energy consumption by 14.3%-25.3%.",
+    "identifiers": {
+      "arxiv": "2605.13319",
+      "doi": "10.48550/arXiv.2605.13319"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.13319"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.13319"
+      },
+      {
+        "label": "Official",
+        "url": "https://www.bza.edu.cn/detail/inews_6typbbqd9r7y99a7hktif3zbkaa02k5t"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/Ghanyunhe/PipeSD"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.13319v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "official-listing",
+        "institution": "zgca",
+        "matchedText": "北京中关村学院官网科研创新页面",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_6typbbqd9r7y99a7hktif3zbkaa02k5t"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "北京中关村学院官网"
+    ],
+    "id": "doi-10-48550-arxiv-2605-13319",
+    "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
     "id": "doi-10-1007-s11390-026-5948-8",
     "type": "article",
     "title": "Data Preparation for Large Language Models",
@@ -99,6 +670,109 @@
       "Publisher"
     ],
     "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "type": "preprint",
+    "title": "FutureWorld: A Live Reinforcement Learning Environment for Predictive Agents with Real-World Outcome Rewards",
+    "authors": [
+      {
+        "name": "Zhixin Han"
+      },
+      {
+        "name": "Yanzhi Zhang"
+      },
+      {
+        "name": "Chuyang Wei"
+      },
+      {
+        "name": "Maohang Gao"
+      },
+      {
+        "name": "Xiawei Yue"
+      },
+      {
+        "name": "Kefei Chen"
+      },
+      {
+        "name": "Yu Zhuang"
+      },
+      {
+        "name": "Haoxiang Guan"
+      },
+      {
+        "name": "Jiyan He"
+      },
+      {
+        "name": "Jian Li"
+      },
+      {
+        "name": "Yitong Duan"
+      },
+      {
+        "name": "Yu Shi"
+      },
+      {
+        "name": "Mengting Hu"
+      },
+      {
+        "name": "Shuxin Zheng"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "北京中关村学院官网科研创新页面"
+    ],
+    "relationType": "official-output",
+    "publishedAt": "2026-04-29",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "abstract": "Live future prediction refers to the task of making predictions about real-world events before they unfold. This task is increasingly studied using large language model-based agent systems, and it is important for building agents that can continually learn from the real world. It can provide a large number of prediction questions grounded in diverse real-world events, while preventing answer leakage. To leverage the advantages of future prediction, we present FutureWorld, a live agentic reinforcement learning environment that closes the training loop between prediction, outcome realization, and parameter updates. Specifically, we modify and extend verl-tool, resulting in a new framework that we call verl-tool-future. Unlike standard reinforcement learning training frameworks that rely on immediate rewards, verl-tool-future stores prediction-time rollouts, backfills rewards after real-world outcomes become available, and then replays the completed trajectories for policy update. Across three open-source agents, successive FutureWorld training rounds lead to consistent improvements in prediction accuracy, probabilistic scoring, and calibration, demonstrating that delayed real-world outcome feedback can serve as an effective reinforcement learning signal.",
+    "identifiers": {
+      "arxiv": "2604.26733",
+      "doi": "10.48550/arXiv.2604.26733"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2604.26733"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2604.26733"
+      },
+      {
+        "label": "Official",
+        "url": "https://www.bza.edu.cn/detail/inews_8t639n2lzd7p6v1xwxost2goxugu6xoa"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2604.26733v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "official-listing",
+        "institution": "zgca",
+        "matchedText": "北京中关村学院官网科研创新页面",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_8t639n2lzd7p6v1xwxost2goxugu6xoa"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "北京中关村学院官网"
+    ],
+    "id": "doi-10-48550-arxiv-2604-26733",
+    "updatedAt": "2026-08-08T11:59:38Z"
   },
   {
     "id": "rebalance-iclr-2026",
@@ -284,6 +958,580 @@
     "updatedAt": "2026-08-08T00:00:00Z"
   },
   {
+    "type": "conference",
+    "title": "Quotient-Space Diffusion Models",
+    "authors": [
+      {
+        "name": "Yixian Xu"
+      },
+      {
+        "name": "Yusong Wang"
+      },
+      {
+        "name": "Shengjie Luo"
+      },
+      {
+        "name": "Kaiyuan Gao"
+      },
+      {
+        "name": "Tianyu He"
+      },
+      {
+        "name": "Di He"
+      },
+      {
+        "name": "Chang Liu"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "北京中关村学院官网科研创新页面"
+    ],
+    "relationType": "official-output",
+    "publishedAt": "2026-04-23",
+    "year": 2026,
+    "venue": "ICLR 2026",
+    "status": "published",
+    "topics": [
+      "cs.LG",
+      "cs.AI",
+      "q-bio.QM",
+      "stat.ML"
+    ],
+    "abstract": "Diffusion-based generative models have reformed generative AI, and also enabled new capabilities in the science domain, e.g., fast generation of 3D structures of molecules. In such tasks, there is often a symmetry in the system, identifying elements that can be converted by certain transformations as equivalent. Equivariant diffusion models guarantee a symmetric distribution, but miss the opportunity to make learning easier, while alignment-based simplification attempts fail to preserve the target distribution. In this work, we develop quotient-space diffusion models, a principled generative framework to fully handle and leverage symmetry. By viewing the intrinsic generation process on the quotient space, the exact construction that removes symmetry redundancy, the framework simplifies learning by allowing model output to have an arbitrary intra-equivalence-class movement, while generating the correct symmetric target distribution with guarantee. We instantiate the framework for molecular structure generation which follows $\\mathrm{SE}(3)$ (rigid-body movement) symmetry. It improves the performance over equivariant diffusion models and outperforms alignment-based methods universally for small molecules and proteins, representing a new framework that surpasses previous symmetry treatments in generative models.",
+    "identifiers": {
+      "arxiv": "2604.21809",
+      "doi": "10.48550/arXiv.2604.21809"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2604.21809"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2604.21809"
+      },
+      {
+        "label": "Official",
+        "url": "https://www.bza.edu.cn/detail/inews_j8oft0n01fkw77lwg26q7682its89suf"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2604.21809v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "official-listing",
+        "institution": "zgca",
+        "matchedText": "北京中关村学院官网科研创新页面",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_j8oft0n01fkw77lwg26q7682its89suf"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "北京中关村学院官网"
+    ],
+    "id": "doi-10-48550-arxiv-2604-21809",
+    "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Harnessing Pre-Resolution Signals for Future Prediction Agents",
+    "authors": [
+      {
+        "name": "Chuyang Wei"
+      },
+      {
+        "name": "Maohang Gao"
+      },
+      {
+        "name": "Zhixin Han"
+      },
+      {
+        "name": "Kefei Chen"
+      },
+      {
+        "name": "Yu Zhuang"
+      },
+      {
+        "name": "Haoxiang Guan"
+      },
+      {
+        "name": "Yanzhi Zhang"
+      },
+      {
+        "name": "Yilin Cheng"
+      },
+      {
+        "name": "Xiren Zhou"
+      },
+      {
+        "name": "Huanhuan Chen"
+      },
+      {
+        "name": "Jian Li"
+      },
+      {
+        "name": "Jiyan He"
+      },
+      {
+        "name": "Yu Shi"
+      },
+      {
+        "name": "Yitong Duan"
+      },
+      {
+        "name": "Shuxin Zheng"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "北京中关村学院官网科研创新页面"
+    ],
+    "relationType": "official-output",
+    "publishedAt": "2026-04-17",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.AI"
+    ],
+    "abstract": "Many high-stakes decisions depend on forecasts made before outcomes are known. In this future prediction setting, the central challenge is that public evidence evolves over time, while the main supervision signal arrives only after resolution: the realized outcome mainly assesses final correctness, offering only coarse guidance on what to track, what to verify, and which judgments to leave uncertain along the way. Our key observation is that revisiting the same unresolved question over time creates informative temporal contrasts across evolving evidence and repeated forecasts, exposing what earlier attempts missed before resolution and yielding a diagnostic signal we call the pre-resolution signal. We instantiate this idea in Milkyway, a future prediction agent with a persistent future prediction harness, an editable external state that stores reusable procedural guidance across revisits to the same unresolved question. As the same unresolved question is revisited, Milkyway extracts pre-resolution signals from evolving evidence and repeated forecasts, uses them to update the harness, and improves later forecasts on that question before resolution. After resolution, the realized outcome serves as a post-resolution check of provisional updates. On the FutureX and FutureWorld benchmarks, Milkyway achieves strong performance against competitive baselines, and a mechanism study suggests that the gains stem from harness evolution driven by pre-resolution signals rather than repeated prediction alone.",
+    "identifiers": {
+      "arxiv": "2604.15719",
+      "doi": "10.48550/arXiv.2604.15719"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2604.15719"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2604.15719"
+      },
+      {
+        "label": "Official",
+        "url": "https://www.bza.edu.cn/detail/inews_8t639n2lzd7p6v1xwxost2goxugu6xoa"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2604.15719v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "official-listing",
+        "institution": "zgca",
+        "matchedText": "北京中关村学院官网科研创新页面",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_8t639n2lzd7p6v1xwxost2goxugu6xoa"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "北京中关村学院官网"
+    ],
+    "id": "doi-10-48550-arxiv-2604-15719",
+    "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "conference",
+    "title": "CoPA: Benchmarking Personalized Question Answering with Data-Informed Cognitive Factors",
+    "authors": [
+      {
+        "name": "Hang Su"
+      },
+      {
+        "name": "Zequn Liu"
+      },
+      {
+        "name": "Chen Hu"
+      },
+      {
+        "name": "Xuesong Lu"
+      },
+      {
+        "name": "Yingce Xia"
+      },
+      {
+        "name": "Zhen Liu"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "北京中关村学院官网科研创新页面"
+    ],
+    "relationType": "official-output",
+    "publishedAt": "2026-04-16",
+    "year": 2026,
+    "venue": "ACL 2026",
+    "status": "published",
+    "topics": [
+      "cs.CL"
+    ],
+    "abstract": "While LLMs have demonstrated remarkable potential in Question Answering (QA), evaluating personalization remains a critical bottleneck. Existing paradigms predominantly rely on lexical-level similarity or manual heuristics, often lacking sufficient data-driven validation. We address this by mining Community-Individual Preference Divergence (CIPD), where individual choices override consensus, to distill six key personalization factors as evaluative dimensions. Accordingly, we introduce CoPA, a benchmark with 1,985 user profiles for fine-grained, factor-level assessment. By quantifying the alignment between model outputs and user-specific cognitive preferences inferred from interaction patterns, CoPA provides a more comprehensive and discriminative standard for evaluating personalized QA than generic metrics. The code is available at https://github.com/bjzgcai/CoPA.",
+    "identifiers": {
+      "arxiv": "2604.14773",
+      "doi": "10.48550/arXiv.2604.14773"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2604.14773"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2604.14773"
+      },
+      {
+        "label": "Official",
+        "url": "https://www.bza.edu.cn/detail/inews_dogy7yn9wqq8w3vdfu0gv0gnzmz5nhtm"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/bjzgcai/CoPA"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2604.14773v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "official-listing",
+        "institution": "zgca",
+        "matchedText": "北京中关村学院官网科研创新页面",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_dogy7yn9wqq8w3vdfu0gv0gnzmz5nhtm"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "北京中关村学院官网"
+    ],
+    "id": "doi-10-48550-arxiv-2604-14773",
+    "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "conference",
+    "title": "AutoSOTA: An End-to-End Automated Research System for State-of-the-Art AI Model Discovery",
+    "authors": [
+      {
+        "name": "Yu Li"
+      },
+      {
+        "name": "Chenyang Shao"
+      },
+      {
+        "name": "Xinyang Liu"
+      },
+      {
+        "name": "Ruotong Zhao"
+      },
+      {
+        "name": "Peijie Liu"
+      },
+      {
+        "name": "Hongyuan Su"
+      },
+      {
+        "name": "Zhibin Chen"
+      },
+      {
+        "name": "Qinglong Yang"
+      },
+      {
+        "name": "Anjie Xu"
+      },
+      {
+        "name": "Yi Fang"
+      },
+      {
+        "name": "Qingbin Zeng"
+      },
+      {
+        "name": "Tianxing Li"
+      },
+      {
+        "name": "Jingbo Xu"
+      },
+      {
+        "name": "Fengli Xu"
+      },
+      {
+        "name": "Yong Li"
+      },
+      {
+        "name": "Tie-Yan Liu"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "北京中关村学院官网科研创新页面"
+    ],
+    "relationType": "official-output",
+    "publishedAt": "2026-04-07",
+    "year": 2026,
+    "venue": "CVPR 2026",
+    "status": "published",
+    "topics": [
+      "cs.CL",
+      "cs.CE"
+    ],
+    "abstract": "Artificial intelligence research increasingly depends on prolonged cycles of reproduction, debugging, and iterative refinement to achieve State-Of-The-Art (SOTA) performance, creating a growing need for systems that can accelerate the full pipeline of empirical model optimization. In this work, we introduce AutoSOTA, an end-to-end automated research system that advances the latest SOTA models published in top-tier AI papers to reproducible and empirically improved new SOTA models. We formulate this problem through three tightly coupled stages: resource preparation and goal setting; experiment evaluation; and reflection and ideation. To tackle this problem, AutoSOTA adopts a multi-agent architecture with eight specialized agents that collaboratively ground papers to code and dependencies, initialize and repair execution environments, track long-horizon experiments, generate and schedule optimization ideas, and supervise validity to avoid spurious gains. We evaluate AutoSOTA on recent research papers collected from eight top-tier AI conferences under filters for code availability and execution cost. Across these papers, AutoSOTA achieves strong end-to-end performance in both automated replication and subsequent optimization. Specifically, it successfully discovers 105 new SOTA models that surpass the original reported methods, averaging approximately five hours per paper. Case studies spanning LLM, NLP, computer vision, time series, and optimization further show that the system can move beyond routine hyperparameter tuning to identify architectural innovation, algorithmic redesigns, and workflow-level improvements. These results suggest that end-to-end research automation can serve not only as a performance optimizer, but also as a new form of research infrastructure that reduces repetitive experimental burden and helps redirect human attention toward higher-level scientific creativity.",
+    "identifiers": {
+      "arxiv": "2604.05550",
+      "doi": "10.48550/arXiv.2604.05550"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2604.05550"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2604.05550"
+      },
+      {
+        "label": "Official",
+        "url": "https://www.bza.edu.cn/detail/inews_d0qhgfwk5u8c45svd8cmydi5eh526adr"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/tsinghua-fib-lab/AutoSOTA"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2604.05550v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "official-listing",
+        "institution": "zgca",
+        "matchedText": "北京中关村学院官网科研创新页面",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_d0qhgfwk5u8c45svd8cmydi5eh526adr"
+      },
+      {
+        "level": "official-listing",
+        "institution": "zgca",
+        "matchedText": "北京中关村学院官网科研创新页面",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_38df3gx56izdt48elmvdwcldz7upshy1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "北京中关村学院官网"
+    ],
+    "id": "doi-10-48550-arxiv-2604-05550",
+    "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "conference",
+    "title": "GaussianPile: A Unified Sparse Gaussian Splatting Framework for Slice-based Volumetric Reconstruction",
+    "authors": [
+      {
+        "name": "Di Kong"
+      },
+      {
+        "name": "Yikai Wang"
+      },
+      {
+        "name": "Wenjie Guo"
+      },
+      {
+        "name": "Yifan Bu"
+      },
+      {
+        "name": "Boya Zhang"
+      },
+      {
+        "name": "Yuexin Duan"
+      },
+      {
+        "name": "Xiawei Yue"
+      },
+      {
+        "name": "Wenbiao Du"
+      },
+      {
+        "name": "Yiman Zhong"
+      },
+      {
+        "name": "Yuwen Chen"
+      },
+      {
+        "name": "Cheng Ma"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "北京中关村学院官网科研创新页面"
+    ],
+    "relationType": "official-output",
+    "publishedAt": "2026-03-21",
+    "year": 2026,
+    "venue": "CVPR 2026",
+    "status": "published",
+    "topics": [
+      "cs.CV"
+    ],
+    "abstract": "Slice-based volumetric imaging is widely applied and it demands representations that compress aggressively while preserving internal structure for analysis. We introduce GaussianPile, unifying 3D Gaussian splatting with an imaging system-aware focus model to address this challenge. Our proposed method introduces three key innovations: (i) a slice-aware piling strategy that positions anisotropic 3D Gaussians to model through-slice contributions, (ii) a differentiable projection operator that encodes the finite-thickness point spread function of the imaging acquisition system, and (iii) a compact encoding and joint optimization pipeline that simultaneously reconstructs and compresses the Gaussian sets. Our CUDA-based design retains the compression and real-time rendering efficiency of Gaussian primitives while preserving high-frequency internal volumetric detail. Experiments on microscopy and ultrasound datasets demonstrate that our method reduces storage and reconstruction cost, sustains diagnostic fidelity, and enables fast 2D visualization, along with 3D voxelization. In practice, it delivers high-quality results in as few as 3 minutes, up to 11x faster than NeRF-based approaches, and achieves consistent 16x compression over voxel grids, offering a practical path to deployable compression and exploration of slice-based volumetric datasets.",
+    "identifiers": {
+      "arxiv": "2603.20611",
+      "doi": "10.48550/arXiv.2603.20611"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2603.20611"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2603.20611"
+      },
+      {
+        "label": "Official",
+        "url": "https://www.bza.edu.cn/detail/inews_o1swjxxaebea2eanmwv6830gh976rgp9"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2603.20611v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "official-listing",
+        "institution": "zgca",
+        "matchedText": "北京中关村学院官网科研创新页面",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_o1swjxxaebea2eanmwv6830gh976rgp9"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "北京中关村学院官网"
+    ],
+    "id": "doi-10-48550-arxiv-2603-20611",
+    "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "conference",
+    "title": "Towards Human-Like Manipulation through RL-Augmented Teleoperation and Mixture-of-Dexterous-Experts VLA",
+    "authors": [
+      {
+        "name": "Tutian Tang"
+      },
+      {
+        "name": "Xingyu Ji"
+      },
+      {
+        "name": "Wanli Xing"
+      },
+      {
+        "name": "Ce Hao"
+      },
+      {
+        "name": "Wenqiang Xu"
+      },
+      {
+        "name": "Lin Shao"
+      },
+      {
+        "name": "Cewu Lu"
+      },
+      {
+        "name": "Qiaojun Yu"
+      },
+      {
+        "name": "Jiangmiao Pang"
+      },
+      {
+        "name": "Kaifeng Zhang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "北京中关村学院官网科研创新页面"
+    ],
+    "relationType": "official-output",
+    "publishedAt": "2026-03-09",
+    "year": 2026,
+    "venue": "IROS 2026",
+    "status": "published",
+    "topics": [
+      "cs.RO"
+    ],
+    "abstract": "While Vision-Language-Action (VLA) models have demonstrated remarkable success in robotic manipulation, their application has largely been confined to low-degree-of-freedom end-effectors performing simple, vision-guided pick-and-place tasks. Extending these models to human-like, bimanual dexterous manipulation-specifically contact-rich in-hand operations-introduces critical challenges in high-fidelity data acquisition, multi-skill learning, and multimodal sensory fusion. In this paper, we propose an integrated framework to address these bottlenecks, built upon two components. First, we introduce IMCopilot (In-hand Manipulation Copilot), a suite of reinforcement learning-trained atomic skills that plays a dual role: it acts as a shared-autonomy assistant to simplify teleoperation data collection, and it serves as a callable low-level execution primitive for the VLA. Second, we present MoDE-VLA (Mixture-of-Dexterous-Experts VLA), an architecture that seamlessly integrates heterogeneous force and tactile modalities into a pretrained VLA backbone. By utilizing a residual injection mechanism, MoDE-VLA enables contact-aware refinement without degrading the model's pretrained knowledge. We validate our approach on four tasks of escalating complexity, demonstrating doubled success rate improvement over the baseline in dexterous contact-rich tasks.",
+    "identifiers": {
+      "arxiv": "2603.08122",
+      "doi": "10.48550/arXiv.2603.08122"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2603.08122"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2603.08122"
+      },
+      {
+        "label": "Official",
+        "url": "https://www.bza.edu.cn/detail/inews_zcnezi3d5262bwox2y8rzs3etx81racl"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2603.08122v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "official-listing",
+        "institution": "zgca",
+        "matchedText": "北京中关村学院官网科研创新页面",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_zcnezi3d5262bwox2y8rzs3etx81racl"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "北京中关村学院官网"
+    ],
+    "id": "doi-10-48550-arxiv-2603-08122",
+    "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
     "id": "whitepaper-beijing-genai-2026",
     "type": "whitepaper",
     "title": "北京市生成式人工智能大模型产业发展与治理白皮书",
@@ -356,6 +1604,515 @@
       "Official institutional release"
     ],
     "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "type": "conference",
+    "title": "Extending Sequence Length is Not All You Need: Effective Integration of Multimodal Signals for Gene Expression Prediction",
+    "authors": [
+      {
+        "name": "Zhao Yang"
+      },
+      {
+        "name": "Yi Duan"
+      },
+      {
+        "name": "Jiwei Zhu"
+      },
+      {
+        "name": "Ying Ba"
+      },
+      {
+        "name": "Chuan Cao"
+      },
+      {
+        "name": "Bing Su"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "北京中关村学院官网科研创新页面"
+    ],
+    "relationType": "official-output",
+    "publishedAt": "2026-02-25",
+    "year": 2026,
+    "venue": "ICLR 2026",
+    "status": "published",
+    "topics": [
+      "cs.LG",
+      "q-bio.GN"
+    ],
+    "abstract": "Gene expression prediction, which predicts mRNA expression levels from DNA sequences, presents significant challenges. Previous works often focus on extending input sequence length to locate distal enhancers, which may influence target genes from hundreds of kilobases away. Our work first reveals that for current models, long sequence modeling can decrease performance. Even carefully designed algorithms only mitigate the performance degradation caused by long sequences. Instead, we find that proximal multimodal epigenomic signals near target genes prove more essential. Hence we focus on how to better integrate these signals, which has been overlooked. We find that different signal types serve distinct biological roles, with some directly marking active regulatory elements while others reflect background chromatin patterns that may introduce confounding effects. Simple concatenation may lead models to develop spurious associations with these background patterns. To address this challenge, we propose Prism, a framework that learns multiple combinations of high-dimensional epigenomic features to represent distinct background chromatin states and uses backdoor adjustment to mitigate confounding effects. Our experimental results demonstrate that proper modeling of multimodal epigenomic signals achieves state-of-the-art performance using only short sequences for gene expression prediction.",
+    "identifiers": {
+      "arxiv": "2602.21550",
+      "doi": "10.48550/arXiv.2602.21550"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2602.21550"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2602.21550"
+      },
+      {
+        "label": "Official",
+        "url": "https://www.bza.edu.cn/detail/inews_h5w6mf0s0gevg8ibfx0boc4vp99w5tc4"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2602.21550v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "official-listing",
+        "institution": "zgca",
+        "matchedText": "北京中关村学院官网科研创新页面",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_h5w6mf0s0gevg8ibfx0boc4vp99w5tc4"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "北京中关村学院官网"
+    ],
+    "id": "doi-10-48550-arxiv-2602-21550",
+    "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "conference",
+    "title": "ChordEdit: One-Step Low-Energy Transport for Image Editing",
+    "authors": [
+      {
+        "name": "Liangsi Lu"
+      },
+      {
+        "name": "Xuhang Chen"
+      },
+      {
+        "name": "Minzhe Guo"
+      },
+      {
+        "name": "Shichu Li"
+      },
+      {
+        "name": "Jingchao Wang"
+      },
+      {
+        "name": "Yang Shi"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "北京中关村学院官网科研创新页面"
+    ],
+    "relationType": "official-output",
+    "publishedAt": "2026-02-22",
+    "year": 2026,
+    "venue": "CVPR 2026",
+    "status": "published",
+    "topics": [
+      "cs.CV"
+    ],
+    "abstract": "The advent of one-step text-to-image (T2I) models offers unprecedented synthesis speed. However, their application to text-guided image editing remains severely hampered, as forcing existing training-free editors into a single inference step fails. This failure manifests as severe object distortion and a critical loss of consistency in non-edited regions, resulting from the high-energy, erratic trajectories produced by naive vector arithmetic on the models' structured fields. To address this problem, we introduce ChordEdit, a model agnostic, training-free, and inversion-free method that facilitates high-fidelity one-step editing. We recast editing as a transport problem between the source and target distributions defined by the source and target text prompts. Leveraging dynamic optimal transport theory, we derive a principled, low-energy control strategy. This strategy yields a smoothed, variance-reduced editing field that is inherently stable, facilitating the field to be traversed in a single, large integration step. A theoretically grounded and experimentally validated approach allows ChordEdit to deliver fast, lightweight and precise edits, finally achieving true real-time editing on these challenging models.",
+    "identifiers": {
+      "arxiv": "2602.19083",
+      "doi": "10.48550/arXiv.2602.19083"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2602.19083"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2602.19083"
+      },
+      {
+        "label": "Official",
+        "url": "https://www.bza.edu.cn/detail/inews_d0qhgfwk5u8c45svd8cmydi5eh526adr"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/tsinghua-fib-lab/AutoSOTA"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2602.19083v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "official-listing",
+        "institution": "zgca",
+        "matchedText": "北京中关村学院官网科研创新页面",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_d0qhgfwk5u8c45svd8cmydi5eh526adr"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "北京中关村学院官网"
+    ],
+    "id": "doi-10-48550-arxiv-2602-19083",
+    "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "preprint",
+    "title": "VLA-JEPA: Enhancing Vision-Language-Action Model with Latent World Model",
+    "authors": [
+      {
+        "name": "Jingwen Sun"
+      },
+      {
+        "name": "Wenyao Zhang"
+      },
+      {
+        "name": "Zekun Qi"
+      },
+      {
+        "name": "Shaojie Ren"
+      },
+      {
+        "name": "Zezhi Liu"
+      },
+      {
+        "name": "Hanxin Zhu"
+      },
+      {
+        "name": "Guangzhong Sun"
+      },
+      {
+        "name": "Xin Jin"
+      },
+      {
+        "name": "Zhibo Chen"
+      }
+    ],
+    "institutions": [
+      "zgca",
+      "zgci"
+    ],
+    "rawAffiliations": [
+      "北京中关村学院与中关村人工智能研究院（中关村两院）"
+    ],
+    "relationType": "official-output",
+    "publishedAt": "2026-02-10",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.RO",
+      "cs.CV"
+    ],
+    "abstract": "Pretraining Vision-Language-Action (VLA) policies on internet-scale video is appealing, yet current latent-action objectives often learn the wrong thing: they remain anchored to pixel variation rather than action-relevant state transitions, making them vulnerable to appearance bias, nuisance motion, and information leakage. We introduce VLA-JEPA, a JEPA-style pretraining framework that sidesteps these pitfalls by design. The key idea is leakage-free state prediction: a target encoder produces latent representations from future frames, while the student pathway sees only the current observation -- future information is used solely as supervision targets, never as input. By predicting in latent space rather than pixel space, VLA-JEPA learns dynamics abstractions that are robust to camera motion and irrelevant background changes. This yields a simple two-stage recipe -- JEPA pretraining followed by action-head fine-tuning -- without the multi-stage complexity of prior latent-action pipelines. Experiments on LIBERO, LIBERO-Plus, SimplerEnv and real-world manipulation tasks show that VLA-JEPA achieves consistent gains in generalization and robustness over existing methods.",
+    "identifiers": {
+      "arxiv": "2602.10098",
+      "doi": "10.48550/arXiv.2602.10098"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2602.10098"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2602.10098"
+      },
+      {
+        "label": "Official",
+        "url": "https://www.bza.edu.cn/detail/inews_l7phjpnrrbyvox1hdf4hw105uqmctm1v"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/ginwind/VLA-JEPA"
+      },
+      {
+        "label": "Model",
+        "url": "https://huggingface.co/ginwind/VLA-JEPA"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2602.10098v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "official-listing",
+        "institution": "zgca",
+        "matchedText": "北京中关村学院与中关村人工智能研究院（中关村两院）",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_l7phjpnrrbyvox1hdf4hw105uqmctm1v"
+      },
+      {
+        "level": "official-listing",
+        "institution": "zgci",
+        "matchedText": "北京中关村学院与中关村人工智能研究院（中关村两院）",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_l7phjpnrrbyvox1hdf4hw105uqmctm1v"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "北京中关村学院官网"
+    ],
+    "id": "doi-10-48550-arxiv-2602-10098",
+    "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "preprint",
+    "title": "RLinf-USER: A Unified and Extensible System for Real-World Online Policy Learning in Embodied AI",
+    "authors": [
+      {
+        "name": "Hongzhi Zang"
+      },
+      {
+        "name": "Shu'ang Yu"
+      },
+      {
+        "name": "Hao Lin"
+      },
+      {
+        "name": "Tianxing Zhou"
+      },
+      {
+        "name": "Zefang Huang"
+      },
+      {
+        "name": "Zhen Guo"
+      },
+      {
+        "name": "Xin Xu"
+      },
+      {
+        "name": "Jiakai Zhou"
+      },
+      {
+        "name": "Yuze Sheng"
+      },
+      {
+        "name": "Shizhe Zhang"
+      },
+      {
+        "name": "Feng Gao"
+      },
+      {
+        "name": "Wenhao Tang"
+      },
+      {
+        "name": "Yufeng Yue"
+      },
+      {
+        "name": "Quanlu Zhang"
+      },
+      {
+        "name": "Xinlei Chen"
+      },
+      {
+        "name": "Chao Yu"
+      },
+      {
+        "name": "Yu Wang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "北京中关村学院官网科研创新页面"
+    ],
+    "relationType": "official-output",
+    "publishedAt": "2026-02-08",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.RO"
+    ],
+    "abstract": "Online policy learning directly in the physical world is a promising yet challenging direction for embodied intelligence. Unlike simulation, real-world systems cannot be arbitrarily accelerated, cheaply reset, or massively replicated, which makes scalable data collection, heterogeneous deployment, and long-horizon effective training difficult. These challenges suggest that real-world policy learning is not only an algorithmic issue but fundamentally a systems problem. We present USER, a Unified and extensible SystEm for Real-world online policy learning. USER treats physical robots as first-class hardware resources alongside GPUs through a unified hardware abstraction layer, enabling automatic discovery, management, and scheduling of heterogeneous robots. To address cloud-edge communication, USER introduces an adaptive communication plane with tunneling-based networking, distributed data channels for traffic localization, and streaming-multiprocessor-aware weight synchronization to regulate GPU-side overhead. On top of this infrastructure, USER organizes learning as a fully asynchronous framework with a persistent, cache-aware buffer, enabling efficient long-horizon experiments with robust crash recovery and reuse of historical data. In addition, USER provides extensible abstractions for rewards, algorithms, and policies, supporting online imitation or reinforcement learning of CNN/MLP, generative policies, and large vision-language-action (VLA) models within a unified pipeline. Results in both simulation and the real world show that USER enables multi-robot coordination, heterogeneous manipulators, edge-cloud collaboration with large models, and long-running asynchronous training, offering a unified and extensible systems foundation for real-world online policy learning.",
+    "identifiers": {
+      "arxiv": "2602.07837",
+      "doi": "10.48550/arXiv.2602.07837"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2602.07837"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2602.07837"
+      },
+      {
+        "label": "Official",
+        "url": "https://www.bza.edu.cn/detail/inews_7o9560ekbye9ncxknflzf3nrwfhv18wd"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/RLinf/RLinf"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2602.07837v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "official-listing",
+        "institution": "zgca",
+        "matchedText": "北京中关村学院官网科研创新页面",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_7o9560ekbye9ncxknflzf3nrwfhv18wd"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "北京中关村学院官网"
+    ],
+    "id": "doi-10-48550-arxiv-2602-07837",
+    "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "dataset",
+    "title": "TransNormal-Synthetic",
+    "authors": [
+      {
+        "name": "longxiang-ai"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "1 Zhejiang University, 2 Zhongguancun Academy"
+    ],
+    "relationType": "official-output",
+    "publishedAt": "2026-01-31",
+    "year": 2026,
+    "venue": "Hugging Face Datasets",
+    "status": "released",
+    "topics": [
+      "Open Dataset"
+    ],
+    "abstract": "Dataset released alongside TransNormal: Dense Visual Semantics for Diffusion-based Transparent Object Normal Estimation",
+    "identifiers": {},
+    "links": [
+      {
+        "label": "Dataset",
+        "url": "https://huggingface.co/datasets/Longxiang-ai/TransNormal-Synthetic"
+      },
+      {
+        "label": "Project",
+        "url": "https://github.com/longxiang-ai/TransNormal"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Hugging Face dataset",
+        "url": "https://huggingface.co/datasets/Longxiang-ai/TransNormal-Synthetic"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "1 Zhejiang University, 2 Zhongguancun Academy",
+        "source": "Official GitHub project README",
+        "sourceUrl": "https://github.com/longxiang-ai/TransNormal"
+      }
+    ],
+    "sources": [
+      "Official GitHub project README",
+      "Hugging Face"
+    ],
+    "id": "work-59f5f8c7d054",
+    "updatedAt": "2026-08-08T12:09:53Z"
+  },
+  {
+    "type": "conference",
+    "title": "TransNormal: Dense Visual Semantics for Diffusion-based Transparent Object Normal Estimation",
+    "authors": [
+      {
+        "name": "Mingwei Li"
+      },
+      {
+        "name": "Hehe Fan"
+      },
+      {
+        "name": "Yi Yang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "1 Zhejiang University, 2 Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-31",
+    "year": 2026,
+    "venue": "ICML 2026",
+    "status": "published",
+    "topics": [
+      "cs.CV"
+    ],
+    "abstract": "Monocular normal estimation for transparent objects is critical for laboratory automation, yet it remains challenging due to complex light refraction and reflection. These optical properties often lead to catastrophic failures in conventional depth and normal sensors, hindering the deployment of embodied AI in scientific environments. We propose TransNormal, a novel framework that adapts pre-trained diffusion priors for single-step normal regression. To handle the lack of texture in transparent surfaces, TransNormal integrates dense visual semantics from DINOv3 via a cross-attention mechanism, providing strong geometric cues. Furthermore, we employ a multi-task learning objective and wavelet-based regularization to ensure the preservation of fine-grained structural details. To support this task, we introduce TransNormal-Synthetic, a physics-based dataset with high-fidelity normal maps for transparent labware. Extensive experiments demonstrate that TransNormal significantly outperforms state-of-the-art methods: on the ClearGrasp benchmark, it reduces mean error by 24.4% and improves 11.25° accuracy by 22.8%; on ClearPose, it achieves a 15.2% reduction in mean error. The code and dataset will be made publicly available at https://longxiang-ai.github.io/TransNormal.",
+    "identifiers": {
+      "arxiv": "2602.00839",
+      "doi": "10.48550/arXiv.2602.00839"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2602.00839"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2602.00839"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/longxiang-ai/TransNormal"
+      },
+      {
+        "label": "Dataset",
+        "url": "https://huggingface.co/datasets/Longxiang-ai/TransNormal-Synthetic"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2602.00839v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "1 Zhejiang University, 2 Zhongguancun Academy",
+        "source": "Official GitHub project README",
+        "sourceUrl": "https://github.com/longxiang-ai/TransNormal"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "Official GitHub project README"
+    ],
+    "id": "doi-10-48550-arxiv-2602-00839",
+    "updatedAt": "2026-08-08T12:09:53Z"
   },
   {
     "id": "arxiv-2601-03260",
@@ -595,10 +2352,7 @@
       "State Key Laboratory of Human-Machine Hybrid Augmented Intelligence, Institute of Artificial Intelligence and Robotics, Xi’an Jiaotong University",
       "Zhongguancun Academy",
       "Zhongguancun Institute of Artificial Intelligence",
-      "State Key Laboratory of Human-Machine Hybrid Augmented Intelligence, Institute of Artificial Intelligence and Robotics, Xi’an Jiaotong University",
-      "Shanghai Artificial Intelligence Laboratory",
-      "State Key Laboratory of Human-Machine Hybrid Augmented Intelligence, Institute of Artificial Intelligence and Robotics, Xi’an Jiaotong University",
-      "State Key Laboratory of Human-Machine Hybrid Augmented Intelligence, Institute of Artificial Intelligence and Robotics, Xi’an Jiaotong University"
+      "Shanghai Artificial Intelligence Laboratory"
     ],
     "relationType": "affiliation",
     "publishedAt": "2026-01-01",
@@ -744,14 +2498,6 @@
       {
         "label": "DOI",
         "url": "https://doi.org/10.64898/2026.02.02.703197"
-      },
-      {
-        "label": "DOI",
-        "url": "https://zenodo.org/doi/10.5281/zenodo.18478480"
-      },
-      {
-        "label": "DOI",
-        "url": "https://zenodo.org/doi/10.5281/zenodo.18478479"
       }
     ],
     "versions": [
@@ -1150,10 +2896,6 @@
       {
         "label": "DOI",
         "url": "https://zenodo.org/doi/10.5281/zenodo.21257875"
-      },
-      {
-        "label": "DOI",
-        "url": "https://zenodo.org/doi/10.5281/zenodo.21257874"
       }
     ],
     "versions": [
@@ -1252,10 +2994,6 @@
       {
         "label": "DOI",
         "url": "https://zenodo.org/doi/10.5281/zenodo.20594128"
-      },
-      {
-        "label": "DOI",
-        "url": "https://zenodo.org/doi/10.5281/zenodo.20594127"
       }
     ],
     "versions": [
@@ -1403,10 +3141,6 @@
       {
         "label": "DOI",
         "url": "https://zenodo.org/doi/10.5281/zenodo.20336846"
-      },
-      {
-        "label": "DOI",
-        "url": "https://zenodo.org/doi/10.5281/zenodo.18264213"
       }
     ],
     "versions": [
@@ -1747,14 +3481,8 @@
     "rawAffiliations": [
       "Institute of Advanced Structure Technology",
       "Beijing Institute of Technology",
-      "Institute of Advanced Structure Technology",
-      "Beijing Institute of Technology",
       "Zhongguancun Academy",
-      "Zhongguancun Institute of Artificial Intelligence",
-      "Institute of Advanced Structure Technology",
-      "Beijing Institute of Technology",
-      "Institute of Advanced Structure Technology",
-      "Beijing Institute of Technology"
+      "Zhongguancun Institute of Artificial Intelligence"
     ],
     "relationType": "affiliation",
     "publishedAt": "2026-01-01",
@@ -1831,11 +3559,7 @@
     ],
     "rawAffiliations": [
       "Gaoling School of Artificial Intelligence, Renmin University of China, Beijing, China",
-      "Gaoling School of Artificial Intelligence, Renmin University of China, Beijing, China",
-      "Gaoling School of Artificial Intelligence, Renmin University of China, Beijing, China",
-      "Gaoling School of Artificial Intelligence, Renmin University of China, Beijing, China",
-      "Zhongguancun Academy, Beijing, China",
-      "Gaoling School of Artificial Intelligence, Renmin University of China, Beijing, China"
+      "Zhongguancun Academy, Beijing, China"
     ],
     "relationType": "affiliation",
     "publishedAt": "2026-01-01",
@@ -2002,12 +3726,7 @@
       "Beijing Institute of Technology, Beijing, China and Zhongguancun Academy, Beijing, China",
       "Xinjiang Future Enterprise Incubator Co., Ltd., Xinjiang, China and Beijing Institute of Technology, Beijing, China",
       "Beijing Institute of Technology, Beijing, China",
-      "Beijing Institute of Technology, Beijing, China",
-      "Zhongguancun Academy, Beijing, China and Institute of Automation, Chinese Academy of Sciencess, Beijing, China",
-      "Zhongguancun Academy, Beijing, China and Institute of Automation, Chinese Academy of Sciencess, Beijing, China",
-      "Beijing Institute of Technology, Beijing, China",
-      "Beijing Institute of Technology, Beijing, China",
-      "Beijing Institute of Technology, Beijing, China"
+      "Zhongguancun Academy, Beijing, China and Institute of Automation, Chinese Academy of Sciencess, Beijing, China"
     ],
     "relationType": "affiliation",
     "publishedAt": "2026-01-01",
@@ -2111,21 +3830,9 @@
     "rawAffiliations": [
       "Shanghai Artificial Intelligence Laboratory, Shanghai, China and Peking University, Beijing, China",
       "Shanghai Artificial Intelligence Laboratory, Shanghai, China",
-      "Shanghai Artificial Intelligence Laboratory, Shanghai, China",
-      "Shanghai Artificial Intelligence Laboratory, Shanghai, China",
-      "Shanghai Artificial Intelligence Laboratory, Shanghai, Shanghai, China",
       "Shanghai Artificial Intelligence Laboratory, Shanghai, Shanghai, China",
       "Shanghai Artificial Intelligence Laboratory, Shanghai, Shanghai, China and Peking University, Beijing, Beijing, China",
-      "Shanghai Artificial Intelligence Laboratory, Shanghai, China",
-      "Shanghai Artificial Intelligence Laboratory, Shanghai, Shanghai, China",
-      "Shanghai Artificial Intelligence Laboratory, Shanghai, Shanghai, China",
-      "Shanghai Artificial Intelligence Laboratory, Shanghai, Shanghai, China",
-      "Shanghai Artificial Intelligence Laboratory, Shanghai, Shanghai, China",
-      "Shanghai Artificial Intelligence Laboratory, Shanghai, Shanghai, China",
-      "Shanghai Artificial Intelligence Laboratory, Shanghai, Shanghai, China",
-      "Shanghai Artificial Intelligence Laboratory, Shanghai, Shanghai, China",
-      "Shanghai Artificial Intelligence Laboratory, Shanghai, Shanghai, China, Peking University, Beijing, Beijing, China, Zhongguancun Academy, Beijing, Beijing, China, and Beijing Key Laboratory of Data Intelligence and Security (Peking University), Beijing, Beijing, China",
-      "Shanghai Artificial Intelligence Laboratory, Shanghai, Shanghai, China"
+      "Shanghai Artificial Intelligence Laboratory, Shanghai, Shanghai, China, Peking University, Beijing, Beijing, China, Zhongguancun Academy, Beijing, Beijing, China, and Beijing Key Laboratory of Data Intelligence and Security (Peking University), Beijing, Beijing, China"
     ],
     "relationType": "affiliation",
     "publishedAt": "2026-01-01",
@@ -2206,7 +3913,6 @@
       "Shanghai Artificial Intelligence Laboratory, Beijing, China",
       "Renmin University of China, Beijing, China and Shanghai Artificial Intelligence Laboratory, Shanghai, China",
       "Cornell University, Ithaca, USA",
-      "Huazhong University of Science and Technology, Wuhan, China",
       "Shanghai Artificial Intelligence Laboratory, Shanghai, China and Shanghai Innovation institute, Shanghai, China"
     ],
     "relationType": "affiliation",
@@ -2268,7 +3974,6 @@
     ],
     "rawAffiliations": [
       "Zhongguancun Institute of Artificial Intelligence, Beijing, China",
-      "University of Science and Technology of China, Hefei, China",
       "University of Science and Technology of China, Hefei, China"
     ],
     "relationType": "affiliation",
@@ -2393,9 +4098,8 @@
     ],
     "rawAffiliations": [
       "School of Computer Science, University of Sydney, NSW, Australia",
-      "Zhongguancun Academy &amp; Zhongguancun Institute of Artificial Intelligence, Beijing, China",
-      "Institute of Translational Medicine, National Center for Translational Medicine, Shanghai Jiao Tong University, Shanghai, China",
-      "School of Computer Science, University of Sydney, NSW, Australia"
+      "Zhongguancun Academy & Zhongguancun Institute of Artificial Intelligence, Beijing, China",
+      "Institute of Translational Medicine, National Center for Translational Medicine, Shanghai Jiao Tong University, Shanghai, China"
     ],
     "relationType": "affiliation",
     "publishedAt": "2026-01-01",
@@ -2423,14 +4127,14 @@
       {
         "level": "exact-affiliation",
         "institution": "zgca",
-        "matchedText": "Zhongguancun Academy &amp; Zhongguancun Institute of Artificial Intelligence, Beijing, China",
+        "matchedText": "Zhongguancun Academy & Zhongguancun Institute of Artificial Intelligence, Beijing, China",
         "source": "Crossref",
         "sourceUrl": "https://doi.org/10.1109/jbhi.2026.3701924"
       },
       {
         "level": "exact-affiliation",
         "institution": "zgci",
-        "matchedText": "Zhongguancun Academy &amp; Zhongguancun Institute of Artificial Intelligence, Beijing, China",
+        "matchedText": "Zhongguancun Academy & Zhongguancun Institute of Artificial Intelligence, Beijing, China",
         "source": "Crossref",
         "sourceUrl": "https://doi.org/10.1109/jbhi.2026.3701924"
       }
@@ -2486,14 +4190,7 @@
       "Ministry of Education Key Laboratory of Image Processing and Intelligent Control, School of Artificial Intelligence and Automation, Huazhong University of Science and Technology , Wuhan, 430074",
       "Zhongguancun Academy , Beijing, 100094 ,",
       "Ministry of Education Key Laboratory of Image Processing and Intelligent Control, School of Artificial Intelligence and Automation, Huazhong University of Science and Technology 1 , Wuhan, 430074",
-      "Ministry of Education Key Laboratory of Image Processing and Intelligent Control, School of Artificial Intelligence and Automation, Huazhong University of Science and Technology , Wuhan, 430074",
-      "Ministry of Education Key Laboratory of Image Processing and Intelligent Control, School of Artificial Intelligence and Automation, Huazhong University of Science and Technology , Wuhan, 430074",
-      "Zhongguancun Academy , Beijing, 100094 ,",
-      "State Key Laboratory of Brain Cognition and Brain-inspired Intelligence Technology, Institute of Automation, Chinese Academy of Sciences , Beijing, 100190 ,",
-      "Ministry of Education Key Laboratory of Image Processing and Intelligent Control, School of Artificial Intelligence and Automation, Huazhong University of Science and Technology , Wuhan, 430074",
-      "Ministry of Education Key Laboratory of Image Processing and Intelligent Control, School of Artificial Intelligence and Automation, Huazhong University of Science and Technology , Wuhan, 430074",
-      "Ministry of Education Key Laboratory of Image Processing and Intelligent Control, School of Artificial Intelligence and Automation, Huazhong University of Science and Technology , Wuhan, 430074",
-      "Zhongguancun Academy , Beijing, 100094 ,"
+      "State Key Laboratory of Brain Cognition and Brain-inspired Intelligence Technology, Institute of Automation, Chinese Academy of Sciences , Beijing, 100190 ,"
     ],
     "relationType": "affiliation",
     "publishedAt": "2026-01-01",
@@ -2578,15 +4275,7 @@
       "Bytedance Seed",
       "The College of Chemistry and Molecular Engineering",
       "Peking University",
-      "Bytedance Seed",
-      "Zhongguancun Academy",
-      "The College of Chemistry and Molecular Engineering",
-      "Peking University",
-      "Bytedance Seed",
-      "Zhongguancun Academy",
-      "Bytedance Seed",
       "New Cornerstone Science Laboratory, The College of Chemistry and Molecular Engineering",
-      "Peking University",
       "West Lake University"
     ],
     "relationType": "affiliation",
@@ -2667,13 +4356,6 @@
       "School of Artificial Intelligence University of Chinese Academy of Sciences Beijing China",
       "Zhongguancun Academy Beijing China",
       "Center of Materials Science and Optoelectronics Engineering College of Materials Science and Opto‐Electronic Technology University of Chinese Academy of Sciences Beijing China",
-      "State Key Laboratory of Multimodal Artificial Intelligence Systems (MAIS) Institute of Automation Chinese Academy of Sciences Beijing China",
-      "School of Artificial Intelligence University of Chinese Academy of Sciences Beijing China",
-      "Zhongguancun Academy Beijing China",
-      "State Key Laboratory of Multimodal Artificial Intelligence Systems (MAIS) Institute of Automation Chinese Academy of Sciences Beijing China",
-      "School of Artificial Intelligence University of Chinese Academy of Sciences Beijing China",
-      "Center of Materials Science and Optoelectronics Engineering College of Materials Science and Opto‐Electronic Technology University of Chinese Academy of Sciences Beijing China",
-      "Kavli Institute for Theoretical Sciences School of Physical Sciences University of Chinese Academy of Sciences Beijing China",
       "Institute of Theoretical Physics Chinese Academy of Sciences Beijing China"
     ],
     "relationType": "affiliation",
@@ -2712,6 +4394,264 @@
     ],
     "id": "doi-10-1002-mgea-70065",
     "updatedAt": "2026-08-08T11:35:31Z"
+  },
+  {
+    "type": "preprint",
+    "title": "One Tool Is Enough: Reinforcement Learning for Repository-Level LLM Agents",
+    "authors": [
+      {
+        "name": "Zhaoxi Zhang"
+      },
+      {
+        "name": "Yitong Duan"
+      },
+      {
+        "name": "Yanzhi Zhang"
+      },
+      {
+        "name": "Yiming Xu"
+      },
+      {
+        "name": "Zhixiang Wang"
+      },
+      {
+        "name": "Kun Liang"
+      },
+      {
+        "name": "Weikang Li"
+      },
+      {
+        "name": "Jiahui Liang"
+      },
+      {
+        "name": "Deguo Xia"
+      },
+      {
+        "name": "Jizhou Huang"
+      },
+      {
+        "name": "Jiyan He"
+      },
+      {
+        "name": "Yunfang Wu"
+      }
+    ],
+    "institutions": [
+      "zgca",
+      "zgci"
+    ],
+    "rawAffiliations": [
+      "北京中关村学院与中关村人工智能研究院（中关村两院）"
+    ],
+    "relationType": "official-output",
+    "publishedAt": "2025-12-24",
+    "year": 2025,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "abstract": "Locating files and functions requiring modification in large software repositories is challenging due to their scale and structural complexity. Existing LLM-based methods typically treat this as a repository-level retrieval task and rely on multiple auxiliary tools, which often overlook code execution logic and complicate model control. We propose RepoNavigator, an LLM agent equipped with a single execution-aware tool: jumping to the definition of an invoked symbol. This unified design reflects the actual flow of code execution while simplifying tool manipulation. RepoNavigator is trained end-to-end via Reinforcement Learning (RL) directly from a base pretrained model, without relying on closed-source distillation. Experiments demonstrate that RL-trained RepoNavigator achieves state-of-the-art performance, with the 7B model outperforming 14B baselines, the 14B model surpassing 32B competitors, and the 32B model exceeding closed-source models such as GPT-5 on most metrics. These results confirm that integrating a single, structurally grounded tool with RL training provides an efficient and scalable solution for repository-level issue localization.",
+    "identifiers": {
+      "arxiv": "2512.20957",
+      "doi": "10.48550/arXiv.2512.20957"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2512.20957"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2512.20957"
+      },
+      {
+        "label": "Official",
+        "url": "https://www.bza.edu.cn/detail/inews_mycb9w8jxc6gpcyeq7j8wc4cn6lga2l9"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2512.20957v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "official-listing",
+        "institution": "zgca",
+        "matchedText": "北京中关村学院与中关村人工智能研究院（中关村两院）",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_mycb9w8jxc6gpcyeq7j8wc4cn6lga2l9"
+      },
+      {
+        "level": "official-listing",
+        "institution": "zgci",
+        "matchedText": "北京中关村学院与中关村人工智能研究院（中关村两院）",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_mycb9w8jxc6gpcyeq7j8wc4cn6lga2l9"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "北京中关村学院官网"
+    ],
+    "id": "doi-10-48550-arxiv-2512-20957",
+    "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "preprint",
+    "title": "RLinf: Flexible and Efficient Large-scale Reinforcement Learning via Macro-to-Micro Flow Transformation",
+    "authors": [
+      {
+        "name": "Chao Yu"
+      },
+      {
+        "name": "Yuanqing Wang"
+      },
+      {
+        "name": "Zhen Guo"
+      },
+      {
+        "name": "Hao Lin"
+      },
+      {
+        "name": "Si Xu"
+      },
+      {
+        "name": "Hongzhi Zang"
+      },
+      {
+        "name": "Quanlu Zhang"
+      },
+      {
+        "name": "Yongji Wu"
+      },
+      {
+        "name": "Chunyang Zhu"
+      },
+      {
+        "name": "Junhao Hu"
+      },
+      {
+        "name": "Zixiao Huang"
+      },
+      {
+        "name": "Mingjie Wei"
+      },
+      {
+        "name": "Yuqing Xie"
+      },
+      {
+        "name": "Ke Yang"
+      },
+      {
+        "name": "Bo Dai"
+      },
+      {
+        "name": "Zhexuan Xu"
+      },
+      {
+        "name": "Jiakun Du"
+      },
+      {
+        "name": "Xiangyuan Wang"
+      },
+      {
+        "name": "Xu Fu"
+      },
+      {
+        "name": "Letong Shi"
+      },
+      {
+        "name": "Zhihao Liu"
+      },
+      {
+        "name": "Kang Chen"
+      },
+      {
+        "name": "Weilin Liu"
+      },
+      {
+        "name": "Gang Liu"
+      },
+      {
+        "name": "Boxun Li"
+      },
+      {
+        "name": "Jianlei Yang"
+      },
+      {
+        "name": "Zhi Yang"
+      },
+      {
+        "name": "Guohao Dai"
+      },
+      {
+        "name": "Yu Wang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "北京中关村学院官网科研创新页面"
+    ],
+    "relationType": "official-output",
+    "publishedAt": "2025-09-19",
+    "year": 2025,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.LG",
+      "cs.AI",
+      "cs.DC"
+    ],
+    "abstract": "Reinforcement learning (RL) has demonstrated immense potential in advancing artificial general intelligence, agentic intelligence, and embodied intelligence. However, the inherent heterogeneity and dynamicity of RL workflows often lead to low hardware utilization and slow training on existing systems. In this paper, we present RLinf, a high-performance RL training system based on our key observation that the major roadblock to efficient RL training lies in system flexibility. To maximize flexibility and efficiency, RLinf is built atop a novel RL system design paradigm called macro-to-micro flow transformation (M2Flow), which automatically breaks down high-level, easy-to-compose RL workflows at both the temporal and spatial dimensions, and recomposes them into optimized execution flows. Supported by RLinf worker's adaptive communication capability, we devise context switching and elastic pipelining to realize M2Flow transformation, and a profiling-guided scheduling policy to generate optimal execution plans. Extensive evaluations on both reasoning RL and embodied RL tasks demonstrate that RLinf consistently outperforms state-of-the-art systems, achieving $1.07\\times-2.43\\times$ speedup in end-to-end training throughput.",
+    "identifiers": {
+      "arxiv": "2509.15965",
+      "doi": "10.48550/arXiv.2509.15965"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2509.15965"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2509.15965"
+      },
+      {
+        "label": "Official",
+        "url": "https://www.bza.edu.cn/detail/inews_yps1zc0z9d3bf6owk6ighwbvst93ajw1"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/RLinf/RLinf"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2509.15965v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "official-listing",
+        "institution": "zgca",
+        "matchedText": "北京中关村学院官网科研创新页面",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_yps1zc0z9d3bf6owk6ighwbvst93ajw1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "北京中关村学院官网"
+    ],
+    "id": "doi-10-48550-arxiv-2509-15965",
+    "updatedAt": "2026-08-08T11:59:38Z"
   },
   {
     "id": "doi-10-1093-bioinformatics-btaf489",
@@ -2800,6 +4740,222 @@
       "Publisher"
     ],
     "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "type": "conference",
+    "title": "CityLens: Evaluating Large Vision-Language Models for Urban Socioeconomic Sensing",
+    "authors": [
+      {
+        "name": "Tianhui Liu"
+      },
+      {
+        "name": "Hetian Pang"
+      },
+      {
+        "name": "Xin Zhang"
+      },
+      {
+        "name": "Tianjian Ouyang"
+      },
+      {
+        "name": "Zhiyuan Zhang"
+      },
+      {
+        "name": "Jie Feng"
+      },
+      {
+        "name": "Yong Li"
+      },
+      {
+        "name": "Pan Hui"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "北京中关村学院官网科研创新页面"
+    ],
+    "relationType": "official-output",
+    "publishedAt": "2025-05-31",
+    "year": 2025,
+    "venue": "ICLR 2026",
+    "status": "published",
+    "topics": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "abstract": "Understanding urban socioeconomic conditions through visual data is a challenging yet essential task for sustainable urban development and policy planning. In this work, we introduce \\textit{CityLens}, a comprehensive benchmark designed to evaluate the capabilities of Large Vision-Language Models (LVLMs) in predicting socioeconomic indicators from satellite and street view imagery. We construct a multi-modal dataset covering a total of 17 globally distributed cities, spanning 6 key domains: economy, education, crime, transport, health, and environment, reflecting the multifaceted nature of urban life. Based on this dataset, we define 11 prediction tasks and utilize 3 evaluation paradigms: Direct Metric Prediction, Normalized Metric Estimation, and Feature-Based Regression. We benchmark 17 state-of-the-art LVLMs across these tasks. These make CityLens the most extensive socioeconomic benchmark to date in terms of geographic coverage, indicator diversity, and model scale. Our results reveal that while LVLMs demonstrate promising perceptual and reasoning capabilities, they still exhibit limitations in predicting urban socioeconomic indicators. CityLens provides a unified framework for diagnosing these limitations and guiding future efforts in using LVLMs to understand and predict urban socioeconomic patterns. The code and data are available at https://github.com/tsinghua-fib-lab/CityLens.",
+    "identifiers": {
+      "arxiv": "2506.00530",
+      "doi": "10.48550/arXiv.2506.00530"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2506.00530"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2506.00530"
+      },
+      {
+        "label": "Official",
+        "url": "https://www.bza.edu.cn/detail/inews_xb8ky5d1m0w0i3zjeh4jpnsks22oazlc"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2506.00530v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "official-listing",
+        "institution": "zgca",
+        "matchedText": "北京中关村学院官网科研创新页面",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_xb8ky5d1m0w0i3zjeh4jpnsks22oazlc"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "北京中关村学院官网"
+    ],
+    "id": "doi-10-48550-arxiv-2506-00530",
+    "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "dataset",
+    "title": "TransLab",
+    "authors": [
+      {
+        "name": "longxiang-ai"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "1 Zhejiang University, 2 Zhongguancun Academy, Beijing, 3 Xi'an Jiaotong University, 4 Beijing Normal University"
+    ],
+    "relationType": "official-output",
+    "publishedAt": "2025-04-17",
+    "year": 2025,
+    "venue": "Hugging Face Datasets",
+    "status": "released",
+    "topics": [
+      "Open Dataset"
+    ],
+    "abstract": "Dataset released alongside TSGS: Improving Gaussian Splatting for Transparent Surface Reconstruction via Normal and De-lighting Priors",
+    "identifiers": {},
+    "links": [
+      {
+        "label": "Dataset",
+        "url": "https://huggingface.co/datasets/Longxiang-ai/TransLab"
+      },
+      {
+        "label": "Project",
+        "url": "https://github.com/longxiang-ai/TSGS"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Hugging Face dataset",
+        "url": "https://huggingface.co/datasets/Longxiang-ai/TransLab"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "1 Zhejiang University, 2 Zhongguancun Academy, Beijing, 3 Xi'an Jiaotong University, 4 Beijing Normal University",
+        "source": "Official GitHub project README",
+        "sourceUrl": "https://github.com/longxiang-ai/TSGS"
+      }
+    ],
+    "sources": [
+      "Official GitHub project README",
+      "Hugging Face"
+    ],
+    "id": "work-b19a6ad16790",
+    "updatedAt": "2026-08-08T12:09:53Z"
+  },
+  {
+    "type": "conference",
+    "title": "TSGS: Improving Gaussian Splatting for Transparent Surface Reconstruction via Normal and De-lighting Priors",
+    "authors": [
+      {
+        "name": "Mingwei Li"
+      },
+      {
+        "name": "Pu Pang"
+      },
+      {
+        "name": "Hehe Fan"
+      },
+      {
+        "name": "Hua Huang"
+      },
+      {
+        "name": "Yi Yang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "1 Zhejiang University, 2 Zhongguancun Academy, Beijing, 3 Xi'an Jiaotong University, 4 Beijing Normal University"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2025-04-17",
+    "year": 2025,
+    "venue": "ACM MM 2025",
+    "status": "published",
+    "topics": [
+      "cs.CV"
+    ],
+    "abstract": "Reconstructing transparent surfaces is essential for tasks such as robotic manipulation in labs, yet it poses a significant challenge for 3D reconstruction techniques like 3D Gaussian Splatting (3DGS). These methods often encounter a transparency-depth dilemma, where the pursuit of photorealistic rendering through standard $α$-blending undermines geometric precision, resulting in considerable depth estimation errors for transparent materials. To address this issue, we introduce Transparent Surface Gaussian Splatting (TSGS), a new framework that separates geometry learning from appearance refinement. In the geometry learning stage, TSGS focuses on geometry by using specular-suppressed inputs to accurately represent surfaces. In the second stage, TSGS improves visual fidelity through anisotropic specular modeling, crucially maintaining the established opacity to ensure geometric accuracy. To enhance depth inference, TSGS employs a first-surface depth extraction method. This technique uses a sliding window over $α$-blending weights to pinpoint the most likely surface location and calculates a robust weighted average depth. To evaluate the transparent surface reconstruction task under realistic conditions, we collect a TransLab dataset that includes complex transparent laboratory glassware. Extensive experiments on TransLab show that TSGS achieves accurate geometric reconstruction and realistic rendering of transparent objects simultaneously within the efficient 3DGS framework. Specifically, TSGS significantly surpasses current leading methods, achieving a 37.3% reduction in chamfer distance and an 8.0% improvement in F1 score compared to the top baseline. The code and dataset are available at https://longxiang-ai.github.io/TSGS/.",
+    "identifiers": {
+      "arxiv": "2504.12799",
+      "doi": "10.48550/arXiv.2504.12799"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2504.12799"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2504.12799"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/longxiang-ai/TSGS"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2504.12799v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "1 Zhejiang University, 2 Zhongguancun Academy, Beijing, 3 Xi'an Jiaotong University, 4 Beijing Normal University",
+        "source": "Official GitHub project README",
+        "sourceUrl": "https://github.com/longxiang-ai/TSGS"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "Official GitHub project README"
+    ],
+    "id": "doi-10-48550-arxiv-2504-12799",
+    "updatedAt": "2026-08-08T12:09:53Z"
   },
   {
     "id": "doi-10-1109-tkde-2025-3545948",
@@ -2916,12 +5072,7 @@
     ],
     "rawAffiliations": [
       "Peking University",
-      "Peking University",
-      "Peking University",
-      "Peking University",
-      "Zhongguancun Institute of Artificial Intelligence",
-      "Peking University",
-      "Peking University"
+      "Zhongguancun Institute of Artificial Intelligence"
     ],
     "relationType": "affiliation",
     "publishedAt": "2025-01-01",
@@ -3015,15 +5166,12 @@
       "BUPT",
       "The Hong Kong Polytechnic University, Hong Kong Polytechnic University",
       "Microsoft",
-      "Microsoft",
       "ByteDance Inc.",
       "Shanghai Artificial Intelligence Laboratory",
       "Shanghai Jiaotong University",
       "Microsoft Research",
-      "Microsoft Research",
       "Zhongguancun Academy",
-      "Yale University",
-      "Microsoft"
+      "Yale University"
     ],
     "relationType": "affiliation",
     "publishedAt": "2025-01-01",
@@ -3116,18 +5264,10 @@
       "University of Science and Technology of China",
       "Zhongguancun Academy",
       "Harbin Institute of Technology",
-      "Zhongguancun Academy",
       "Nankai University",
-      "Zhongguancun Academy",
       "Eastern Institute of Technology",
-      "Zhongguancun Academy",
       "Shanghai Jiao Tong University",
-      "Eastern Institute of Technology",
-      "Harbin Institute of Technology",
-      "Tsinghua University",
-      "Zhongguancun Academy",
-      "University of Science and Technology of China",
-      "Zhongguancun Academy"
+      "Tsinghua University"
     ],
     "relationType": "affiliation",
     "publishedAt": "2025-01-01",
@@ -3207,12 +5347,7 @@
     "rawAffiliations": [
       "University of Tennessee at Knoxville",
       "Wuhan University",
-      "Zhongguancun Institute of Artificial Intelligence",
-      "Wuhan University",
-      "Wuhan University",
-      "University of Tennessee at Knoxville",
-      "Zhongguancun Institute of Artificial Intelligence",
-      "University of Tennessee at Knoxville"
+      "Zhongguancun Institute of Artificial Intelligence"
     ],
     "relationType": "affiliation",
     "publishedAt": "2025-01-01",
@@ -3475,8 +5610,7 @@
     "rawAffiliations": [
       "University of Science and Technology Beijing,School of Intelligence Science and Technology Institute of Artificial Intelligence,Beijing,China",
       "Hunan University,School of Artificial Intelligence and Robotics,Changsha,China",
-      "University of Chinese Academy of Sciences,State Key Laboratory of MAIS, CASIA Zhongguancun Academy,Beijing,China",
-      "Hunan University,School of Artificial Intelligence and Robotics,Changsha,China"
+      "University of Chinese Academy of Sciences,State Key Laboratory of MAIS, CASIA Zhongguancun Academy,Beijing,China"
     ],
     "relationType": "affiliation",
     "publishedAt": "2025-01-01",
@@ -3688,5 +5822,96 @@
     ],
     "id": "doi-10-1101-2025-10-08-681293",
     "updatedAt": "2026-08-08T11:35:31Z"
+  },
+  {
+    "type": "article",
+    "title": "AI-Driven Accelerated Discovery of High-Performance Perovskite Quantum Dots Via Predictive LightGBM Modeling",
+    "authors": [
+      {
+        "name": "Zhenze Zhao"
+      },
+      {
+        "name": "Yanan Zhu"
+      },
+      {
+        "name": "Gaoxu Li"
+      },
+      {
+        "name": "Haojie Dong"
+      },
+      {
+        "name": "Kai Chen"
+      },
+      {
+        "name": "Yibo Zhang"
+      },
+      {
+        "name": "Roman B. Vasiliev"
+      },
+      {
+        "name": "Jiyan He"
+      },
+      {
+        "name": "Na Liu"
+      },
+      {
+        "name": "Shuai Chang"
+      }
+    ],
+    "institutions": [
+      "zgca",
+      "zgci"
+    ],
+    "rawAffiliations": [
+      "北京中关村学院与中关村人工智能研究院（中关村两院）"
+    ],
+    "relationType": "official-output",
+    "publishedAt": "2025-01-01",
+    "year": 2025,
+    "venue": "The Journal of Physical Chemistry Letters",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1021/acs.jpclett.5c02902"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1021/acs.jpclett.5c02902"
+      },
+      {
+        "label": "Official",
+        "url": "https://www.bza.edu.cn/detail/inews_f2t7awv1560v78jfkwtbbg69qgzppkzs"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1021/acs.jpclett.5c02902"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "official-listing",
+        "institution": "zgca",
+        "matchedText": "北京中关村学院与中关村人工智能研究院（中关村两院）",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_f2t7awv1560v78jfkwtbbg69qgzppkzs"
+      },
+      {
+        "level": "official-listing",
+        "institution": "zgci",
+        "matchedText": "北京中关村学院与中关村人工智能研究院（中关村两院）",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_f2t7awv1560v78jfkwtbbg69qgzppkzs"
+      }
+    ],
+    "sources": [
+      "Crossref",
+      "北京中关村学院官网"
+    ],
+    "id": "doi-10-1021-acs-jpclett-5c02902",
+    "updatedAt": "2026-08-08T11:59:38Z"
   }
 ]

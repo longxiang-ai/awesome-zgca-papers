@@ -31,6 +31,26 @@ class MatchingTests(unittest.TestCase):
         ]:
             self.assertEqual(pipeline.match_institutions(text), [], text)
 
+    def test_extracts_arxiv_ids_from_official_pages_and_readmes(self):
+        text = "Paper: https://arxiv.org/pdf/2602.00839 and arXiv: 2606.15890"
+        self.assertEqual(pipeline.extract_arxiv_ids(text), ["2602.00839", "2606.15890"])
+
+    def test_recognizes_formal_venue_from_project_text(self):
+        self.assertEqual(pipeline.venue_and_status("Accepted to ICML 2026"), ("ICML 2026", "published"))
+
+    def test_transnormal_readme_supplies_missing_affiliation_evidence(self):
+        readme = "arXiv:2602.00839\n² Zhongguancun Academy, Beijing, China\nAccepted to ICML 2026"
+        self.assertEqual(pipeline.extract_arxiv_ids(readme), ["2602.00839"])
+        self.assertEqual(pipeline.match_institutions(readme), [("zgca", "Zhongguancun Academy")])
+
+    def test_project_links_ignore_badges_and_dependency_noise(self):
+        links = pipeline.sanitize_links([
+            {"label": "Code", "url": "https://github.com/longxiang-ai/TransNormal"},
+            {"label": "Code", "url": "https://github.com/facebookresearch/dinov3"},
+            {"label": "Model", "url": "https://img.shields.io/badge/model"},
+        ])
+        self.assertEqual(links, [{"label": "Code", "url": "https://github.com/longxiang-ai/TransNormal"}])
+
 
 class DataTests(unittest.TestCase):
     def test_seed_data_is_valid_and_unique(self):

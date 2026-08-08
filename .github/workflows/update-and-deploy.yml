@@ -53,6 +53,7 @@ jobs:
 
       - name: Discover and merge outputs
         env:
+          GITHUB_TOKEN: ${{ github.token }}
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
           SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
           CORE_API_KEY: ${{ secrets.CORE_API_KEY }}

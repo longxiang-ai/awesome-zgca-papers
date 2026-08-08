@@ -1,15 +1,16 @@
 {
-  "generatedAt": "2026-08-08T11:35:31Z",
+  "generatedAt": "2026-08-08T12:09:53Z",
   "mode": "automatic",
   "sources": {
-    "arxiv": "available",
+    "crossref": "ok (36 matched)",
+    "openalex": "ok (0 matched)",
+    "europe_pmc": "ok (0 matched)",
+    "arxiv": "unavailable (URLError)",
+    "datacite": "ok (17 matched)",
+    "bza_official": "ok (21 matched)",
+    "github_projects": "ok (7 matched)",
+    "semantic_scholar": "optional key",
     "core": "optional key",
-    "crossref": "available",
-    "datacite": "available",
-    "europe_pmc": "available",
-    "lens": "optional key",
-    "official_sites": "available",
-    "openalex": "available with key",
-    "semantic_scholar": "optional key"
+    "lens": "optional key"
   }
 }

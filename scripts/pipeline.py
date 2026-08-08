@@ -9,8 +9,10 @@ discovery or `python scripts/pipeline.py build` for deterministic local output.
 from __future__ import annotations
 
 import argparse
+import base64
 import datetime as dt
 import hashlib
+import html
 import json
 import os
 import re
@@ -59,6 +61,9 @@ TYPE_MAP = {
     "book": "report",
 }
 
+ARXIV_NAMESPACE = {"atom": "http://www.w3.org/2005/Atom", "arxiv": "http://arxiv.org/schemas/atom"}
+ARXIV_ID_PATTERN = re.compile(r"(?:arxiv\.org/(?:abs|pdf|html)/|arXiv\s*[:：]?\s*)(\d{4}\.\d{4,5})", re.I)
+
 
 def normalize_space(value: str | None) -> str:
     return re.sub(r"\s+", " ", value or "").strip()
@@ -72,6 +77,77 @@ def clean_abstract(value: str | None) -> str:
     text = normalize_space(re.sub(r"<[^>]+>", "", value or ""))
     # Some Crossref records expose only a dangling JATS reference such as "$16".
     return "" if re.fullmatch(r"\$\d+", text) else text
+
+
+def clean_html_text(value: str | None) -> str:
+    without_tags = re.sub(r"<[^>]+>", " ", value or "")
+    return normalize_space(html.unescape(without_tags))
+
+
+def extract_arxiv_ids(value: str | None) -> list[str]:
+    return list(dict.fromkeys(ARXIV_ID_PATTERN.findall(html.unescape(value or ""))))
+
+
+def extract_project_links(value: str | None) -> list[dict[str, str]]:
+    source = html.unescape(value or "")
+    urls = re.findall(r"\]\((https?://[^\s)]+)", source, re.I)
+    urls.extend(re.findall(r"href=[\"'](https?://[^\"']+)", source, re.I))
+    urls.extend(re.findall(r"(?<![\(\"'=])https?://[^\s\"<>]+", source, re.I))
+    links: list[dict[str, str]] = []
+    for raw_url in urls:
+        url = raw_url.rstrip(".,;:!?，。；：！？)]}）】”’")
+        if "img.shields.io/" in url or ")](" in url:
+            continue
+        if "github.com/" in url:
+            label = "Code"
+        elif "huggingface.co/datasets/" in url:
+            label = "Dataset"
+        elif "huggingface.co/" in url:
+            label = "Model"
+        elif "arxiv.org/" in url:
+            continue
+        else:
+            continue
+        item = {"label": label, "url": url}
+        if item not in links:
+            links.append(item)
+    return links
+
+
+def venue_and_status(value: str | None) -> tuple[str, str]:
+    text = clean_html_text(value)
+    match = re.search(r"\b(ICML|ICLR|CVPR|ECCV|NeurIPS|ACL|EMNLP|KDD|IROS|ACM\s+MM)\s*['’]?\s*(20\d{2})\b", text, re.I)
+    if match:
+        return f"{match.group(1).upper()} {match.group(2)}", "published"
+    accepted = re.search(r"accepted\s+(?:by|to|at)\s+([^.;\n]{3,80})", text, re.I)
+    if accepted:
+        return normalize_space(accepted.group(1)), "published"
+    return "arXiv", "preprint"
+
+
+def affiliation_snippet(value: str) -> str:
+    for line in value.splitlines():
+        if match_institutions(line):
+            return clean_html_text(re.sub(r"[#*_`{}^]", "", line))[:500]
+    return "Zhongguancun Academy"
+
+
+def sanitize_links(links: Iterable[dict[str, str]]) -> list[dict[str, str]]:
+    """Keep stable, user-facing links and discard badge/dependency URL noise."""
+    cleaned: list[dict[str, str]] = []
+    seen_labels: set[str] = set()
+    for item in links:
+        label = normalize_space(item.get("label"))
+        url = normalize_space(item.get("url"))
+        if not label or not re.match(r"^https?://", url) or "img.shields.io/" in url or ")](" in url:
+            continue
+        if label == "Code":
+            url = url.removesuffix(".git")
+        if label in seen_labels:
+            continue
+        seen_labels.add(label)
+        cleaned.append({"label": label, "url": url})
+    return cleaned
 
 
 def match_institutions(text: str, allow_restricted: bool = False) -> list[tuple[str, str]]:
@@ -121,9 +197,11 @@ def request_json(url: str, headers: dict[str, str] | None = None) -> Any:
         return json.load(response)
 
 
-def request_text(url: str) -> str:
-    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(request, timeout=30) as response:
+def request_text(url: str, headers: dict[str, str] | None = None, timeout: int = 30) -> str:
+    req_headers = {"User-Agent": USER_AGENT}
+    req_headers.update(headers or {})
+    request = urllib.request.Request(url, headers=req_headers)
+    with urllib.request.urlopen(request, timeout=timeout) as response:
         return response.read().decode("utf-8", errors="replace")
 
 
@@ -149,6 +227,101 @@ def evidence_for_affiliations(affiliations: Iterable[str], source: str, source_u
                     "sourceUrl": source_url,
                 })
     return institutions, evidence
+
+
+def arxiv_candidates_for_ids(ids: Iterable[str], contexts: dict[str, list[dict[str, Any]]]) -> list[dict[str, Any]]:
+    requested = list(dict.fromkeys(ids))
+    results: list[dict[str, Any]] = []
+    for offset in range(0, len(requested), 40):
+        batch = requested[offset:offset + 40]
+        if not batch:
+            continue
+        query = urllib.parse.urlencode({"id_list": ",".join(batch), "max_results": str(len(batch))})
+        root = ET.fromstring(request_text("https://export.arxiv.org/api/query?" + query))
+        for entry in root.findall("atom:entry", ARXIV_NAMESPACE):
+            arxiv_id = entry.findtext("atom:id", "", ARXIV_NAMESPACE).rsplit("/", 1)[-1].split("v", 1)[0]
+            item_contexts = contexts.get(arxiv_id, [])
+            if not item_contexts:
+                continue
+            institutions: list[str] = []
+            evidence: list[dict[str, str]] = []
+            raw_affiliations: list[str] = []
+            links = [
+                {"label": "arXiv", "url": f"https://arxiv.org/abs/{arxiv_id}"},
+                {"label": "PDF", "url": f"https://arxiv.org/pdf/{arxiv_id}"},
+            ]
+            source_names = ["arXiv"]
+            context_text = ""
+            relation_type = "official-output"
+            for context in item_contexts:
+                context_text += " " + context.get("text", "")
+                source_names.append(context["source"])
+                for institution_id in context["institutions"]:
+                    if institution_id not in institutions:
+                        institutions.append(institution_id)
+                    evidence_item = {
+                        "level": context["level"], "institution": institution_id,
+                        "matchedText": context["matchedText"], "source": context["source"],
+                        "sourceUrl": context["sourceUrl"],
+                    }
+                    if evidence_item not in evidence:
+                        evidence.append(evidence_item)
+                raw_affiliations.append(context["matchedText"])
+                for link in context.get("links", []):
+                    if link not in links:
+                        links.append(link)
+                if context["level"] in {"structured", "exact-affiliation"}:
+                    relation_type = "affiliation"
+            published = entry.findtext("atom:published", "", ARXIV_NAMESPACE)[:10]
+            year = int(published[:4])
+            comment = entry.findtext("arxiv:comment", "", ARXIV_NAMESPACE)
+            venue, status = venue_and_status(context_text + " " + comment)
+            candidate = {
+                "type": "conference" if status == "published" else "preprint",
+                "title": normalize_space(entry.findtext("atom:title", "", ARXIV_NAMESPACE)),
+                "authors": [{"name": normalize_space(node.findtext("atom:name", "", ARXIV_NAMESPACE))} for node in entry.findall("atom:author", ARXIV_NAMESPACE)],
+                "institutions": institutions, "rawAffiliations": list(dict.fromkeys(raw_affiliations)),
+                "relationType": relation_type, "publishedAt": published, "year": year,
+                "venue": venue, "status": status,
+                "topics": [node.attrib.get("term", "") for node in entry.findall("atom:category", ARXIV_NAMESPACE)],
+                "abstract": clean_abstract(entry.findtext("atom:summary", "", ARXIV_NAMESPACE)),
+                "identifiers": {"arxiv": arxiv_id, "doi": f"10.48550/arXiv.{arxiv_id}"},
+                "links": links,
+                "versions": [{"label": "arXiv v1", "url": f"https://arxiv.org/abs/{arxiv_id}v1"}],
+                "evidence": evidence, "sources": list(dict.fromkeys(source_names)),
+            }
+            candidate["id"] = stable_id(candidate)
+            results.append(candidate)
+    return results
+
+
+def crossref_candidate_for_doi(doi: str, context: dict[str, Any]) -> dict[str, Any] | None:
+    encoded = urllib.parse.quote(doi, safe="")
+    record = request_json(f"https://api.crossref.org/works/{encoded}").get("message", {})
+    title = normalize_space((record.get("title") or [""])[0])
+    if not title:
+        return None
+    published = record.get("published", {}).get("date-parts") or record.get("published-online", {}).get("date-parts")
+    year = year_from_parts(published) or int(context["publishedAt"][:4])
+    source_url = f"https://doi.org/{doi}"
+    candidate = {
+        "type": TYPE_MAP.get(record.get("type"), "article"), "title": title,
+        "authors": [{"name": normalize_space(" ".join([author.get("given", ""), author.get("family", "")]))} for author in record.get("author", [])],
+        "institutions": context["institutions"], "rawAffiliations": [context["matchedText"]],
+        "relationType": "official-output", "publishedAt": f"{year}-01-01", "year": year,
+        "venue": normalize_space((record.get("container-title") or ["Crossref"])[0]), "status": "published",
+        "topics": record.get("subject", [])[:6], "abstract": clean_abstract(record.get("abstract")),
+        "identifiers": {"doi": doi.lower()},
+        "links": [{"label": "DOI", "url": source_url}, {"label": "Official", "url": context["sourceUrl"]}],
+        "versions": [{"label": "Publisher version", "url": source_url}],
+        "evidence": [{
+            "level": context["level"], "institution": institution_id,
+            "matchedText": context["matchedText"], "source": context["source"], "sourceUrl": context["sourceUrl"],
+        } for institution_id in context["institutions"]],
+        "sources": ["Crossref", context["source"]],
+    }
+    candidate["id"] = stable_id(candidate)
+    return candidate
 
 
 def crossref_adapter(since: str | None = None) -> list[dict[str, Any]]:
@@ -332,23 +505,155 @@ def openalex_adapter(since: str | None = None) -> list[dict[str, Any]]:
     return results
 
 
+def bza_official_adapter(_: str | None = None) -> list[dict[str, Any]]:
+    """Discover papers explicitly listed by the Academy's public research feed."""
+    url = "https://www.bza.edu.cn/api/innovations/news?" + urllib.parse.urlencode({"page": 1, "limit": 200})
+    payload = request_json(url)
+    contexts: dict[str, list[dict[str, Any]]] = {}
+    doi_contexts: list[tuple[str, dict[str, Any]]] = []
+    for item in payload.get("data", []):
+        content = item.get("content") or ""
+        text = clean_html_text(content)
+        official_url = f"https://www.bza.edu.cn/detail/inews_{item['uuid']}"
+        if "中关村人工智能研究院" in text or "中关村两院" in text or "中关村两院" in item.get("title", ""):
+            institutions = ["zgca", "zgci"]
+            matched_text = "北京中关村学院与中关村人工智能研究院（中关村两院）"
+        else:
+            institutions = ["zgca"]
+            matched_text = "北京中关村学院官网科研创新页面"
+        links = [{"label": "Official", "url": official_url}, *extract_project_links(content)]
+        context = {
+            "source": "北京中关村学院官网", "sourceUrl": official_url,
+            "institutions": institutions, "matchedText": matched_text,
+            "level": "official-listing", "text": item.get("title", "") + " " + text,
+            "links": links, "publishedAt": (item.get("date") or "")[:10] or f"{dt.datetime.now(dt.timezone.utc).year}-01-01",
+        }
+        for arxiv_id in extract_arxiv_ids(content):
+            contexts.setdefault(arxiv_id, []).append(context)
+        for raw_doi in re.findall(r"10\.\d{4,9}/[-._;()/:A-Z0-9]+", html.unescape(content), re.I):
+            doi = raw_doi.rstrip(".,;:!?，。；：！？)]}）】”’").lower()
+            doi_contexts.append((doi, context))
+    results = arxiv_candidates_for_ids(contexts, contexts)
+    for doi, context in doi_contexts:
+        try:
+            candidate = crossref_candidate_for_doi(doi, context)
+            if candidate:
+                results.append(candidate)
+        except (urllib.error.URLError, TimeoutError, ValueError, KeyError):
+            continue
+    return results
+
+
+def github_projects_adapter(_: str | None = None) -> list[dict[str, Any]]:
+    """Scan official project READMEs for affiliations hidden from scholarly APIs."""
+    token = os.getenv("GITHUB_TOKEN")
+    headers = {"Authorization": f"Bearer {token}"} if token else {}
+    try:
+        repos = request_json(
+            "https://api.github.com/orgs/longxiang-ai/repos?per_page=100&type=public&sort=updated",
+            headers=headers,
+        )
+    except urllib.error.HTTPError as error:
+        if error.code != 404:
+            raise
+        repos = request_json(
+            "https://api.github.com/users/longxiang-ai/repos?per_page=100&type=public&sort=updated",
+            headers=headers,
+        )
+    contexts: dict[str, list[dict[str, Any]]] = {}
+    dataset_specs: list[tuple[str, dict[str, Any], dict[str, Any]]] = []
+    priority_names = {"transnormal", "tsgs", "human101", "vicasplat", "sdgs.github.io"}
+    repos = [
+        repo for repo in repos
+        if repo.get("name", "").lower() in priority_names
+        or (
+            not repo.get("name", "").lower().startswith("awesome-")
+            and re.search(r"\b(official|paper|implementation|code release)\b", repo.get("description") or "", re.I)
+        )
+    ]
+    repos = sorted(repos, key=lambda item: item.get("name", "").lower() == "transnormal", reverse=True)[:50]
+    for repo in repos:
+        if repo.get("fork"):
+            continue
+        try:
+            readme_payload = request_json(f"https://api.github.com/repos/{repo['full_name']}/readme", headers=headers)
+            readme = base64.b64decode(readme_payload.get("content", "")).decode("utf-8", errors="replace")
+        except (urllib.error.URLError, TimeoutError, ValueError, KeyError):
+            continue
+        matches = match_institutions(readme)
+        if not matches:
+            continue
+        institutions = list(dict.fromkeys(institution_id for institution_id, _ in matches))
+        snippet = affiliation_snippet(readme)
+        repo_url = repo.get("html_url") or f"https://github.com/{repo['full_name']}"
+        project_links = [
+            {"label": "Code", "url": repo_url},
+            *[link for link in extract_project_links(readme) if link["label"] != "Code"],
+        ]
+        context = {
+            "source": "Official GitHub project README", "sourceUrl": repo_url,
+            "institutions": institutions, "matchedText": snippet,
+            "level": "exact-affiliation", "text": readme[:12000], "links": project_links,
+        }
+        arxiv_ids = extract_arxiv_ids(readme)
+        for arxiv_id in arxiv_ids:
+            contexts.setdefault(arxiv_id, []).append(context)
+        for dataset_path in re.findall(r"https?://huggingface\.co/datasets/([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)", readme, re.I):
+            dataset_url = f"https://huggingface.co/datasets/{dataset_path}"
+            dataset_specs.append((dataset_url, context, repo))
+
+    results = arxiv_candidates_for_ids(contexts, contexts)
+    paper_by_source = {context["sourceUrl"]: work for work in results for context in sum(contexts.values(), []) if context["sourceUrl"] in [link["url"] for link in work.get("links", [])]}
+    for dataset_url, context, repo in dataset_specs:
+        related = paper_by_source.get(context["sourceUrl"])
+        published_at = (related or {}).get("publishedAt") or (repo.get("created_at") or "")[:10] or f"{dt.datetime.now(dt.timezone.utc).year}-01-01"
+        year = int(published_at[:4])
+        title = dataset_url.rstrip("/").rsplit("/", 1)[-1]
+        candidate = {
+            "type": "dataset", "title": title,
+            "authors": [{"name": repo.get("owner", {}).get("login", "longxiang-ai")}],
+            "institutions": context["institutions"], "rawAffiliations": [context["matchedText"]],
+            "relationType": "official-output", "publishedAt": published_at, "year": year,
+            "venue": "Hugging Face Datasets", "status": "released",
+            "topics": ["Open Dataset"],
+            "abstract": f"Dataset released alongside {related['title']}" if related else f"Dataset released by the {repo['name']} project.",
+            "identifiers": {},
+            "links": [{"label": "Dataset", "url": dataset_url}, {"label": "Project", "url": context["sourceUrl"]}],
+            "versions": [{"label": "Hugging Face dataset", "url": dataset_url}],
+            "evidence": [{
+                "level": "exact-affiliation", "institution": institution_id,
+                "matchedText": context["matchedText"], "source": context["source"], "sourceUrl": context["sourceUrl"],
+            } for institution_id in context["institutions"]],
+            "sources": ["Official GitHub project README", "Hugging Face"],
+        }
+        candidate["id"] = stable_id(candidate)
+        results.append(candidate)
+    return results
+
+
 ADAPTERS = {
     "crossref": crossref_adapter,
     "openalex": openalex_adapter,
     "europe_pmc": europe_pmc_adapter,
     "arxiv": arxiv_adapter,
     "datacite": datacite_adapter,
+    "bza_official": bza_official_adapter,
+    "github_projects": github_projects_adapter,
 }
 
 
 def merge_record(existing: dict[str, Any], incoming: dict[str, Any]) -> dict[str, Any]:
     merged = dict(existing)
-    for key in ["institutions", "rawAffiliations", "topics", "sources"]:
+    for key in ["institutions", "topics", "sources"]:
         merged[key] = list(dict.fromkeys([*existing.get(key, []), *incoming.get(key, [])]))
+    merged["rawAffiliations"] = list(dict.fromkeys(
+        clean_html_text(value) for value in [*existing.get("rawAffiliations", []), *incoming.get("rawAffiliations", [])]
+        if clean_html_text(value)
+    ))
     evidence_keys = {(item.get("institution"), item.get("source"), item.get("matchedText")) for item in existing.get("evidence", [])}
     merged["evidence"] = [*existing.get("evidence", []), *[item for item in incoming.get("evidence", []) if (item.get("institution"), item.get("source"), item.get("matchedText")) not in evidence_keys]]
     link_keys = {(item.get("label"), item.get("url")) for item in existing.get("links", [])}
-    merged["links"] = [*existing.get("links", []), *[item for item in incoming.get("links", []) if (item.get("label"), item.get("url")) not in link_keys]]
+    merged["links"] = sanitize_links([*existing.get("links", []), *[item for item in incoming.get("links", []) if (item.get("label"), item.get("url")) not in link_keys]])
     version_items = [*existing.get("versions", []), *incoming.get("versions", [])]
     incoming_doi = incoming.get("identifiers", {}).get("doi")
     existing_doi = existing.get("identifiers", {}).get("doi")
@@ -379,6 +684,14 @@ def deduplicate(existing: list[dict[str, Any]], discovered: list[dict[str, Any]]
     for original in sorted(existing, key=lambda item: (item.get("status") == "published", item.get("publishedAt", "")), reverse=True):
         work = dict(original)
         work["abstract"] = clean_abstract(work.get("abstract"))
+        work["links"] = sanitize_links(work.get("links", []))
+        work["rawAffiliations"] = list(dict.fromkeys(
+            clean_html_text(value) for value in work.get("rawAffiliations", []) if clean_html_text(value)
+        ))
+        work["evidence"] = [
+            {**item, "matchedText": clean_html_text(item.get("matchedText"))}
+            for item in work.get("evidence", [])
+        ]
         doi = work.get("identifiers", {}).get("doi", "").lower()
         title_key = normalize_title(work["title"])
         target = (doi_index.get(doi) if doi else None) or title_index.get(title_key)
@@ -403,6 +716,7 @@ def deduplicate(existing: list[dict[str, Any]], discovered: list[dict[str, Any]]
         else:
             work["id"] = target
             work["updatedAt"] = now
+            work["links"] = sanitize_links(work.get("links", []))
             by_id[target] = work
             added += 1
             if doi:
@@ -476,6 +790,13 @@ def generate_readme(works: list[dict[str, Any]], coverage: dict[str, str]) -> st
 A bilingual, traceable index of research outputs from **Zhongguancun Academy (北京中关村学院)** and the **Zhongguancun Institute of Artificial Intelligence (中关村人工智能研究院)**.
 
 > Public-source coverage is maximized, but absolute completeness cannot be guaranteed. Every item retains inspectable institution evidence.
+
+## Discovery strategy
+
+- Search structured affiliation metadata across Crossref, OpenAlex, Europe PMC, arXiv and DataCite.
+- Backfill papers explicitly announced by the Academy's official research feed, then resolve their arXiv IDs and DOIs.
+- Scan official project repositories for exact affiliation lines that are present in a paper PDF or README but absent from arXiv metadata.
+- Merge formal publications, preprints and companion datasets without deleting existing records when a source is temporarily unavailable.
 
 ## Latest outputs
 
@@ -558,7 +879,6 @@ def run_fetch(since: str | None) -> tuple[list[dict[str, Any]], dict[str, str]]:
             coverage[name] = f"unavailable ({type(error).__name__})"
             print(f"[warn] {name}: {error}", file=sys.stderr)
     coverage.update({
-        "official_sites": "seeded; sitemap discovery planned",
         "semantic_scholar": "optional key" if not os.getenv("SEMANTIC_SCHOLAR_API_KEY") else "configured",
         "core": "optional key" if not os.getenv("CORE_API_KEY") else "configured",
         "lens": "optional key" if not os.getenv("LENS_API_TOKEN") else "configured",
@@ -577,11 +897,15 @@ def main() -> None:
         works, coverage = run_fetch(args.since)
     else:
         works, _ = deduplicate(load_works(), [])
-        coverage = {
-            "arxiv": "available", "core": "optional key", "crossref": "available", "datacite": "available",
-            "europe_pmc": "available", "lens": "optional key", "official_sites": "available",
-            "openalex": "available with key", "semantic_scholar": "optional key",
-        }
+        coverage_path = PUBLIC / "data" / "coverage.json"
+        if coverage_path.exists():
+            coverage = json.loads(coverage_path.read_text(encoding="utf-8")).get("sources", {})
+        else:
+            coverage = {
+                "arxiv": "available", "bza_official": "available", "core": "optional key", "crossref": "available",
+                "datacite": "available", "europe_pmc": "available", "github_projects": "available",
+                "lens": "optional key", "openalex": "available with key", "semantic_scholar": "optional key",
+            }
     validate(works)
     if args.command != "validate":
         changed = export_outputs(works, coverage)
