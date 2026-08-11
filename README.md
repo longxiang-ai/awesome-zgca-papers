@@ -34,7 +34,7 @@ A bilingual, traceable index of research outputs from **Zhongguancun Academy (åŒ
 | core | optional key |
 | crossref | unavailable (HTTPError) |
 | datacite | ok (17 matched) |
-| europe_pmc | ok (0 matched) |
+| europe_pmc | unavailable (TimeoutError) |
 | github_projects | ok (7 matched) |
 | lens | optional key |
 | openalex | ok (0 matched) |
