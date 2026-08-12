@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-08T12:09:53Z",
+  "generatedAt": "2026-08-12T03:04:08Z",
   "mode": "automatic",
   "sources": {
-    "crossref": "unavailable (HTTPError)",
+    "crossref": "ok (15 matched)",
     "openalex": "ok (0 matched)",
-    "europe_pmc": "unavailable (TimeoutError)",
+    "europe_pmc": "ok (0 matched)",
     "arxiv": "ok (0 matched)",
     "datacite": "ok (17 matched)",
-    "bza_official": "ok (21 matched)",
+    "bza_official": "ok (22 matched)",
     "github_projects": "ok (7 matched)",
     "semantic_scholar": "optional key",
     "core": "optional key",

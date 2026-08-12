@@ -3588,6 +3588,148 @@
     "updatedAt": "2026-08-08T11:35:31Z"
   },
   {
+    "type": "article",
+    "title": "VectorWeaver: A Stage-Aware Automated Optimization Framework for LLM Inference on Edge Platform",
+    "authors": [
+      {
+        "name": "Pengfei Yang"
+      },
+      {
+        "name": "Hui Zeng",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Wenxuan Hou"
+      },
+      {
+        "name": "Mingwei Wang"
+      },
+      {
+        "name": "Weiye Ji"
+      },
+      {
+        "name": "Tianyang Zheng"
+      },
+      {
+        "name": "Hui Li"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Xidian University",
+      "Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "ACM Transactions on Architecture and Code Optimization",
+    "status": "published",
+    "topics": [],
+    "abstract": "The convergence of Large Language Models (LLMs) and the open-source RISC-V architecture creates significant opportunities for specialized AI hardware. However, achieving optimal LLM inference performance on RISC-V platforms is challenging due to the complex computational patterns of LLM operators and the architectural nuances of the RISC-V Vector (RVV) extension. Existing optimization strategies often rely on manual, expert-driven tuning, which is labor-intensive and not generalizable across diverse operators and hardware configurations. This article presents VectorWeaver, an automated framework to generate high-performance, stage-aware microkernels for LLM inference on RISC-V. VectorWeaver specifically addresses key performance bottlenecks in quantized models, such as memory discontinuities in vector dot-product operations, by employing a widen vectorization strategy. Guided by a stage-aware performance model, the framework systematically explores a rich optimization space encompassing loop unrolling, software pipelining, and mathematical approximations. The model generates distinct, highly-optimized kernels for the prefill and decode stages, selected at runtime via a dispatch mechanism. We evaluate VectorWeaver on the TH1520 and the Sophon SG2044 using Gemma3 and Qwen3 models with sizes ranging from 270M to 4B, where our generated microkernels achieve up to a 24x speedup over baseline implementations. For end-to-end evaluations, VectorWeaver delivers up to a 5.2x increase in inference throughput, demonstrating its effectiveness in automating the generation of high-performance code and advancing the state of LLM inference on the RISC-V ecosystem.",
+    "identifiers": {
+      "doi": "10.1145/3799719"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1145/3799719"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1145/3799719"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1145/3799719"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1145-3799719",
+    "updatedAt": "2026-08-12T03:04:08Z"
+  },
+  {
+    "type": "conference",
+    "title": "PaperRepro: Automated Computational Reproducibility Assessment for Social Science Papers",
+    "authors": [
+      {
+        "name": "Linhao Zhang",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Tong Xia"
+      },
+      {
+        "name": "Jinghua Piao",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Lizhen Cui"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "School of Software, Shandong University, Jinan, China and Zhongguancun Academy, Beijing, China",
+      "Vanke School of Public Health, Tsinghua University, Beijing, China",
+      "Department of Electronic Engineering, Tsinghua University, Beijing, China and Zhongguancun Academy, Beijing, China",
+      "School of Software, Shandong University, Jinan, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1145/3770855.3818943"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1145/3770855.3818943"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1145/3770855.3818943"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "School of Software, Shandong University, Jinan, China and Zhongguancun Academy, Beijing, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1145/3770855.3818943"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1145-3770855-3818943",
+    "updatedAt": "2026-08-12T03:04:08Z"
+  },
+  {
     "type": "conference",
     "title": "Biological Reasoning-Informed Regression for Interpretable Regulatory DNA Activity Prediction",
     "authors": [
@@ -4287,6 +4429,73 @@
     ],
     "id": "doi-10-1093-nsr-nwag466",
     "updatedAt": "2026-08-08T11:35:31Z"
+  },
+  {
+    "type": "article",
+    "title": "Competing Sn–O and Sn–C Bond Cleavage Pathways Control Cross-Linking in Tin-Oxo Clusters",
+    "authors": [
+      {
+        "name": "Taoli Guo",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Chen Zhu"
+      },
+      {
+        "name": "Lei Zhang"
+      },
+      {
+        "name": "Feng Luo"
+      },
+      {
+        "name": "Jin-Cheng Liu"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Nankai University , , ,",
+      "Zhongguancun Academy , ,"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "The Journal of Physical Chemistry Letters",
+    "status": "published",
+    "topics": [],
+    "abstract": "Abstract Tin-oxo clusters, owing to their exceptionally high extreme ultraviolet (EUV) absorption cross sections, have emerged as promising photoresist materials for EUV lithography, yet their atomic-scale photochemical mechanisms remain poorly understood. Here, by combining density functional theory (DFT) and large-scale molecular dynamics enabled by machine-learning interatomic potentials (MLIPs), we reveal a previously underexplored atomistic pathway for cross-linking in tin-oxo clusters. Beyond conventional Sn–C bond cleavage, cross-linking is strongly influenced by ligand-controlled destabilization of the Sn–O cage framework. Cleavage of Sn–O bonds disrupts cage structural integrity and generates coordinatively unsaturated tin centers that actively facilitate intercluster linkage formation. Notably, the free-energy cost associated with Sn–O bond cleavage is comparable to that of Sn–C dissociation under the same simulation protocol, which identifies framework instability as a driving factor in the structural evolution and cross-linking of tin-oxo photoresists. We further demonstrate that ligand identity critically governs cross-linking behavior by modulating both Sn–C stability and cage resilience: vinyl-functionalized clusters form extensive cross-linked networks containing aggregates up to Sn160 during MLIP molecular dynamics simulation, whereas phenyl ligands largely suppress cross-linking due to stronger Sn–C bonding and steric stabilization. These findings expand the mechanistic picture of tin-oxo photoresist cross-linking and provide atomistic insight for the molecular design of tin-oxo photoresist materials.",
+    "identifiers": {
+      "doi": "10.1021/acs.jpclett.6c01438"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1021/acs.jpclett.6c01438"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1021/acs.jpclett.6c01438"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy , ,",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1021/acs.jpclett.6c01438"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1021-acs-jpclett-6c01438",
+    "updatedAt": "2026-08-12T03:04:08Z"
   },
   {
     "type": "article",
@@ -5103,6 +5312,78 @@
   },
   {
     "type": "conference",
+    "title": "DGSolver: Diffusion Generalist Solver with Universal Posterior Sampling for Image Restoration",
+    "authors": [
+      {
+        "name": "Hebaixu Wang",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Jing Zhang"
+      },
+      {
+        "name": "Haonan Guo"
+      },
+      {
+        "name": "Di Wang"
+      },
+      {
+        "name": "Jiayi Ma"
+      },
+      {
+        "name": "Bo Du"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Zhongguancun Academy",
+      "The University of Sydney",
+      "Wuhan University",
+      "Nanyang Technological University"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2025-01-01",
+    "year": 2025,
+    "venue": "Advances in Neural Information Processing Systems 38",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.52202/085713-5624"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.52202/085713-5624"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.52202/085713-5624"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.52202/085713-5624"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-52202-085713-5624",
+    "updatedAt": "2026-08-12T03:04:08Z"
+  },
+  {
+    "type": "conference",
     "title": "Uni-MuMER: Unified Multi-Task Fine-Tuning of Vision-Language Model for Handwritten Mathematical Expression Recognition",
     "authors": [
       {
@@ -5368,6 +5649,71 @@
     ],
     "id": "doi-10-36227-techrxiv-176531987-77979037-v1",
     "updatedAt": "2026-08-08T11:35:31Z"
+  },
+  {
+    "type": "conference",
+    "title": "Model-Based Closed-Loop Control Algorithm for Stochastic Partial Differential Equation Control",
+    "authors": [
+      {
+        "name": "Peiyan Hu"
+      },
+      {
+        "name": "Haodong Feng"
+      },
+      {
+        "name": "Yue Wang",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Zhiming Ma"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Academy of Mathematics and Systems Science",
+      "Westlake University",
+      "Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2025-01-01",
+    "year": 2025,
+    "venue": "Proceedings of the Thirty-Fourth International Joint Conference on Artificial Intelligence",
+    "status": "published",
+    "topics": [],
+    "abstract": "Neural operators have demonstrated promise in modeling and controlling systems governed by Partial Differential Equations (PDEs). Beyond PDEs, Stochastic Partial Differential Equations (SPDEs) play a critical role in modeling systems influenced by randomness, with applications in finance, physics, and beyond. However, controlling SPDE-governed systems remains a significant challenge. On the one hand, the regularity of the system's state (which can be intuitively understood as smoothness) deteriorates, making modeling and generalization more challenging. On the other hand, this stochasticity also renders control more unstable and thus less accurate. To address this gap, we propose the Model-Based Closed-Loop Control Algorithm (MB-CC), the first model-based closed-loop control method for SPDEs. MB-CC introduces two key innovations to enhance control robustness and efficiency: a Regularity Feature (RF) block and a closed-loop strategy with an operator-encoded policy network. The RF block, inspired by the regularity structure theory of SPDEs, addresses noise-induced irregularities by transforming the network's input—including the system state and noise-perturbed external forces—into a refined feature space for improved forward prediction. Compared to previous works using regularity features, we introduce a new parameterization, data augmentation, and extend the RF block as a plug-and-play component. Additionally, to achieve closed-loop control, we introduce an operator-encoded policy network to map the current state to optimal control, which integrates physical priors and swiftly makes decisions based on states returned by the environment. We conduct a systematic evaluation of MB-CC on two notable SPDEs, showcasing its effectiveness and efficiency. The ablation studies show its ability to handle stochasticity more effectively.",
+    "identifiers": {
+      "doi": "10.24963/ijcai.2025/599"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.24963/ijcai.2025/599"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.24963/ijcai.2025/599"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.24963/ijcai.2025/599"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-24963-ijcai-2025-599",
+    "updatedAt": "2026-08-12T03:04:08Z"
   },
   {
     "type": "preprint",
@@ -5976,5 +6322,87 @@
     ],
     "id": "doi-10-1021-acs-jpclett-5c02902",
     "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "preprint",
+    "title": "The Value of AI-Generated Metadata for UGC Platforms: Evidence from a Large-scale Field Experiment",
+    "authors": [
+      {
+        "name": "Xinyi Zhang"
+      },
+      {
+        "name": "Chenshuo Sun"
+      },
+      {
+        "name": "Renyu Zhang"
+      },
+      {
+        "name": "Khim-Yong Goh"
+      }
+    ],
+    "institutions": [
+      "zgca",
+      "zgci"
+    ],
+    "rawAffiliations": [
+      "北京中关村学院与中关村人工智能研究院（中关村两院）"
+    ],
+    "relationType": "official-output",
+    "publishedAt": "2024-12-24",
+    "year": 2024,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "econ.GN",
+      "cs.AI",
+      "cs.HC"
+    ],
+    "abstract": "AI-generated content (AIGC), such as advertisement copy, product descriptions, and social media posts, is becoming ubiquitous in business practices. However, the value of AI-generated metadata, such as titles, remains unclear on user-generated content (UGC) platforms. To address this gap, we conducted a large-scale field experiment on a leading short-video platform in Asia to provide about 1 million users access to AI-generated titles for their uploaded videos. Our findings show that the provision of AI-generated titles significantly boosted content consumption, increasing valid watches by 1.6% and watch duration by 0.9%. When producers adopted these titles, these increases jumped to 7.1% and 4.1%, respectively. This viewership-boost effect was largely attributed to the use of this generative AI (GAI) tool increasing the likelihood of videos having a title by 41.4%. The effect was more pronounced for groups more affected by metadata sparsity. Mechanism analysis revealed that AI-generated metadata improved user-video matching accuracy in the platform's recommender system. Interestingly, for a video for which the producer would have posted a title anyway, adopting the AI-generated title decreased its viewership on average, implying that AI-generated titles may be of lower quality than human-generated ones. However, when producers chose to co-create with GAI and significantly revised the AI-generated titles, the videos outperformed their counterparts with either fully AI-generated or human-generated titles, showcasing the benefits of human-AI co-creation. This study highlights the value of AI-generated metadata and human-AI metadata co-creation in enhancing user-content matching and content consumption for UGC platforms.",
+    "identifiers": {
+      "arxiv": "2412.18337",
+      "doi": "10.48550/arXiv.2412.18337"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2412.18337"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2412.18337"
+      },
+      {
+        "label": "Official",
+        "url": "https://www.bza.edu.cn/detail/inews_8jt1d001mt4c3kzt090aknzlnitbtnz3"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2412.18337v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "official-listing",
+        "institution": "zgca",
+        "matchedText": "北京中关村学院与中关村人工智能研究院（中关村两院）",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_8jt1d001mt4c3kzt090aknzlnitbtnz3"
+      },
+      {
+        "level": "official-listing",
+        "institution": "zgci",
+        "matchedText": "北京中关村学院与中关村人工智能研究院（中关村两院）",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_8jt1d001mt4c3kzt090aknzlnitbtnz3"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "北京中关村学院官网"
+    ],
+    "id": "doi-10-48550-arxiv-2412-18337",
+    "updatedAt": "2026-08-12T03:04:08Z"
   }
 ]
