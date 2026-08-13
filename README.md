@@ -16,20 +16,21 @@ A bilingual, traceable index of research outputs from **Zhongguancun Academy (�
 
 ## Latest outputs
 
+- [EmbodiedVAE: Disentangled Video VAE for Efficient and Controllable Embodied Manipulation](https://arxiv.org/abs/2608.02990) — arXiv (2026)
+- [RSVideo: Are Your Vision-Language Models Ready for Remote Sensing Videos?](https://arxiv.org/abs/2608.02039) — arXiv (2026)
+- [Looking Beyond Visible Cues: Implicit Video Question Answering via Dual-Clue Reasoning](https://arxiv.org/abs/2506.07811) — arXiv (2026)
 - [TacReasoner: A Dynamic Tactile-Language Framework for Interactive Reasoning in Real-World Scenarios](https://arxiv.org/abs/2607.05131) — IROS 2026 (2026)
 - [Feeling the Unexpected: ResTacVLA for Contact-Rich Manipulation via Residual Tactile Representation](https://arxiv.org/abs/2607.03387) — IROS 2026 (2026)
 - [UrbanWell: Benchmarking Multimodal Large Language Models for Spatio-Temporal Urban Wellbeing Analytics](https://arxiv.org/abs/2606.15890) — KDD Datasets and Benchmarks Track 2026 (2026)
-- [SciCustom: A Framework for Custom Evaluation of Scientific Capabilities in Large Language Models](https://arxiv.org/abs/2605.19357) — ACL 2026 (2026)
-- [IntentVLA: Short-Horizon Intent Modeling for Aliased Robot Manipulation](https://arxiv.org/abs/2605.14712) — arXiv (2026)
-- [PipeSD: An Efficient Cloud-Edge Collaborative Pipeline Inference Framework with Speculative Decoding](https://arxiv.org/abs/2605.13319) — ICML 2026 (2026)
-- [Data Preparation for Large Language Models](https://doi.org/10.1007/s11390-026-5948-8) — Journal of Computer Science and Technology (2026)
-- [FutureWorld: A Live Reinforcement Learning Environment for Predictive Agents with Real-World Outcome Rewards](https://arxiv.org/abs/2604.26733) — arXiv (2026)
+- [Differencing the Diffusion Trajectory toward Uncertain Components for Time Series Forecasting](https://arxiv.org/abs/2607.22599) — arXiv (2026)
+- [SliceWorld: A Predictive and Controllable World-State Model for CT Report Generation](https://arxiv.org/abs/2605.24371) — arXiv (2026)
 
 ## Data sources
 
 | Source | Status |
 | --- | --- |
 | arxiv | ok (0 matched) |
+| arxiv_html_backfill | local checkpoint 10826/10826; 18 exact affiliation matches |
 | bza_official | ok (22 matched) |
 | core | optional key |
 | crossref | unavailable (HTTPError) |

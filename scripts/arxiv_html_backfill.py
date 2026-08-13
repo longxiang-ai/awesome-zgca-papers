@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import email.utils
+import http.client
 import json
 import os
 import random
@@ -36,6 +37,8 @@ ROOT = SCRIPT_DIR.parent
 DEFAULT_DB = ROOT / "var" / "arxiv-html-scan" / "checkpoint.sqlite3"
 PARTNER_CONFIG = ROOT / "data" / "arxiv-partner-institutions.json"
 DEFAULT_START = "2024-06-01"
+DEFAULT_REQUEST_TIMEOUT = 20.0
+MAX_SCAN_ATTEMPTS = 3
 OAI_BASE = "https://oaipmh.arxiv.org/oai"
 HTML_BASE = "https://arxiv.org/html"
 OAI_NS = "http://www.openarchives.org/OAI/2.0/"
@@ -119,6 +122,8 @@ def connect_database(path: Path) -> sqlite3.Connection:
         );
         CREATE INDEX IF NOT EXISTS papers_scan_queue
             ON papers(scan_status, created, arxiv_id);
+        CREATE INDEX IF NOT EXISTS papers_scan_queue_by_id
+            ON papers(scan_status, arxiv_id);
         CREATE TABLE IF NOT EXISTS scan_meta (
             key TEXT PRIMARY KEY,
             value TEXT NOT NULL
@@ -360,6 +365,7 @@ class PacedClient:
         jitter: float = 0.5,
         rest_every: int = 500,
         rest_seconds: float = 300.0,
+        request_timeout: float = DEFAULT_REQUEST_TIMEOUT,
     ) -> None:
         if delay < 3.0:
             raise ValueError("arXiv requests must be spaced by at least 3 seconds")
@@ -368,12 +374,14 @@ class PacedClient:
         self.jitter = max(0.0, jitter)
         self.rest_every = max(0, rest_every)
         self.rest_seconds = max(0.0, rest_seconds)
+        self.request_timeout = max(5.0, request_timeout)
         self.request_count = 0
 
     def _pace(self) -> None:
         last_request = float(get_meta(self.connection, "last_arxiv_request_epoch", "0") or 0)
+        defer_until = float(get_meta(self.connection, "arxiv_defer_until_epoch", "0") or 0)
         minimum_wait = self.delay + random.uniform(0, self.jitter)
-        remaining = minimum_wait - (time.time() - last_request)
+        remaining = max(minimum_wait - (time.time() - last_request), defer_until - time.time())
         if remaining > 0:
             time.sleep(remaining)
         if self.rest_every and self.request_count and self.request_count % self.rest_every == 0:
@@ -402,17 +410,22 @@ class PacedClient:
             self.connection.commit()
             self.request_count += 1
             try:
-                with urllib.request.urlopen(request, timeout=45) as response:
+                with urllib.request.urlopen(request, timeout=self.request_timeout) as response:
                     body = response.read().decode("utf-8", errors="replace")
                     return response.status, body, dict(response.headers.items())
             except urllib.error.HTTPError as error:
                 if error.code not in TRANSIENT_STATUS or attempt == retries:
+                    if error.code in TRANSIENT_STATUS:
+                        wait = self._retry_after(error.headers, attempt) + random.uniform(0, 3)
+                        set_meta(self.connection, "arxiv_defer_until_epoch", str(time.time() + wait))
+                        self.connection.commit()
+                        print(f"[defer] HTTP {error.code}; next request will wait {wait:.0f}s")
                     body = error.read().decode("utf-8", errors="replace")
                     return error.code, body, dict(error.headers.items())
                 wait = self._retry_after(error.headers, attempt) + random.uniform(0, 3)
                 print(f"[backoff] HTTP {error.code}; pausing {wait:.0f}s before retry")
                 time.sleep(wait)
-            except (urllib.error.URLError, TimeoutError) as error:
+            except (urllib.error.URLError, OSError, http.client.HTTPException) as error:
                 if attempt == retries:
                     raise
                 wait = min(900.0, 30.0 * (2 ** attempt)) + random.uniform(0, 3)
@@ -631,7 +644,10 @@ def scan_one(connection: sqlite3.Connection, client: PacedClient, row: sqlite3.R
     arxiv_id = row["arxiv_id"]
     html_url = f"{HTML_BASE}/{arxiv_id}v1"
     try:
-        status, payload, _ = client.get(html_url)
+        # A broken connection must not hold the whole queue in exponential backoff.
+        # Record one attempt, move the paper behind all pending work, and retry it
+        # after the first pass. Server-directed HTTP backoff is still respected.
+        status, payload, _ = client.get(html_url, retries=0)
         if status == 200:
             matches = find_institution_matches(payload)
             scan_status = "matched" if matches else "no_match"
@@ -644,7 +660,7 @@ def scan_one(connection: sqlite3.Connection, client: PacedClient, row: sqlite3.R
             matches = []
             scan_status = "retry"
             error = f"HTTP {status}"
-    except (urllib.error.URLError, TimeoutError) as exception:
+    except (urllib.error.URLError, OSError, http.client.HTTPException) as exception:
         status = None
         matches = []
         scan_status = "retry"
@@ -743,11 +759,20 @@ def scan(
         rows = connection.execute(
             """
             SELECT * FROM papers
-            WHERE scan_status IN ('pending', 'retry') AND attempts < 3 AND prefilter_source IS NOT NULL
+            WHERE scan_status = 'pending' AND attempts < ? AND prefilter_source IS NOT NULL
             ORDER BY arxiv_id LIMIT ?
             """,
-            (batch_size,),
+            (MAX_SCAN_ATTEMPTS, batch_size),
         ).fetchall()
+        if not rows:
+            rows = connection.execute(
+                """
+                SELECT * FROM papers
+                WHERE scan_status = 'retry' AND attempts < ? AND prefilter_source IS NOT NULL
+                ORDER BY last_scanned_at, arxiv_id LIMIT ?
+                """,
+                (MAX_SCAN_ATTEMPTS, batch_size),
+            ).fetchall()
         if not rows:
             break
         for row in rows:
@@ -791,7 +816,12 @@ def scan_stats(connection: sqlite3.Connection) -> dict[str, Any]:
     exact = connection.execute(
         "SELECT COUNT(*) AS count FROM papers WHERE scan_status = 'matched' AND matches_json LIKE '%exact-affiliation%'"
     ).fetchone()["count"]
-    scanned = total - statuses.get("pending", 0) - statuses.get("retry", 0)
+    retryable = connection.execute(
+        "SELECT COUNT(*) AS count FROM papers WHERE scan_status = 'retry' AND attempts < ?",
+        (MAX_SCAN_ATTEMPTS,),
+    ).fetchone()["count"]
+    exhausted = statuses.get("retry", 0) - retryable
+    scanned = total - statuses.get("pending", 0) - retryable
     background_pid = int(get_meta(connection, "background_scan_pid", "0") or 0)
     background_running = False
     if background_pid:
@@ -806,7 +836,8 @@ def scan_stats(connection: sqlite3.Connection) -> dict[str, Any]:
         "total": total,
         "scanned": scanned,
         "pending": statuses.get("pending", 0),
-        "retry": statuses.get("retry", 0),
+        "retry": retryable,
+        "retry_exhausted": exhausted,
         "matched": statuses.get("matched", 0),
         "exact_matches": exact,
         "no_match": statuses.get("no_match", 0),
@@ -842,6 +873,7 @@ def start_background_scan(database: Path, args: argparse.Namespace) -> int:
         sys.executable, "-u", str(Path(__file__).resolve()), "--database", str(database), "scan",
         "--limit", str(args.limit), "--delay", str(args.delay), "--jitter", str(args.jitter),
         "--rest-every", str(args.rest_every), "--rest-seconds", str(args.rest_seconds),
+        "--request-timeout", str(args.request_timeout),
     ]
     if args.include_association:
         command.append("--include-association")
@@ -874,10 +906,16 @@ def pacing_arguments(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--jitter", type=float, default=0.5, help="Random extra delay per request")
     parser.add_argument("--rest-every", type=int, default=500, help="Take a longer rest after this many requests; 0 disables")
     parser.add_argument("--rest-seconds", type=float, default=300, help="Long-rest duration")
+    parser.add_argument(
+        "--request-timeout", type=float, default=DEFAULT_REQUEST_TIMEOUT,
+        help="Seconds before a stalled request is deferred to the retry queue",
+    )
 
 
 def make_client(connection: sqlite3.Connection, args: argparse.Namespace) -> PacedClient:
-    return PacedClient(connection, args.delay, args.jitter, args.rest_every, args.rest_seconds)
+    return PacedClient(
+        connection, args.delay, args.jitter, args.rest_every, args.rest_seconds, args.request_timeout,
+    )
 
 
 def main() -> None:
@@ -944,7 +982,7 @@ def main() -> None:
             return
         else:
             stats = scan_stats(connection)
-            pending_seconds = stats["pending"] * 3.75
+            pending_seconds = (stats["pending"] + stats["retry"]) * 3.75
             stats["minimum_eta_hours"] = round(pending_seconds / 3600, 1)
             print(json.dumps(stats, ensure_ascii=False, indent=2))
     finally:

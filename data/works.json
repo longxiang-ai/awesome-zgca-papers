@@ -1,5 +1,261 @@
 [
   {
+    "type": "preprint",
+    "title": "EmbodiedVAE: Disentangled Video VAE for Efficient and Controllable Embodied Manipulation",
+    "authors": [
+      {
+        "name": "Jiayi Luo"
+      },
+      {
+        "name": "Hanxin Zhu"
+      },
+      {
+        "name": "Chen Gao"
+      },
+      {
+        "name": "Jiankun Wang"
+      },
+      {
+        "name": "Cong Wang"
+      },
+      {
+        "name": "Tianyu He"
+      },
+      {
+        "name": "Jianxin Li"
+      },
+      {
+        "name": "Zhibo Chen"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Jiayi Luo Affiliation: Beihang University Affiliation: Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-08-04",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Latent diffusion models (LDMs) have recently significantly advanced embodied learning in constructing powerful embodied manipulation world models. However, despite the remarkable performance, existing LDMs predominantly rely on Variational Autoencoders (VAEs) optimized for natural scenes while failing to account for the unique characteristics of embodied manipulation scenarios, yielding latent representations that are neither compact nor controllable, thereby hindering efficient training of LDMs and precise robotic control. To solve this problem, we present EmbodiedVAE, a novel video VAE that provides compact yet controllable latent representations tailored for the robotic manipulation world models. Specifically, EmbodiedVAE adopts a dual-encoder, single-decoder architecture with an asymmetric spatio-temporal compression module, which automatically disentangles the robot arm's motion from background environment, resulting in overall compactness while providing explicit embodied latent to support fine-grained action control. To further preserve the temporal consistency of learned robotic motion latent, we introduce an optimal-transport-based consistency module that explicitly enforces motion fidelity and inter-frame coherence. Extensive experiments demonstrate that our proposed EmbodiedVAE achieves superior reconstruction quality with high compression rate, while enabling more precise action control in robotic manipulation scenarios with an average of 2dB PSNR improvement over state-of-the-art video VAEs.",
+    "identifiers": {
+      "arxiv": "2608.02990",
+      "doi": "10.48550/arXiv.2608.02990"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2608.02990"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2608.02990v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2608.02990"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2608.02990v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Jiayi Luo Affiliation: Beihang University Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2608.02990v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2608-02990",
+    "updatedAt": "2026-08-13T13:51:38Z"
+  },
+  {
+    "type": "preprint",
+    "title": "RSVideo: Are Your Vision-Language Models Ready for Remote Sensing Videos?",
+    "authors": [
+      {
+        "name": "Hongjie Zhou"
+      },
+      {
+        "name": "Shiqin Wang"
+      },
+      {
+        "name": "Haoyang Chen"
+      },
+      {
+        "name": "Haonan Guo"
+      },
+      {
+        "name": "Di Wang"
+      },
+      {
+        "name": "Juhua Liu"
+      },
+      {
+        "name": "Fu Lin"
+      },
+      {
+        "name": "Yong Luo"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Hongjie Zhou Affiliation: Fu Lin Affiliation: [3pt] Wuhan University Affiliation: Zhongguancun AcademyProject: https://HongjieZhou0329.github.io/RSVideo"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-08-03",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Remote-sensing videos enable real-time observation of changes in target attributes, short-term activities, and scene evolution. They record motion, actions, interactions, and scene changes that cannot be captured by isolated images. Existing models primarily target single images or discrete temporal observations spanning a long time range. However, a unified evaluation setting for assessing vision-language models on continuous remote-sensing video understanding remains lacking. We introduce RSVideo-10K, a remote-sensing video dataset comprising 10,773 instances, 1.47 million frames, and 17.02 hours of footage, containing both unmanned aerial vehicles and satellite platforms. Its fixed evaluation benchmark, RSVideo-Bench, contains 2,731 test instances and evaluates two complementary aspects of remote-sensing video understanding: L1 Perception and L2 Reasoning, spanning seven capability groups and 17 tasks. Evaluations show that current vision-language models still struggle to recover small local evidence, track short-lived states, and use scene-constrained spatial relations. Based on this analysis, we further propose RSVideo, a reinforcement learning framework for small-target spatiotemporal focusing that selects question-relevant regions across frames and suppresses redundant background tokens. RSVideo achieves a maximum absolute improvement of 9.01% with InternVL3.5-14B and attains the highest accuracy of 40.63% with Qwen3.6-27B across 26 open-source vision-language backbones. Codes will be available at https://github.com/HongjieZhou0329/RSVideo.",
+    "identifiers": {
+      "arxiv": "2608.02039",
+      "doi": "10.48550/arXiv.2608.02039"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2608.02039"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2608.02039v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2608.02039"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2608.02039v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Hongjie Zhou Affiliation: Fu Lin Affiliation: [3pt] Wuhan University Affiliation: Zhongguancun AcademyProject: https://HongjieZhou0329.github.io/RSVideo",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2608.02039v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2608-02039",
+    "updatedAt": "2026-08-13T13:51:38Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Looking Beyond Visible Cues: Implicit Video Question Answering via Dual-Clue Reasoning",
+    "authors": [
+      {
+        "name": "Tieyuan Chen"
+      },
+      {
+        "name": "Huabin Liu"
+      },
+      {
+        "name": "Yi Wang"
+      },
+      {
+        "name": "Chaofan Gan"
+      },
+      {
+        "name": "Mingxi Lv"
+      },
+      {
+        "name": "Ziran Qin"
+      },
+      {
+        "name": "Shijie Li"
+      },
+      {
+        "name": "Liquan Shen"
+      },
+      {
+        "name": "Junhui Hou"
+      },
+      {
+        "name": "Zheng Wang"
+      },
+      {
+        "name": "Weiyao Lin"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "1 Shanghai Jiao Tong University, 2 Zhongguancun Academy, 3 Shanghai AI Laboratory"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-07-19",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "arxiv": "2506.07811",
+      "doi": "10.48550/arXiv.2506.07811",
+      "publishedDoi": "10.1007/s11263-026-02925-w"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2506.07811"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2506.07811v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2506.07811"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2506.07811v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "1 Shanghai Jiao Tong University, 2 Zhongguancun Academy, 3 Shanghai AI Laboratory",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2506.07811v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2506-07811",
+    "updatedAt": "2026-08-08T18:30:46Z"
+  },
+  {
     "type": "conference",
     "title": "TacReasoner: A Dynamic Tactile-Language Framework for Interactive Reasoning in Real-World Scenarios",
     "authors": [
@@ -256,6 +512,137 @@
     "updatedAt": "2026-08-08T11:59:38Z"
   },
   {
+    "type": "preprint",
+    "title": "Differencing the Diffusion Trajectory toward Uncertain Components for Time Series Forecasting",
+    "authors": [
+      {
+        "name": "Chen Su"
+      },
+      {
+        "name": "Yuanhe Tian"
+      },
+      {
+        "name": "Yan Song"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Yuanhe Tian Affiliation: University of Science and Technology of China Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-06-12",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Diffusion models have become a widely used framework for probabilistic time series forecasting, modeling the distribution of future values given an observed history. In time series forecasting, however, the future continues the observed history, creating an asymmetry the standard diffusion process leaves unaddressed, with slowly-varying content largely determined by the observed continuity while higher-frequency dynamics carry most of the residual uncertainty. Existing diffusion-based forecasters decouple this asymmetry through an external rule before generation, leaving the corruption trajectory blind to which parts of the target the history can already anchor. We propose DiffDiff, a diffusion framework that embeds this predictability asymmetry into the diffusion trajectory itself, so that a single end-to-end diffusion process becomes aware of which parts of the target the history can already anchor. DiffDiff makes the forward operator step-dependent so that the noisy intermediate state progressively shifts from the target itself toward its second-order differenced structure, while a conditioning pathway supplies the denoiser with both value-domain and differential history information balanced by a stage-adaptive gate at each diffusion step. The terminal distribution approaches a standard Gaussian, preserving compatibility with existing samplers. On seven benchmarks across four prediction horizons, DiffDiff outperforms six diffusion baselines, and our analysis confirms that DiffDiff concentrates the diffusion's generative effort on the most uncertain components of the target while relieving it from rebuilding the history-anchored content.",
+    "identifiers": {
+      "arxiv": "2607.22599",
+      "doi": "10.48550/arXiv.2607.22599"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2607.22599"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2607.22599v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2607.22599"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2607.22599v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Yuanhe Tian Affiliation: University of Science and Technology of China Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2607.22599v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2607-22599",
+    "updatedAt": "2026-08-13T13:11:50Z"
+  },
+  {
+    "type": "preprint",
+    "title": "SliceWorld: A Predictive and Controllable World-State Model for CT Report Generation",
+    "authors": [
+      {
+        "name": "Yuanhe Tian"
+      },
+      {
+        "name": "Yan Song"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Yuanhe Tian Affiliation: Zhongguancun Academy Email: yhtian94@gmail.com"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-23",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "CT report generation (CTRG) requires models to summarize three-dimensional anatomical context and pathological findings from hundreds of axial slices. Existing methods typically learn a direct image-to-text mapping, providing limited mechanisms for modeling how CT evidence evolves across slices or how reports respond to controlled changes in latent lesion-related factors. We propose SliceWorld, a CT-specific world-state framework that treats an axial CT scan as an ordered sequence along the z-axis. SliceWorld encodes prefix CT evidence into factor-aware latent states containing anatomy, lesion, and uncertainty components, and projects these states into world tokens used for multi-step future-slice feature prediction, lesion-factor intervention, and LLM-based report generation. The model is first pretrained on CT slice sequences with predictive, factor-aware, and counterfactual objectives, and is then fine-tuned on paired CT-report data. Experiments on M3D-Cap and CT-RATE show that SliceWorld improves natural language generation metrics and clinically oriented automatic evaluation. Further analyses demonstrate multi-horizon future-slice prediction, measurable factor alignment, reduced-slice robustness, and selective lesion-sensitive report modulation.",
+    "identifiers": {
+      "arxiv": "2605.24371",
+      "doi": "10.48550/arXiv.2605.24371"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.24371"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.24371v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.24371"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.24371v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Yuanhe Tian Affiliation: Zhongguancun Academy Email: yhtian94@gmail.com",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.24371v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2605-24371",
+    "updatedAt": "2026-08-13T12:34:14Z"
+  },
+  {
     "type": "conference",
     "title": "SciCustom: A Framework for Custom Evaluation of Scientific Capabilities in Large Language Models",
     "authors": [
@@ -380,6 +767,70 @@
     ],
     "id": "doi-10-48550-arxiv-2605-19357",
     "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Distance-Matrix Wasserstein Statistics for Scalable Gromov--Wasserstein Learning",
+    "authors": [
+      {
+        "name": "Ao Xu"
+      },
+      {
+        "name": "Tieru Wu"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Ao Xu xuao24@mails.jlu.edu.cn Affiliation: School of Artificial Intelligence Affiliation: Jilin University Affiliation: No. 2699, Qianjin Street, Chaoyang District Affiliation: Changchun 130012, China Affiliation: and Affiliation: Zhongguancun Academy Affiliation: Daniufang 2nd Ring Road, Haidian District Affiliation: Beijing 100094, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-14",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Gromov--Wasserstein (GW) distances compare graphs, shapes, and point clouds through internal distances, without requiring a common coordinate system. This invariance is powerful, but discrete GW is a nonconvex quadratic optimal transport problem and is difficult to estimate at scale. We propose \\emph{Distance-Matrix Wasserstein} (DMW), a hierarchy of Wasserstein statistics comparing laws of random finite distance matrices. Rather than optimizing a global point-level alignment, DMW samples $n$ points from each space, records their pairwise distances, and transports the resulting matrix laws. We prove that DMW is a relaxation and lower bound of GW, and establish a reverse approximation inequality: the GW--DMW gap is controlled by the Wasserstein error of approximating each original measure with $n$ samples. Hence population DMW converges to GW as sampled subspaces become dense. We further give finite-sample bounds, including intrinsic-dimensional rates that depend on the data manifold rather than the ambient matrix dimension $\\binom n2$. For scalable computation, we introduce sliced and multi-scale DMW; for $p=1$, the sliced multi-scale dissimilarity yields positive-definite exponential kernels. Experiments on synthetic metric spaces, scalability benchmarks, graph classification, and two-sample testing validate the theory and demonstrate an interpretable GW-style proxy for structural comparison.",
+    "identifiers": {
+      "arxiv": "2605.14981",
+      "doi": "10.48550/arXiv.2605.14981"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.14981"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.14981v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.14981"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.14981v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Ao Xu xuao24@mails.jlu.edu.cn Affiliation: School of Artificial Intelligence Affiliation: Jilin University Affiliation: No. 2699, Qianjin Street, Chaoyang District Affiliation: Changchun 130012, China Affiliation: and Affiliation: Zhongguancun Academy Affiliation: Daniufang 2nd Ring Road, Haidian District Affiliation: Beijing 100094, China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.14981v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2605-14981",
+    "updatedAt": "2026-08-13T11:57:17Z"
   },
   {
     "type": "preprint",
@@ -569,6 +1020,86 @@
     ],
     "id": "doi-10-48550-arxiv-2605-13319",
     "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "preprint",
+    "title": "LDFE: Laplacian Decoupled Feature Enhancement block for dual-stream CNN-based RGB-IR object detection",
+    "authors": [
+      {
+        "name": "Wenhao Dong"
+      },
+      {
+        "name": "Xiaoyan Luo"
+      },
+      {
+        "name": "Linlin Yang"
+      },
+      {
+        "name": "Haodong Zhu"
+      },
+      {
+        "name": "Xiaorong Shi"
+      },
+      {
+        "name": "Guo G"
+      },
+      {
+        "name": "B Zhang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Haodong Zhu Affiliation: The School of Artificial Intelligence, Beihang University, Beijing, 100191, China Affiliation: Zhongguancun Academy, Beijing, 100094, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-05",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "arxiv": "2607.08076",
+      "doi": "10.48550/arXiv.2607.08076",
+      "publishedDoi": "10.1016/j.patcog.2026.113935"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2607.08076"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2607.08076v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2607.08076"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2607.08076v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Haodong Zhu Affiliation: The School of Artificial Intelligence, Beihang University, Beijing, 100191, China Affiliation: Zhongguancun Academy, Beijing, 100094, China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2607.08076v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2607-08076",
+    "updatedAt": "2026-08-13T13:11:50Z"
   },
   {
     "id": "doi-10-1007-s11390-026-5948-8",
@@ -1043,6 +1574,79 @@
   },
   {
     "type": "preprint",
+    "title": "Geometry-Guided 3D Visual Token Pruning for Video-Language Models",
+    "authors": [
+      {
+        "name": "Han Li"
+      },
+      {
+        "name": "Zehao Huang"
+      },
+      {
+        "name": "Jiahui Fu"
+      },
+      {
+        "name": "Naiyan Wang"
+      },
+      {
+        "name": "Si Liu"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Han Li Affiliation: Beihang University Affiliation: Zhongguancun Academy Email: lihan0620@buaa.edu.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-04-20",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Multimodal large language models have demonstrated remarkable capabilities in 2D vision, motivating their extension to 3D scene understanding. Recent studies represent 3D scenes as 3D spatial videos composed of image sequences with depth and camera pose information, enabling pre-trained video-language models to perform 3D reasoning tasks. However, the large number of visual tokens in spatial videos remains a major bottleneck for efficient inference and context management. Existing pruning methods overlook the view consistency of spatial videos and the spatial diversity of the remaining tokens, which prevents them from effectively removing inter-frame redundancy and preserving scene completeness. In this paper, we propose Geo3DPruner, a Geometry-Guided 3D Visual Token Pruning framework. Geo3DPruner first models cross-frame relevance through geometry-aware global attention, and then performs a two-stage pruning process. The intra-voxel stage selects representative multi-view features within each voxel, while the inter-voxel stage preserves spatial diversity by selecting a globally distributed subset of voxels. Extensive experiments on multiple 3D scene understanding benchmarks demonstrate that Geo3DPruner retains over 90% of the original performance while pruning 90% of visual tokens, significantly outperforming existing text-guided and vision-guided pruning methods.",
+    "identifiers": {
+      "arxiv": "2604.18260",
+      "doi": "10.48550/arXiv.2604.18260"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2604.18260"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2604.18260v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2604.18260"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2604.18260v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Han Li Affiliation: Beihang University Affiliation: Zhongguancun Academy Email: lihan0620@buaa.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2604.18260v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2604-18260",
+    "updatedAt": "2026-08-13T11:57:17Z"
+  },
+  {
+    "type": "preprint",
     "title": "Harnessing Pre-Resolution Signals for Future Prediction Agents",
     "authors": [
       {
@@ -1227,6 +1831,79 @@
     ],
     "id": "doi-10-48550-arxiv-2604-14773",
     "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "preprint",
+    "title": "BiCoord: A Bimanual Manipulation Benchmark towards Long-Horizon Spatial-Temporal Coordination",
+    "authors": [
+      {
+        "name": "Xingyu Peng"
+      },
+      {
+        "name": "Chen Gao"
+      },
+      {
+        "name": "Liankai Jin"
+      },
+      {
+        "name": "A.B. Li"
+      },
+      {
+        "name": "Si Liu"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Xingyu Peng Note: Equal Contribution. email: pengxyai@buaa.edu.cn Affiliation: Beihang University , Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-04-07",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Bimanual manipulation, i.e., the coordinated use of two robotic arms to complete tasks, is essential for achieving human-level dexterity in robotics. Recent simulation benchmarks, e.g., RoboTwin and RLBench2, have advanced data-driven learning for bimanual manipulation. However, existing tasks are short-horizon and only loosely coordinated, failing to capture the spatial-temporal coupling inherent in real-world bimanual behaviors. To address this gap, we introduce BiCoord, a benchmark for long-horizon and tightly coordinated bimanual manipulation. Specifically, BiCoord comprises diverse tasks that require continuous inter-arm dependency and dynamic role exchange across multiple sub-goals. Also, we propose a suite of quantitative metrics that evaluate coordination from temporal, spatial, and spatial-temporal perspectives, enabling systematic measurement of bimanual cooperation. Experimental results show that representative manipulation policies, e.g., DP, RDT, Pi0, and OpenVLA-OFT, struggle with long-duration and highly coupled tasks, revealing fundamental challenges in achieving long-horizon and tight coordination tasks. We hope BiCoord can serve as a foundation for studying long-horizon cooperative manipulation and inspire future research on coordination-aware robotic learning. All datasets, codes and supplements could be found at https://buaa-colalab.github.io/BiCoord/.",
+    "identifiers": {
+      "arxiv": "2604.05831",
+      "doi": "10.48550/arXiv.2604.05831"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2604.05831"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2604.05831v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2604.05831"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2604.05831v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Xingyu Peng Note: Equal Contribution. email: pengxyai@buaa.edu.cn Affiliation: Beihang University , Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2604.05831v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2604-05831",
+    "updatedAt": "2026-08-13T11:18:16Z"
   },
   {
     "type": "conference",
@@ -1530,6 +2207,76 @@
     ],
     "id": "doi-10-48550-arxiv-2603-08122",
     "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "preprint",
+    "title": "D3LM: A Discrete DNA Diffusion Language Model for Bidirectional DNA Understanding and Generation",
+    "authors": [
+      {
+        "name": "Zhao Yang"
+      },
+      {
+        "name": "Hengchang Liu"
+      },
+      {
+        "name": "Chuan Cao"
+      },
+      {
+        "name": "Bing Su"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Chuan Cao Affiliation: Zhongguancun Academy Email: chuancao@bza.edu.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-03-02",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Early DNA foundation models adopted BERT-style training, achieving good performance on DNA understanding tasks but lacking generative capabilities. Recent autoregressive models enable DNA generation, but employ left-to-right causal modeling that is suboptimal for DNA where regulatory relationships are inherently bidirectional. We present D3LM (\\textbf{D}iscrete \\textbf{D}NA \\textbf{D}iffusion \\textbf{L}anguage \\textbf{M}odel), which unifies bidirectional representation learning and DNA generation through masked diffusion. D3LM directly adopts the Nucleotide Transformer (NT) v2 architecture but reformulates the training objective as masked diffusion in discrete DNA space, enabling both bidirectional understanding and generation capabilities within a single model. Compared to NT v2 of the same size, D3LM achieves improved performance on understanding tasks. Notably, on regulatory element generation, D3LM achieves an SFID of 10.92, closely approaching real DNA sequences (7.85) and substantially outperforming the previous best result of 29.16 from autoregressive models. Our work suggests diffusion language models as a promising paradigm for unified DNA foundation models. We further present the first systematic study of masked diffusion models in the DNA domain, investigating practical design choices such as tokenization schemes and sampling strategies, thereby providing empirical insights and a solid foundation for future research. D3LM has been released at https://huggingface.co/collections/Hengchang-Liu/d3lm.",
+    "identifiers": {
+      "arxiv": "2603.01780",
+      "doi": "10.48550/arXiv.2603.01780"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2603.01780"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2603.01780v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2603.01780"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2603.01780v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Chuan Cao Affiliation: Zhongguancun Academy Email: chuancao@bza.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2603.01780v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2603-01780",
+    "updatedAt": "2026-08-13T10:41:06Z"
   },
   {
     "id": "whitepaper-beijing-genai-2026",
@@ -3318,6 +4065,81 @@
   },
   {
     "type": "preprint",
+    "title": "Unified Modeling of Lane and Lane Topology for Driving Scene Reasoning",
+    "authors": [
+      {
+        "name": "Hui Li"
+      },
+      {
+        "name": "Yulu Gao"
+      },
+      {
+        "name": "Si Liu"
+      },
+      {
+        "name": "Yuhang Wang"
+      },
+      {
+        "name": "Bo Liu"
+      },
+      {
+        "name": "Beipeng Mu"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Autonomous vehicles need to perceive not only physical elements in the driving scene, such as lane lines and traffic lights, but also logical elements like lane centerlines and their topology. Existing lane topology reasoning methods typically follow a reasoning-by-detection paradigm, where lane topological relationships are primarily derived from lane detection results. In this paper, we propose an innovative method called Unified Modeling of Lane and Lane Topology (UniTopo), which represents the topological relationships between lanes as connected lanes, encompassing predecessor lanes, successor lanes, and their interconnections. This unified representation of lanes and lane topology allows us to simultaneously obtain both the positions and topological information of lanes within a shared perception pipeline, establishing a new paradigm for directly perceiving lane topology from original image features. We validate our method on the driving scene reasoning benchmark OpenLane-V2, which consists of two subsets, built based on Argoverse2 and nuScenes, respectively. Our method achieves TOPllof 30.1% and 31.8% on the two subsets, significantly surpassing the existing state-ofthe- art method T2SG by 6.0% and 8.6%.",
+    "identifiers": {
+      "arxiv": "2605.08911",
+      "doi": "10.48550/arXiv.2605.08911",
+      "publishedDoi": "10.1109/tcsvt.2026.3690152"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.08911"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.08911v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.08911"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.08911v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Beipeng Mu Thanks: Han Li is with the School of Artificial Intelligence, Beihang University, Beijing, China, and also with Zhongguancun Academy, Beijing, China. E-mail: lihan0620@buaa.edu.cn. Thanks: Yulu Gao is with the Hangzhou International Innovation Institute, Beihang University, Hangzhou, China. E-mail: gyl97@buaa.edu.cn. Thanks: Si Liu is with the School of Artificial Intelligence, Beihang University, Beijing, China. E-mail: liusi@buaa.edu.cn. Thanks: Yuhang Wang, Bo Liu, and Beipeng Mu are with Meituan, Beijing, China. E-mails: {wangyuhang11, mubeipeng}@meituan.com, boliu1995@163.com. Thanks: The first two authors contributed equally to this work, and the corresponding author is Si Liu. Thanks: Digital Object Identifier 10.1109/TCSVT.2026.3690152",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.08911v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2605-08911",
+    "updatedAt": "2026-08-13T11:57:17Z"
+  },
+  {
+    "type": "preprint",
     "title": "Unleashing the Agility of Wheeled-Legged Robots for High-Dynamic Reflexive Obstacle Evasion",
     "authors": [
       {
@@ -4770,6 +5592,151 @@
   },
   {
     "type": "preprint",
+    "title": "Spatiotemporal Degradation-Aware 3D Gaussian Splatting for Realistic Underwater Scene Reconstruction",
+    "authors": [
+      {
+        "name": "Shaohua Liu"
+      },
+      {
+        "name": "Ning Gao"
+      },
+      {
+        "name": "Zuoya Gu"
+      },
+      {
+        "name": "Hongkun Dou"
+      },
+      {
+        "name": "Yue Deng"
+      },
+      {
+        "name": "Hongjue Li"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Yue Deng OrcID: 0000-0003-2871-8922 Affiliation: School of Artificial Intelligence , Beihang University , Beijing , China Affiliation: Zhongguancun Academy , Beijing , China email: ydeng@buaa.edu.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2025-10-25",
+    "year": 2025,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Reconstructing realistic underwater scenes from underwater video remains a meaningful yet challenging task in the multimedia domain. The inherent spatiotemporal degradations in underwater imaging, including caustics, flickering, attenuation, and backscattering, frequently result in inaccurate geometry and appearance in existing 3D reconstruction methods. While a few recent works have explored underwater degradation-aware reconstruction, they often address either spatial or temporal degradation alone, falling short in more real-world underwater scenarios where both types of degradation occur. We propose MarineSTD-GS, a novel 3D Gaussian Splatting-based framework that explicitly models both temporal and spatial degradations for realistic underwater scene reconstruction. Specifically, we introduce two paired Gaussian primitives: Intrinsic Gaussians represent the true scene, while Degraded Gaussians render the degraded observations. The color of each Degraded Gaussian is physically derived from its paired Intrinsic Gaussian via a Spatiotemporal Degradation Modeling (SDM) module, enabling self-supervised disentanglement of realistic appearance from degraded images. To ensure stable training and accurate geometry, we further propose a Depth-Guided Geometry Loss and a Multi-Stage Optimization strategy. We also construct a simulated benchmark with diverse spatial and temporal degradations and ground-truth appearances for comprehensive evaluation. Experiments on both simulated and real-world datasets show that MarineSTD-GS robustly handles spatiotemporal degradations and outperforms existing methods in novel view synthesis with realistic, water-free scene appearances.",
+    "identifiers": {
+      "arxiv": "2604.23551",
+      "doi": "10.48550/arXiv.2604.23551",
+      "publishedDoi": "10.1145/3746027.3754888"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2604.23551"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2604.23551v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2604.23551"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2604.23551v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Yue Deng OrcID: 0000-0003-2871-8922 Affiliation: School of Artificial Intelligence , Beihang University , Beijing , China Affiliation: Zhongguancun Academy , Beijing , China email: ydeng@buaa.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2604.23551v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2604-23551",
+    "updatedAt": "2026-08-13T11:57:17Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Learning Yourself: Class-Incremental Semantic Segmentation with Language-Inspired Bootstrapped Disentanglement",
+    "authors": [
+      {
+        "name": "Ruofan Wu"
+      },
+      {
+        "name": "Yifan Zhao"
+      },
+      {
+        "name": "Jia Li"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "2 Zhongguancun Academy, Beijing, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2025-10-19",
+    "year": 2025,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Class-Incremental Semantic Segmentation (CISS) requires continuous learning of newly introduced classes while retaining knowledge of past classes. By abstracting mainstream methods into two stages (visual feature extraction and prototype-feature matching), we identify a more fundamental challenge termed catastrophic semantic entanglement. This phenomenon involves Prototype-Feature Entanglement caused by semantic misalignment during the incremental process, and Background-Increment Entanglement due to dynamic data evolution. Existing techniques, which rely on visual feature learning without sufficient cues to distinguish targets, introduce significant noise and errors. To address these issues, we introduce a Language-inspired Bootstrapped Disentanglement framework (LBD). We leverage the prior class semantics of pre-trained visual-language models (e.g., CLIP) to guide the model in autonomously disentangling features through Language-guided Prototypical Disentanglement and Manifold Mutual Background Disentanglement. The former guides the disentangling of new prototypes by treating hand-crafted text features as topological templates, while the latter employs multiple learnable prototypes and mask-pooling-based supervision for background-incremental class disentanglement. By incorporating soft prompt tuning and encoder adaptation modifications, we further bridge the capability gap of CLIP between dense and sparse tasks, achieving state-of-the-art performance on both Pascal VOC and ADE20k, particularly in multi-step scenarios.",
+    "identifiers": {
+      "arxiv": "2509.00527",
+      "doi": "10.48550/arXiv.2509.00527",
+      "publishedDoi": "10.1109/iccv51701.2025.02008"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2509.00527"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2509.00527v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2509.00527"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2509.00527v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "2 Zhongguancun Academy, Beijing, China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2509.00527v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2509-00527",
+    "updatedAt": "2026-08-12T04:55:57Z"
+  },
+  {
+    "type": "preprint",
     "title": "RLinf: Flexible and Efficient Large-scale Reinforcement Learning via Macro-to-Micro Flow Transformation",
     "authors": [
       {
@@ -5553,6 +6520,344 @@
     ],
     "id": "doi-10-52202-085713-0797",
     "updatedAt": "2026-08-08T11:35:31Z"
+  },
+  {
+    "type": "preprint",
+    "title": "DartQuant: Efficient Rotational Distribution Calibration for LLM Quantization",
+    "authors": [
+      {
+        "name": "Yuantian Shao"
+      },
+      {
+        "name": "Yuanteng Chen"
+      },
+      {
+        "name": "Peisong Wang"
+      },
+      {
+        "name": "Jinpu Yu"
+      },
+      {
+        "name": "Jing Lin"
+      },
+      {
+        "name": "Yiwu Yao"
+      },
+      {
+        "name": "Zhihui Wei"
+      },
+      {
+        "name": "Jianwei Cheng"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Yuanteng Chen 1 1 footnotemark: 1 Affiliation: C DL, Institute of Automation, Chinese Academy of Sciences, Affiliation: School of Artificial Intelligence, University of Chinese Academy of Sciences, Affiliation: Zhongguancun Academy,"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2025-01-01",
+    "year": 2025,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Quantization plays a crucial role in accelerating the inference of large-scale models, and rotational matrices have been shown to effectively improve quantization performance by smoothing outliers. However, end-to-end fine-tuning of rotational optimization algorithms incurs high computational costs and is prone to overfitting. To address this challenge, we propose an efficient distribution-aware rotational calibration method, DartQuant, which reduces the complexity of rotational optimization by constraining the distribution of the activations after rotation. This approach also effectively reduces reliance on task-specific losses, thereby mitigating the risk of overfitting. Additionally, we introduce the QR-Orth optimization scheme, which replaces expensive alternating optimization with a more efficient solution. In a variety of model quantization experiments, DartQuant demonstrates superior performance. Compared to existing methods, it achieves 47$\\times$ acceleration and 10$\\times$ memory savings for rotational optimization on a 70B model. Furthermore, it is the first to successfully complete rotational calibration for a 70B model on a single 3090 GPU, making quantization of large language models feasible in resource-constrained environments. Code is available at https://github.com/CAS-CLab/DartQuant.git.",
+    "identifiers": {
+      "arxiv": "2511.04063",
+      "doi": "10.48550/arXiv.2511.04063",
+      "publishedDoi": "10.52202/085713-4819"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2511.04063"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2511.04063v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2511.04063"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2511.04063v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Yuanteng Chen 1 1 footnotemark: 1 Affiliation: C DL, Institute of Automation, Chinese Academy of Sciences, Affiliation: School of Artificial Intelligence, University of Chinese Academy of Sciences, Affiliation: Zhongguancun Academy,",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2511.04063v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2511-04063",
+    "updatedAt": "2026-08-13T08:02:46Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Diffusion-Classifier Synergy: Reward-Aligned Learning via Mutual Boosting Loop for FSCIL",
+    "authors": [
+      {
+        "name": "Ronghui Wu"
+      },
+      {
+        "name": "Yifan Zhao"
+      },
+      {
+        "name": "Guangyao Chen"
+      },
+      {
+        "name": "Jia Li"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "2 Zhongguancun Academy 3 Peking University Corresponding authors."
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2025-01-01",
+    "year": 2025,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Few-Shot Class-Incremental Learning (FSCIL) challenges models to sequentially learn new classes from minimal examples without forgetting prior knowledge, a task complicated by the stability-plasticity dilemma and data scarcity. Current FSCIL methods often struggle with generalization due to their reliance on limited datasets. While diffusion models offer a path for data augmentation, their direct application can lead to semantic misalignment or ineffective guidance. This paper introduces Diffusion-Classifier Synergy (DCS), a novel framework that establishes a mutual boosting loop between diffusion model and FSCIL classifier. DCS utilizes a reward-aligned learning strategy, where a dynamic, multi-faceted reward function derived from the classifier's state directs the diffusion model. This reward system operates at two levels: the feature level ensures semantic coherence and diversity using prototype-anchored maximum mean discrepancy and dimension-wise variance matching, while the logits level promotes exploratory image generation and enhances inter-class discriminability through confidence recalibration and cross-session confusion-aware mechanisms. This co-evolutionary process, where generated images refine the classifier and an improved classifier state yields better reward signals, demonstrably achieves state-of-the-art performance on FSCIL benchmarks, significantly enhancing both knowledge retention and new class learning.",
+    "identifiers": {
+      "arxiv": "2510.03608",
+      "doi": "10.48550/arXiv.2510.03608",
+      "publishedDoi": "10.52202/085713-2153"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2510.03608"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2510.03608v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2510.03608"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2510.03608v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "2 Zhongguancun Academy 3 Peking University Corresponding authors.",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2510.03608v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2510-03608",
+    "updatedAt": "2026-08-13T06:56:52Z"
+  },
+  {
+    "type": "preprint",
+    "title": "GeoLLaVA-8K: Scaling Remote-Sensing Multimodal Large Language Models to 8K Resolution",
+    "authors": [
+      {
+        "name": "Fengxiang Wang"
+      },
+      {
+        "name": "Mingshuo Chen"
+      },
+      {
+        "name": "Yueying Li"
+      },
+      {
+        "name": "Di Wang"
+      },
+      {
+        "name": "Haotian Wang"
+      },
+      {
+        "name": "Zonghao Guo"
+      },
+      {
+        "name": "Zefan Wang"
+      },
+      {
+        "name": "Shan Boqi"
+      },
+      {
+        "name": "Long Lan"
+      },
+      {
+        "name": "Yulin Wang"
+      },
+      {
+        "name": "Hongzhen Wang"
+      },
+      {
+        "name": "Wenjing Yang"
+      },
+      {
+        "name": "Boxue Du"
+      },
+      {
+        "name": "Jing Zhang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "4 School of Computer Science, Wuhan University, China 5 Zhongguancun Academy, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2025-01-01",
+    "year": 2025,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Ultra-high-resolution (UHR) remote sensing (RS) imagery offers valuable data for Earth observation but pose challenges for existing multimodal foundation models due to two key bottlenecks: (1) limited availability of UHR training data, and (2) token explosion caused by the large image size. To address data scarcity, we introduce SuperRS-VQA (avg. 8,376$\\times$8,376) and HighRS-VQA (avg. 2,000$\\times$1,912), the highest-resolution vision-language datasets in RS to date, covering 22 real-world dialogue tasks. To mitigate token explosion, our pilot studies reveal significant redundancy in RS images: crucial information is concentrated in a small subset of object-centric tokens, while pruning background tokens (e.g., ocean or forest) can even improve performance. Motivated by these findings, we propose two strategies: Background Token Pruning and Anchored Token Selection, to reduce the memory footprint while preserving key semantics.Integrating these techniques, we introduce GeoLLaVA-8K, the first RS-focused multimodal large language model capable of handling inputs up to 8K$\\times$8K resolution, built on the LLaVA framework. Trained on SuperRS-VQA and HighRS-VQA, GeoLLaVA-8K sets a new state-of-the-art on the XLRS-Bench.",
+    "identifiers": {
+      "arxiv": "2505.21375",
+      "doi": "10.48550/arXiv.2505.21375",
+      "publishedDoi": "10.52202/085713-5317"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2505.21375"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2505.21375v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2505.21375"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2505.21375v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "4 School of Computer Science, Wuhan University, China 5 Zhongguancun Academy, China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2505.21375v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2505-21375",
+    "updatedAt": "2026-08-08T18:30:46Z"
+  },
+  {
+    "type": "preprint",
+    "title": "STEP: A Unified Spiking Transformer Evaluation Platform for Fair and Reproducible Benchmarking",
+    "authors": [
+      {
+        "name": "Sicheng Shen"
+      },
+      {
+        "name": "Dongcheng Zhao"
+      },
+      {
+        "name": "Linghao Feng"
+      },
+      {
+        "name": "Zeyang Yue"
+      },
+      {
+        "name": "Jindong Li"
+      },
+      {
+        "name": "T. Li"
+      },
+      {
+        "name": "Guobin Shen"
+      },
+      {
+        "name": "Yi Zeng"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "4 Zhongguancun Academy 5 Beihang University"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2025-01-01",
+    "year": 2025,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Spiking Transformers have recently emerged as promising architectures for combining the efficiency of spiking neural networks with the representational power of self-attention. However, the lack of standardized implementations, evaluation pipelines, and consistent design choices has hindered fair comparison and principled analysis. In this paper, we introduce STEP a unified benchmark framework for Spiking Transformers that supports a wide range of tasks, including classification, segmentation, and detection across static, event-based, and sequential datasets. STEP provides modular support for diverse components such as spiking neurons, input encodings, surrogate gradients, and multiple backends (e.g., SpikingJelly, BrainCog). Using STEP, we reproduce and evaluate several representative models, and conduct systematic ablation studies on attention design, neuron types, encoding schemes, and temporal modeling capabilities. We also propose a unified analytical model for energy estimation, accounting for spike sparsity, bitwidth, and memory access, and show that quantized ANNs may offer comparable or better energy efficiency. Our results suggest that current Spiking Transformers rely heavily on convolutional frontends and lack strong temporal modeling, underscoring the need for spike-native architectural innovations. The full code is available at: https://github.com/Fancyssc/STEP",
+    "identifiers": {
+      "arxiv": "2505.11151",
+      "doi": "10.48550/arXiv.2505.11151",
+      "publishedDoi": "10.52202/085713-5334"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2505.11151"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2505.11151v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2505.11151"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2505.11151v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "4 Zhongguancun Academy 5 Beihang University",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2505.11151v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2505-11151",
+    "updatedAt": "2026-08-08T17:52:29Z"
   },
   {
     "type": "preprint",

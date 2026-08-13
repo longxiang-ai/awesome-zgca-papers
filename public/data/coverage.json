@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T03:04:08Z",
+  "generatedAt": "2026-08-13T13:51:38Z",
   "mode": "automatic",
   "sources": {
     "crossref": "unavailable (HTTPError)",
@@ -11,6 +11,7 @@
     "github_projects": "ok (7 matched)",
     "semantic_scholar": "optional key",
     "core": "optional key",
-    "lens": "optional key"
+    "lens": "optional key",
+    "arxiv_html_backfill": "local checkpoint 10826/10826; 18 exact affiliation matches"
   }
 }
