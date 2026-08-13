@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-13T13:51:38Z",
+  "generatedAt": "2026-08-13T13:57:27Z",
   "mode": "automatic",
   "sources": {
-    "crossref": "unavailable (HTTPError)",
+    "crossref": "ok (17 matched)",
     "openalex": "ok (0 matched)",
     "europe_pmc": "ok (0 matched)",
     "arxiv": "ok (0 matched)",
@@ -11,7 +11,6 @@
     "github_projects": "ok (7 matched)",
     "semantic_scholar": "optional key",
     "core": "optional key",
-    "lens": "optional key",
-    "arxiv_html_backfill": "local checkpoint 10826/10826; 18 exact affiliation matches"
+    "lens": "optional key"
   }
 }

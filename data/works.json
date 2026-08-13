@@ -4553,6 +4553,99 @@
   },
   {
     "type": "conference",
+    "title": "<scp>Caduceus:</scp> MoE Foundation Models for Unifying Biological and Natural Language",
+    "authors": [
+      {
+        "name": "Mingze Yin"
+      },
+      {
+        "name": "Yiheng Zhu",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Jialu Wu"
+      },
+      {
+        "name": "Jian Ma",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Hanjing Zhou"
+      },
+      {
+        "name": "Mingyang Li"
+      },
+      {
+        "name": "Yuhua Zhou"
+      },
+      {
+        "name": "Jintai Chen"
+      },
+      {
+        "name": "Tingjun Hou"
+      },
+      {
+        "name": "Jieping Ye"
+      },
+      {
+        "name": "Aimin Pan"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "College of Computer Science and Technology, Zhejiang University, Hangzhou, China",
+      "Zhongguancun Academy, Beijing, China",
+      "College of Pharmaceutical Sciences, Zhejiang University, Hangzhou, China",
+      "Cainiao Group, Alibaba Group, Hangzhou, China",
+      "Tongyi Lab, Beijing, China",
+      "AI Thrust, Information Hub, HKUST (GZ), Guangzhou, China",
+      "Zhejiang Lab, Hangzhou, China and VNET Group, Beijing, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1145/3770855.3818885"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1145/3770855.3818885"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1145/3770855.3818885"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy, Beijing, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1145/3770855.3818885"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1145-3770855-3818885",
+    "updatedAt": "2026-08-13T13:57:27Z"
+  },
+  {
+    "type": "conference",
     "title": "Biological Reasoning-Informed Regression for Interpretable Regulatory DNA Activity Prediction",
     "authors": [
       {
@@ -5916,7 +6009,10 @@
       "zgca"
     ],
     "rawAffiliations": [
-      "Zhongguancun Academy, Beijing 100094, China"
+      "Zhongguancun Academy, Beijing 100094, China",
+      "School of Computer Science and Technology, Beijing Institute of Technology , Beijing 100081,",
+      "Zhongguancun Academy , Beijing 100094,",
+      "SMBU-MSU-BIT Joint Laboratory on Bioinformatics and Engineering Biology, Shenzhen MSU-BIT University , Shenzhen, Guangdong 518172,"
     ],
     "relationType": "affiliation",
     "publishedAt": "2025-09-04",
@@ -5929,7 +6025,7 @@
       "Machine Learning",
       "Toxicity Prediction"
     ],
-    "abstract": "This work introduces ToxPre-2L, a two-level predictor for peptide toxicity and multifunctional types. The method combines multi-view tensor learning, latent semantic learning and low-rank constraints, and is evaluated on an updated toxicity peptide benchmark.",
+    "abstract": "Abstract Motivation Therapeutic peptide is an important ingredient in the treatment of various diseases and drug discovery. The toxicity of peptides is one of the major challenges in peptide drug therapy. With the abundance of therapeutic peptides generated in the post-genomics era, it is a challenge to promptly identify toxicity peptides using computational methods. Although several efforts have been made, few algorithms are designed to identify whether a query peptide exhibits toxicity. Considering the varied levels of biological activities, the toxicity peptides should be further classified into multi-functional peptides. Results This study introduces a two-level predictor, ToxPre-2L, developed using the multi-view tensor learning and latent semantic learning framework. The proposed method utilized multi-label learning with feature induced labels to avoid the redundancy of information from each view. Then the multi-view tensor learning was employed to establish the latent semantic information among different views, while low-rank constraint learning was leveraged to exploit the correlation information among multi-labels. Finally, we constructed an updated toxicity peptide benchmark dataset to assess the effectiveness of the proposed method. Experimental results demonstrated that ToxPre-2L achieves a better performance than alternative computational methods in the prediction of toxicity peptides and their multi-functional types. Availability and implementation The source code and data of ToxPre-2L can be accessed at http://bliulab.net/ToxPre-2L.",
     "identifiers": {
       "doi": "10.1093/bioinformatics/btaf489"
     },
@@ -5951,6 +6047,10 @@
       {
         "label": "Open access version",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12457739/"
+      },
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1093/bioinformatics/btaf489"
       }
     ],
     "evidence": [
@@ -5966,6 +6066,13 @@
         "institution": "zgca",
         "matchedText": "Zhongguancun Academy, Beijing 100094, China",
         "source": "Publisher PDF",
+        "sourceUrl": "https://doi.org/10.1093/bioinformatics/btaf489"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy , Beijing 100094,",
+        "source": "Crossref",
         "sourceUrl": "https://doi.org/10.1093/bioinformatics/btaf489"
       }
     ],
