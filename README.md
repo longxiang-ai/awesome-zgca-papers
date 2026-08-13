@@ -16,6 +16,7 @@ A bilingual, traceable index of research outputs from **Zhongguancun Academy (�
 
 ## Latest outputs
 
+- [Trace, Verify, and Correct: A Training-Free Framework for Spatial Reasoning in Multimodal LLMs](https://arxiv.org/abs/2608.04759) — arXiv (2026)
 - [EmbodiedVAE: Disentangled Video VAE for Efficient and Controllable Embodied Manipulation](https://arxiv.org/abs/2608.02990) — arXiv (2026)
 - [RSVideo: Are Your Vision-Language Models Ready for Remote Sensing Videos?](https://arxiv.org/abs/2608.02039) — arXiv (2026)
 - [Looking Beyond Visible Cues: Implicit Video Question Answering via Dual-Clue Reasoning](https://arxiv.org/abs/2506.07811) — arXiv (2026)
@@ -23,13 +24,13 @@ A bilingual, traceable index of research outputs from **Zhongguancun Academy (�
 - [Feeling the Unexpected: ResTacVLA for Contact-Rich Manipulation via Residual Tactile Representation](https://arxiv.org/abs/2607.03387) — IROS 2026 (2026)
 - [UrbanWell: Benchmarking Multimodal Large Language Models for Spatio-Temporal Urban Wellbeing Analytics](https://arxiv.org/abs/2606.15890) — KDD Datasets and Benchmarks Track 2026 (2026)
 - [Differencing the Diffusion Trajectory toward Uncertain Components for Time Series Forecasting](https://arxiv.org/abs/2607.22599) — arXiv (2026)
-- [SliceWorld: A Predictive and Controllable World-State Model for CT Report Generation](https://arxiv.org/abs/2605.24371) — arXiv (2026)
 
 ## Data sources
 
 | Source | Status |
 | --- | --- |
 | arxiv | ok (0 matched) |
+| arxiv_html_backfill | checked 11082/11093; 19 exact affiliation matches; 0 pending; 11 retry; last check 2026-08-13T14:40:31Z; discovery ok |
 | bza_official | ok (22 matched) |
 | core | optional key |
 | crossref | ok (17 matched) |

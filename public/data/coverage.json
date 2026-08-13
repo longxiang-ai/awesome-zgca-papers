@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T13:57:27Z",
+  "generatedAt": "2026-08-13T14:57:08Z",
   "mode": "automatic",
   "sources": {
     "crossref": "ok (17 matched)",
@@ -11,6 +11,7 @@
     "github_projects": "ok (7 matched)",
     "semantic_scholar": "optional key",
     "core": "optional key",
-    "lens": "optional key"
+    "lens": "optional key",
+    "arxiv_html_backfill": "checked 11082/11093; 19 exact affiliation matches; 0 pending; 11 retry; last check 2026-08-13T14:40:31Z; discovery ok"
   }
 }
