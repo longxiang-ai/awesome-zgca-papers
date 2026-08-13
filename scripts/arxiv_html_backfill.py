@@ -36,9 +36,14 @@ import pipeline  # noqa: E402
 ROOT = SCRIPT_DIR.parent
 DEFAULT_DB = ROOT / "var" / "arxiv-html-scan" / "checkpoint.sqlite3"
 PARTNER_CONFIG = ROOT / "data" / "arxiv-partner-institutions.json"
+DEFAULT_STATE_FILE = ROOT / "data" / "arxiv-html-state.jsonl"
 DEFAULT_START = "2024-06-01"
 DEFAULT_REQUEST_TIMEOUT = 20.0
 MAX_SCAN_ATTEMPTS = 3
+MAX_INCREMENTAL_REQUESTS = 300
+MAX_UNAVAILABLE_ATTEMPTS = 7
+UNAVAILABLE_RETRY_WINDOW_DAYS = 14
+LEDGER_STATUSES = {"pending", "matched", "no_match", "html_unavailable", "retry"}
 OAI_BASE = "https://oaipmh.arxiv.org/oai"
 HTML_BASE = "https://arxiv.org/html"
 OAI_NS = "http://www.openarchives.org/OAI/2.0/"
@@ -117,7 +122,11 @@ def connect_database(path: Path) -> sqlite3.Connection:
             http_status INTEGER,
             matches_json TEXT NOT NULL DEFAULT '[]',
             attempts INTEGER NOT NULL DEFAULT 0,
+            unavailable_attempts INTEGER NOT NULL DEFAULT 0,
+            first_seen_at TEXT,
             last_scanned_at TEXT,
+            next_retry_at TEXT,
+            exact_match INTEGER NOT NULL DEFAULT 0,
             error TEXT
         );
         CREATE INDEX IF NOT EXISTS papers_scan_queue
@@ -142,6 +151,22 @@ def connect_database(path: Path) -> sqlite3.Connection:
         connection.execute("ALTER TABLE papers ADD COLUMN prefilter_source TEXT")
     if "prefilter_institutions_json" not in columns:
         connection.execute("ALTER TABLE papers ADD COLUMN prefilter_institutions_json TEXT NOT NULL DEFAULT '[]'")
+    if "unavailable_attempts" not in columns:
+        connection.execute("ALTER TABLE papers ADD COLUMN unavailable_attempts INTEGER NOT NULL DEFAULT 0")
+    if "first_seen_at" not in columns:
+        connection.execute("ALTER TABLE papers ADD COLUMN first_seen_at TEXT")
+    if "next_retry_at" not in columns:
+        connection.execute("ALTER TABLE papers ADD COLUMN next_retry_at TEXT")
+    if "exact_match" not in columns:
+        connection.execute("ALTER TABLE papers ADD COLUMN exact_match INTEGER NOT NULL DEFAULT 0")
+    connection.execute(
+        """
+        CREATE INDEX IF NOT EXISTS idx_papers_incremental_queue
+        ON papers(scan_status, next_retry_at, arxiv_id)
+        WHERE prefilter_source IS NOT NULL
+        """
+    )
+    connection.execute("PRAGMA optimize")
     connection.commit()
     return connection
 
@@ -156,6 +181,123 @@ def set_meta(connection: sqlite3.Connection, key: str, value: str) -> None:
         "INSERT INTO scan_meta(key, value) VALUES (?, ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value",
         (key, value),
     )
+
+
+def parse_timestamp(value: str | None) -> dt.datetime | None:
+    if not value:
+        return None
+    return dt.datetime.fromisoformat(value.replace("Z", "+00:00"))
+
+
+def timestamp_after(days: int, base: dt.datetime | None = None) -> str:
+    value = (base or dt.datetime.now(dt.timezone.utc)) + dt.timedelta(days=days)
+    return value.replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+
+def state_created_date(arxiv_id: str) -> str:
+    match = re.fullmatch(r"(\d{2})(\d{2})\.\d{4,5}", arxiv_id)
+    if not match:
+        return "1970-01-01"
+    return f"{2000 + int(match.group(1)):04d}-{int(match.group(2)):02d}-01"
+
+
+def load_state_file(path: Path) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+    records: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+        if not line.strip():
+            continue
+        record = json.loads(line)
+        arxiv_id = record.get("arxivId", "")
+        status = record.get("status", "")
+        if not re.fullmatch(r"\d{4}\.\d{4,5}", arxiv_id):
+            raise ValueError(f"Invalid arXiv ID on state line {line_number}: {arxiv_id!r}")
+        if status not in LEDGER_STATUSES:
+            raise ValueError(f"Invalid status on state line {line_number}: {status!r}")
+        if arxiv_id in seen:
+            raise ValueError(f"Duplicate arXiv ID in state file: {arxiv_id}")
+        seen.add(arxiv_id)
+        records.append(record)
+    return records
+
+
+def restore_state(connection: sqlite3.Connection, path: Path) -> int:
+    records = load_state_file(path)
+    for record in records:
+        arxiv_id = record["arxivId"]
+        first_seen = record.get("firstSeenAt") or f"{state_created_date(arxiv_id)}T00:00:00Z"
+        connection.execute(
+            """
+            INSERT INTO papers(
+                arxiv_id, created, updated, title, authors_json, categories, abstract,
+                prefilter_source, scan_status, http_status, attempts, unavailable_attempts,
+                first_seen_at, last_scanned_at, next_retry_at, exact_match, error
+            ) VALUES (?, ?, ?, '', '[]', '', '', 'persistent state ledger', ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ON CONFLICT(arxiv_id) DO UPDATE SET
+                scan_status = excluded.scan_status,
+                http_status = excluded.http_status,
+                attempts = excluded.attempts,
+                unavailable_attempts = excluded.unavailable_attempts,
+                first_seen_at = excluded.first_seen_at,
+                last_scanned_at = excluded.last_scanned_at,
+                next_retry_at = excluded.next_retry_at,
+                exact_match = excluded.exact_match,
+                error = excluded.error
+            """,
+            (
+                arxiv_id, state_created_date(arxiv_id), state_created_date(arxiv_id), record["status"],
+                record.get("httpStatus"), int(record.get("attempts") or 0),
+                int(record.get("unavailableAttempts") or 0), first_seen, record.get("checkedAt"),
+                record.get("nextRetryAt"), int(bool(record.get("exactMatch"))), record.get("lastError"),
+            ),
+        )
+    connection.commit()
+    return len(records)
+
+
+def state_records(connection: sqlite3.Connection) -> list[dict[str, Any]]:
+    rows = connection.execute(
+        """
+        SELECT arxiv_id, scan_status, attempts, unavailable_attempts, first_seen_at,
+               last_scanned_at, next_retry_at, http_status, error, exact_match, created, matches_json
+        FROM papers ORDER BY arxiv_id
+        """
+    ).fetchall()
+    records = []
+    for row in rows:
+        exact_match = bool(row["exact_match"])
+        if not exact_match and row["matches_json"]:
+            exact_match = any(
+                item.get("level") == "exact-affiliation"
+                for item in json.loads(row["matches_json"])
+            )
+        records.append({
+            "arxivId": row["arxiv_id"],
+            "status": row["scan_status"],
+            "firstSeenAt": row["first_seen_at"] or f"{row['created']}T00:00:00Z",
+            "checkedAt": row["last_scanned_at"],
+            "nextRetryAt": row["next_retry_at"],
+            "attempts": row["attempts"],
+            "unavailableAttempts": row["unavailable_attempts"],
+            "httpStatus": row["http_status"],
+            "lastError": row["error"],
+            "exactMatch": exact_match,
+        })
+    return records
+
+
+def export_state(connection: sqlite3.Connection, path: Path) -> bool:
+    records = state_records(connection)
+    payload = "".join(json.dumps(record, ensure_ascii=False, separators=(",", ":")) + "\n" for record in records)
+    if path.exists() and path.read_text(encoding="utf-8") == payload:
+        return False
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_name(f".{path.name}.tmp")
+    temporary.write_text(payload, encoding="utf-8")
+    os.replace(temporary, path)
+    return True
 
 
 def request_openalex(url: str) -> dict[str, Any]:
@@ -184,6 +326,28 @@ def resolve_partner_institution(connection: sqlite3.Connection, institution: dic
     ).fetchone()
     if cached:
         return dict(cached)
+    if institution.get("openalexId"):
+        resolved = {
+            "name": institution["name"],
+            "openalex_id": institution["openalexId"],
+            "display_name": institution["name"],
+            "ror": institution.get("ror", ""),
+            "resolved_at": utc_now(),
+        }
+        connection.execute(
+            """
+            INSERT INTO partner_institutions(name, openalex_id, display_name, ror, resolved_at)
+            VALUES (:name, :openalex_id, :display_name, :ror, :resolved_at)
+            ON CONFLICT(name) DO UPDATE SET
+                openalex_id = excluded.openalex_id,
+                display_name = excluded.display_name,
+                ror = excluded.ror,
+                resolved_at = excluded.resolved_at
+            """,
+            resolved,
+        )
+        connection.commit()
+        return resolved
     params = {"search": institution["name"], "filter": "country_code:CN", "per-page": "10"}
     api_key = os.getenv("OPENALEX_API_KEY")
     if api_key:
@@ -283,9 +447,11 @@ def upsert_openalex_work(
             """
             INSERT INTO papers(
                 arxiv_id, created, updated, title, authors_json, categories, abstract, doi,
-                journal_ref, comments, prefilter_source, prefilter_institutions_json
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                journal_ref, comments, prefilter_source, prefilter_institutions_json, first_seen_at
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ON CONFLICT(arxiv_id) DO UPDATE SET
+                created = excluded.created,
+                updated = excluded.updated,
                 title = excluded.title,
                 authors_json = excluded.authors_json,
                 abstract = CASE WHEN length(excluded.abstract) > length(papers.abstract) THEN excluded.abstract ELSE papers.abstract END,
@@ -297,7 +463,7 @@ def upsert_openalex_work(
                 arxiv_id, publication_date, publication_date, pipeline.normalize_space(record.get("title")),
                 json.dumps(authors, ensure_ascii=False), "", abstract_from_inverted_index(record.get("abstract_inverted_index")),
                 (record.get("doi") or "").replace("https://doi.org/", "") or None,
-                "", "", "OpenAlex partner institution prefilter", json.dumps(partners, ensure_ascii=False),
+                "", "", "OpenAlex partner institution prefilter", json.dumps(partners, ensure_ascii=False), utc_now(),
             ),
         )
         inserted += int(before is None)
@@ -596,6 +762,21 @@ def get_single_record(connection: sqlite3.Connection, client: PacedClient, arxiv
     connection.commit()
 
 
+def hydrate_arxiv_metadata(connection: sqlite3.Connection, client: PacedClient, arxiv_id: str) -> None:
+    """Restore metadata for a pending ledger row on a fresh Actions runner."""
+    query = urllib.parse.urlencode({
+        "verb": "GetRecord", "identifier": f"oai:arXiv.org:{arxiv_id}", "metadataPrefix": "arXiv",
+    })
+    status, payload, _ = client.get(f"{OAI_BASE}?{query}", retries=0)
+    if status != 200:
+        raise RuntimeError(f"OAI-PMH returned HTTP {status} for {arxiv_id}")
+    records, _, _ = parse_oai_records(payload)
+    if not records:
+        raise ValueError(f"No OAI metadata found for {arxiv_id}")
+    upsert_records(connection, records, "0000-01-01")
+    connection.commit()
+
+
 def find_institution_matches(html_source: str) -> list[dict[str, str]]:
     matches: list[dict[str, str]] = []
     plain_source = pipeline.clean_html_text(html_source)
@@ -640,9 +821,19 @@ def find_institution_matches(html_source: str) -> list[dict[str, str]]:
     return matches
 
 
-def scan_one(connection: sqlite3.Connection, client: PacedClient, row: sqlite3.Row) -> str:
+def scan_one(
+    connection: sqlite3.Connection,
+    client: PacedClient,
+    row: sqlite3.Row,
+    incremental: bool = False,
+    now: dt.datetime | None = None,
+) -> str:
     arxiv_id = row["arxiv_id"]
     html_url = f"{HTML_BASE}/{arxiv_id}v1"
+    current = now or dt.datetime.now(dt.timezone.utc)
+    next_retry_at: str | None = None
+    unavailable_attempts = row["unavailable_attempts"]
+    exact_match = False
     try:
         # A broken connection must not hold the whole queue in exponential backoff.
         # Record one attempt, move the paper behind all pending work, and retry it
@@ -651,34 +842,53 @@ def scan_one(connection: sqlite3.Connection, client: PacedClient, row: sqlite3.R
         if status == 200:
             matches = find_institution_matches(payload)
             scan_status = "matched" if matches else "no_match"
+            exact_match = any(item["level"] == "exact-affiliation" for item in matches)
             error = None
         elif status in {404, 406}:
             matches = []
-            scan_status = "html_unavailable"
+            unavailable_attempts += 1
+            first_seen = parse_timestamp(row["first_seen_at"]) or current
+            terminal = (
+                not incremental
+                or unavailable_attempts >= MAX_UNAVAILABLE_ATTEMPTS
+                or current - first_seen >= dt.timedelta(days=UNAVAILABLE_RETRY_WINDOW_DAYS)
+            )
+            scan_status = "html_unavailable" if terminal else "retry"
+            next_retry_at = None if terminal else timestamp_after(1, current)
             error = f"HTTP {status}"
         else:
             matches = []
             scan_status = "retry"
+            next_retry_at = timestamp_after(1, current) if incremental else None
             error = f"HTTP {status}"
     except (urllib.error.URLError, OSError, http.client.HTTPException) as exception:
         status = None
         matches = []
         scan_status = "retry"
+        next_retry_at = timestamp_after(1, current) if incremental else None
         error = f"{type(exception).__name__}: {exception}"
     connection.execute(
         """
         UPDATE papers SET
             scan_status = ?, html_url = ?, http_status = ?, matches_json = ?, attempts = attempts + 1,
-            last_scanned_at = ?, error = ?
+            unavailable_attempts = ?, first_seen_at = COALESCE(first_seen_at, ?),
+            last_scanned_at = ?, next_retry_at = ?, exact_match = ?, error = ?
         WHERE arxiv_id = ?
         """,
-        (scan_status, html_url, status, json.dumps(matches, ensure_ascii=False), utc_now(), error, arxiv_id),
+        (
+            scan_status, html_url, status, json.dumps(matches, ensure_ascii=False), unavailable_attempts,
+            current.replace(microsecond=0).isoformat().replace("+00:00", "Z"),
+            current.replace(microsecond=0).isoformat().replace("+00:00", "Z"), next_retry_at,
+            int(exact_match), error, arxiv_id,
+        ),
     )
     connection.commit()
     return scan_status
 
 
 def candidate_from_row(row: sqlite3.Row, include_association: bool = False) -> dict[str, Any] | None:
+    if not row["title"]:
+        return None
     matches = [
         item for item in json.loads(row["matches_json"])
         if item["level"] == "exact-affiliation" or include_association
@@ -726,7 +936,11 @@ def candidate_from_row(row: sqlite3.Row, include_association: bool = False) -> d
     return candidate
 
 
-def merge_matches(connection: sqlite3.Connection, include_association: bool = False) -> tuple[int, int]:
+def merge_matches(
+    connection: sqlite3.Connection,
+    include_association: bool = False,
+    discovery_status: str = "ok",
+) -> tuple[int, int]:
     rows = connection.execute("SELECT * FROM papers WHERE scan_status = 'matched' ORDER BY created").fetchall()
     candidates = [candidate for row in rows if (candidate := candidate_from_row(row, include_association))]
     existing = pipeline.load_works()
@@ -736,9 +950,10 @@ def merge_matches(connection: sqlite3.Connection, include_association: bool = Fa
     if coverage_path.exists():
         coverage = json.loads(coverage_path.read_text(encoding="utf-8")).get("sources", {})
     stats = scan_stats(connection)
+    last_check = connection.execute("SELECT MAX(last_scanned_at) AS value FROM papers").fetchone()["value"] or "never"
     coverage["arxiv_html_backfill"] = (
-        f"local checkpoint {stats['scanned']}/{stats['total']}; "
-        f"{stats['exact_matches']} exact affiliation matches"
+        f"checked {stats['scanned']}/{stats['total']}; {stats['exact_matches']} exact affiliation matches; "
+        f"{stats['pending']} pending; {stats['retry']} retry; last check {last_check}; discovery {discovery_status}"
     )
     changed = pipeline.export_outputs(merged, coverage)
     print(f"[merge] candidates={len(candidates)} added={added} updated_files={len(changed)}")
@@ -807,6 +1022,100 @@ def scan_ids(
     return counts
 
 
+def scan_incremental(
+    connection: sqlite3.Connection,
+    client: PacedClient,
+    limit: int = MAX_INCREMENTAL_REQUESTS,
+    now: dt.datetime | None = None,
+) -> dict[str, int]:
+    current = now or dt.datetime.now(dt.timezone.utc)
+    current_text = current.replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    pending = connection.execute(
+        """
+        SELECT * FROM papers
+        WHERE scan_status = 'pending' AND prefilter_source IS NOT NULL
+        ORDER BY arxiv_id LIMIT ?
+        """,
+        (limit,),
+    ).fetchall()
+    remaining = max(0, limit - len(pending))
+    retries = connection.execute(
+        """
+        SELECT * FROM papers
+        WHERE scan_status = 'retry' AND prefilter_source IS NOT NULL
+          AND (next_retry_at IS NULL OR next_retry_at <= ?)
+        ORDER BY next_retry_at, arxiv_id LIMIT ?
+        """,
+        (current_text, remaining),
+    ).fetchall() if remaining else []
+    counts: dict[str, int] = {}
+    for processed, row in enumerate([*pending, *retries], 1):
+        if not row["title"]:
+            try:
+                hydrate_arxiv_metadata(connection, client, row["arxiv_id"])
+                row = connection.execute("SELECT * FROM papers WHERE arxiv_id = ?", (row["arxiv_id"],)).fetchone()
+            except (urllib.error.URLError, OSError, http.client.HTTPException, RuntimeError, ValueError, ET.ParseError) as error:
+                connection.execute(
+                    """
+                    UPDATE papers SET scan_status='retry', next_retry_at=?, error=?
+                    WHERE arxiv_id=?
+                    """,
+                    (timestamp_after(1, current), f"metadata: {type(error).__name__}: {error}", row["arxiv_id"]),
+                )
+                connection.commit()
+                counts["retry"] = counts.get("retry", 0) + 1
+                continue
+        result = scan_one(connection, client, row, incremental=True, now=current)
+        counts[result] = counts.get(result, 0) + 1
+        if result == "matched" or processed % 25 == 0:
+            print(f"[incremental scan] processed={processed} {row['arxiv_id']} -> {result}")
+    return counts
+
+
+def run_incremental(
+    connection: sqlite3.Connection,
+    client: PacedClient,
+    state_file: Path,
+    start: str,
+    until: str,
+    limit: int,
+) -> dict[str, Any]:
+    restored = restore_state(connection, state_file)
+    previous_coverage_path = pipeline.PUBLIC / "data" / "coverage.json"
+    previous_discovery = "unknown"
+    if previous_coverage_path.exists():
+        previous_line = json.loads(previous_coverage_path.read_text(encoding="utf-8")).get("sources", {}).get(
+            "arxiv_html_backfill", ""
+        )
+        match = re.search(r"discovery ([^;]+)$", previous_line)
+        if match:
+            previous_discovery = match.group(1)
+    discovery_status = "ok"
+    prefilter_result: dict[str, int] = {"institutions": 0, "completed": 0, "new_arxiv_ids": 0}
+    try:
+        prefilter_result = prefilter_openalex(connection, start, until)
+    except (urllib.error.URLError, OSError, TimeoutError, ValueError, KeyError) as error:
+        discovery_status = f"unavailable ({type(error).__name__})"
+        print(f"[warn] OpenAlex incremental discovery: {error}", file=sys.stderr)
+    counts = scan_incremental(connection, client, limit)
+    state_changed = export_state(connection, state_file)
+    if discovery_status != "ok" and not state_changed and not counts:
+        discovery_status = previous_discovery
+    candidates, added = merge_matches(connection, discovery_status=discovery_status)
+    stats = scan_stats(connection)
+    return {
+        "restored": restored,
+        "discovery": discovery_status,
+        "prefilter": prefilter_result,
+        "scan": counts,
+        "state_changed": state_changed,
+        "matched_candidates": candidates,
+        "works_added": added,
+        "pending": stats["pending"],
+        "retry": stats["retry"],
+    }
+
+
 def scan_stats(connection: sqlite3.Connection) -> dict[str, Any]:
     total = connection.execute("SELECT COUNT(*) AS count FROM papers").fetchone()["count"]
     status_rows = connection.execute(
@@ -814,13 +1123,16 @@ def scan_stats(connection: sqlite3.Connection) -> dict[str, Any]:
     ).fetchall()
     statuses = {row["scan_status"]: row["count"] for row in status_rows}
     exact = connection.execute(
-        "SELECT COUNT(*) AS count FROM papers WHERE scan_status = 'matched' AND matches_json LIKE '%exact-affiliation%'"
+        """
+        SELECT COUNT(*) AS count FROM papers
+        WHERE scan_status = 'matched' AND (exact_match = 1 OR matches_json LIKE '%exact-affiliation%')
+        """
     ).fetchone()["count"]
-    retryable = connection.execute(
-        "SELECT COUNT(*) AS count FROM papers WHERE scan_status = 'retry' AND attempts < ?",
+    retryable = statuses.get("retry", 0)
+    exhausted = connection.execute(
+        "SELECT COUNT(*) AS count FROM papers WHERE scan_status = 'retry' AND attempts >= ?",
         (MAX_SCAN_ATTEMPTS,),
     ).fetchone()["count"]
-    exhausted = statuses.get("retry", 0) - retryable
     scanned = total - statuses.get("pending", 0) - retryable
     background_pid = int(get_meta(connection, "background_scan_pid", "0") or 0)
     background_running = False
@@ -921,6 +1233,7 @@ def make_client(connection: sqlite3.Connection, args: argparse.Namespace) -> Pac
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--database", type=Path, default=DEFAULT_DB)
+    parser.add_argument("--state-file", type=Path, default=DEFAULT_STATE_FILE)
     subparsers = parser.add_subparsers(dest="command", required=True)
 
     prefilter_parser = subparsers.add_parser("prefilter", help="Build the candidate queue from partner institutions in OpenAlex")
@@ -957,6 +1270,16 @@ def main() -> None:
     start_parser.add_argument("--include-association", action="store_true")
     pacing_arguments(start_parser)
 
+    incremental_parser = subparsers.add_parser(
+        "incremental", help="Discover and scan only new or retryable arXiv HTML candidates"
+    )
+    incremental_parser.add_argument("--from", dest="start", required=True)
+    incremental_parser.add_argument("--until", default=dt.datetime.now(dt.timezone.utc).date().isoformat())
+    incremental_parser.add_argument("--limit", type=int, default=MAX_INCREMENTAL_REQUESTS)
+    pacing_arguments(incremental_parser)
+
+    subparsers.add_parser("export-state", help="Export the SQLite checkpoint as the persistent JSONL ledger")
+
     args = parser.parse_args()
     connection = connect_database(args.database)
     try:
@@ -980,6 +1303,15 @@ def main() -> None:
             connection.close()
             start_background_scan(args.database, args)
             return
+        elif args.command == "incremental":
+            result = run_incremental(
+                connection, make_client(connection, args), args.state_file,
+                args.start, args.until, args.limit,
+            )
+            print(json.dumps(result, ensure_ascii=False, indent=2))
+        elif args.command == "export-state":
+            changed = export_state(connection, args.state_file)
+            print(json.dumps({"records": len(state_records(connection)), "changed": changed}, indent=2))
         else:
             stats = scan_stats(connection)
             pending_seconds = (stats["pending"] + stats["retry"]) * 3.75

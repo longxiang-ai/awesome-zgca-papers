@@ -856,6 +856,8 @@ python3 scripts/arxiv_html_backfill.py status
 
 The local SQLite checkpoint is resumable and ignored by Git. arXiv requests are single-connection, at least 3.5 seconds apart by default, take a five-minute rest every 500 requests, and back off automatically after throttling or server errors. Only HTML matches in the author-affiliation region are published automatically; body-text matches remain audit-only associations.
 
+GitHub Actions runs the same HTML check incrementally every day at 08:30 Asia/Shanghai. The committed `data/arxiv-html-state.jsonl` ledger prevents completed IDs from being fetched again; daily runs inspect the latest 120 days, while the weekly job rechecks OpenAlex discovery from June 2024 for delayed indexing.
+
 ## Corrections
 
 Open an issue or pull request. Stable overrides live in `data/overrides.yml` and are never replaced by the automated pipeline.

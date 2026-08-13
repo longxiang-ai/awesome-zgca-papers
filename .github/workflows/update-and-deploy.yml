@@ -69,6 +69,32 @@ jobs:
             python3 scripts/pipeline.py fetch --since "$(date -u -d '8 days ago' +%F)"
           fi
 
+      - name: Discover and scan incremental arXiv HTML candidates
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          REQUESTED_SINCE: ${{ inputs.since }}
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          if [ -n "$REQUESTED_SINCE" ]; then
+            HTML_SINCE="$REQUESTED_SINCE"
+          elif [ "$SCHEDULE" = "15 1 * * 0" ]; then
+            HTML_SINCE="2024-06-01"
+          else
+            HTML_SINCE="$(date -u -d '120 days ago' +%F)"
+          fi
+          python3 scripts/arxiv_html_backfill.py \
+            --database "$RUNNER_TEMP/arxiv-html-incremental.sqlite3" \
+            --state-file data/arxiv-html-state.jsonl \
+            incremental \
+            --from "$HTML_SINCE" \
+            --until "$(date -u +%F)" \
+            --limit 300 \
+            --delay 3.5 \
+            --jitter 0.5 \
+            --rest-every 500 \
+            --rest-seconds 300 \
+            --request-timeout 20
+
       - name: Validate data and application
         run: npm test
 
@@ -79,7 +105,15 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data public/data public/feed.xml README.md
             git commit -m "chore(data): automated research index update"
-            git push
+            for attempt in 1 2 3; do
+              if git push; then
+                break
+              fi
+              if [ "$attempt" = "3" ]; then
+                exit 1
+              fi
+              git pull --rebase origin main
+            done
           else
             echo "No metadata changes to commit."
           fi
