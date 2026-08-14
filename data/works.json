@@ -4912,7 +4912,8 @@
       "Beijing Institute of Technology, Beijing, China and Zhongguancun Academy, Beijing, China",
       "Xinjiang Future Enterprise Incubator Co., Ltd., Xinjiang, China and Beijing Institute of Technology, Beijing, China",
       "Beijing Institute of Technology, Beijing, China",
-      "Zhongguancun Academy, Beijing, China and Institute of Automation, Chinese Academy of Sciencess, Beijing, China"
+      "Zhongguancun Academy, Beijing, China and Institute of Automation, Chinese Academy of Sciencess, Beijing, China",
+      "Wenyao Cui OrcID: 0000-0002-2810-3824 Affiliation: Beijing Institute of Technology , Beijing , China Affiliation: Zhongguancun Academy , Beijing , China email: yao1970099540@gmail.com"
     ],
     "relationType": "affiliation",
     "publishedAt": "2026-01-01",
@@ -4920,7 +4921,7 @@
     "venue": "Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2",
     "status": "published",
     "topics": [],
-    "abstract": "",
+    "abstract": "Large language models (LLMs) increasingly serve as data-driven reasoners, yet their chains-of-thought (CoT) can be unfaithful even when final answers are correct. Most existing ''verification'' signals are not diagnostic: answer matching observes only the outcome, LLM-as-judge provides subjective and non-verifiable critiques, and scalar rewards (e.g., PRMs/RMs) offer little insight into where a multi-step derivation fails.We propose SymDiag, a neuro-symbolic framework that reframes reasoning verification as structured failure diagnosis. SymDiag translates natural-language CoT into symbolic constraints and performs step-level satisfiability/entailment checks to (i) localize failing steps and (ii) produce verifiable diagnostic evidence, including counterexamples, inconsistency witnesses, and missing-premise indicators. A central challenge is that apparent ''logic violations'' can be caused either by genuine reasoning defects or by neural-to-symbolic translation noise. SymDiag therefore incorporates a Self-Auditor that disentangles TranslationError from ReasoningError via dual symbolic encodings consistency checks, enabling robust diagnosis under partial observability. Across diverse mathematical, logical, scientific, and general reasoning benchmarks, SymDiag improves detection of unfaithful reasoning and provides substantially more effective feedback for multi-round reasoning repair than outcome-only verification and LLM-based judging, offering a principled foundation for trustworthy and scalable reasoning diagnosis.",
     "identifiers": {
       "doi": "10.1145/3770855.3818004"
     },
@@ -4928,12 +4929,32 @@
       {
         "label": "DOI",
         "url": "https://doi.org/10.1145/3770855.3818004"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2608.08786"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2608.08786v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2608.08786"
       }
     ],
     "versions": [
       {
         "label": "Publisher version",
         "url": "https://doi.org/10.1145/3770855.3818004"
+      },
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2608.08786v1"
+      },
+      {
+        "label": "DOI 10.48550/arXiv.2608.08786",
+        "url": "https://doi.org/10.48550/arXiv.2608.08786"
       }
     ],
     "evidence": [
@@ -4943,10 +4964,19 @@
         "matchedText": "Beijing Institute of Technology, Beijing, China and Zhongguancun Academy, Beijing, China",
         "source": "Crossref",
         "sourceUrl": "https://doi.org/10.1145/3770855.3818004"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Wenyao Cui OrcID: 0000-0002-2810-3824 Affiliation: Beijing Institute of Technology , Beijing , China Affiliation: Zhongguancun Academy , Beijing , China email: yao1970099540@gmail.com",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2608.08786v1"
       }
     ],
     "sources": [
-      "Crossref"
+      "Crossref",
+      "arXiv",
+      "arXiv HTML"
     ],
     "id": "doi-10-1145-3770855-3818004",
     "updatedAt": "2026-08-08T11:35:31Z"
