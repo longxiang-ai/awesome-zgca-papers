@@ -4135,6 +4135,86 @@
   },
   {
     "type": "preprint",
+    "title": "MIDAS: Mutual Information Disentanglement With Uncertainty-Aware Fusion for Incomplete Multimodal Sentiment Analysis",
+    "authors": [
+      {
+        "name": "Yuhua Wen"
+      },
+      {
+        "name": "Yingying Zhou"
+      },
+      {
+        "name": "Qifei Li"
+      },
+      {
+        "name": "Yingming Gao"
+      },
+      {
+        "name": "Zhengqi Wen"
+      },
+      {
+        "name": "Jianhua Tao"
+      },
+      {
+        "name": "Ya Li"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Yuhua Wen, Yingying Zhou, Qifei Li, Yingming Gao, Zhengqi Wen, Jianhua Tao, and Ya Li This work is supported by the National Key R&D Program of China under Grant No.2024YFB2808802. (Corresponding author: Ya Li.)Yuhua Wen is with the School of Artificial Intelligence, Beijing University of Posts and Telecommunications, Beijing 100876, China, and also with the Zhongguancun Academy, Beijing 100094, China (e-mail: yuhuawen@bupt.edu.cn).Yingying Zhou, Qifei Li, Yingming Gao, and Ya Li are with the School of Artificial Intelligence, Beijing University of Posts and Telecommunications, Beijing 100876, China (e-mail: yingyingzhou@bupt.edu.cn; liqifei@bupt.edu.cn; yingming.gao@bupt.edu.cn; yli01@bupt.edu.cn).Zhengqi Wen is with the Beijing National Research Center for Information Science and Technology, Tsinghua University, Beijing 100084, China (e-mail: zqwen@tsinghua.edu.cn).Jianhua Tao is with"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Most existing multimodal sentiment analysis approaches assume access to complete multimodal inputs. However, real-world applications frequently encounter incomplete or corrupted modalities, posing a critical challenge. Although several methods have been proposed to tackle this issue, they mainly rely on data imputation and heuristic coordination constraints, which fail to effectively extract and leverage task-relevant information from the incomplete multimodal data. To address this challenge, we propose a unified framework termed Mutual Information Disentanglement with uncertainty-Aware fuSion (MIDAS), which effectively restructures multimodal representations under incomplete conditions. MIDAS adopts a variational modeling strategy to represent each modality with multivariate Gaussian latent variables and further decomposes them into shared and exclusive factors. To obtain reliable representations, we design a minimax objective that minimizes the mutual information between shared and exclusive spaces for stable disentanglement, while maximizing the mutual information among shared spaces across modalities to enhance semantic alignment. In addition, an uncertainty-aware fusion mechanism is introduced, where posterior variance is leveraged as a reliability indicator to adaptively weight latent features during fusion, ensuring robust integration even when modalities are incomplete. Extensive experiments on three widely used datasets show that MIDAS achieves strong and consistent performance gains over competitive baselines across a wide range of incomplete settings, demonstrating its effectiveness and robustness for incomplete data scenarios.",
+    "identifiers": {
+      "arxiv": "2608.09986",
+      "doi": "10.48550/arXiv.2608.09986",
+      "publishedDoi": "10.1109/tpami.2026.3713694"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2608.09986"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2608.09986v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2608.09986"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2608.09986v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Yuhua Wen, Yingying Zhou, Qifei Li, Yingming Gao, Zhengqi Wen, Jianhua Tao, and Ya Li This work is supported by the National Key R&D Program of China under Grant No.2024YFB2808802. (Corresponding author: Ya Li.)Yuhua Wen is with the School of Artificial Intelligence, Beijing University of Posts and Telecommunications, Beijing 100876, China, and also with the Zhongguancun Academy, Beijing 100094, China (e-mail: yuhuawen@bupt.edu.cn).Yingying Zhou, Qifei Li, Yingming Gao, and Ya Li are with the School of Artificial Intelligence, Beijing University of Posts and Telecommunications, Beijing 100876, China (e-mail: yingyingzhou@bupt.edu.cn; liqifei@bupt.edu.cn; yingming.gao@bupt.edu.cn; yli01@bupt.edu.cn).Zhengqi Wen is with the Beijing National Research Center for Information Science and Technology, Tsinghua University, Beijing 100084, China (e-mail: zqwen@tsinghua.edu.cn).Jianhua Tao is with",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2608.09986v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2608-09986",
+    "updatedAt": "2026-08-16T02:48:42Z"
+  },
+  {
+    "type": "preprint",
     "title": "Unified Modeling of Lane and Lane Topology for Driving Scene Reasoning",
     "authors": [
       {
