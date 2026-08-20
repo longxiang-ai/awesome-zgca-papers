@@ -1172,6 +1172,398 @@
     "updatedAt": "2026-08-13T13:11:50Z"
   },
   {
+    "type": "preprint",
+    "title": "Embody4D: A Generalist Data Engine for Embodied 4D World Modeling",
+    "authors": [
+      {
+        "name": "Peiyan Tu"
+      },
+      {
+        "name": "Hanxin Zhu"
+      },
+      {
+        "name": "Jingwen Sun"
+      },
+      {
+        "name": "Shaojie Ren"
+      },
+      {
+        "name": "Cong Wang"
+      },
+      {
+        "name": "Yuyan Xu"
+      },
+      {
+        "name": "Jiayi Luo"
+      },
+      {
+        "name": "Xiaoqian Cheng"
+      },
+      {
+        "name": "Z H Chen"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Jingwen Sun Affiliation: Beijing Zhongguancun Academy Affiliation: University of Science and Technology of China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-03",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Embodied agents require robust and comprehensive 3D spatiotemporal representations to support spatial reasoning, manipulation understanding, and downstream decision making. However, existing robot data are typically captured from fixed or sparse viewpoints, providing only partial and view-dependent observations, which limits multi-view perception and generalization across viewpoints. Given the difficulty of collecting additional viewpoints in real-world settings, we propose Embody4D, a dedicated video-to-video world model for embodied scenarios to bridge this observation gap by transforming a monocular robot video into novel-view videos from flexible target camera viewpoints. First, to tackle training data scarcity, we introduce a 3D-aware compositional synthesis pipeline to curate a heterogeneous dataset compositing cross-embodiment robotic arms with diverse backgrounds, promoting broad generalization. Second, to enforce geometric stability, we devise a latent confidence-aware expert modulation strategy, which estimates the reliability of warped latent priors and adaptively routes regions to copy, repair, or inpaint experts for spatiotemporally consistent 4D generation. Finally, to enhance the fidelity of the manipulation, we incorporate an interaction-aware attention mechanism that explicitly attends to the robotic interaction regions. Extensive experiments show that Embody4D achieves state-of-the-art performance on visual evaluation benchmarks, while both simulated and real-world robotic experiments further demonstrate its effectiveness as a robust data engine for synthesizing high-fidelity, view-consistent videos that empower downstream robotic planning and learning.",
+    "identifiers": {
+      "arxiv": "2605.01799",
+      "doi": "10.48550/arXiv.2605.01799"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.01799"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.01799v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.01799"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.01799v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Jingwen Sun Affiliation: Beijing Zhongguancun Academy Affiliation: University of Science and Technology of China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.01799v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2605-01799",
+    "updatedAt": "2026-08-20T02:19:27Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Colinearity Decay: Training Quantization-Friendly ViTs with Outlier Decay",
+    "authors": [
+      {
+        "name": "Jin Tong"
+      },
+      {
+        "name": "Guang Liang"
+      },
+      {
+        "name": "Peilin Sun"
+      },
+      {
+        "name": "Jianxin Wu"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Guang Liang Affiliation: State Key Laboratory of Novel Software Technology, Nanjing University, Nanjing 210023, China Affiliation: School of Artificial Intelligence, Nanjing University, Nanjing 210023, China Affiliation: Zhongguancun Academy, Beijing 100094, China {tongj, liangg, sunpl}@lamda.nju.edu.cn, wujx2001@nju.edu.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-02",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Low-bit quantization is a practical route for efficiently deploying vision Transformers, yet activation outliers complicate fully quantized deployment. Existing methods either handle quantization post-training or suppress large activations during training; however, aggressively restricting outliers in vision models can lead to a poorer trade-off between full-precision and quantized accuracy. We argue that rather than simply suppressing outliers, the training objective should control the structural amplification that makes them harmful. To this end, we introduce Colinearity-Decay (CD), a structural regularizer for ordered matrix pairs within Transformer blocks. CD penalizes detrimental cross-matrix alignment and mitigates extreme activations without altering the architecture or task loss. Applied as a decoupled update, CD is non-invasive and introduces minimal training overhead. Across ImageNet-1K pre-training, COCO detection, and downstream fine-tuning, CD consistently boosts quantized accuracy across multiple pipelines while preserving, or even improving, full-precision performance. Ultimately, our results demonstrate that structural regularization effectively prepares vision Transformers for low-bit deployment with zero inference-time overhead.",
+    "identifiers": {
+      "arxiv": "2605.01330",
+      "doi": "10.48550/arXiv.2605.01330"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.01330"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.01330v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.01330"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.01330v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Guang Liang Affiliation: State Key Laboratory of Novel Software Technology, Nanjing University, Nanjing 210023, China Affiliation: School of Artificial Intelligence, Nanjing University, Nanjing 210023, China Affiliation: Zhongguancun Academy, Beijing 100094, China {tongj, liangg, sunpl}@lamda.nju.edu.cn, wujx2001@nju.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.01330v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2605-01330",
+    "updatedAt": "2026-08-20T02:19:27Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Position-Aware Drafting for Inference Acceleration in LLM-Based Generative List-Wise Recommendation",
+    "authors": [
+      {
+        "name": "Jiaju Chen"
+      },
+      {
+        "name": "Chongming Gao"
+      },
+      {
+        "name": "Chenxiao Fan"
+      },
+      {
+        "name": "Haoyan Liu"
+      },
+      {
+        "name": "Qingpeng Cai"
+      },
+      {
+        "name": "Peng Jiang"
+      },
+      {
+        "name": "Xiangnan He"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Jiaju Chen Affiliation: University of Science and Technology of China, Hefei, China Affiliation: Zhongguancun Academy, Beijing, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-04-30",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Large language model (LLM)-based generative list-wise recommendation has advanced rapidly, but decoding remains sequential and thus latency-prone. To accelerate inference without changing the target distribution, speculative decoding (SD) uses a small draft model to propose several next tokens at once and a target LLM to verify and accept the longest prefix, skipping multiple steps per round. In generative recommendation, however, each item is represented by multiple semantic-ID tokens, often with separators, and current drafts typically treat these tokens uniformly. This overlooks two practical facts: (i) a token's semantics depend on its within-item slot, and (ii) uncertainty tends to increase with speculation depth. Without modeling these effects, SD's speedups can be limited. We introduce PAD-Rec, Position-Aware Drafting for generative Recommendation, a lightweight module that augments the draft model with two complementary signals. Item position embeddings explicitly encode the within-item slot of each token, strengthening structural awareness. Step position embeddings encode the draft step, allowing the model to adapt to depth-dependent uncertainty and improve proposal quality. To harmonize these signals with base features, we add simple gates: a learnable coefficient for item slots and a context-driven gate for draft steps. The module is trainable, easy to integrate with standard draft models, and adds negligible inference overhead. Extensive experiments on four real-world datasets show up to 3.1x wall-clock speedup and about 5% average wall-clock speedup gain over strong SD baselines, while largely preserving recommendation quality.",
+    "identifiers": {
+      "arxiv": "2604.27747",
+      "doi": "10.48550/arXiv.2604.27747"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2604.27747"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2604.27747v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2604.27747"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2604.27747v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Jiaju Chen Affiliation: University of Science and Technology of China, Hefei, China Affiliation: Zhongguancun Academy, Beijing, China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2604.27747v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2604-27747",
+    "updatedAt": "2026-08-20T02:19:27Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Generative structure search for efficient and diverse discovery of molecular and crystal structures",
+    "authors": [
+      {
+        "name": "Yifang Qin"
+      },
+      {
+        "name": "Yu Shi"
+      },
+      {
+        "name": "Junfu Tan"
+      },
+      {
+        "name": "Chang Liu"
+      },
+      {
+        "name": "Ming Zhang"
+      },
+      {
+        "name": "Ziheng Lu"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Yu Shi Email: shiyu@bza.edu.cn Affiliation: Zhongguancun Academy, Beijing, 100094, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-04-30",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Predicting stable and metastable structures is central to molecular and materials discovery, but remains limited by the cost of searching high-dimensional energy landscapes. Deep generative models offer efficient structure sampling, yet their outputs remain shaped by training data and can underexplore minima that are rare but physically relevant. We introduce generative structure search (GSS), a unified framework that formulates diffusion-based generation and random structure search (RSS) as limiting regimes of a common sampling process driven by learned score fields and physical forces. Coupling these drivers lets GSS use data priors to accelerate sampling while retaining energy-guided exploration of local minima. Across molecular and crystalline systems, GSS recovers diverse metastable structures with more than tenfold lower sampling cost than RSS for broad coverage and remains effective for compositions outside the training distribution. The results establish a physically grounded generative search strategy for discovering structures beyond the reach of data-driven sampling alone.",
+    "identifiers": {
+      "arxiv": "2604.27636",
+      "doi": "10.48550/arXiv.2604.27636"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2604.27636"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2604.27636v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2604.27636"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2604.27636v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Yu Shi Email: shiyu@bza.edu.cn Affiliation: Zhongguancun Academy, Beijing, 100094, China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2604.27636v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2604-27636",
+    "updatedAt": "2026-08-20T02:19:27Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Skills-Coach: A Self-Evolving Skill Optimizer via Training-Free GRPO",
+    "authors": [
+      {
+        "name": "Yu Tian"
+      },
+      {
+        "name": "Jiawei Chen"
+      },
+      {
+        "name": "Lifan Zheng"
+      },
+      {
+        "name": "Mingxiang Tao"
+      },
+      {
+        "name": "Xinyi Zeng"
+      },
+      {
+        "name": "Zhaoxia Yin"
+      },
+      {
+        "name": "Hang Su"
+      },
+      {
+        "name": "Xian Sun"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "† † affiliation: Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-04-30",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "We introduce Skills-Coach, a novel automated framework designed to significantly enhance the self-evolution of skills within Large Language Model (LLM)-based agents. Addressing the current fragmentation of the skill ecosystem, Skills-Coach explores the boundaries of skill capabilities, thereby facilitating the comprehensive competency coverage essential for intelligent applications. The framework comprises four core modules: a Diverse Task Generation Module that systematically creates a comprehensive test suite for various skills; a Lightweight Optimization Module dedicated to optimizing skill prompts and their corresponding code; a Comparative Execution Module facilitating the execution and evaluation of both original and optimized skills; and a Traceable Evaluation Module, which rigorously evaluates performance against specified criteria. Skills-Coach offers flexible execution options through its virtual and real modes. To validate its efficacy, we introduce Skill-X, a comprehensive benchmark dataset consisting of 48 diverse skills. Experimental results demonstrate that Skills-Coach achieves significant performance improvements in skill capability across a wide range of categories, highlighting its potential to advance the development of more robust and adaptable LLM-based agents.",
+    "identifiers": {
+      "arxiv": "2604.27488",
+      "doi": "10.48550/arXiv.2604.27488"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2604.27488"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2604.27488v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2604.27488"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2604.27488v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "† † affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2604.27488v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2604-27488",
+    "updatedAt": "2026-08-20T02:19:27Z"
+  },
+  {
     "id": "doi-10-1007-s11390-026-5948-8",
     "type": "article",
     "title": "Data Preparation for Large Language Models",
