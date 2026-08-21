@@ -1093,6 +1093,416 @@
   },
   {
     "type": "preprint",
+    "title": "FLARE: Full-Modality Long-Video Audiovisual Retrieval Benchmark with User-Simulated Queries",
+    "authors": [
+      {
+        "name": "Qijie You"
+      },
+      {
+        "name": "Hao Liang"
+      },
+      {
+        "name": "Mingrui Chen"
+      },
+      {
+        "name": "Bohan Zeng"
+      },
+      {
+        "name": "Meiyi Qiang"
+      },
+      {
+        "name": "Zhenhao Wong"
+      },
+      {
+        "name": "Wentao Zhang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Qijie You 1 Hao Liang 2,4 1 1 footnotemark: 1 Mingrui Chen 3 Bohan Zeng 2 Meiyi Qiang 2 Zhenhao Wong 2 Wentao Zhang 2,4 1 University of Science and Technology Beijing 2 Peking University 3 Institute of Automation, Chinese Academy of Sciences 4 Zhongguancun Academy Thanks: Equal contribution. Thanks: Project leader. Thanks: Corresponding author."
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-11",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "As video becomes increasingly central to information dissemination and multimodal large language models (MLLMs) continue to advance, evaluating video retrieval has become increasingly important. In realistic search scenarios, this requires matching short user queries to long-form content using both visual and auditory evidence. Yet existing retrieval benchmarks are still dominated by short clips, single modalities, and caption-based evaluation. We introduce FLARE, a full-modality long-video audiovisual retrieval benchmark with user-simulated queries. Built from 399 carefully screened Video-MME videos (10--60 min, 225.4 h) to ensure source quality and diversity, FLARE contains 87,697 clips annotated with vision, audio, and unified audiovisual captions, together with 274,933 user-style queries. Cross-modal queries are further filtered by a hard bimodal constraint, requiring retrieval to fail under either modality alone but succeed when both are combined. FLARE evaluates models under two regimes, caption-based and query-based retrieval, across vision, audio, and unified audiovisual settings. Experiments with 15 representative retrievers show that user-style queries substantially change model behavior, strong caption-based performance does not always transfer to query-based retrieval, and audio--language alignment remains a key bottleneck for unified audiovisual retrieval. Our code and data are released at https://flarebench.github.io/",
+    "identifiers": {
+      "arxiv": "2605.10228",
+      "doi": "10.48550/arXiv.2605.10228"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.10228"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.10228v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.10228"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.10228v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Qijie You 1 Hao Liang 2,4 1 1 footnotemark: 1 Mingrui Chen 3 Bohan Zeng 2 Meiyi Qiang 2 Zhenhao Wong 2 Wentao Zhang 2,4 1 University of Science and Technology Beijing 2 Peking University 3 Institute of Automation, Chinese Academy of Sciences 4 Zhongguancun Academy Thanks: Equal contribution. Thanks: Project leader. Thanks: Corresponding author.",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.10228v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2605-10228",
+    "updatedAt": "2026-08-21T02:28:00Z"
+  },
+  {
+    "type": "preprint",
+    "title": "SkillMaster: Toward Autonomous Skill Mastery in LLM Agents",
+    "authors": [
+      {
+        "name": "Min Yang"
+      },
+      {
+        "name": "Jinghua Piao"
+      },
+      {
+        "name": "Xu Xia"
+      },
+      {
+        "name": "Xiaochong Lan"
+      },
+      {
+        "name": "Jiaju Chen"
+      },
+      {
+        "name": "Yongshun Gong"
+      },
+      {
+        "name": "Yong Li"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Min Yang Affiliation: Shandong University Affiliation: Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-09",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Skills provide an effective mechanism for improving LLM agents on complex tasks, yet in existing agent frameworks, their creation, refinement, and selection are typically governed by external teachers, hand-designed rules, or auxiliary modules. As a result, skills remain external resources to be invoked, rather than capabilities that agents can develop, adapt, and internalize through experience. To endow LLM agents with autonomous skill mastery, we propose SkillMaster, a training framework that teaches agents to create new skills, refine existing skills, and select accumulated skills during task solving. This capability is achieved through three key designs. First, we train agents through trajectory-informed skill review, teaching agents to propose, update, or retain skills based on evidence from completed episodes. Second, each candidate skill edit is designed to be evaluated by its counterfactual utility on related probe tasks, providing a direct learning signal for training skill-editing decisions. Third, we introduce DualAdv-GRPO, which separately estimates advantages for task-solving actions and skill-editing decisions, stabilizing joint training across task solving and skill management. Experiments on ALFWorld and WebShop show that SkillMaster improves the overall success rate over state-of-the-art baselines by 8.8% and 9.3%, respectively, achieving the best performance among all compared methods. Further analysis reveals a marked shift in agent capability: agents trained with SkillMaster can identify skill failures, refine procedural knowledge from trajectory evidence, and transfer improvements to future tasks with limited skill-bank edits. Overall, SkillMaster moves LLM agents beyond mere skill use toward self-improving agents capable of developing, adapting, and applying their own skill repertoires.",
+    "identifiers": {
+      "arxiv": "2605.08693",
+      "doi": "10.48550/arXiv.2605.08693"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.08693"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.08693v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.08693"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.08693v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Min Yang Affiliation: Shandong University Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.08693v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2605-08693",
+    "updatedAt": "2026-08-21T02:28:00Z"
+  },
+  {
+    "type": "preprint",
+    "title": "SimCT: Recovering Lost Supervision for Cross-Tokenizer On-Policy Distillation",
+    "authors": [
+      {
+        "name": "Jie Sun"
+      },
+      {
+        "name": "Mao Zheng"
+      },
+      {
+        "name": "Mingyang Song"
+      },
+      {
+        "name": "Qiyong Zhong"
+      },
+      {
+        "name": "Yilin Cheng"
+      },
+      {
+        "name": "Bichuan Feng"
+      },
+      {
+        "name": "Pengfei Liu"
+      },
+      {
+        "name": "Junfeng Fang"
+      },
+      {
+        "name": "Xiang Wang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Yilin Cheng Affiliation: Zhongguancun Academy[4pt] sunjie2019@mail.ustc.edu.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-08",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "On-policy distillation (OPD) is a standard tool for transferring teacher behavior to a smaller student, but it implicitly assumes that teacher and student predictions are comparable token by token, an assumption that fails whenever the two models tokenize the same text differently. Under heterogeneous tokenizers, exact shared-token matching silently discards a large fraction of the teacher signal at precisely the positions where vocabularies disagree. We propose \\textbf{\\underline{Sim}ple \\underline{C}ross-\\underline{T}okenizer OPD (SimCT)}, which restores this signal by enlarging the supervision space: alongside shared tokens, SimCT compares teacher and student over short multi-token continuations that both tokenizers can realize, leaving the OPD loss form itself unchanged. We show that these units are the finest jointly tokenizable supervision interface, and that coarser alternatives remove teacher-student distinctions that are useful for on-policy learning. Across three heterogeneous teacher-student pairs on mathematical reasoning and code-generation benchmarks, SimCT shows consistent gains over shared-vocabulary OPD and representative cross-tokenizer baselines, with ablations confirming that the improvements come from recovering supervision discarded by exact shared-token matching. Code is available at \\href{https://github.com/sunjie279/SimCT-}{https://github.com/sunjie279/SimCT-}.",
+    "identifiers": {
+      "arxiv": "2605.07711",
+      "doi": "10.48550/arXiv.2605.07711"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.07711"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.07711v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.07711"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.07711v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Yilin Cheng Affiliation: Zhongguancun Academy[4pt] sunjie2019@mail.ustc.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.07711v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2605-07711",
+    "updatedAt": "2026-08-21T02:28:00Z"
+  },
+  {
+    "type": "preprint",
+    "title": "TraceAV-Bench: Benchmarking Multi-Hop Trajectory Reasoning over Long Audio-Visual Videos",
+    "authors": [
+      {
+        "name": "Hengyi Feng"
+      },
+      {
+        "name": "Hao Liang"
+      },
+      {
+        "name": "Mingrui Chen"
+      },
+      {
+        "name": "Bohan Zeng"
+      },
+      {
+        "name": "Meiyi Qiang"
+      },
+      {
+        "name": "Zhengyang Zhao"
+      },
+      {
+        "name": "Zimo Meng"
+      },
+      {
+        "name": "Zeang Sheng"
+      },
+      {
+        "name": "Wentao Zhang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Bohan Zeng Affiliation: Peking University Affiliation: Zhongguancun Academy https://heinz217.github.io/TraceAV-Bench-Page"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-08",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Real-world audio-visual understanding requires chaining evidence that is sparse, temporally dispersed, and split across the visual and auditory streams, whereas existing benchmarks largely fail to evaluate this capability. They restrict videos to short clips, isolate modalities, or reduce questions to one-hop perception. We introduce TraceAV-Bench, the first benchmark to jointly evaluate multi-hop reasoning over long audio-visual trajectories and multimodal hallucination robustness. TraceAV-Bench comprises 2,200 rigorously validated multiple-choice questions over 578 long videos, totaling 339.5 hours, spanning 4 evaluation dimensions and 15 sub-tasks. Each question is grounded in an explicit reasoning chain that averages 3.68 hops across a 15.1-minute temporal span. The dataset is built by a three-step semi-automated pipeline followed by a strict quality assurance process. Evaluation of multiple representative OmniLLMs on TraceAV-Bench reveals that the benchmark poses a persistent challenge across all models, with the strongest closed-source model (Gemini 3.1 Pro) reaching only 68.29% on general tasks, and the best open-source model (Ming-Flash-Omni-2.0) reaching 51.70%, leaving substantial headroom. Moreover, we find that robustness to multimodal hallucination is largely decoupled from general multimodal reasoning performance. We anticipate that TraceAV-Bench will stimulate further research toward OmniLLMs that can reason coherently and faithfully over long-form audio-visual content.",
+    "identifiers": {
+      "arxiv": "2605.07593",
+      "doi": "10.48550/arXiv.2605.07593"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.07593"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.07593v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.07593"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.07593v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Bohan Zeng Affiliation: Peking University Affiliation: Zhongguancun Academy https://heinz217.github.io/TraceAV-Bench-Page",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.07593v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2605-07593",
+    "updatedAt": "2026-08-21T02:28:00Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Implicit Compression Regularization: Concise Reasoning via Internal Shorter Distributions in RL Post-Training",
+    "authors": [
+      {
+        "name": "Chen Wang"
+      },
+      {
+        "name": "Hexuan Deng"
+      },
+      {
+        "name": "Yining Zhang"
+      },
+      {
+        "name": "Yuchen Zhang"
+      },
+      {
+        "name": "Jionghao Bai"
+      },
+      {
+        "name": "Zhaochun Li"
+      },
+      {
+        "name": "Ge Lan"
+      },
+      {
+        "name": "Yue Wang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Chen Wang 1,2,∗ Hexuan Deng 2,3 Yining Zhang 2,4 Yuchen Zhang 2,5 Jionghao Bai 2,6 Zhaochun Li 2,7 Ge Lan 1,† Yue Wang 2,† 1 College of Software, Nankai University 2 Zhongguancun Academy 3 Harbin Institute of Technology 4 Institute of Automation, Chinese Academy of Sciences 5 East China Normal University 6 Zhejiang University 7 Beijing Institute of Technology"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-08",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Reinforcement learning with verifiable rewards improves LLM reasoning but often induces overthinking, where models generate unnecessarily long reasoning traces. Existing methods mainly rely on length penalties or early-exit strategies; however, the former may degrade accuracy and induce underthinking, whereas the latter assumes that substantial portions of reasoning traces can be safely truncated. To obtain a compression signal without these limitations, we revisit the training dynamics of existing compression methods. We observe that the length--accuracy correlation is initially negative but continually increases during compression, indicating that shorter responses are initially more likely to be correct but gradually lose this property as the policy moves toward underthinking. Based on this observation, we formalize overthinking: a negative correlation indicates an overthinking regime, while a positive one indicates underthinking. When overthinking, the shortest correct responses are shorter than the group-average response length in expectation, making them natural compression targets already present in on-policy rollouts. We therefore propose \\emph{Implicit Compression Regularization} (ICR), an on-policy regularization method whose compression signal comes from a virtual shorter distribution induced by the shortest correct responses in rollout groups, guiding the policy toward concise yet correct trajectories. Training dynamics show that ICR maintains a better length--accuracy correlation during compression, indicating that short responses remain better aligned with correctness instead of drifting toward underthinking. Experiments on three reasoning backbones and multiple mathematical and knowledge-intensive benchmarks show that ICR consistently shortens responses while preserving or improving accuracy, achieving a stronger accuracy--length Pareto frontier.",
+    "identifiers": {
+      "arxiv": "2605.07316",
+      "doi": "10.48550/arXiv.2605.07316"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.07316"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.07316v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.07316"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.07316v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Chen Wang 1,2,∗ Hexuan Deng 2,3 Yining Zhang 2,4 Yuchen Zhang 2,5 Jionghao Bai 2,6 Zhaochun Li 2,7 Ge Lan 1,† Yue Wang 2,† 1 College of Software, Nankai University 2 Zhongguancun Academy 3 Harbin Institute of Technology 4 Institute of Automation, Chinese Academy of Sciences 5 East China Normal University 6 Zhejiang University 7 Beijing Institute of Technology",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.07316v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2605-07316",
+    "updatedAt": "2026-08-21T02:28:00Z"
+  },
+  {
+    "type": "preprint",
     "title": "LDFE: Laplacian Decoupled Feature Enhancement block for dual-stream CNN-based RGB-IR object detection",
     "authors": [
       {
