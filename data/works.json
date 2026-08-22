@@ -1093,6 +1093,518 @@
   },
   {
     "type": "preprint",
+    "title": "LeanSearch v2: Global Premise Retrieval for Lean 4 Theorem Proving",
+    "authors": [
+      {
+        "name": "Guoxiong Gao"
+      },
+      {
+        "name": "Zeming Sun"
+      },
+      {
+        "name": "Jiedong Jiang"
+      },
+      {
+        "name": "Yutong Wang"
+      },
+      {
+        "name": "Jingda Xu"
+      },
+      {
+        "name": "Peihao Wu"
+      },
+      {
+        "name": "Bryan Dai"
+      },
+      {
+        "name": "Bin Dong"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Guoxiong Gao Zeming Sun Jiedong Jiang Yutong Wang Jingda Xu Peihao Wu Bryan Dai Bin Dong School of Mathematical Sciences, Peking University IQuest Research Research Institute for Mathematical Sciences, Kyoto University Westlake Institute for Advanced Study, Westlake University Beijing International Center for Mathematical Research and the New Cornerstone Science Laboratory, Peking University Center for Machine Learning Research, Peking University Center for Intelligent Computing, Great Bay Institute for Advanced Study, Great Bay University Zhongguancun Academy Corresponding author: dongbin@math.pku.edu.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-13",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Proving theorems in Lean 4 often requires identifying a scattered set of library lemmas whose joint use enables a concise proof -- a task we call global premise retrieval. Existing tools address adjacent problems: semantic search engines find individual declarations matching a query, while premise-selection systems predict useful lemmas one tactic step at a time. Neither recovers the full premise set an entire theorem requires. We present LeanSearch v2, a two-mode retrieval system for this task. Its standard mode applies a hierarchy-informalized Mathlib corpus with an embedding-reranker pipeline, achieving state-of-the-art single-query retrieval without domain-specific fine-tuning (nDCG@10 of 0.62 vs. 0.53 for the next-best system). Its reasoning mode builds on standard mode as its retrieval substrate, targeting global premise retrieval through iterative sketch-retrieve-reflect cycles. On a 69-query benchmark of research-level Mathlib theorems, reasoning mode recovers 46.1% of ground-truth premise groups within 10 retrieved candidates, outperforming strong reasoning retrieval systems (38.0%) and premise-selection baselines (9.3%) on the same benchmark. In a controlled downstream evaluation with a fixed prover loop, replacing alternative retrievers with LeanSearch v2 yields the highest proof success (20% vs. 16% for the next-best system and 4% without retrieval), confirming that retrieval quality propagates to proof generation. We have open-sourced all code, data, and benchmarks. Code and data: https://github.com/frenzymath/LeanSearch-v2 . The standard mode is publicly available with API access at https://leansearch.net/ .",
+    "identifiers": {
+      "arxiv": "2605.13137",
+      "doi": "10.48550/arXiv.2605.13137"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.13137"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.13137v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.13137"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.13137v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Guoxiong Gao Zeming Sun Jiedong Jiang Yutong Wang Jingda Xu Peihao Wu Bryan Dai Bin Dong School of Mathematical Sciences, Peking University IQuest Research Research Institute for Mathematical Sciences, Kyoto University Westlake Institute for Advanced Study, Westlake University Beijing International Center for Mathematical Research and the New Cornerstone Science Laboratory, Peking University Center for Machine Learning Research, Peking University Center for Intelligent Computing, Great Bay Institute for Advanced Study, Great Bay University Zhongguancun Academy Corresponding author: dongbin@math.pku.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.13137v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2605-13137",
+    "updatedAt": "2026-08-22T02:17:52Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Towards Long-horizon Embodied Agents with Tool-Aligned Vision-Language-Action Models",
+    "authors": [
+      {
+        "name": "Zixing Lei"
+      },
+      {
+        "name": "Changxing Liu"
+      },
+      {
+        "name": "Yu Xiong"
+      },
+      {
+        "name": "Moulin Xiong"
+      },
+      {
+        "name": "Yudan Ding"
+      },
+      {
+        "name": "Zhipeng Zhang"
+      },
+      {
+        "name": "Weixin Li"
+      },
+      {
+        "name": "Siheng Chen"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Zixing Lei Thanks: Equal contribution Affiliation: Shanghai Jiao Tong University Affiliation: Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-13",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Vision-language-action (VLA) models are effective robot action executors, but they remain limited on long-horizon tasks due to the dual burden of extended closed-loop planning and diverse physical operations. We therefore propose VLAs-as-Tools, a strategy that distributes this burden across a high-level vision language model (VLM) agent for temporal reasoning and a family of specialized VLA tools for diverse local physical operations. The VLM handles scene analysis, global planning, and recovery, while each VLA tool executes a bounded subtask. To tightly couple agent planning with VLA tool execution in long-horizon tasks, we introduce a VLA tool-family interface that exposes explicit tool selection and in-execution progress feedback, enabling efficient event-triggered agent replanning without continuous agent polling. To obtain diverse specialized VLA tools that faithfully follow agent invocations, we further propose Tool-Aligned Post-Training (TAPT), which constructs invocation-aligned training units for instruction following and adopts tool-family residual adapters for efficient tool specialization. Experiments show that VLAs-as-Tools improves the success rate of $π_{0.5}$ by 4.8 points on LIBERO-Long and 23.1 points on RoboTwin, and further enhances invocation fidelity by 15.0 points as measured by Non-biased Rate. Code will be released.",
+    "identifiers": {
+      "arxiv": "2605.13119",
+      "doi": "10.48550/arXiv.2605.13119"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.13119"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.13119v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.13119"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.13119v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zixing Lei Thanks: Equal contribution Affiliation: Shanghai Jiao Tong University Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.13119v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2605-13119",
+    "updatedAt": "2026-08-22T02:17:52Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Pyramid Forcing: Head-Aware Pyramid KV Cache Policy for High-Quality Long Video Generation",
+    "authors": [
+      {
+        "name": "Jiayu Chen"
+      },
+      {
+        "name": "Junbei Tang"
+      },
+      {
+        "name": "Wenbiao Zhao"
+      },
+      {
+        "name": "Maoliang Li"
+      },
+      {
+        "name": "Jiayi Luo"
+      },
+      {
+        "name": "Zihao Zheng"
+      },
+      {
+        "name": "Jiawei Yang"
+      },
+      {
+        "name": "Guojie Luo"
+      },
+      {
+        "name": "Xiang Chen"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Jiayi Luo Affiliation: Beihang University Affiliation: Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-13",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Autoregressive video generation enables streaming and open-ended long video synthesis, but still suffers from long-term degradation caused by accumulated errors. Existing KVCache strategies usually apply unified historical-frame retention, implicitly assuming homogeneous historical dependencies across attention heads. We revisit historical-frame attention and reveal three distinct head types: Anchor Heads require broad long-range context, Wave Heads exhibit periodic temporal dependencies, and Veil Heads focus on initial and adjacent frames. Based on this finding, we propose Pyramid Forcing, a head-aware pyramidal KVCache framework that identifies head types offline, assigns behavior-specific cache policies, and supports heterogeneous cache lengths via efficient ragged-cache attention. Experiments on Self Forcing and Causal Forcing show that Pyramid Forcing consistently improves long-horizon generation quality on VBench-Long, increasing the 60-second Self Forcing score from 77.87 to 81.21 while enhancing motion dynamics, visual fidelity, and semantic consistency. Project: https://if-lab-pku.github.io/Pyramid-Forcing/.",
+    "identifiers": {
+      "arxiv": "2605.13111",
+      "doi": "10.48550/arXiv.2605.13111"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.13111"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.13111v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.13111"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.13111v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Jiayi Luo Affiliation: Beihang University Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.13111v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2605-13111",
+    "updatedAt": "2026-08-22T02:17:52Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Revisiting Reinforcement Learning with Verifiable Rewards from a Contrastive Perspective",
+    "authors": [
+      {
+        "name": "Feng Zhang"
+      },
+      {
+        "name": "Xinhong Ma"
+      },
+      {
+        "name": "Ziqiang Dong"
+      },
+      {
+        "name": "Xi Leng"
+      },
+      {
+        "name": "Jianfei Zhao"
+      },
+      {
+        "name": "Xin Sun"
+      },
+      {
+        "name": "Yang Yang"
+      },
+      {
+        "name": "Guanjun Jiang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Jianfei Zhao Affiliation: Beijing Institute of Technology Affiliation: Zhongguancun Academy {bit_zhangfeng, zhqingan, sunxin}@bit.edu.cn{xinhong.mxh, ziqiang.dzq, chris.yang, guanj.jianggj}@alibaba-inc.comxileng@link.cuhk.edu.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-13",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Group Relative Policy Optimization (GRPO) is one of the most widely adopted RLVR algorithms for post-training large language models on reasoning tasks. We first show that GRPO admits an equivalent discriminative reformulation, in which policy optimization maximizes the expected score gap between verified positive and negative rollouts. This reformulation reveals two objective-level limitations: likelihood-misaligned surrogate scores, in which clipped ratio-based scores are optimized rather than the sequence likelihoods that govern generation, and score-insensitive credit assignment, in which rollout-level credit does not reflect the current score gaps between positive and negative rollouts. To address these limitations, we propose ConSPO, a Contrastive Sequence-level Policy Optimization method that uses length-normalized sequence log-probabilities as rollout scores and contrasts verified positive rollouts against negative distractors within the same group. ConSPO optimizes a group-wise InfoNCE-style objective to adaptively strengthen updates for poorly separated positives and high-scoring negatives, together with a curriculum-scheduled margin that preserves separation pressure as training progresses. Experiments across diverse settings show that ConSPO outperforms strong baselines on challenging reasoning benchmarks. Code will be released upon paper acceptance.",
+    "identifiers": {
+      "arxiv": "2605.12969",
+      "doi": "10.48550/arXiv.2605.12969"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.12969"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.12969v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.12969"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.12969v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Jianfei Zhao Affiliation: Beijing Institute of Technology Affiliation: Zhongguancun Academy {bit_zhangfeng, zhqingan, sunxin}@bit.edu.cn{xinhong.mxh, ziqiang.dzq, chris.yang, guanj.jianggj}@alibaba-inc.comxileng@link.cuhk.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.12969v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2605-12969",
+    "updatedAt": "2026-08-22T02:17:52Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Uni-Synergy: Bridging Understanding and Generation for Personalized Reasoning via Co-operative Reinforcement Learning",
+    "authors": [
+      {
+        "name": "Zijun Shen"
+      },
+      {
+        "name": "Sihan Yang"
+      },
+      {
+        "name": "Ruichuan An"
+      },
+      {
+        "name": "Ziyu Guo"
+      },
+      {
+        "name": "Hao Liang"
+      },
+      {
+        "name": "Ming Lü"
+      },
+      {
+        "name": "Renrui Zhang"
+      },
+      {
+        "name": "Wentao Zhang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Hao Liang Affiliation: Peking University Affiliation: Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-11",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Unified Multimodal Models (UMMs) excel in general tasks but struggle to bridge the gap between personalized understanding and generation. Prior works largely rely on implicit token-level alignment via supervised fine-tuning, which fails to fully capture the potential synergy between comprehension and creation. In this work, we propose Sync-R1, an end-to-end reinforcement learning framework that jointly optimizes personalized understanding and generation within a single, explicit reasoning loop. Through this unified feedback process, Sync-R1 enables personalized comprehension to guide content creation, while the resulting generation quality reciprocally refines understanding within an integrated reward landscape. To efficiently orchestrate this dual-task synergy, we introduce Sync-GRPO, a reinforcement learning method utilizing an ensemble reward system. Furthermore, we propose Dynamic Group Scaling (DGS), which adaptively filters low-potential trajectories to reduce gradient variance and accelerate convergence. To better reflect real-world complexity, we introduce UnifyBench++, featuring denser textual descriptions and richer user contexts. Experimental results demonstrate that Sync-R1 achieves state-of-the-art performance, showcasing superior cross-task reasoning and robust personalization without requiring complex cold-start procedures. The code and the UnifyBench++ dataset will be released at: https://github.com/arctanxarc/UniCTokens.",
+    "identifiers": {
+      "arxiv": "2605.10445",
+      "doi": "10.48550/arXiv.2605.10445"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.10445"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.10445v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.10445"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.10445v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Hao Liang Affiliation: Peking University Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.10445v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2605-10445",
+    "updatedAt": "2026-08-22T02:17:52Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Accelerating Locality-Driven Integration in Quantum Chemistry with Block-Structured Matrix Multiplication",
+    "authors": [
+      {
+        "name": "Xinran Wei"
+      },
+      {
+        "name": "Yan Pan"
+      },
+      {
+        "name": "Fusong Ju"
+      },
+      {
+        "name": "Zehao Zhou"
+      },
+      {
+        "name": "Yihong Zhang"
+      },
+      {
+        "name": "Lin Huang"
+      },
+      {
+        "name": "Jianwei Zhu"
+      },
+      {
+        "name": "Jia Zhang"
+      },
+      {
+        "name": "Huanhuan Xia"
+      },
+      {
+        "name": "Bin Shao"
+      },
+      {
+        "name": "Tao Qin"
+      }
+    ],
+    "institutions": [
+      "zgca",
+      "zgci"
+    ],
+    "rawAffiliations": [
+      "Xinran Wei 1 2 5 , Yan Pan 1 , Fusong Ju 5 1 6 , Zehao Zhou 5 , Yihong Zhang 5 , Lin Huang 4 , Jianwei Zhu 5 , Jia Zhang 4 , Huanhuan Xia 1 , Bin Shao 1 2 , Tao Qin 1 Affiliation: 1 Zhongguancun Academy , Beijing, China Affiliation: 2 Zhongguancun Institute of Artificial Intelligence , Beijing, China Affiliation: 4 IQuest Research , Beijing, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-11",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Locality-driven integration is a pervasive computational pattern in quantum chemistry, arising whenever spatially localized basis functions interact through numerical quadrature or integral screening. The dominant matrix multiplications in these tasks exhibit dynamic, structured sparsity driven by spatial locality, posing significant challenges for both dense batched kernels and generic sparse formats on GPUs. We present KerneLDI, a GPU-oriented framework that addresses this regime by co-designing data layout, screening logic, and matrix-computation operators to realize block-structured matrix multiplication for locality-driven integration. KerneLDI reorganizes operand matrices into a unified block-filtered representation that retains only spatially relevant blocks, and executes the resulting contractions with customized dense block multipliers that adapt proven dense-matmul optimizations to retained block pairs. We develop and evaluate KerneLDI on exchange--correlation (EXC) integration in Kohn--Sham density functional theory, a representative and computationally critical instance of this pattern. Across diverse molecular systems, KerneLDI preserves numerical accuracy while delivering up to 10$\\times$ speedup for EXC evaluation over a dense GPU baseline, scales favorably with increasing system size and multi-GPU parallelism, accelerates end-to-end self-consistent field calculations, and yields nearly 6$\\times$ throughput improvement for ab initio molecular dynamics.",
+    "identifiers": {
+      "arxiv": "2605.10363",
+      "doi": "10.48550/arXiv.2605.10363"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.10363"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.10363v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.10363"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.10363v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Xinran Wei 1 2 5 , Yan Pan 1 , Fusong Ju 5 1 6 , Zehao Zhou 5 , Yihong Zhang 5 , Lin Huang 4 , Jianwei Zhu 5 , Jia Zhang 4 , Huanhuan Xia 1 , Bin Shao 1 2 , Tao Qin 1 Affiliation: 1 Zhongguancun Academy , Beijing, China Affiliation: 2 Zhongguancun Institute of Artificial Intelligence , Beijing, China Affiliation: 4 IQuest Research , Beijing, China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.10363v1"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgci",
+        "matchedText": "Xinran Wei 1 2 5 , Yan Pan 1 , Fusong Ju 5 1 6 , Zehao Zhou 5 , Yihong Zhang 5 , Lin Huang 4 , Jianwei Zhu 5 , Jia Zhang 4 , Huanhuan Xia 1 , Bin Shao 1 2 , Tao Qin 1 Affiliation: 1 Zhongguancun Academy , Beijing, China Affiliation: 2 Zhongguancun Institute of Artificial Intelligence , Beijing, China Affiliation: 4 IQuest Research , Beijing, China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.10363v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2605-10363",
+    "updatedAt": "2026-08-22T02:17:52Z"
+  },
+  {
+    "type": "preprint",
     "title": "FLARE: Full-Modality Long-Video Audiovisual Retrieval Benchmark with User-Simulated Queries",
     "authors": [
       {
