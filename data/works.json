@@ -6683,6 +6683,73 @@
   },
   {
     "type": "article",
+    "title": "A Physical-Informed Super-Resolution Method for Electric Camera Inspired by Active Electric Sense",
+    "authors": [
+      {
+        "name": "Penghang Shuai"
+      },
+      {
+        "name": "Zhanhua Xin"
+      },
+      {
+        "name": "Xingyu Chen",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Shihan Kong"
+      },
+      {
+        "name": "Junzhi Yu"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Peking University",
+      "Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "IEEE Transactions on Industrial Electronics",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1109/tie.2026.3720710"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/tie.2026.3720710"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1109/tie.2026.3720710"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1109/tie.2026.3720710"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1109-tie-2026-3720710",
+    "updatedAt": "2026-08-25T01:59:30Z"
+  },
+  {
+    "type": "article",
     "title": "Hybrid-CMLP: Hybrid CNN-MLP Networks for Low-to-standard-dose PET Synthesis",
     "authors": [
       {
@@ -7176,6 +7243,292 @@
     ],
     "id": "doi-10-48550-arxiv-2512-20957",
     "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Bohrium + SciMaster: Building the Infrastructure and Ecosystem for Agentic Science at Scale",
+    "authors": [
+      {
+        "name": "Linfeng Zhang"
+      },
+      {
+        "name": "Siheng Chen"
+      },
+      {
+        "name": "Yuzhu Cai"
+      },
+      {
+        "name": "Jingyi Chai"
+      },
+      {
+        "name": "Junhan Chang"
+      },
+      {
+        "name": "Kun Chen"
+      },
+      {
+        "name": "Zhi X. Chen"
+      },
+      {
+        "name": "Zhaohan Ding"
+      },
+      {
+        "name": "Yuwen Du"
+      },
+      {
+        "name": "Yuanpeng Gao"
+      },
+      {
+        "name": "Yuan Gao"
+      },
+      {
+        "name": "Jing Gao"
+      },
+      {
+        "name": "Zhifeng Gao"
+      },
+      {
+        "name": "Qiangqiang Gu"
+      },
+      {
+        "name": "Yanhui Hong"
+      },
+      {
+        "name": "Yuan Huang"
+      },
+      {
+        "name": "Xi Fang"
+      },
+      {
+        "name": "Xiaohong Ji"
+      },
+      {
+        "name": "Guolin Ke"
+      },
+      {
+        "name": "Zixing Lei"
+      },
+      {
+        "name": "Xinyu Li"
+      },
+      {
+        "name": "Yongge Li"
+      },
+      {
+        "name": "Ruoxue Liao"
+      },
+      {
+        "name": "Hang Lin"
+      },
+      {
+        "name": "Xiaolu Lin"
+      },
+      {
+        "name": "Yuxiang Liu"
+      },
+      {
+        "name": "Xinzijian Liu"
+      },
+      {
+        "name": "Zexi Liu"
+      },
+      {
+        "name": "Jintan Lu"
+      },
+      {
+        "name": "Tingjia Miao"
+      },
+      {
+        "name": "Haohui Que"
+      },
+      {
+        "name": "Weijie Sun"
+      },
+      {
+        "name": "Yanfeng Wang"
+      },
+      {
+        "name": "Bingyang Wu"
+      },
+      {
+        "name": "Tianju Xue"
+      },
+      {
+        "name": "Rui Ye"
+      },
+      {
+        "name": "Jinzhe Zeng"
+      },
+      {
+        "name": "Duo Zhang"
+      },
+      {
+        "name": "Jiahui Zhang"
+      },
+      {
+        "name": "Linfeng Zhang"
+      },
+      {
+        "name": "Tianhan Zhang"
+      },
+      {
+        "name": "Wenchang Zhang"
+      },
+      {
+        "name": "Yuzhi Zhang"
+      },
+      {
+        "name": "Zezhong Zhang"
+      },
+      {
+        "name": "Hang Zheng"
+      },
+      {
+        "name": "Hui Zhou"
+      },
+      {
+        "name": "Tong Zhu"
+      },
+      {
+        "name": "Xinyu Zhu"
+      },
+      {
+        "name": "Qingguo Zhou"
+      },
+      {
+        "name": "Weinan E"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Jing Gao Affiliation: DP Technology, Beijing, China Affiliation: Shanghai Jiao Tong University, Shanghai, China Affiliation: Zhongguancun Academy, Beijing, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2025-12-01",
+    "year": 2025,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.AI"
+    ],
+    "abstract": "AI agents are emerging as a practical way to run multi-step scientific workflows that interleave reasoning with tool use and verification, pointing to a shift from isolated AI-assisted steps toward \\emph{agentic science at scale}. This shift is increasingly feasible, as scientific tools and models can be invoked through stable interfaces and verified with recorded execution traces, and increasingly necessary, as AI accelerates scientific output and stresses the peer-review and publication pipeline, raising the bar for traceability and credible evaluation. However, scaling agentic science remains difficult: workflows are hard to observe and reproduce; many tools and laboratory systems are not agent-ready; execution is hard to trace and govern; and prototype AI Scientist systems are often bespoke, limiting reuse and systematic improvement from real workflow signals. We argue that scaling agentic science requires an infrastructure-and-ecosystem approach, instantiated in Bohrium+SciMaster. Bohrium acts as a managed, traceable hub for AI4S assets -- akin to a HuggingFace of AI for Science -- that turns diverse scientific data, software, compute, and laboratory systems into agent-ready capabilities. SciMaster orchestrates these capabilities into long-horizon scientific workflows, on which scientific agents can be composed and executed. Between infrastructure and orchestration, a \\emph{scientific intelligence substrate} organizes reusable models, knowledge, and components into executable building blocks for workflow reasoning and action, enabling composition, auditability, and improvement through use. We demonstrate this stack with eleven representative master agents in real workflows, achieving orders-of-magnitude reductions in end-to-end scientific cycle time and generating execution-grounded signals from real workloads at multi-million scale.",
+    "identifiers": {
+      "arxiv": "2512.20469",
+      "doi": "10.48550/arXiv.2512.20469"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2512.20469"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2512.20469v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2512.20469"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2512.20469v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Jing Gao Affiliation: DP Technology, Beijing, China Affiliation: Shanghai Jiao Tong University, Shanghai, China Affiliation: Zhongguancun Academy, Beijing, China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2512.20469v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2512-20469",
+    "updatedAt": "2026-08-25T02:44:34Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Degradation-Aware Metric Prompting for Hyperspectral Image Restoration",
+    "authors": [
+      {
+        "name": "Binfeng Wang"
+      },
+      {
+        "name": "Di Wang"
+      },
+      {
+        "name": "Haonan Guo"
+      },
+      {
+        "name": "Ying Fu"
+      },
+      {
+        "name": "Jing Zhang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Binfeng Wang Affiliation: Beijing Institute of Technology Affiliation: Zhongguancun Academy wbf_bit@163.com; {d_wang,haonan.guo}@whu.edu.cn; fuying@bit.edu.cn; jingzhang.cv@gmail.com"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2025-12-01",
+    "year": 2025,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.CV",
+      "eess.IV"
+    ],
+    "abstract": "Unified hyperspectral image (HSI) restoration aims to recover diverse degradations within a single model. However, current methods often rely on impractical explicit priors or opaque black-box representations that overfit to training distributions, hampering generalization to unseen scenarios. To bridge this gap, we propose Degradation-Aware Metric Prompting (DAMP), a novel framework that characterizes multi-dimensional degradations through interpretable spatial-spectral metrics. These metrics serve as Degradation Prompts (DP), enabling the model to capture shared characteristics across tasks and adapt to unknown corruptions. Central to our framework is the Degradation-Adaptive Mixture-of-Experts (DAMoE), where Spatial-Spectral Adaptive Modules (SSAMs) serve as experts that utilize learnable fusion coefficients to specialize in distinct degradation degrees. By using DP as a gating router, DAMoE dynamically activates specialized experts tailored to the specific degradation profile. Extensive experiments on natural and remote sensing HSI datasets demonstrate that DAMP achieves state-of-the-art performance and exhibits exceptional zero-shot generalization on unseen restoration tasks. Code is publicly available at \\href{DAMP}{https://github.com/MiliLab/DAMP}.",
+    "identifiers": {
+      "arxiv": "2512.20251",
+      "doi": "10.48550/arXiv.2512.20251"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2512.20251"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2512.20251v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2512.20251"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2512.20251v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Binfeng Wang Affiliation: Beijing Institute of Technology Affiliation: Zhongguancun Academy wbf_bit@163.com; {d_wang,haonan.guo}@whu.edu.cn; fuying@bit.edu.cn; jingzhang.cv@gmail.com",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2512.20251v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2512-20251",
+    "updatedAt": "2026-08-25T02:44:34Z"
   },
   {
     "type": "preprint",
@@ -8065,12 +8418,16 @@
       "zgca"
     ],
     "rawAffiliations": [
-      "1 Zhejiang University, 2 Zhongguancun Academy, Beijing, 3 Xi'an Jiaotong University, 4 Beijing Normal University"
+      "1 Zhejiang University, 2 Zhongguancun Academy, Beijing, 3 Xi'an Jiaotong University, 4 Beijing Normal University",
+      "Zhejiang University, Hangzhou, Zhejiang, China and Zhongguancun Academy, Beijing, China",
+      "Xi'an Jiaotong University, Xi'an, Shaanxi, China and Zhongguancun Academy, Beijing, China",
+      "Zhejiang University, Hangzhou, Zhejiang, China",
+      "Beijing Normal University, Beijing, China"
     ],
     "relationType": "affiliation",
     "publishedAt": "2025-04-17",
     "year": 2025,
-    "venue": "ACM MM 2025",
+    "venue": "Proceedings of the 33rd ACM International Conference on Multimedia",
     "status": "published",
     "topics": [
       "cs.CV"
@@ -8096,12 +8453,24 @@
       {
         "label": "Dataset",
         "url": "https://huggingface.co/datasets/Longxiang-ai/TransLab"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1145/3746027.3754548"
       }
     ],
     "versions": [
       {
         "label": "arXiv v1",
         "url": "https://arxiv.org/abs/2504.12799v1"
+      },
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1145/3746027.3754548"
+      },
+      {
+        "label": "DOI 10.1145/3746027.3754548",
+        "url": "https://doi.org/10.1145/3746027.3754548"
       }
     ],
     "evidence": [
@@ -8111,11 +8480,19 @@
         "matchedText": "1 Zhejiang University, 2 Zhongguancun Academy, Beijing, 3 Xi'an Jiaotong University, 4 Beijing Normal University",
         "source": "Official GitHub project README",
         "sourceUrl": "https://github.com/longxiang-ai/TSGS"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhejiang University, Hangzhou, Zhejiang, China and Zhongguancun Academy, Beijing, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1145/3746027.3754548"
       }
     ],
     "sources": [
       "arXiv",
-      "Official GitHub project README"
+      "Official GitHub project README",
+      "Crossref"
     ],
     "id": "doi-10-48550-arxiv-2504-12799",
     "updatedAt": "2026-08-08T12:09:53Z"
