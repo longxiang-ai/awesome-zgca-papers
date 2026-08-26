@@ -4291,7 +4291,8 @@
       "zgca"
     ],
     "rawAffiliations": [
-      "Department of Electronic Engineering, BNRist, Tsinghua University; Zhongguancun Academy, Beijing, China"
+      "Department of Electronic Engineering, BNRist, Tsinghua University; Zhongguancun Academy, Beijing, China",
+      "Fengli Xu 1 1 footnotemark: 1 Affiliation: Department of Electronic Engineering, BNRist, Tsinghua University Affiliation: Zhongguancun Academy, Beijing, China Email: ˜˜ fenglixu@tsinghua.edu.cn"
     ],
     "relationType": "affiliation",
     "publishedAt": "2026-01-07",
@@ -4302,9 +4303,11 @@
       "AI Agents",
       "Scientific Retrieval",
       "Knowledge Networks",
-      "Benchmark"
+      "Benchmark",
+      "cs.CE",
+      "cs.CL"
     ],
-    "abstract": "SciNet is a relation-aware benchmark for scientific literature retrieval agents. Built on a meta-database spanning 269 million papers and seven disciplines, it tests ego-centric retrieval, pairwise scholarly relationships and path-wise reconstruction of scientific evolution.",
+    "abstract": "AI agents have seen widespread adoption in information retrieval for scientific research, giving rise to tools such as Deep Research. However, existing retrieval agents mainly rely on keyword- or embedding-based methods. While effective at capturing content-level similarities, they struggle to understand complex relational networks among scientific papers, such as identifying corroborating or conflicting studies and tracing technological lineages. This fundamental limitation often results in fragmented knowledge structures, misinterpreted research sentiment, and ineffective modeling of collective scientific progress. To address this limitation, we introduce SciNet, the first Scientific Network relation-aware dataset for information retrieval agents. Built on a meta-database of 269 million papers across 7 disciplines and containing 8,940 carefully designed tasks, SciNet systematically captures three levels of relational understanding: ego-centric retrieval of papers with novel knowledge structures, pairwise identification of scholarly relationships, and path-wise reconstruction of scientific evolution. Extensive evaluation of three categories of retrieval agents shows that their accuracy on relation-aware tasks often falls below 20%, highlighting a fundamental shortcoming of current retrieval paradigms. Importantly, in a downstream literature review application, agents empowered with SciNet achieve a 25.3% improvement in review quality, highlighting the critical value of relation-aware retrieval for deepening scientific insights. We publicly release SciNet at https://github.com/tsinghua-fib-lab/SciNet to support future research.",
     "identifiers": {
       "arxiv": "2601.03260",
       "doi": "10.48550/arXiv.2601.03260"
@@ -4321,12 +4324,20 @@
       {
         "label": "Code",
         "url": "https://github.com/tsinghua-fib-lab/SciNet"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2601.03260v1"
       }
     ],
     "versions": [
       {
         "label": "arXiv v2",
         "url": "https://arxiv.org/abs/2601.03260v2"
+      },
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2601.03260v1"
       }
     ],
     "evidence": [
@@ -4336,11 +4347,19 @@
         "matchedText": "Zhongguancun Academy, Beijing, China",
         "source": "arXiv PDF",
         "sourceUrl": "https://arxiv.org/pdf/2601.03260"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Fengli Xu 1 1 footnotemark: 1 Affiliation: Department of Electronic Engineering, BNRist, Tsinghua University Affiliation: Zhongguancun Academy, Beijing, China Email: ˜˜ fenglixu@tsinghua.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2601.03260v1"
       }
     ],
     "sources": [
       "arXiv",
-      "Official PDF"
+      "Official PDF",
+      "arXiv HTML"
     ],
     "updatedAt": "2026-08-08T00:00:00Z"
   },
@@ -5002,6 +5021,86 @@
     ],
     "id": "doi-10-64898-2026-01-03-697483",
     "updatedAt": "2026-08-08T11:35:31Z"
+  },
+  {
+    "type": "dataset",
+    "title": "ProtChord: Model Checkpoint, Processed Data, and Evaluation Results",
+    "authors": [
+      {
+        "name": "Zhang, Wei"
+      },
+      {
+        "name": "Guo, Zekun"
+      },
+      {
+        "name": "Xia, Yingce"
+      },
+      {
+        "name": "Jin, Peiran"
+      },
+      {
+        "name": "Xie, Shufang"
+      },
+      {
+        "name": "Liu, Zequn"
+      },
+      {
+        "name": "Li, Xiang-Yang"
+      },
+      {
+        "name": "Qin, Tao"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "University of Science and Technology of China",
+      "Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Zenodo",
+    "status": "released",
+    "topics": [],
+    "abstract": "Research artifacts accompanying the paper\"ProtChord: Structure-Sequence Alignment for Protein-Centered Discovery\". This record contains the released ProtChord-RL model checkpoint,processed CrossDocked2020 data used for supervised fine-tuning,preference optimization, and evaluation, and raw molecular-generationoutputs used in the experiments. Source code, inference scripts, evaluation scripts, and configurationfiles are available at:https://github.com/weizhang-ustc/ProtChord",
+    "identifiers": {
+      "doi": "10.5281/zenodo.22093629"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://zenodo.org/doi/10.5281/zenodo.22093629"
+      }
+    ],
+    "versions": [
+      {
+        "label": "DOI 10.5281/zenodo.22093628",
+        "url": "https://doi.org/10.5281/zenodo.22093628"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy",
+        "source": "DataCite",
+        "sourceUrl": "https://zenodo.org/doi/10.5281/zenodo.22093629"
+      },
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy",
+        "source": "DataCite",
+        "sourceUrl": "https://zenodo.org/doi/10.5281/zenodo.22093628"
+      }
+    ],
+    "sources": [
+      "DataCite"
+    ],
+    "id": "doi-10-5281-zenodo-22093629",
+    "updatedAt": "2026-08-26T02:10:03Z"
   },
   {
     "type": "preprint",
@@ -5794,6 +5893,259 @@
     ],
     "id": "doi-10-48550-arxiv-2601-16403",
     "updatedAt": "2026-08-08T11:35:31Z"
+  },
+  {
+    "type": "preprint",
+    "title": "STAGE: A Full-Screenplay Benchmark for Reasoning over Evolving Stories",
+    "authors": [
+      {
+        "name": "Qiuyu Tian"
+      },
+      {
+        "name": "Yiding Li"
+      },
+      {
+        "name": "Yingce Xia"
+      },
+      {
+        "name": "Fengyi Chen"
+      },
+      {
+        "name": "Youyong Kong"
+      },
+      {
+        "name": "Fan Guo"
+      },
+      {
+        "name": "Yuyao Li"
+      },
+      {
+        "name": "Jinjing Shen"
+      },
+      {
+        "name": "Zhijing Xie"
+      },
+      {
+        "name": "Yiyun Luo"
+      },
+      {
+        "name": "Xin Zhang"
+      },
+      {
+        "name": "Zequn Liu"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Qiuyu Tian Yiding Li Fengyi Chen Zequn Liu Youyong Kong Fan Guo Yuyao Li Jinjing Shen Zhijing Xie Yiyun Luo Xin Zhang Southeast University, Nanjing, China Beijing Zhongguancun Academy, Beijing, China Nanjing Normal University, Nanjing, China ZhuiWen Technology Co., Ltd., Beijing, China qiuyutian@seu.edu.cn, liyiding@zhuiwen.net, fxc1494@g.rit.edu, liuzequn@bjzgca.edu.cn, kongyouyong@seu.edu.cn, guofan@zhuiwen.net, yuyaoli@zhuiwen.net, shenjinjing@zhuiwen.net, xiezhijing@zhuiwen.net, luoyiyun@zhuiwen.net, xinzhang@zhuiwen.net"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "abstract": "Movie screenplays are a demanding testbed for long-form narrative understanding, as characters' goals, beliefs, knowledge, and relationships evolve continuously across scenes. However, existing benchmarks primarily evaluate isolated facts from the completed screenplay, leaving unassessed whether models can track the evolving state of characters as the story unfolds. We introduce STAGE, a benchmark over 151 English and Chinese full-length screenplays, built on a provenance-linked narrative backbone that recovers the state and epistemic access of each character at every point along its timeline. Three tasks derived from the backbone jointly probe whether models can maintain, explain, and act on evolving narrative state: Character Development Tracking updates a focal character's state between checkpoints, Cross-Scene Narrative Evolution Reasoning targets cross-scene state transitions, and In-Script Character Role-Playing requires responses bounded by the character's state and knowledge at a specified point. We identify three failure modes of current LLMs: silent forgetting under recursive state updating, limited cross-scene reasoning even when all relevant evidence is supplied, and a trade-off in role-playing where stylistic character fidelity and screenplay-grounded memory faithfulness are optimized by different memory-access strategies. STAGE thus provides a unified framework for diagnosing how current models fail to track, reason about, and enact story evolution.",
+    "identifiers": {
+      "arxiv": "2601.08510",
+      "doi": "10.48550/arXiv.2601.08510"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2601.08510"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2601.08510v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2601.08510"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2601.08510v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Qiuyu Tian Yiding Li Fengyi Chen Zequn Liu Youyong Kong Fan Guo Yuyao Li Jinjing Shen Zhijing Xie Yiyun Luo Xin Zhang Southeast University, Nanjing, China Beijing Zhongguancun Academy, Beijing, China Nanjing Normal University, Nanjing, China ZhuiWen Technology Co., Ltd., Beijing, China qiuyutian@seu.edu.cn, liyiding@zhuiwen.net, fxc1494@g.rit.edu, liuzequn@bjzgca.edu.cn, kongyouyong@seu.edu.cn, guofan@zhuiwen.net, yuyaoli@zhuiwen.net, shenjinjing@zhuiwen.net, xiezhijing@zhuiwen.net, luoyiyun@zhuiwen.net, xinzhang@zhuiwen.net",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2601.08510v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2601-08510",
+    "updatedAt": "2026-08-26T02:54:30Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Controlling Multimodal Conversational Agents with Coverage-Enhanced Latent Actions",
+    "authors": [
+      {
+        "name": "Yongqi Li"
+      },
+      {
+        "name": "Hao Lang"
+      },
+      {
+        "name": "Tieyun Qian"
+      },
+      {
+        "name": "Yongbin Li"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Tieyun Qian Affiliation: School of Computer Science, Wuhan University Affiliation: Zhongguancun Academy {liyongqi,qty}@whu.edu.cn , {hao.lang,shuide.lyb}@alibaba-inc.com"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "abstract": "Vision-language models are increasingly employed as multimodal conversational agents (MCAs) for diverse conversational tasks. Recently, reinforcement learning (RL) has been widely explored for adapting MCAs to various human-AI interaction scenarios. Despite showing great enhancement in generalization performance, fine-tuning MCAs via RL still faces challenges in handling the extremely large text token space. To address this, we learn a compact latent action space for RL fine-tuning instead. Specifically, we adopt the learning from observation mechanism to construct the codebook for the latent action space, where future observations are leveraged to estimate current latent actions that could further be used to reconstruct future observations. However, the scarcity of paired image-text data hinders learning a codebook with sufficient coverage. Thus, we leverage both paired image-text data and text-only data to construct the latent action space, using a cross-modal projector for transforming text embeddings into image-text embeddings. We initialize the cross-modal projector on paired image-text data, and further train it on massive text-only data with a novel cycle consistency loss to enhance its robustness. We show that our latent action based method outperforms competitive baselines on two conversation tasks across various RL algorithms.",
+    "identifiers": {
+      "arxiv": "2601.07516",
+      "doi": "10.48550/arXiv.2601.07516"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2601.07516"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2601.07516v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2601.07516"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2601.07516v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Tieyun Qian Affiliation: School of Computer Science, Wuhan University Affiliation: Zhongguancun Academy {liyongqi,qty}@whu.edu.cn , {hao.lang,shuide.lyb}@alibaba-inc.com",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2601.07516v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2601-07516",
+    "updatedAt": "2026-08-26T02:54:30Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Controllable LLM Reasoning via Sparse Autoencoder-Based Steering",
+    "authors": [
+      {
+        "name": "Yi Fang"
+      },
+      {
+        "name": "Wenjie Wang"
+      },
+      {
+        "name": "Mingfeng Xue"
+      },
+      {
+        "name": "Boyi Deng"
+      },
+      {
+        "name": "Fengli Xu"
+      },
+      {
+        "name": "Dayiheng Liu"
+      },
+      {
+        "name": "Fuli Feng"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Yi Fang † † thanks: Work done when Yi Fang and Boyi Deng were interns at Alibaba Group. Affiliation: University of Science and Technology of China Affiliation: Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "abstract": "Large Reasoning Models (LRMs) exhibit human-like cognitive reasoning strategies (\\eg backtracking, cross-verification) during the reasoning process, which improves their performance on complex tasks. Currently, reasoning strategies are autonomously selected by LRMs themselves. However, such autonomous selection often produces inefficient or even erroneous reasoning paths. To make reasoning more reliable and flexible, it is important to develop methods for controlling reasoning strategies. Existing methods struggle to control fine-grained reasoning strategies due to conceptual entanglement in LRMs' hidden states. To address this, we leverage Sparse Autoencoders (SAEs) to decompose strategy-entangled hidden states into a disentangled feature space. To identify the few strategy-specific features from the vast pool of SAE features, we propose SAE-Steering, an efficient two-stage feature identification pipeline. SAE-Steering first recalls features that amplify the logits of strategy-specific keywords, filtering out over 99\\% of features, and then ranks the remaining features by their control effectiveness. Using the identified strategy-specific features as control vectors, SAE-Steering outperforms existing methods by over 15\\% in control effectiveness. Furthermore, controlling reasoning strategies can redirect LRMs from erroneous paths to correct ones, achieving a 7\\% absolute accuracy improvement. Our code and data are available at https://github.com/Peter-Fy/SAE-Steering.",
+    "identifiers": {
+      "arxiv": "2601.03595",
+      "doi": "10.48550/arXiv.2601.03595"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2601.03595"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2601.03595v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2601.03595"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2601.03595v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Yi Fang † † thanks: Work done when Yi Fang and Boyi Deng were interns at Alibaba Group. Affiliation: University of Science and Technology of China Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2601.03595v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2601-03595",
+    "updatedAt": "2026-08-26T02:54:30Z"
   },
   {
     "type": "preprint",
