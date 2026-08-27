@@ -5064,7 +5064,7 @@
     "venue": "Zenodo",
     "status": "released",
     "topics": [],
-    "abstract": "Research artifacts accompanying the paper\"ProtChord: Structure-Sequence Alignment for Protein-Centered Discovery\". This record contains the released ProtChord-RL model checkpoint,processed CrossDocked2020 data used for supervised fine-tuning,preference optimization, and evaluation, and raw molecular-generationoutputs used in the experiments. Source code, inference scripts, evaluation scripts, and configurationfiles are available at:https://github.com/weizhang-ustc/ProtChord",
+    "abstract": "Research artifacts accompanying the paper\"ProtChord: Structure-Sequence Alignment for Protein-Centered Discovery\". This record contains the released ProtChord-RL model checkpoint, processed CrossDocked2020 data used for supervised fine-tuning, preference optimization, and evaluation, and raw molecular-generation outputs used in the experiments. Source code, inference scripts, evaluation scripts, and configuration files are available at:https://github.com/weizhang-ustc/ProtChord",
     "identifiers": {
       "doi": "10.5281/zenodo.22093629"
     },
@@ -5893,6 +5893,72 @@
     ],
     "id": "doi-10-48550-arxiv-2601-16403",
     "updatedAt": "2026-08-08T11:35:31Z"
+  },
+  {
+    "type": "preprint",
+    "title": "AI for Mathematics: Progress, Challenges, and Prospects",
+    "authors": [
+      {
+        "name": "Haocheng Ju"
+      },
+      {
+        "name": "Bin Dong"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Bin Dong Address: School of Mathematical Sciences, Peking University, Beijing 100871, China Address: Beijing International Center for Mathematical Research and the New Cornerstone Science Laboratory, Peking University, Beijing 100871, China Address: Center for Machine Learning Research, Peking University, Beijing 100871, China Address: Center for Intelligent Computing, Great Bay Institute for Advanced Study, Great Bay University, Dongguan 523000, China Address: Zhongguancun Academy, Beijing 100094, China Abstract AI for Mathematics (AI4Math) has emerged as a distinct field that leverages machine learning to navigate mathematical landscapes historically intractable for early symbolic systems. While mid-20th-century symbolic approaches successfully automated formal logic, they faced severe scalability limitations due to the combinatorial explosion of the search space. The recent integratio"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "math.HO"
+    ],
+    "abstract": "AI for Mathematics (AI4Math) has emerged as a distinct field that leverages machine learning to navigate mathematical landscapes historically intractable for early symbolic systems. While mid-20th-century symbolic approaches successfully automated formal logic, they faced severe scalability limitations due to the combinatorial explosion of the search space. The recent integration of data-driven approaches has revitalized this pursuit. In this review, we provide a systematic overview of AI4Math, highlighting its primary focus on developing AI models to support mathematical research. Crucially, we emphasize that this is not merely the application of AI to mathematical activities; it also encompasses the development of stronger AI systems where the rigorous nature of mathematics serves as a premier testbed for advancing general reasoning capabilities. We categorize existing research into two complementary directions: problem-specific modeling, involving the design of specialized architectures for distinct mathematical tasks, and general-purpose modeling, focusing on foundation models capable of broader reasoning, retrieval, and exploratory workflows. We conclude by discussing key challenges and prospects, advocating for AI systems that go beyond facilitating formal correctness to enabling the discovery of meaningful results and unified theories, recognizing that the true value of a proof lies in the insights and tools it offers to the broader mathematical landscape.",
+    "identifiers": {
+      "arxiv": "2601.13209",
+      "doi": "10.48550/arXiv.2601.13209"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2601.13209"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2601.13209v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2601.13209"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2601.13209v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Bin Dong Address: School of Mathematical Sciences, Peking University, Beijing 100871, China Address: Beijing International Center for Mathematical Research and the New Cornerstone Science Laboratory, Peking University, Beijing 100871, China Address: Center for Machine Learning Research, Peking University, Beijing 100871, China Address: Center for Intelligent Computing, Great Bay Institute for Advanced Study, Great Bay University, Dongguan 523000, China Address: Zhongguancun Academy, Beijing 100094, China Abstract AI for Mathematics (AI4Math) has emerged as a distinct field that leverages machine learning to navigate mathematical landscapes historically intractable for early symbolic systems. While mid-20th-century symbolic approaches successfully automated formal logic, they faced severe scalability limitations due to the combinatorial explosion of the search space. The recent integratio",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2601.13209v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2601-13209",
+    "updatedAt": "2026-08-27T10:50:02Z"
   },
   {
     "type": "preprint",
