@@ -4117,6 +4117,85 @@
     "updatedAt": "2026-08-08T11:59:38Z"
   },
   {
+    "type": "preprint",
+    "title": "RC-GRPO: Reward-Conditioned Group Relative Policy Optimization for Multi-Turn Tool Calling Agents",
+    "authors": [
+      {
+        "name": "Haitian Zhong"
+      },
+      {
+        "name": "Jixiu Zhai"
+      },
+      {
+        "name": "Lei Song"
+      },
+      {
+        "name": "Jiang Bian"
+      },
+      {
+        "name": "Qiang Liu"
+      },
+      {
+        "name": "Tieniu Tan"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Haitian Zhong Affiliation: New Laboratory of Pattern Recognition (NLPR), State Key Laboratory of Multimodal Artificial Intelligence Systems (MAIS), Institute of Automation, Chinese Academy of Sciences Affiliation: Microsoft Research Affiliation: Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-02-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "abstract": "Multi-turn tool calling is challenging for Large Language Models (LLMs) because rewards are sparse and exploration is expensive. A common recipe, SFT followed by GRPO, can stall when within-group reward variation is low (e.g., more rollouts in a group receive the all 0 or all 1 reward), making the group-normalized advantage uninformative and yielding vanishing updates. To address this problem, we propose RC-GRPO (Reward-Conditioned Group Relative Policy Optimization), which treats exploration as a controllable steering problem via discrete reward tokens. We first fine-tune a Reward-Conditioned Trajectory Policy (RCTP) on mixed-quality trajectories with reward goal special tokens (e.g., , ) injected into the prompts, enabling the model to learn how to generate distinct quality trajectories on demand. Then during RL, we sample diverse reward tokens within each GRPO group and condition rollouts on the sampled token to improve within-group diversity, improving advantage gains. On the Berkeley Function Calling Leaderboard v4 (BFCLv4) multi-turn benchmark, our method yields consistently improved performance than baselines, and the performance on Qwen-2.5-7B-Instruct even surpasses all closed-source API models.",
+    "identifiers": {
+      "arxiv": "2602.03025",
+      "doi": "10.48550/arXiv.2602.03025"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2602.03025"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2602.03025v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2602.03025"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2602.03025v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Haitian Zhong Affiliation: New Laboratory of Pattern Recognition (NLPR), State Key Laboratory of Multimodal Artificial Intelligence Systems (MAIS), Institute of Automation, Chinese Academy of Sciences Affiliation: Microsoft Research Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2602.03025v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2602-03025",
+    "updatedAt": "2026-08-29T07:58:11Z"
+  },
+  {
     "type": "dataset",
     "title": "TransNormal-Synthetic",
     "authors": [
@@ -5021,6 +5100,74 @@
     ],
     "id": "doi-10-64898-2026-01-03-697483",
     "updatedAt": "2026-08-08T11:35:31Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Dynamic Graph Prior-Guided Latent Adaptation for Generalizable Single-Cell Perturbation Response Prediction",
+    "authors": [
+      {
+        "name": "Bie, Yunlong"
+      },
+      {
+        "name": "Fan, Peishan"
+      },
+      {
+        "name": "Yin, Qijin"
+      },
+      {
+        "name": "Xiao, Li"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Beijing University of Posts and Telecommunications",
+      "Beijing Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Zenodo",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "DGP-LA is a dynamic graph prior-guided latent adaptation framework for generalizable single-cell drug perturbation response prediction. It combines a cell-state-conditioned transition model with perturbation-specific refinement of drug-target interaction and protein-protein interaction priors, topology-aware propagation, and support-aware latent adaptation. This software archive contains the DGP-LA implementation, final configurations, preprocessing and prior-construction utilities, split specifications, inference and evaluation code, and tests supporting the associated manuscript.",
+    "identifiers": {
+      "doi": "10.5281/zenodo.22155397"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://zenodo.org/doi/10.5281/zenodo.22155397"
+      }
+    ],
+    "versions": [
+      {
+        "label": "DOI 10.5281/zenodo.22155398",
+        "url": "https://doi.org/10.5281/zenodo.22155398"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "Beijing Zhongguancun Academy",
+        "source": "DataCite",
+        "sourceUrl": "https://zenodo.org/doi/10.5281/zenodo.22155397"
+      },
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "Beijing Zhongguancun Academy",
+        "source": "DataCite",
+        "sourceUrl": "https://zenodo.org/doi/10.5281/zenodo.22155398"
+      }
+    ],
+    "sources": [
+      "DataCite"
+    ],
+    "id": "doi-10-5281-zenodo-22155397",
+    "updatedAt": "2026-08-29T07:14:00Z"
   },
   {
     "type": "dataset",
