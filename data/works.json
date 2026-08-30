@@ -4118,6 +4118,168 @@
   },
   {
     "type": "preprint",
+    "title": "AgenticRAGTracer: A Hop-Aware Benchmark for Diagnosing Multi-Step Retrieval Reasoning in Agentic RAG",
+    "authors": [
+      {
+        "name": "Qijie You"
+      },
+      {
+        "name": "Wenkai Yu"
+      },
+      {
+        "name": "Wentao Zhang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Wentao Zhang Affiliation: Peking University Affiliation: Zhongguancun Academy Affiliation: Beijing Key Laboratory of Data Intelligence and Security (Peking University) u202342615@xs.ustb.edu.cn, { ywk, wentao.zhang } @pku.edu.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-02-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.CL"
+    ],
+    "abstract": "With the rapid advancement of agent-based methods in recent years, Agentic RAG has undoubtedly become an important research direction. Multi-hop reasoning, which requires models to engage in deliberate thinking and multi-step interaction, serves as a critical testbed for assessing such capabilities. However, existing benchmarks typically provide only final questions and answers, while lacking the intermediate hop-level questions that gradually connect atomic questions to the final multi-hop query. This limitation prevents researchers from analyzing at which step an agent fails and restricts more fine-grained evaluation of model capabilities. Moreover, most current benchmarks are manually constructed, which is both time-consuming and labor-intensive, while also limiting scalability and generalization. To address these challenges, we introduce AgenticRAGTracer, the first Agentic RAG benchmark that is primarily constructed automatically by large language models and designed to support step-by-step validation. Our benchmark spans multiple domains, contains 1,305 data points, and has no overlap with existing mainstream benchmarks. Extensive experiments demonstrate that even the best large language models perform poorly on our dataset. For instance, GPT-5 attains merely 22.6\\% EM accuracy on the hardest portion of our dataset. Hop-aware diagnosis reveals that failures are primarily driven by distorted reasoning chains -- either collapsing prematurely or wandering into over-extension. This highlights a critical inability to allocate steps consistent with the task's logical structure, providing a diagnostic dimension missing in traditional evaluations. We believe our work will facilitate research in Agentic RAG and inspire further meaningful progress in this area. Our code and data are available at https://github.com/YqjMartin/AgenticRAGTracer.",
+    "identifiers": {
+      "arxiv": "2602.19127",
+      "doi": "10.48550/arXiv.2602.19127"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2602.19127"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2602.19127v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2602.19127"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2602.19127v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Wentao Zhang Affiliation: Peking University Affiliation: Zhongguancun Academy Affiliation: Beijing Key Laboratory of Data Intelligence and Security (Peking University) u202342615@xs.ustb.edu.cn, { ywk, wentao.zhang } @pku.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2602.19127v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2602-19127",
+    "updatedAt": "2026-08-30T06:21:20Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Beyond Imitation: Reinforcement Learning-Based Sim-Real Co-Training for VLA Models",
+    "authors": [
+      {
+        "name": "Liangzhi Shi"
+      },
+      {
+        "name": "Shuaihang Chen"
+      },
+      {
+        "name": "Feng Gao"
+      },
+      {
+        "name": "Yinuo Chen"
+      },
+      {
+        "name": "Kang Chen"
+      },
+      {
+        "name": "Tonghe Zhang"
+      },
+      {
+        "name": "Hongzhi Zang"
+      },
+      {
+        "name": "Jiakai Zhou"
+      },
+      {
+        "name": "Weinan Zhang"
+      },
+      {
+        "name": "Chao Yu"
+      },
+      {
+        "name": "Yu Wang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Shuaihang Chen Affiliation: Tsinghua University Affiliation: Harbin Institute of Technology Affiliation: Zhongguancun Academy Equal contribution. Project Leader. Corresponding Authors: yuchao@sz.tsinghua.edu.cn , yu-wang@mail.tsinghua.edu.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-02-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.RO"
+    ],
+    "abstract": "Simulation offers a scalable and low-cost way to enrich vision-language-action (VLA) training, reducing reliance on expensive real-robot demonstrations. However, most sim-real co-training methods rely on supervised fine-tuning (SFT), which treats simulation as a static source of demonstrations and does not exploit large-scale closed-loop interaction. Consequently, real-world gains and generalization are often limited. In this paper, we propose an RL-based sim-real Co-training (RL-Co) framework that leverages interactive simulation while preserving real-world capabilities. Our method follows a generic two-stage design: we first warm-start the policy with SFT on a mixture of real and simulated demonstrations, then fine-tune it with reinforcement learning in simulation while adding an auxiliary supervised loss on real-world data to anchor the policy and mitigate catastrophic forgetting. We evaluate our framework on four real-world tabletop manipulation tasks using two representative VLA architectures, OpenVLA and $π_{0.5}$, and observe consistent improvements over real-only fine-tuning and SFT-based co-training, including +24% real-world success on OpenVLA and +20% on $π_{0.5}$. Beyond higher success rates, RL co-training yields stronger generalization to unseen task variations and substantially improved real-world data efficiency, providing a practical and scalable pathway for leveraging simulation to enhance real-robot deployment.",
+    "identifiers": {
+      "arxiv": "2602.12628",
+      "doi": "10.48550/arXiv.2602.12628"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2602.12628"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2602.12628v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2602.12628"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2602.12628v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Shuaihang Chen Affiliation: Tsinghua University Affiliation: Harbin Institute of Technology Affiliation: Zhongguancun Academy Equal contribution. Project Leader. Corresponding Authors: yuchao@sz.tsinghua.edu.cn , yu-wang@mail.tsinghua.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2602.12628v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2602-12628",
+    "updatedAt": "2026-08-30T06:21:20Z"
+  },
+  {
+    "type": "preprint",
     "title": "RC-GRPO: Reward-Conditioned Group Relative Policy Optimization for Multi-Turn Tool Calling Agents",
     "authors": [
       {
