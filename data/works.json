@@ -4118,6 +4118,90 @@
   },
   {
     "type": "preprint",
+    "title": "Test-Time Computing for Referring Multimodal Large Language Models",
+    "authors": [
+      {
+        "name": "Mingrui Wu"
+      },
+      {
+        "name": "Hao Chen"
+      },
+      {
+        "name": "Jiayi Ji"
+      },
+      {
+        "name": "Xiaoshuai Sun"
+      },
+      {
+        "name": "Zhiyuan Liu"
+      },
+      {
+        "name": "Liujuan Cao"
+      },
+      {
+        "name": "Ming-Ming Cheng"
+      },
+      {
+        "name": "Rongrong Ji"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Mingrui Wu Affiliation: Key Laboratory of Multimedia Trusted Perception and Efficient Computing, Ministry of Education of China, Xiamen University, 361005, P.R. China Affiliation: Zhongguancun Academy, Beijing, China.100094"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-02-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.CV"
+    ],
+    "abstract": "We propose ControlMLLM++, a novel test-time adaptation framework that injects learnable visual prompts into frozen multimodal large language models (MLLMs) to enable fine-grained region-based visual reasoning without any model retraining or fine-tuning. Leveraging the insight that cross-modal attention maps intrinsically encode semantic correspondences between textual tokens and visual regions, ControlMLLM++ optimizes a latent visual token modifier during inference via a task-specific energy function to steer model attention towards user-specified areas. To enhance optimization stability and mitigate language prompt biases, ControlMLLM++ incorporates an improved optimization strategy (Optim++) and a prompt debiasing mechanism (PromptDebias). Supporting diverse visual prompt types including bounding boxes, masks, scribbles, and points, our method demonstrates strong out-of-domain generalization and interpretability. The code is available at https://github.com/mrwu-mac/ControlMLLM.",
+    "identifiers": {
+      "arxiv": "2602.19505",
+      "doi": "10.48550/arXiv.2602.19505"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2602.19505"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2602.19505v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2602.19505"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2602.19505v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Mingrui Wu Affiliation: Key Laboratory of Multimedia Trusted Perception and Efficient Computing, Ministry of Education of China, Xiamen University, 361005, P.R. China Affiliation: Zhongguancun Academy, Beijing, China.100094",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2602.19505v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2602-19505",
+    "updatedAt": "2026-08-31T06:36:19Z"
+  },
+  {
+    "type": "preprint",
     "title": "AgenticRAGTracer: A Hop-Aware Benchmark for Diagnosing Multi-Step Retrieval Reasoning in Agentic RAG",
     "authors": [
       {
