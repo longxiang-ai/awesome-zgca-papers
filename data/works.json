@@ -903,7 +903,7 @@
     "updatedAt": "2026-08-13T11:57:17Z"
   },
   {
-    "type": "preprint",
+    "type": "conference",
     "title": "IntentVLA: Short-Horizon Intent Modeling for Aliased Robot Manipulation",
     "authors": [
       {
@@ -950,8 +950,8 @@
     "relationType": "official-output",
     "publishedAt": "2026-05-14",
     "year": 2026,
-    "venue": "arXiv",
-    "status": "preprint",
+    "venue": "EMNLP 2026",
+    "status": "published",
     "topics": [
       "cs.RO",
       "cs.AI",
@@ -3663,6 +3663,364 @@
     "updatedAt": "2026-08-13T10:41:06Z"
   },
   {
+    "type": "preprint",
+    "title": "Unbiased Dynamic Pruning for Efficient Group-Based Policy Optimization",
+    "authors": [
+      {
+        "name": "Haodong Zhu"
+      },
+      {
+        "name": "Yangyang Ren"
+      },
+      {
+        "name": "Yanjing Li"
+      },
+      {
+        "name": "Mingbao Lin"
+      },
+      {
+        "name": "Linlin Yang"
+      },
+      {
+        "name": "Xuhui Liu"
+      },
+      {
+        "name": "Xiantong Zhen"
+      },
+      {
+        "name": "Haiguang Liu"
+      },
+      {
+        "name": "Baochang Zhang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Haodong Zhu Affiliation: Beihang University Affiliation: Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-03-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "abstract": "Group Relative Policy Optimization (GRPO) effectively scales LLM reasoning but incurs prohibitive computational costs due to its extensive group-based sampling requirement. While recent selective data utilization methods can mitigate this overhead, they could induce estimation bias by altering the underlying sampling distribution, compromising theoretical rigor and convergence behavior. To address this limitation, we propose Dynamic Pruning Policy Optimization (DPPO), a framework that enables dynamic pruning while preserving unbiased gradient estimation through importance sampling-based correction. By incorporating mathematically derived rescaling factors, DPPO significantly accelerates GRPO training without altering the optimization objective of the full-batch baseline. Furthermore, to mitigate the data sparsity induced by pruning, we introduce Dense Prompt Packing, a window-based greedy strategy that maximizes valid token density and hardware utilization. Extensive experiments demonstrate that DPPO consistently accelerates training across diverse models and benchmarks. For instance, on Qwen3-4B trained on MATH, DPPO achieves 2.37$\\times$ training speedup and outperforms GRPO by 3.36% in average accuracy across six mathematical reasoning benchmarks.",
+    "identifiers": {
+      "arxiv": "2603.04135",
+      "doi": "10.48550/arXiv.2603.04135"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2603.04135"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2603.04135v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2603.04135"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2603.04135v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Haodong Zhu Affiliation: Beihang University Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2603.04135v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2603-04135",
+    "updatedAt": "2026-09-01T06:09:06Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Any2Any: Unified Arbitrary Modality Translation for Remote Sensing",
+    "authors": [
+      {
+        "name": "Haoyang Chen"
+      },
+      {
+        "name": "Jing Zhang"
+      },
+      {
+        "name": "Hebaixu Wang"
+      },
+      {
+        "name": "Shiqin Wang"
+      },
+      {
+        "name": "Pohsun Huang"
+      },
+      {
+        "name": "Jiayuan Li"
+      },
+      {
+        "name": "Haonan Guo"
+      },
+      {
+        "name": "Di Wang"
+      },
+      {
+        "name": "Zheng Wang"
+      },
+      {
+        "name": "Bo Du"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Haoyang Chen Affiliation: Wuhan University Affiliation: Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-03-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.CV"
+    ],
+    "abstract": "Multi-modal remote sensing imagery provides complementary observations of the same geographic scene, yet such observations are frequently incomplete in practice. Existing cross-modal translation methods treat each modality pair as an independent task, resulting in quadratic complexity and limited generalization to unseen modality combinations. We formulate Any-to-Any translation as inference over a shared latent representation of the scene, where different modalities correspond to partial observations of the same underlying semantics. Based on this formulation, we propose Any2Any, a unified latent diffusion framework that projects heterogeneous inputs into a geometrically aligned latent space. Such structure performs anchored latent regression with a shared backbone, decoupling modality-specific representation learning from semantic mapping. Moreover, lightweight target-specific residual adapters are used to correct systematic latent mismatches without increasing inference complexity. To support learning under sparse but connected supervision, we introduce RST-1M, the first million-scale remote sensing dataset with paired observations across five sensing modalities, providing supervision anchors for any-to-any translation. Experiments across 14 translation tasks show that Any2Any consistently outperforms pairwise translation methods and exhibits strong zero-shot generalization to unseen modality pairs. Code and models are available at https://github.com/MiliLab/Any2Any.",
+    "identifiers": {
+      "arxiv": "2603.04114",
+      "doi": "10.48550/arXiv.2603.04114"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2603.04114"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2603.04114v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2603.04114"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2603.04114v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Haoyang Chen Affiliation: Wuhan University Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2603.04114v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2603-04114",
+    "updatedAt": "2026-09-01T06:09:06Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Swimming Under Constraints: A Safe Reinforcement Learning Framework for Quadrupedal Bio-Inspired Propulsion",
+    "authors": [
+      {
+        "name": "Xinyu Cui"
+      },
+      {
+        "name": "Fei Han"
+      },
+      {
+        "name": "Hang Xu"
+      },
+      {
+        "name": "Yongcheng Zeng"
+      },
+      {
+        "name": "Luoyang Sun"
+      },
+      {
+        "name": "Ruizhi Zhang"
+      },
+      {
+        "name": "Jian Zhao"
+      },
+      {
+        "name": "Haifeng Zhang"
+      },
+      {
+        "name": "Weikun Li"
+      },
+      {
+        "name": "Hao Chen"
+      },
+      {
+        "name": "Jun Wang"
+      },
+      {
+        "name": "Dixia Fan"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Jian Zhao Affiliation: Zhongguancun Academy, Beijing, 100094, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-03-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.RO"
+    ],
+    "abstract": "Bio-inspired aquatic propulsion offers high thrust and maneuverability but is prone to destabilizing forces such as lift fluctuations, which are further amplified by six-degree-of-freedom (6-DoF) fluid coupling. We formulate quadrupedal swimming as a constrained optimization problem that maximizes forward thrust while minimizing destabilizing fluctuations. Our proposed framework, Accelerated Constrained Proximal Policy Optimization with a PID-regulated Lagrange multiplier (ACPPO-PID), enforces constraints with a PID-regulated Lagrange multiplier, accelerates learning via conditional asymmetric clipping, and stabilizes updates through cycle-wise geometric aggregation. Initialized with imitation learning and refined through on-hardware towing-tank experiments, ACPPO-PID produces control policies that transfer effectively to quadrupedal free-swimming trials. Results demonstrate improved thrust efficiency, reduced destabilizing forces, and faster convergence compared with state-of-the-art baselines, underscoring the importance of constraint-aware safe RL for robust and generalizable bio-inspired locomotion in complex fluid environments.",
+    "identifiers": {
+      "arxiv": "2603.04073",
+      "doi": "10.48550/arXiv.2603.04073"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2603.04073"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2603.04073v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2603.04073"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2603.04073v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Jian Zhao Affiliation: Zhongguancun Academy, Beijing, 100094, China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2603.04073v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2603-04073",
+    "updatedAt": "2026-09-01T06:09:06Z"
+  },
+  {
+    "type": "preprint",
+    "title": "SkillVLA: Tackling Combinatorial Diversity in Dual-Arm Manipulation via Skill Reuse",
+    "authors": [
+      {
+        "name": "Xuanran Zhai"
+      },
+      {
+        "name": "Zekai Huang"
+      },
+      {
+        "name": "Longyan Wu"
+      },
+      {
+        "name": "Qianyou Zhao"
+      },
+      {
+        "name": "Qiaojun Yu"
+      },
+      {
+        "name": "Jieji Ren"
+      },
+      {
+        "name": "Ce Hao"
+      },
+      {
+        "name": "Harold Soh"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Ce Hao Affiliation: Beijing Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-03-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.RO"
+    ],
+    "abstract": "Recent progress in vision-language-action (VLA) models has demonstrated strong potential for dual-arm manipulation, enabling complex behaviors and generalization to unseen environments. However, mainstream bimanual VLA formulations largely overlook the critical challenge of combinatorial diversity. Different pairings of single-arm behaviors can induce qualitatively distinct task behaviors, yet existing models do not explicitly account for this structure. We argue that effective bimanual VLAs should support skill reuse - the ability to recombine previously learned single-arm skills across novel left-right pairings - thereby avoiding the need to separately learn every possible combination. Current VLA designs entangle skills across arms, preventing such recomposition and limiting scalability. To address this limitation, we propose SkillVLA, a framework explicitly designed to enable skill reuse in dual-arm manipulation. Extensive experiments demonstrate that SkillVLA substantially improves skill composition, increasing overall success rate from 0% to 51%, and achieves strong performance on cooperative and long-horizon tasks.",
+    "identifiers": {
+      "arxiv": "2603.03836",
+      "doi": "10.48550/arXiv.2603.03836"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2603.03836"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2603.03836v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2603.03836"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2603.03836v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Ce Hao Affiliation: Beijing Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2603.03836v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2603-03836",
+    "updatedAt": "2026-09-01T06:09:06Z"
+  },
+  {
     "id": "whitepaper-beijing-genai-2026",
     "type": "whitepaper",
     "title": "北京市生成式人工智能大模型产业发展与治理白皮书",
@@ -4002,7 +4360,7 @@
     "updatedAt": "2026-08-08T11:59:38Z"
   },
   {
-    "type": "preprint",
+    "type": "conference",
     "title": "RLinf-USER: A Unified and Extensible System for Real-World Online Policy Learning in Embodied AI",
     "authors": [
       {
@@ -4066,8 +4424,8 @@
     "relationType": "official-output",
     "publishedAt": "2026-02-08",
     "year": 2026,
-    "venue": "arXiv",
-    "status": "preprint",
+    "venue": "RSS 2026",
+    "status": "published",
     "topics": [
       "cs.RO"
     ],
