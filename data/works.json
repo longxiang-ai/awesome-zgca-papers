@@ -3541,7 +3541,8 @@
       "zgca"
     ],
     "rawAffiliations": [
-      "北京中关村学院官网科研创新页面"
+      "北京中关村学院官网科研创新页面",
+      "Ce Hao Affiliation: Zhongguancun Academy"
     ],
     "relationType": "official-output",
     "publishedAt": "2026-03-09",
@@ -3568,6 +3569,10 @@
       {
         "label": "Official",
         "url": "https://www.bza.edu.cn/detail/inews_zcnezi3d5262bwox2y8rzs3etx81racl"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2603.08122v1"
       }
     ],
     "versions": [
@@ -3583,11 +3588,19 @@
         "matchedText": "北京中关村学院官网科研创新页面",
         "source": "北京中关村学院官网",
         "sourceUrl": "https://www.bza.edu.cn/detail/inews_zcnezi3d5262bwox2y8rzs3etx81racl"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Ce Hao Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2603.08122v1"
       }
     ],
     "sources": [
       "arXiv",
-      "北京中关村学院官网"
+      "北京中关村学院官网",
+      "arXiv HTML"
     ],
     "id": "doi-10-48550-arxiv-2603-08122",
     "updatedAt": "2026-08-08T11:59:38Z"
@@ -3661,6 +3674,272 @@
     ],
     "id": "doi-10-48550-arxiv-2603-01780",
     "updatedAt": "2026-08-13T10:41:06Z"
+  },
+  {
+    "type": "preprint",
+    "title": "One-Eval: An Agentic System for Automated and Traceable LLM Evaluation",
+    "authors": [
+      {
+        "name": "Chengyu Shen"
+      },
+      {
+        "name": "Yanheng Hou"
+      },
+      {
+        "name": "Minghui Pan"
+      },
+      {
+        "name": "Runming He"
+      },
+      {
+        "name": "Zhen Hao Wong"
+      },
+      {
+        "name": "Meiyi Qiang"
+      },
+      {
+        "name": "Zhou Liu"
+      },
+      {
+        "name": "Hao Liang"
+      },
+      {
+        "name": "Peichao Lai"
+      },
+      {
+        "name": "Zeang Sheng"
+      },
+      {
+        "name": "Wentao Zhang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Hao Liang Affiliation: Peking University Affiliation: Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-03-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.CL"
+    ],
+    "abstract": "Reliable evaluation is essential for developing and deploying large language models, yet in practice it often requires substantial manual effort: practitioners must identify appropriate benchmarks, reproduce heterogeneous evaluation codebases, configure dataset schema mappings, and interpret aggregated metrics. To address these challenges, we present One-Eval, an agentic evaluation system that converts natural-language evaluation requests into executable, traceable, and customizable evaluation workflows. One-Eval integrates (i) NL2Bench for intent structuring and personalized benchmark planning, (ii) BenchResolve for benchmark resolution, automatic dataset acquisition, and schema normalization to ensure executability, and (iii) Metrics \\& Reporting for task-aware metric selection and decision-oriented reporting beyond scalar scores. The system further incorporates human-in-the-loop checkpoints for review, editing, and rollback, while preserving sample evidence trails for debugging and auditability. Experiments show that One-Eval can execute end-to-end evaluations from diverse natural-language requests with minimal user effort, supporting more efficient and reproducible evaluation in industrial settings. Our framework is publicly available at https://github.com/OpenDCAI/One-Eval.",
+    "identifiers": {
+      "arxiv": "2603.09821",
+      "doi": "10.48550/arXiv.2603.09821"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2603.09821"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2603.09821v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2603.09821"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2603.09821v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Hao Liang Affiliation: Peking University Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2603.09821v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2603-09821",
+    "updatedAt": "2026-09-02T05:36:27Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Memory-Guided View Refinement for Dynamic Human-in-the-loop EQA",
+    "authors": [
+      {
+        "name": "Xin Lu"
+      },
+      {
+        "name": "Rui Li"
+      },
+      {
+        "name": "Xun Huang"
+      },
+      {
+        "name": "Weixin Li"
+      },
+      {
+        "name": "Chuanqing Zhuang"
+      },
+      {
+        "name": "Jiayuan Li"
+      },
+      {
+        "name": "Zhengda Lu"
+      },
+      {
+        "name": "Jun Xiao"
+      },
+      {
+        "name": "Yunhong Wang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Xin Lu Affiliation: University of Chinese Academy of Sciences, China Affiliation: Zhongguancun Academy, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-03-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.CV",
+      "cs.MM"
+    ],
+    "abstract": "Embodied Question Answering (EQA) has traditionally been evaluated in temporally stable environments where visual evidence can be accumulated reliably. However, in dynamic, human-populated scenes, human activities and occlusions introduce significant perceptual non-stationarity: task-relevant cues are transient and view-dependent, while a store-then-retrieve strategy over-accumulates redundant evidence and increases inference cost. This setting exposes two practical challenges for EQA agents: resolving ambiguity caused by viewpoint-dependent occlusions, and maintaining compact yet up-to-date evidence for efficient inference. To enable systematic study of this setting, we introduce DynHiL-EQA, a human-in-the-loop EQA dataset with two subsets: a Dynamic subset featuring human activities and temporal changes, and a Static subset with temporally stable observations. To address the above challenges, we present DIVRR (Dynamic-Informed View Refinement and Relevance-guided Adaptive Memory Selection), a training-free framework that couples relevance-guided view refinement with selective memory admission. By verifying ambiguous observations before committing them and retaining only informative evidence, DIVRR improves robustness under occlusions while preserving fast inference with compact memory. Extensive experiments on DynHiL-EQA and the established HM-EQA dataset demonstrate that DIVRR consistently improves over existing baselines in both dynamic and static settings while maintaining high inference efficiency.",
+    "identifiers": {
+      "arxiv": "2603.09541",
+      "doi": "10.48550/arXiv.2603.09541"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2603.09541"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2603.09541v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2603.09541"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2603.09541v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Xin Lu Affiliation: University of Chinese Academy of Sciences, China Affiliation: Zhongguancun Academy, China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2603.09541v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2603-09541",
+    "updatedAt": "2026-09-02T05:36:27Z"
+  },
+  {
+    "type": "preprint",
+    "title": "AdaCultureSafe: Adaptive Cultural Safety Grounded by Cultural Knowledge in Large Language Models",
+    "authors": [
+      {
+        "name": "Hankun Kang"
+      },
+      {
+        "name": "Di Lin"
+      },
+      {
+        "name": "Zhirong Liao"
+      },
+      {
+        "name": "Pengfei Bai"
+      },
+      {
+        "name": "Xinyi Zeng"
+      },
+      {
+        "name": "Jiawei Jiang"
+      },
+      {
+        "name": "Yuanyuan Zhu"
+      },
+      {
+        "name": "Tieyun Qian"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Tieyun Qian Affiliation: Wuhan University , Wuhan , Hubei , China Affiliation: Zhongguancun Academy , Beijing , China email: qty@whu.edu.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-03-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "abstract": "With the widespread adoption of Large Language Models (LLMs), respecting indigenous cultures becomes essential for models' culturally safety and responsible global applications. Existing studies separately consider cultural safety and cultural knowledge and neglect that the former should be grounded by the latter. This severely prevents LLMs from yielding culture-specific respectful responses. Consequently, adaptive cultural safety remains a formidable task. In this work, we propose to jointly model cultural safety and knowledge. First and foremost, cultural-safety and knowledge-paired data serve as the key prerequisite to conduct this research. However, the cultural diversity across regions and the subtlety of cultural differences pose significant challenges to the creation of such paired evaluation data. To address this issue, we propose a novel framework that integrates authoritative cultural knowledge descriptions curation, LLM-automated query generation, and heavy manual verification. Accordingly, we obtain a dataset named AdaCultureSafe containing 4.8K manually decomposed fine-grained cultural descriptions and the corresponding 48K manually verified safety- and knowledge-oriented queries. Upon the constructed dataset, we evaluate three families of popular LLMs on their cultural safety and knowledge proficiency, via which we make a critical discovery: no significant correlation exists between their cultural safety and knowledge proficiency. We then delve into the utility-related neuron activations within LLMs to investigate the potential cause of the absence of correlation, which can be attributed to the difference of the objectives of pre-training and post-alignment. We finally present a knowledge-grounded method, which significantly enhances cultural safety by enforcing the integration of knowledge into the LLM response generation process.",
+    "identifiers": {
+      "arxiv": "2603.08275",
+      "doi": "10.48550/arXiv.2603.08275"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2603.08275"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2603.08275v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2603.08275"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2603.08275v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Tieyun Qian Affiliation: Wuhan University , Wuhan , Hubei , China Affiliation: Zhongguancun Academy , Beijing , China email: qty@whu.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2603.08275v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2603-08275",
+    "updatedAt": "2026-09-02T05:36:27Z"
   },
   {
     "type": "preprint",
@@ -8011,6 +8290,80 @@
     ],
     "id": "doi-10-1145-3770855-3817915",
     "updatedAt": "2026-08-08T11:35:31Z"
+  },
+  {
+    "type": "conference",
+    "title": "Generating Realistic Human Mobility Data with Hybrid Large Language Model Agent",
+    "authors": [
+      {
+        "name": "Chenyang Shao",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Bingbing Fan"
+      },
+      {
+        "name": "Jingtao Ding"
+      },
+      {
+        "name": "Yuan Yuan"
+      },
+      {
+        "name": "Meng Wang"
+      },
+      {
+        "name": "Fengli Xu",
+        "institutions": [
+          "zgca"
+        ]
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Department of Electronic Engineering, BNRist, Tsinghua University, Beijing, China and Zhongguancun Academy, Beijing, China",
+      "Department of Electronic Engineering, BNRist, Tsinghua University, Beijing, China",
+      "School of Computer Science and Information Engineering, Hefei University of Technology, Hefei, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.1",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1145/3770854.3785685"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1145/3770854.3785685"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1145/3770854.3785685"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Department of Electronic Engineering, BNRist, Tsinghua University, Beijing, China and Zhongguancun Academy, Beijing, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1145/3770854.3785685"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1145-3770854-3785685",
+    "updatedAt": "2026-09-02T04:51:31Z"
   },
   {
     "type": "conference",
