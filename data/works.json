@@ -3677,6 +3677,258 @@
   },
   {
     "type": "preprint",
+    "title": "ContiGuard: A Framework for Continual Toxicity Detection Against Evolving Evasive Perturbations",
+    "authors": [
+      {
+        "name": "Hankun Kang"
+      },
+      {
+        "name": "Xin Miao"
+      },
+      {
+        "name": "Jianhao Chen"
+      },
+      {
+        "name": "Jintao Wen"
+      },
+      {
+        "name": "Mayi Xu"
+      },
+      {
+        "name": "Weiyu Zhang"
+      },
+      {
+        "name": "Wenpeng Lu"
+      },
+      {
+        "name": "Tieyun Qian"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Jianhao Chen Affiliation: School of Computer Science , Wuhan University , Wuhan , Hubei , China Affiliation: Zhongguancun Academy , Beijing , China email: chenjianhao@whu.edu.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-03-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "abstract": "Toxicity detection mitigates the dissemination of toxic content (e.g., hateful comments, posts, and messages within online social actions) to safeguard a healthy online social environment. However, malicious users persistently develop evasive perturbations to disguise toxic content and evade detectors. Traditional detectors or methods are static over time and are inadequate in addressing these evolving evasion tactics. Thus, continual learning emerges as a logical approach to dynamically update detection ability against evolving perturbations. Nevertheless, disparities across perturbations hinder the detector's continual learning on perturbed text. More importantly, perturbation-induced noises distort semantics to degrade comprehension and also impair critical feature learning to render detection sensitive to perturbations. These amplify the challenge of continual learning against evolving perturbations. In this work, we present ContiGuard, the first framework tailored for continual learning of the detector on time-evolving perturbed text (termed continual toxicity detection) to enable the detector to continually update capability and maintain sustained resilience against evolving perturbations. Specifically, to boost the comprehension, we present an LLM-powered semantic enriching strategy, where we dynamically incorporate possible meaning and toxicity-related clues excavated by LLM into the perturbed text to improve the comprehension. To mitigate non-critical features and amplify critical ones, we propose a discriminability-driven feature learning strategy, where we strengthen discriminative features while suppressing the less-discriminative ones to shape a robust classification boundary for detection...",
+    "identifiers": {
+      "arxiv": "2603.14843",
+      "doi": "10.48550/arXiv.2603.14843"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2603.14843"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2603.14843v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2603.14843"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2603.14843v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Jianhao Chen Affiliation: School of Computer Science , Wuhan University , Wuhan , Hubei , China Affiliation: Zhongguancun Academy , Beijing , China email: chenjianhao@whu.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2603.14843v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2603-14843",
+    "updatedAt": "2026-09-03T05:34:18Z"
+  },
+  {
+    "type": "preprint",
+    "title": "HiMemVLN: Enhancing Reliability of Open-Source Zero-Shot Vision-and-Language Navigation with Hierarchical Memory System",
+    "authors": [
+      {
+        "name": "Kailin Lyu"
+      },
+      {
+        "name": "Kangyi Wu"
+      },
+      {
+        "name": "Pengna Li"
+      },
+      {
+        "name": "Xiuyu Hu"
+      },
+      {
+        "name": "Qingyi Si"
+      },
+      {
+        "name": "Cui Miao"
+      },
+      {
+        "name": "Ning Yang"
+      },
+      {
+        "name": "Zihang Wang"
+      },
+      {
+        "name": "Long Xiao"
+      },
+      {
+        "name": "Lianyu Hu"
+      },
+      {
+        "name": "Jingyuan Sun"
+      },
+      {
+        "name": "Ce Hao"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Kailin Lyu Affiliation: Kailin Lyu is with the Institute of Automation, Chinese Academy of Sciences, and the Zhongguancun Academy, Beijing, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-03-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.CV",
+      "cs.RO"
+    ],
+    "abstract": "LLM-based agents have demonstrated impressive zero-shot performance in vision-language navigation (VLN) tasks. However, most zero-shot methods primarily rely on closed-source LLMs as navigators, which face challenges related to high token costs and potential data leakage risks. Recent efforts have attempted to address this by using open-source LLMs combined with a spatiotemporal CoT framework, but they still fall far short compared to closed-source models. In this work, we identify a critical issue, Navigation Amnesia, through a detailed analysis of the navigation process. This issue leads to navigation failures and amplifies the gap between open-source and closed-source methods. To address this, we propose HiMemVLN, which incorporates a Hierarchical Memory System into a multimodal large model to enhance visual perception recall and long-term localization, mitigating the amnesia issue and improving the agent's navigation performance. Extensive experiments in both simulated and real-world environments demonstrate that HiMemVLN achieves nearly twice the performance of the open-source state-of-the-art method. The code is available at https://github.com/lvkailin0118/HiMemVLN.",
+    "identifiers": {
+      "arxiv": "2603.14807",
+      "doi": "10.48550/arXiv.2603.14807"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2603.14807"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2603.14807v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2603.14807"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2603.14807v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Kailin Lyu Affiliation: Kailin Lyu is with the Institute of Automation, Chinese Academy of Sciences, and the Zhongguancun Academy, Beijing, China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2603.14807v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2603-14807",
+    "updatedAt": "2026-09-03T05:34:18Z"
+  },
+  {
+    "type": "preprint",
+    "title": "LongVidSearch: An Agentic Benchmark for Multi-hop Evidence Retrieval Planning in Long Videos",
+    "authors": [
+      {
+        "name": "Rongyi Yu"
+      },
+      {
+        "name": "Chenyuan Duan"
+      },
+      {
+        "name": "Wentao Zhang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Wentao Zhang Affiliation: Peking University & Zhongguancun Academy , Beijing , China email: wentao.zhang@pku.edu.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-03-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.CV",
+      "cs.IR"
+    ],
+    "abstract": "Long video question answering (Long-Video QA) increasingly relies on agentic tool use to retrieve evidence from long videos. In realistic settings, this process often requires multi-hop retrieval, where agents must iteratively gather multiple discontinuous evidence clips. However, existing long-video benchmarks are largely static: they rarely enforce strict multi-hop retrieval and typically lack a standardized evidence-access interface, making it difficult to separate failures in retrieval planning from those in answer generation. To address this gap, we introduce LongVidSearch, a benchmark for evaluating agentic multi-hop evidence retrieval planning in long videos under standardized access constraints. LongVidSearch enforces retrieval necessity: a Hop-k question requires exactly k necessary evidence clips, and removing any single clip renders the question unsolvable. The benchmark contains 3,000 questions over 447 long videos (average length 26 minutes), covering four reasoning categories: State Mutation, Causal Inference, Global Summary, and Visual Tracking, with 2-hop, 3-hop, and 4-hop evidence requirements. To ensure fair and controlled evaluation, all agents interact with LongVidSearch through a unified tool interface, which fixes the retrieval backend and isolates the agent's ability to formulate queries and plan iterative retrieval. In addition to answer accuracy, we measure tool-call cost to analyze the accuracy-efficiency trade-off under identical access conditions. We evaluate VideoAgent-style QA agents with multiple backbone LLMs using three-judge majority voting. GPT-5 achieves the highest accuracy (42.43), outperforming Gemini 3 Pro (30.97) and GPT-4o (19.20), yet remaining below 50 %, highlighting the difficulty of multi-hop retrieval planning. With gold evidence clips, performance becomes near-perfect, confirming retrieval planning as the primary bottleneck.",
+    "identifiers": {
+      "arxiv": "2603.14468",
+      "doi": "10.48550/arXiv.2603.14468"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2603.14468"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2603.14468v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2603.14468"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2603.14468v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Wentao Zhang Affiliation: Peking University & Zhongguancun Academy , Beijing , China email: wentao.zhang@pku.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2603.14468v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2603-14468",
+    "updatedAt": "2026-09-03T05:34:18Z"
+  },
+  {
+    "type": "preprint",
     "title": "One-Eval: An Agentic System for Automated and Traceable LLM Evaluation",
     "authors": [
       {
