@@ -3677,6 +3677,362 @@
   },
   {
     "type": "preprint",
+    "title": "PEARL: Personalized Streaming Video Understanding Model",
+    "authors": [
+      {
+        "name": "Yuanhong Zheng"
+      },
+      {
+        "name": "Ruichuan An"
+      },
+      {
+        "name": "Xiaopeng Lin"
+      },
+      {
+        "name": "Yuxing Liu"
+      },
+      {
+        "name": "Sihan Yang"
+      },
+      {
+        "name": "Huanyu Zhang"
+      },
+      {
+        "name": "Haodong Li"
+      },
+      {
+        "name": "Qintong Zhang"
+      },
+      {
+        "name": "Renrui Zhang"
+      },
+      {
+        "name": "Guopeng Li"
+      },
+      {
+        "name": "Yifan Zhang"
+      },
+      {
+        "name": "Yuheng Li"
+      },
+      {
+        "name": "Wentao Zhang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Wentao Zhang Affiliation: Peking University Adobe CASIA Stepfun CUHK Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-03-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.CV",
+      "cs.AI",
+      "cs.IR"
+    ],
+    "abstract": "Human cognition of new concepts is inherently a streaming process: we continuously recognize new objects or identities and update our memories over time. However, current multimodal personalization methods are largely limited to static images or offline videos. This disconnects continuous visual input from instant real-world feedback, limiting their ability to provide the real-time, interactive personalized responses essential for future AI assistants. To bridge this gap, we first propose and formally define the novel task of Personalized Streaming Video Understanding (PSVU). To facilitate research in this new direction, we introduce PEARL-Bench, the first comprehensive benchmark designed specifically to evaluate this challenging setting. It evaluates a model's ability to respond to personalized concepts at exact timestamps under two modes: (1) Frame-level, focusing on a specific person or object in discrete frames, and (2) a novel Video-level, focusing on personalized actions unfolding across continuous frames. PEARL-Bench comprises 132 unique videos and 2,173 fine-grained annotations with precise timestamps. Concept diversity and annotation quality are strictly ensured through a combined pipeline of automated generation and human verification. To tackle this challenging new setting, we further propose PEARL, a plug-and-play, training-free strategy that serves as a strong baseline. Extensive evaluations across 8 offline and online models demonstrate that PEARL achieves state-of-the-art performance. Notably, it brings consistent PSVU improvements when applied to 3 distinct architectures, proving to be a highly effective and robust strategy. We hope this work advances vision-language model (VLM) personalization and inspires further research into streaming personalized AI assistants. Code is available at https://github.com/Yuanhong-Zheng/PEARL.",
+    "identifiers": {
+      "arxiv": "2603.20422",
+      "doi": "10.48550/arXiv.2603.20422"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2603.20422"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2603.20422v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2603.20422"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2603.20422v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Wentao Zhang Affiliation: Peking University Adobe CASIA Stepfun CUHK Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2603.20422v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2603-20422",
+    "updatedAt": "2026-09-04T05:36:47Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Deciphering Scientific Reasoning Steps from Outcome Data for Molecule Optimization",
+    "authors": [
+      {
+        "name": "Zequn Liu"
+      },
+      {
+        "name": "Kehan Wu"
+      },
+      {
+        "name": "Shufang Xie"
+      },
+      {
+        "name": "Zekun Guo"
+      },
+      {
+        "name": "Wei Zhang"
+      },
+      {
+        "name": "Tao Qin"
+      },
+      {
+        "name": "Renhe Liu"
+      },
+      {
+        "name": "Yingce Xia"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Shufang Xie Affiliation: Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-03-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "q-bio.BM",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "abstract": "Emerging reasoning models hold promise for automating scientific discovery. However, their training is hindered by a critical supervision gap: experimental outcomes are abundant, whereas intermediate reasoning steps are rarely documented at scale. To bridge this gap, we propose DESRO, a framework for deciphering scientific reasoning from outcomes. By analyzing shared patterns and key differences within grouped data, a large language model (LLM) can recover the underlying logic. We instantiate this framework in molecule optimization, a pivotal stage in drug discovery that traditionally relies on the iterative reasoning of medicinal chemists. Across 2.3 million molecular property records, our framework infers optimization rationales by grouping molecules with shared fragments, then using an LLM to analyze how structural variations correlate with property differences. Based on the derived data, we train a model that conducts molecule optimization through an interpretable reasoning process. DESRO achieves the highest success rates on 15 out of 18 tasks, spanning both single- and multi-property optimization of bioactivity and ADMET properties. The reasoning process enables robust generalization to out-of-distribution scenarios, including novel property combinations, unseen biological targets, and unseen properties defined solely by natural language descriptions. In retrospective case studies under strict temporal splits, the model autonomously reconstructs expert-level lead optimization trajectories. Additionally, our framework extends beyond molecule optimization to reaction ligand selection. Our results establish deciphering reasoning steps from outcome data as a viable paradigm for enabling scientific reasoning, providing a scalable approach to accelerate scientific discovery.",
+    "identifiers": {
+      "arxiv": "2603.20262",
+      "doi": "10.48550/arXiv.2603.20262"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2603.20262"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2603.20262v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2603.20262"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2603.20262v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Shufang Xie Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2603.20262v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2603-20262",
+    "updatedAt": "2026-09-04T05:36:47Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Semantic Audio-Visual Navigation in Continuous Environments",
+    "authors": [
+      {
+        "name": "Yichen Zeng"
+      },
+      {
+        "name": "Hebaixu Wang"
+      },
+      {
+        "name": "Meng Liu"
+      },
+      {
+        "name": "Yu Zhou"
+      },
+      {
+        "name": "Chen Gao"
+      },
+      {
+        "name": "Kehan Chen"
+      },
+      {
+        "name": "Gongping Huang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Yichen Zeng Hebaixu Wang Meng Liu Yu Zhou Chen Gao Kehan Chen Gongping Huang Affiliation: Wuhan University Affiliation: Zhongguancun Academy Affiliation: Shandong Jianzhu University Affiliation: Nankai University Affiliation: Tsinghua University Affiliation: CASIA Affiliation: UCAS"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-03-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.CV",
+      "cs.SD"
+    ],
+    "abstract": "Audio-visual navigation enables embodied agents to navigate toward sound-emitting targets by leveraging both auditory and visual cues. However, most existing approaches rely on precomputed room impulse responses (RIRs) for binaural audio rendering, restricting agents to discrete grid positions and leading to spatially discontinuous observations. To establish a more realistic setting, we introduce Semantic Audio-Visual Navigation in Continuous Environments (SAVN-CE), where agents can move freely in 3D spaces and perceive temporally and spatially coherent audio-visual streams. In this setting, targets may intermittently become silent or stop emitting sound entirely, causing agents to lose goal information. To tackle this challenge, we propose MAGNet, a multimodal transformer-based model that jointly encodes spatial and semantic goal representations and integrates historical context with self-motion cues to enable memory-augmented goal reasoning. Comprehensive experiments demonstrate that MAGNet significantly outperforms state-of-the-art methods, achieving up to a 12.1\\% absolute improvement in success rate. These results also highlight its robustness to short-duration sounds and long-distance navigation scenarios. The code is available at https://github.com/yichenzeng24/SAVN-CE.",
+    "identifiers": {
+      "arxiv": "2603.19660",
+      "doi": "10.48550/arXiv.2603.19660"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2603.19660"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2603.19660v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2603.19660"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2603.19660v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Yichen Zeng Hebaixu Wang Meng Liu Yu Zhou Chen Gao Kehan Chen Gongping Huang Affiliation: Wuhan University Affiliation: Zhongguancun Academy Affiliation: Shandong Jianzhu University Affiliation: Nankai University Affiliation: Tsinghua University Affiliation: CASIA Affiliation: UCAS",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2603.19660v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2603-19660",
+    "updatedAt": "2026-09-04T05:36:47Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Attention Sparsity is Input-Stable: Training-Free Sparse Attention for Video Generation via Offline Sparsity Profiling and Online QK Co-Clustering",
+    "authors": [
+      {
+        "name": "Jiayi Luo"
+      },
+      {
+        "name": "Jiayu Chen"
+      },
+      {
+        "name": "Jiankun Wang"
+      },
+      {
+        "name": "Cong Wang"
+      },
+      {
+        "name": "Hanxin Zhu"
+      },
+      {
+        "name": "Qingyun Sun"
+      },
+      {
+        "name": "Chen Gao"
+      },
+      {
+        "name": "Zhibo Chen"
+      },
+      {
+        "name": "Jianxin Li"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Jiayi Luo Affiliation: SKLCCSE, School of Computer Science and Engineering, Beihang University Affiliation: Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-03-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.CV"
+    ],
+    "abstract": "Diffusion Transformers (DiTs) achieve strong video generation quality but suffer from high inference cost due to dense 3D attention, motivating sparse attention techniques for improving efficiency. However, existing training-free sparse attention methods for video generation still face two unresolved limitations: ignoring layer heterogeneity in attention pruning and ignoring query-key coupling in block partitioning, which hinder a better quality-speedup trade-off. In this work, we uncover a critical insight: attention sparsity is an intrinsic layer-wise property, with only minor variation across different inputs. Motivated by this observation, we propose SVOO, a training-free sparse attention framework for fast video generation via offline layer-wise sparsity profiling and online bidirectional co-clustering. Specifically, SVOO adopts a two-stage paradigm: (i) offline layer-wise sensitivity profiling to derive intrinsic per-layer pruning levels, and (ii) online block-wise sparse attention via a bidirectional co-clustering algorithm. Extensive experiments on seven widely used video generation models demonstrate that SVOO achieves a superior quality-speedup trade-off over state-of-the-art methods, delivering up to 1.93x speedup while maintaining a PSNR of up to 29 dB on Wan2.1. Code is available at: https://github.com/Mutual-Luo/SVOO.",
+    "identifiers": {
+      "arxiv": "2603.18636",
+      "doi": "10.48550/arXiv.2603.18636"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2603.18636"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2603.18636v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2603.18636"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2603.18636v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Jiayi Luo Affiliation: SKLCCSE, School of Computer Science and Engineering, Beihang University Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2603.18636v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2603-18636",
+    "updatedAt": "2026-09-04T05:36:47Z"
+  },
+  {
+    "type": "preprint",
     "title": "ContiGuard: A Framework for Continual Toxicity Detection Against Evolving Evasive Perturbations",
     "authors": [
       {
