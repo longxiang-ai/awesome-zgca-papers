@@ -3677,6 +3677,189 @@
   },
   {
     "type": "preprint",
+    "title": "RiskProp: Collision-Anchored Self-Supervised Risk Propagation for Early Accident Anticipation",
+    "authors": [
+      {
+        "name": "Yiyang Zou"
+      },
+      {
+        "name": "Tianhao Zhao"
+      },
+      {
+        "name": "Peilun Xiao"
+      },
+      {
+        "name": "Hongyu Jin"
+      },
+      {
+        "name": "Longyu Qi"
+      },
+      {
+        "name": "Yuxuan Li"
+      },
+      {
+        "name": "Liyin Liang"
+      },
+      {
+        "name": "Yifeng Qian"
+      },
+      {
+        "name": "Chunbo Lai"
+      },
+      {
+        "name": "Yutian Lin"
+      },
+      {
+        "name": "Zhihui Li"
+      },
+      {
+        "name": "Yu Wu"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Tianhao Zhao 1 1 footnotemark: 1 Affiliation: School of Computer Science, Wuhan University Affiliation: Zhongguancun Academy, Beijing, China Email: happytianhao@whu.edu.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-03-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.CV"
+    ],
+    "abstract": "Accident anticipation aims to predict impending collisions from dashcam videos and trigger early alerts. Existing methods rely on binary supervision with manually annotated \"anomaly onset\" frames, which are subjective and inconsistent, leading to inaccurate risk estimation. In contrast, we propose RiskProp, a novel collision-anchored self-supervised risk propagation paradigm for early accident anticipation, which removes the need for anomaly onset annotations and leverages only the reliably annotated collision frame. RiskProp models temporal risk evolution through two observation-driven losses: first, since future frames contain more definitive evidence of an impending accident, we introduce a future-frame regularization loss that uses the model's next-frame prediction as a soft target to supervise the current frame, enabling backward propagation of risk signals; second, inspired by the empirical trend of rising risk before accidents, we design an adaptive monotonic constraint to encourage a non-decreasing progression over time. Experiments on CAP and Nexar demonstrate that RiskProp achieves state-of-the-art performance and produces smoother, more discriminative risk curves, improving both early anticipation and interpretability.",
+    "identifiers": {
+      "arxiv": "2603.27165",
+      "doi": "10.48550/arXiv.2603.27165"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2603.27165"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2603.27165v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2603.27165"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2603.27165v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Tianhao Zhao 1 1 footnotemark: 1 Affiliation: School of Computer Science, Wuhan University Affiliation: Zhongguancun Academy, Beijing, China Email: happytianhao@whu.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2603.27165v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2603-27165",
+    "updatedAt": "2026-09-05T05:30:31Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Heuristic Self-Paced Learning for Domain Adaptive Semantic Segmentation under Adverse Conditions",
+    "authors": [
+      {
+        "name": "Shiqin Wang"
+      },
+      {
+        "name": "Haoyang Chen"
+      },
+      {
+        "name": "Huaizhou Huang"
+      },
+      {
+        "name": "Yinkan He"
+      },
+      {
+        "name": "Dongfang Sun"
+      },
+      {
+        "name": "Xiaoqing Chen"
+      },
+      {
+        "name": "Xingyu Liu"
+      },
+      {
+        "name": "Zheng Wang"
+      },
+      {
+        "name": "Kaiyan Zhao"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Shiqin Wang † † thanks: These authors contributed equally to this work. Affiliation: National Engineering Research Center for Multimedia Software, Institute of Artificial Intelligence, School of Affiliation: Zhongguancun Academy, Beijing, China. 100094 School of Computer Science, Wuhan University, Wuhan, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-03-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.CV"
+    ],
+    "abstract": "The learning order of semantic classes significantly impacts unsupervised domain adaptation for semantic segmentation, especially under adverse weather conditions. Most existing curricula rely on handcrafted heuristics (e.g., fixed uncertainty metrics) and follow a static schedule, which fails to adapt to a model's evolving, high-dimensional training dynamics, leading to category bias. Inspired by Reinforcement Learning, we cast curriculum learning as a sequential decision problem and propose an autonomous class scheduler. This scheduler consists of two components: (i) a high-dimensional state encoder that maps the model's training status into a latent space and distills key features indicative of progress, and (ii) a category-fair policy-gradient objective that ensures balanced improvement across classes. Coupled with mixed source-target supervision, the learned class rankings direct the network's focus to the most informative classes at each stage, enabling more adaptive and dynamic learning. It is worth noting that our method achieves state-of-the-art performance on three widely used benchmarks (e.g., ACDC, Dark Zurich, and Nighttime Driving) and shows generalization ability in synthetic-to-real semantic segmentation.",
+    "identifiers": {
+      "arxiv": "2603.24322",
+      "doi": "10.48550/arXiv.2603.24322"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2603.24322"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2603.24322v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2603.24322"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2603.24322v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Shiqin Wang † † thanks: These authors contributed equally to this work. Affiliation: National Engineering Research Center for Multimedia Software, Institute of Artificial Intelligence, School of Affiliation: Zhongguancun Academy, Beijing, China. 100094 School of Computer Science, Wuhan University, Wuhan, China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2603.24322v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2603-24322",
+    "updatedAt": "2026-09-05T05:30:31Z"
+  },
+  {
+    "type": "preprint",
     "title": "PEARL: Personalized Streaming Video Understanding Model",
     "authors": [
       {
@@ -5932,6 +6115,91 @@
       "arXiv HTML"
     ],
     "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "type": "preprint",
+    "title": "scRep: A Latent-Space Self-Distilled Foundation Model for Single-Cell Representation Learning",
+    "authors": [
+      {
+        "name": "Shengjie Wang",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Zongyong Hu",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Yunlong Bie",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Qijin Yin",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Hechang Chen"
+      },
+      {
+        "name": "Qiuyi Li",
+        "institutions": [
+          "zgca"
+        ]
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Jilin University & Zhongguancun Academy;",
+      "Xiamen University & Zhongguancun academy;",
+      "Beijing University of Posts and Telecommunications & Zhongguancun Academy;",
+      "Zhongguancun Academy;",
+      "Jilin University"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Crossref",
+    "status": "published",
+    "topics": [],
+    "abstract": "Single-cell foundation models have shown strong potential for learning transferable representations from large-scale transcriptomic data. However, many existing approaches rely on reconstructing masked gene expression values, creating a potential mismatch between observation-space reconstruction and the goal of learning stable biological representations. This challenge is particularly relevant to single-cell RNA sequencing, where sparsity, incomplete gene detection, and technical variation can obscure the underlying biological state. Here, we introduce scRep, a compact latent-space self-distillation framework for single-cell representation learning. Rather than reconstructing raw expression values, scRep aligns differently perturbed views of the same cell through a momentum-updated teacher--student architecture, with self-distillation objectives at both the cell and gene levels. This representation-centered formulation encourages the model to capture biological information that remains stable across incomplete and perturbed transcriptomic observations. Using frozen representations without task-specific fine-tuning, scRep pretrained on approximately 2.8 million cells achieves the strongest overall performance across the evaluated frozen-representation benchmarks, demonstrating strong sample efficiency. A larger-scale scRep model pretrained on 30.72 million cells further demonstrates that the framework remains effective when scaled to a substantially larger and more diverse corpus. Beyond cell identity, scRep prioritizes established marker genes, recovers transcription factor--associated gene programs with cell-type-specific activity, and preserves continuous developmental structure that supports graph-based pseudotime inference. We further show that pretraining performance is closely associated with biological diversity: reducing redundant cells while improving cell-type coverage can match or exceed the performance of larger, less balanced training corpora. Together, these results establish latent-space self-distillation as an effective alternative to expression reconstruction for single-cell foundation modeling and suggest that efficient scaling depends not only on the number of cells, but also on the learning objective and the biological diversity of the pretraining corpus.",
+    "identifiers": {
+      "doi": "10.64898/2026.08.31.747784"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.64898/2026.08.31.747784"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.64898/2026.08.31.747784"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Jilin University & Zhongguancun Academy;",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.64898/2026.08.31.747784"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-64898-2026-08-31-747784",
+    "updatedAt": "2026-09-05T04:45:42Z"
   },
   {
     "type": "preprint",

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-04T05:36:47Z",
+  "generatedAt": "2026-09-05T05:30:31Z",
   "mode": "automatic",
   "sources": {
-    "crossref": "unavailable (HTTPError)",
+    "crossref": "ok (5 matched)",
     "openalex": "ok (0 matched)",
     "europe_pmc": "ok (0 matched)",
     "arxiv": "ok (0 matched)",
@@ -12,6 +12,6 @@
     "semantic_scholar": "optional key",
     "core": "optional key",
     "lens": "optional key",
-    "arxiv_html_backfill": "checked 16490/23866; 71 exact affiliation matches; 7078 pending; 298 retry; last check 2026-09-04T04:54:25Z; discovery ok"
+    "arxiv_html_backfill": "checked 16770/23876; 73 exact affiliation matches; 6788 pending; 318 retry; last check 2026-09-05T04:48:02Z; discovery ok"
   }
 }
