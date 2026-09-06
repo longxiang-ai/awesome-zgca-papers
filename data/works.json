@@ -3218,6 +3218,73 @@
   },
   {
     "type": "preprint",
+    "title": "Learning Shared Sentiment Prototypes for Adaptive Multimodal Sentiment Analysis",
+    "authors": [
+      {
+        "name": "Chen Su"
+      },
+      {
+        "name": "Yuanhe Tian"
+      },
+      {
+        "name": "Yan Song"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Yuanhe Tian Affiliation: Zhongguancun Academy email: yhtian94@gmail.com"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-04-07",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Multimodal sentiment analysis (MSA) aims to predict human sentiment from textual, acoustic, and visual information in videos. Recent studies improve multimodal fusion by modeling modality interaction and assigning different modality weights. However, they usually compress diverse sentiment cues into a single compact representation before sentiment reasoning. This early aggregation makes it difficult to preserve the internal structure of sentiment evidence, where different cues may complement, conflict with, or differ in reliability from each other. In addition, modality importance is often determined only once during fusion, so later reasoning cannot further adjust modality contributions. To address these issues, we propose PRISM, a framework that unifies structured affective extraction and adaptive modality evaluation. PRISM organizes multimodal evidence in a shared prototype space, which supports structured cross-modal comparison and adaptive fusion. It further applies dynamic modality reweighting during reasoning, allowing modality contributions to be continuously refined as semantic interactions become deeper. Experiments on three benchmark datasets show that PRISM outperforms representative baselines.",
+    "identifiers": {
+      "arxiv": "2604.05873",
+      "doi": "10.48550/arXiv.2604.05873"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2604.05873"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2604.05873v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2604.05873"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2604.05873v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Yuanhe Tian Affiliation: Zhongguancun Academy email: yhtian94@gmail.com",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2604.05873v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2604-05873",
+    "updatedAt": "2026-09-06T06:18:47Z"
+  },
+  {
+    "type": "preprint",
     "title": "BiCoord: A Bimanual Manipulation Benchmark towards Long-Horizon Spatial-Temporal Coordination",
     "authors": [
       {
