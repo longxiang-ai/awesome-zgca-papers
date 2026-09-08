@@ -3161,7 +3161,8 @@
       "zgca"
     ],
     "rawAffiliations": [
-      "北京中关村学院官网科研创新页面"
+      "北京中关村学院官网科研创新页面",
+      "Hang Su Affiliation: East China Normal University, China. Affiliation: Zhongguancun Academy, China. Email: s-sh25@bza.edu.cn"
     ],
     "relationType": "official-output",
     "publishedAt": "2026-04-16",
@@ -3192,6 +3193,10 @@
       {
         "label": "Code",
         "url": "https://github.com/bjzgcai/CoPA"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2604.14773v1"
       }
     ],
     "versions": [
@@ -3207,11 +3212,19 @@
         "matchedText": "北京中关村学院官网科研创新页面",
         "source": "北京中关村学院官网",
         "sourceUrl": "https://www.bza.edu.cn/detail/inews_dogy7yn9wqq8w3vdfu0gv0gnzmz5nhtm"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Hang Su Affiliation: East China Normal University, China. Affiliation: Zhongguancun Academy, China. Email: s-sh25@bza.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2604.14773v1"
       }
     ],
     "sources": [
       "arXiv",
-      "北京中关村学院官网"
+      "北京中关村学院官网",
+      "arXiv HTML"
     ],
     "id": "doi-10-48550-arxiv-2604-14773",
     "updatedAt": "2026-08-08T11:59:38Z"
@@ -3475,6 +3488,175 @@
     ],
     "id": "doi-10-48550-arxiv-2604-05550",
     "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Paper2Data: Large-Scale LLM Extraction and Metadata Structuring of Global Urban Data from Scientific Literature",
+    "authors": [
+      {
+        "name": "Runwen You"
+      },
+      {
+        "name": "Tong Xia"
+      },
+      {
+        "name": "Jingzhi Wang"
+      },
+      {
+        "name": "Jiankun Zhang"
+      },
+      {
+        "name": "Tengyao Tu"
+      },
+      {
+        "name": "Jinghua Piao"
+      },
+      {
+        "name": "Yi Chang"
+      },
+      {
+        "name": "Yong Li"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Runwen You Affiliation: Jilin University , Zhongguancun Academy , Beijing, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-04-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.IR",
+      "cs.AI"
+    ],
+    "abstract": "Urban data support a wide range of applications across multiple disciplines. However, at the global scale, there is no unified platform for urban data discovery. As a result, researchers often have to manually search through websites or scientific literature to identify relevant datasets. To address this problem, we curate an open urban data discovery portal, \\textit{UrbanDataMiner}, which supports dataset-level search and filtering over more than 60{,}000 urban datasets extracted from over 15{,}000 Nature-affiliated publications. \\textit{UrbanDataMiner} is enabled by \\textit{Paper2Data}, a novel large-scale LLM-driven pipeline that automatically identifies dataset mentions in scientific papers and structures them using a unified urban data metadata schema. Human-annotated evaluation demonstrates that \\textit{Paper2Data} achieves high recall (approximately 90\\%) in dataset identification and high field-level precision (above 80\\%). In addition, \\textit{UrbanDataMiner} can retrieve over 9\\% of datasets that are not easily discoverable through general-purpose search engines such as Google. Overall, our work provides the first large-scale, literature-derived infrastructure for urban data discovery and enables more systematic and reusable data-driven research across disciplines. Our code and data are publicly available\\footnote{https://github.com/Yourunwen/Paper2Data}.",
+    "identifiers": {
+      "arxiv": "2604.16317",
+      "doi": "10.48550/arXiv.2604.16317"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2604.16317"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2604.16317v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2604.16317"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2604.16317v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Runwen You Affiliation: Jilin University , Zhongguancun Academy , Beijing, China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2604.16317v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2604-16317",
+    "updatedAt": "2026-09-08T05:43:11Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Targeted Exploration via Unified Entropy Control for Reinforcement Learning",
+    "authors": [
+      {
+        "name": "Chen Wang"
+      },
+      {
+        "name": "Lai Wei"
+      },
+      {
+        "name": "Yanzhi Zhang"
+      },
+      {
+        "name": "Chenyang Shao"
+      },
+      {
+        "name": "Zedong Dan"
+      },
+      {
+        "name": "Weiran Huang"
+      },
+      {
+        "name": "Ge Lan"
+      },
+      {
+        "name": "Yue Wang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Chen Wang Affiliation: College of Software, Nankai University Affiliation: Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-04-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.AI"
+    ],
+    "abstract": "Recent advances in reinforcement learning (RL) have improved the reasoning capabilities of large language models (LLMs) and vision-language models (VLMs). However, the widely used Group Relative Policy Optimization (GRPO) consistently suffers from entropy collapse, causing the policy to converge prematurely and lose diversity. Existing exploration methods introduce additional bias or variance during exploration, making it difficult to maintain optimization stability. We propose Unified Entropy Control for Reinforcement Learning (UEC-RL), a framework that provides targeted mechanisms for exploration and stabilization. UEC-RL activates more exploration on difficult prompts to search for potential and valuable reasoning trajectories. In parallel, a stabilizer prevents entropy from growing uncontrollably, thereby keeping training stable as the model consolidates reliable behaviors. Together, these components expand the search space when needed while maintaining robust optimization throughout training. Experiments on both LLM and VLM reasoning tasks show consistent gains over RL baselines on both Pass@1 and Pass@$k$. On Geometry3K, UEC-RL achieves a 37.9\\% relative improvement over GRPO, indicating that it sustains effective exploration without compromising convergence and underscoring UEC-RL as a key for scaling RL-based reasoning in large models. Our code is available at https://github.com/597358816/UEC-RL.",
+    "identifiers": {
+      "arxiv": "2604.14646",
+      "doi": "10.48550/arXiv.2604.14646"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2604.14646"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2604.14646v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2604.14646"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2604.14646v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Chen Wang Affiliation: College of Software, Nankai University Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2604.14646v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2604-14646",
+    "updatedAt": "2026-09-08T05:43:11Z"
   },
   {
     "type": "preprint",
@@ -6268,6 +6450,103 @@
   },
   {
     "type": "preprint",
+    "title": "OmniSyn unifies target-aware molecular generation and optimization within a synthesis-native LLM framework across the human proteome",
+    "authors": [
+      {
+        "name": "Zheng QIN"
+      },
+      {
+        "name": "Yuzhang Li"
+      },
+      {
+        "name": "Yueqing Zhang"
+      },
+      {
+        "name": "Yunshuo Zhao"
+      },
+      {
+        "name": "Huan Yee Koh"
+      },
+      {
+        "name": "Zheng Wan"
+      },
+      {
+        "name": "Haocheng Ren"
+      },
+      {
+        "name": "Changying Huang"
+      },
+      {
+        "name": "Yiming Shi"
+      },
+      {
+        "name": "Zhenguo Wu"
+      },
+      {
+        "name": "Yaosen Min",
+        "institutions": [
+          "zgci"
+        ]
+      },
+      {
+        "name": "Jing Yang"
+      },
+      {
+        "name": "Xiao He"
+      },
+      {
+        "name": "Duanhua Cao"
+      }
+    ],
+    "institutions": [
+      "zgci"
+    ],
+    "rawAffiliations": [
+      "Hong Kong University of Science & Technology;",
+      "Tongji University;",
+      "East China Normal University;",
+      "Monash University;",
+      "Zhongguancun Institute of Artificial Intelligence"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Crossref",
+    "status": "published",
+    "topics": [],
+    "abstract": "Designing target-specific bioactive molecules with actionable synthesis routes for the human proteome holds enormous potential for expanding therapeutic discovery, but remains a challenge. Existing target-aware generative models often depend on protein structures and generate molecules before assessing synthetic feasibility. Here we present OmniSyn, a protein-sequence-conditioned Mixture-of-Experts (MoE) language model that couples a task-conditioned interaction module with a synthesis-action decoder to generate molecules with explicit synthesis traces, thereby unifying de novo ligand generation, synthesizability projection and hit-to-lead (H2L) optimization within synthesis-traceable chemical space. OmniSyn is pre-trained with self-distillation and post-trained with task-specific reinforcement learning (RL) to adapt expert routing and optimize molecular properties across design modes. On unseen protein targets from MolGenBench, a real-world drug-discovery benchmark, OmniSyn achieves state-of-the-art performance across de novo design and H2L optimization, including target-awareness and hit-rediscovery metrics, despite relying only on protein sequences rather than three-dimensional (3D) pocket structures. By embedding synthesis planning into the design process, OmniSyn shifts molecular generation from a generate-then-filter paradigm toward design-with-synthesis paradigm, transforming virtual predictions into experimentally actionable candidates. Independent AiZynthFinder evaluation yielded retrosynthetic success rates of 68.47% for de novo generation and 71.92% for H2L optimization, improving over the strongest baselines by 61.3% and 184.2%, respectively, and supporting the synthetic feasibility of OmniSyn-generated molecules. In synthesizability projection, OmniSyn further converts outputs from external generative models into close analogues with improved retrosynthetic feasibility while preserving molecular similarity. Having established strong benchmark performance and external retrosynthetic feasibility, we next applied OmniSyn at human-proteome scale, spanning more than 21,000 targets. Rapid sequence-conditioned sampling enabled the construction of, to our knowledge, the largest human-proteome-scale generative virtual library, comprising 2.7 billion target-specific molecules, each accompanied by model-derived synthesis traces and target-specific prioritization scores. By enabling scalable target-specific molecular design with synthesis-aware generation across the human proteome, OmniSyn opens new opportunities for exploring previously inaccessible therapeutic targets, including those lacking experimentally resolved structures.",
+    "identifiers": {
+      "doi": "10.64898/2026.09.02.748775"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.64898/2026.09.02.748775"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.64898/2026.09.02.748775"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgci",
+        "matchedText": "Zhongguancun Institute of Artificial Intelligence",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.64898/2026.09.02.748775"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-64898-2026-09-02-748775",
+    "updatedAt": "2026-09-08T04:58:29Z"
+  },
+  {
+    "type": "preprint",
     "title": "scRep: A Latent-Space Self-Distilled Foundation Model for Single-Cell Representation Learning",
     "authors": [
       {
@@ -6312,7 +6591,9 @@
       "Xiamen University & Zhongguancun academy;",
       "Beijing University of Posts and Telecommunications & Zhongguancun Academy;",
       "Zhongguancun Academy;",
-      "Jilin University"
+      "Jilin University",
+      "School of Artificial Intelligence, Jilin University, Jilin, China",
+      "Zhongguancun Academy, Beijing, China"
     ],
     "relationType": "affiliation",
     "publishedAt": "2026-01-01",
@@ -6320,7 +6601,7 @@
     "venue": "Crossref",
     "status": "published",
     "topics": [],
-    "abstract": "Single-cell foundation models have shown strong potential for learning transferable representations from large-scale transcriptomic data. However, many existing approaches rely on reconstructing masked gene expression values, creating a potential mismatch between observation-space reconstruction and the goal of learning stable biological representations. This challenge is particularly relevant to single-cell RNA sequencing, where sparsity, incomplete gene detection, and technical variation can obscure the underlying biological state. Here, we introduce scRep, a compact latent-space self-distillation framework for single-cell representation learning. Rather than reconstructing raw expression values, scRep aligns differently perturbed views of the same cell through a momentum-updated teacher--student architecture, with self-distillation objectives at both the cell and gene levels. This representation-centered formulation encourages the model to capture biological information that remains stable across incomplete and perturbed transcriptomic observations. Using frozen representations without task-specific fine-tuning, scRep pretrained on approximately 2.8 million cells achieves the strongest overall performance across the evaluated frozen-representation benchmarks, demonstrating strong sample efficiency. A larger-scale scRep model pretrained on 30.72 million cells further demonstrates that the framework remains effective when scaled to a substantially larger and more diverse corpus. Beyond cell identity, scRep prioritizes established marker genes, recovers transcription factor--associated gene programs with cell-type-specific activity, and preserves continuous developmental structure that supports graph-based pseudotime inference. We further show that pretraining performance is closely associated with biological diversity: reducing redundant cells while improving cell-type coverage can match or exceed the performance of larger, less balanced training corpora. Together, these results establish latent-space self-distillation as an effective alternative to expression reconstruction for single-cell foundation modeling and suggest that efficient scaling depends not only on the number of cells, but also on the learning objective and the biological diversity of the pretraining corpus.",
+    "abstract": "Abstract Single-cell foundation models have shown strong potential for learning transferable representations from large-scale transcriptomic data. However, many existing approaches rely on reconstructing masked gene expression values, creating a potential mismatch between observation-space reconstruction and the goal of learning stable biological representations. This challenge is particularly relevant to single-cell RNA sequencing, where sparsity, incomplete gene detection, and technical variation can obscure the underlying biological state. Here, we introduce scRep, a compact latent-space self-distillation framework for single-cell representation learning. Rather than reconstructing raw expression values, scRep aligns differently perturbed views of the same cell through a momentum-updated teacher–student architecture, with self-distillation objectives at both the cell and gene levels. This representation-centered formulation encourages the model to capture biological information that remains stable across incomplete and perturbed transcriptomic observations. Using frozen representations without task-specific fine-tuning, scRep pretrained on approximately 2.8 million cells achieves the strongest overall performance across the evaluated frozen-representation benchmarks, demonstrating strong sample efficiency. A larger-scale scRep model pretrained on 30.72 million cells further demonstrates that the framework remains effective when scaled to a substantially larger and more diverse corpus. Beyond cell identity, scRep prioritizes established marker genes, recovers transcription factor–associated gene programs with cell-type-specific activity, and preserves continuous developmental structure that supports graph-based pseudotime inference. We further show that pretraining performance is closely associated with biological diversity: reducing redundant cells while improving cell-type coverage can match or exceed the performance of larger, less balanced training corpora. Together, these results establish latent-space self-distillation as an effective alternative to expression reconstruction for single-cell foundation modeling and suggest that efficient scaling depends not only on the number of cells, but also on the learning objective and the biological diversity of the pretraining corpus.",
     "identifiers": {
       "doi": "10.64898/2026.08.31.747784"
     },
@@ -6340,7 +6621,7 @@
       {
         "level": "exact-affiliation",
         "institution": "zgca",
-        "matchedText": "Jilin University & Zhongguancun Academy;",
+        "matchedText": "Zhongguancun Academy, Beijing, China",
         "source": "Crossref",
         "sourceUrl": "https://doi.org/10.64898/2026.08.31.747784"
       }
@@ -8710,6 +8991,93 @@
     "updatedAt": "2026-08-08T11:35:31Z"
   },
   {
+    "type": "preprint",
+    "title": "Chemical Disorder Suppresses Thermal Transport through Local Stress Redistribution in SrTiO3-Based High-Entropy Perovskites",
+    "authors": [
+      {
+        "name": "Yongheng Li",
+        "institutions": [
+          "zgci"
+        ]
+      },
+      {
+        "name": "Maomao Liu"
+      },
+      {
+        "name": "Hongwei Du",
+        "institutions": [
+          "zgci"
+        ]
+      },
+      {
+        "name": "Baole Wei",
+        "institutions": [
+          "zgci"
+        ]
+      },
+      {
+        "name": "Bin Wei"
+      },
+      {
+        "name": "Bonan Zhu"
+      },
+      {
+        "name": "Ziheng Lu",
+        "institutions": [
+          "zgci"
+        ]
+      },
+      {
+        "name": "Yuanhua Lin"
+      }
+    ],
+    "institutions": [
+      "zgci"
+    ],
+    "rawAffiliations": [
+      "Zhongguancun Institute of Artificial Intelligence",
+      "Henan Polytechnic University",
+      "Beijing Institute of Technology",
+      "Tsinghua University"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Crossref",
+    "status": "published",
+    "topics": [],
+    "abstract": "Abstract High-entropy disorder offers an effective route to suppress lattice heat transport in oxide thermoelectrics, yet the atomistic origin of phonon scattering in high-entropy SrTiO 3 remains unresolved. Here, we distill a fine-tuned MACE teacher into an accurate and efficient NEP for large-scale molecular dynamics. Using this potential, we find that A-site substitution rapidly lowers lattice thermal conductivity, while further reductions are modest in the four-and five-component compositions near 3 W m −1 K −1 . Phonon spectra reveal two distinct dopant effects: Pb introduces a low-frequency soft-mode-like response, whereas Ca produces stronger spectral broadening. Mass fluctuation and ionic-size mismatch alone do not describe the conductivity trend well. Instead, the local stress descriptor correlates more directly with thermal conductivity and captures the loss of phonon spectral coherence, linking local stress disorder to effective lifetime-like broadening. These results establish local stress disorder as a transport descriptor for low thermal conductivity and show that MACE-guided NEP distillation provides a practical route to large-scale atomistic studies of high-entropy oxides.",
+    "identifiers": {
+      "doi": "10.21203/rs.3.rs-10754513/v1"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.21203/rs.3.rs-10754513/v1"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.21203/rs.3.rs-10754513/v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgci",
+        "matchedText": "Zhongguancun Institute of Artificial Intelligence",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.21203/rs.3.rs-10754513/v1"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-21203-rs-3-rs-10754513-v1",
+    "updatedAt": "2026-09-08T04:58:29Z"
+  },
+  {
     "type": "article",
     "title": "VectorWeaver: A Stage-Aware Automated Optimization Framework for LLM Inference on Edge Platform",
     "authors": [
@@ -9815,6 +10183,82 @@
     ],
     "id": "doi-10-1093-nsr-nwag466",
     "updatedAt": "2026-08-08T11:35:31Z"
+  },
+  {
+    "type": "article",
+    "title": "DECANT: Decoupling mechanism from context in single-cell drug perturbation representation",
+    "authors": [
+      {
+        "name": "Ren Qi"
+      },
+      {
+        "name": "Wenjie Teng"
+      },
+      {
+        "name": "Xin Yang"
+      },
+      {
+        "name": "Yue Cheng",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Alexey K Shaytan"
+      },
+      {
+        "name": "Bin Liu",
+        "institutions": [
+          "zgca"
+        ]
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Beijing Institute of Technology School of Computer Science and Technology, , Beijing 100081,",
+      "Zhongguancun Academy , Beijing 100094,",
+      "Jilin University School of Artificial Intelligence, , Jilin 130012,",
+      "Lomonosov Moscow State University Department of Biology, , Moscow, Russia",
+      "SMBU-MSU-BIT Joint Laboratory on Bioinformatics and Engineering Biology, Shenzhen MSU-BIT University , Shenzhen, Guangdong 518172,"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Bioinformatics",
+    "status": "published",
+    "topics": [],
+    "abstract": "Abstract Motivation Single-cell chemical perturbation profiling offers a powerful opportunity to organize drugs by shared mechanism-associated transcriptional responses, but observed transcriptional responses are entangled with contextual variation from cell identity, dose and treatment time. As a result, models that perform well in perturbation-response prediction may still learn latent spaces dominated by context-associated structure rather than transferable drug-associated signal. We developed DECANT to learn mechanism-aligned perturbation representations that remain stable across context shifts while preserving response fidelity. Results DECANT represents each perturbation as a matched treated–control cell set and separates a context-suppressed, mechanism-aligned perturbation representation from context-dependent response information. The resulting mechanism-aligned perturbation space is shaped to support drug-level retrieval and biological interpretation. Under a fixed drug-level unseen-compound benchmark, DECANT achieved the strongest overall response-difference profile among adapted published perturbation models and strong pseudo-bulk baselines across gene- and program-level metrics. Beyond prediction, DECANT produced embeddings that remained stable across changes in dose, cell line and treatment time, recovered drug neighborhoods enriched for shared mechanism-family annotations, and linked these neighborhoods to interpretable downstream consequence programs. Ablation analyses showed that mechanism–context decoupling provided the main signal-separation backbone, whereas retrieval-oriented shaping was critical for organizing local representation-space geometry. These results support DECANT as a framework for learning context-robust, mechanism-aligned perturbation representations from single-cell transcriptional responses, providing a basis for mechanism-aligned perturbation analysis and representation-based compound prioritization. Availability and Implementation The DECANT web server is publicly available at http://bliulab.net/DECANT. All source code and analysis scripts are available at https://github.com/bliulab/DECANT and archived on Zenodo at https://doi.org/10.5281/zenodo.21216567. Supplementary information Supplementary data are available at Bioinformatics online.",
+    "identifiers": {
+      "doi": "10.1093/bioinformatics/btag662"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1093/bioinformatics/btag662"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1093/bioinformatics/btag662"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy , Beijing 100094,",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1093/bioinformatics/btag662"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1093-bioinformatics-btag662",
+    "updatedAt": "2026-09-08T04:58:29Z"
   },
   {
     "type": "article",
@@ -12386,6 +12830,85 @@
     ],
     "id": "doi-10-21203-rs-3-rs-7314380-v1",
     "updatedAt": "2026-08-08T11:35:31Z"
+  },
+  {
+    "type": "conference",
+    "title": "LSF-Animation: Label-Free Speech-Driven Facial Animation via Implicit Feature Representation",
+    "authors": [
+      {
+        "name": "Xin Lu",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Chuanqing Zhuang"
+      },
+      {
+        "name": "Chenxi Jin"
+      },
+      {
+        "name": "Zhengda Lu"
+      },
+      {
+        "name": "Yiqun Wang"
+      },
+      {
+        "name": "Wu Liu"
+      },
+      {
+        "name": "Jun Xiao",
+        "institutions": [
+          "zgca"
+        ]
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "University of Chinese Academy of Sciences, Beijing, China and Zhongguancun Academy, Beijing, China",
+      "University of Chinese Academy of Sciences, Beijing, China",
+      "National university of Singapore, Singapore, Singapore",
+      "Chongqing University, Chongqing, China",
+      "University of Science and Technology of China, Hefei, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2025-01-01",
+    "year": 2025,
+    "venue": "Proceedings of the SIGGRAPH Asia 2025 Conference Papers",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1145/3757377.3763887"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1145/3757377.3763887"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1145/3757377.3763887"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "University of Chinese Academy of Sciences, Beijing, China and Zhongguancun Academy, Beijing, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1145/3757377.3763887"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1145-3757377-3763887",
+    "updatedAt": "2026-09-08T04:58:29Z"
   },
   {
     "type": "conference",
