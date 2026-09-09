@@ -16,6 +16,7 @@ A bilingual, traceable index of research outputs from **Zhongguancun Academy (�
 
 ## Latest outputs
 
+- [TransNormal-2: Geometry-Grounded Rectified Flow with Edge-Aware Decoding for Precise Normal Estimation](https://arxiv.org/abs/2609.06665) — arXiv (2026)
 - [Trace, Verify, and Correct: A Training-Free Framework for Spatial Reasoning in Multimodal LLMs](https://arxiv.org/abs/2608.04759) — arXiv (2026)
 - [EmbodiedVAE: Disentangled Video VAE for Efficient and Controllable Embodied Manipulation](https://arxiv.org/abs/2608.02990) — arXiv (2026)
 - [RSVideo: Are Your Vision-Language Models Ready for Remote Sensing Videos?](https://arxiv.org/abs/2608.02039) — arXiv (2026)
@@ -23,20 +24,19 @@ A bilingual, traceable index of research outputs from **Zhongguancun Academy (�
 - [TacReasoner: A Dynamic Tactile-Language Framework for Interactive Reasoning in Real-World Scenarios](https://arxiv.org/abs/2607.05131) — IROS 2026 (2026)
 - [Feeling the Unexpected: ResTacVLA for Contact-Rich Manipulation via Residual Tactile Representation](https://arxiv.org/abs/2607.03387) — IROS 2026 (2026)
 - [UrbanWell: Benchmarking Multimodal Large Language Models for Spatio-Temporal Urban Wellbeing Analytics](https://arxiv.org/abs/2606.15890) — KDD Datasets and Benchmarks Track 2026 (2026)
-- [Differencing the Diffusion Trajectory toward Uncertain Components for Time Series Forecasting](https://arxiv.org/abs/2607.22599) — arXiv (2026)
 
 ## Data sources
 
 | Source | Status |
 | --- | --- |
-| arxiv | unavailable (TimeoutError) |
-| arxiv_html_backfill | checked 17920/24003; 78 exact affiliation matches; 5715 pending; 368 retry; last check 2026-09-08T05:00:40Z; discovery ok |
-| bza_official | unavailable (HTTPError) |
+| arxiv | ok (0 matched) |
+| arxiv_html_backfill | checked 18218/24005; 82 exact affiliation matches; 5417 pending; 370 retry; last check 2026-09-09T04:59:23Z; discovery ok |
+| bza_official | ok (22 matched) |
 | core | optional key |
-| crossref | ok (12 matched) |
+| crossref | unavailable (HTTPError) |
 | datacite | ok (19 matched) |
 | europe_pmc | ok (0 matched) |
-| github_projects | unavailable (HTTPError) |
+| github_projects | ok (9 matched) |
 | lens | optional key |
 | openalex | ok (0 matched) |
 | semantic_scholar | optional key |
