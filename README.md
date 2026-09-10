@@ -16,7 +16,7 @@ A bilingual, traceable index of research outputs from **Zhongguancun Academy (�
 
 ## Latest outputs
 
-- [TransNormal-2: Geometry-Grounded Rectified Flow with Edge-Aware Decoding for Precise Normal Estimation](https://arxiv.org/abs/2609.06665) — arXiv (2026)
+- [TransNormal-2: Geometry-Grounded Rectified Flow with Edge-Aware Decoding for Precise Normal Estimation](https://arxiv.org/abs/2609.06665) — ICML 2026 (2026)
 - [Trace, Verify, and Correct: A Training-Free Framework for Spatial Reasoning in Multimodal LLMs](https://arxiv.org/abs/2608.04759) — arXiv (2026)
 - [EmbodiedVAE: Disentangled Video VAE for Efficient and Controllable Embodied Manipulation](https://arxiv.org/abs/2608.02990) — arXiv (2026)
 - [RSVideo: Are Your Vision-Language Models Ready for Remote Sensing Videos?](https://arxiv.org/abs/2608.02039) — arXiv (2026)
@@ -30,10 +30,10 @@ A bilingual, traceable index of research outputs from **Zhongguancun Academy (�
 | Source | Status |
 | --- | --- |
 | arxiv | ok (0 matched) |
-| arxiv_html_backfill | checked 18218/24005; 82 exact affiliation matches; 5417 pending; 370 retry; last check 2026-09-09T04:59:23Z; discovery ok |
+| arxiv_html_backfill | checked 18518/24009; 85 exact affiliation matches; 5121 pending; 370 retry; last check 2026-09-10T05:01:49Z; discovery ok |
 | bza_official | ok (22 matched) |
 | core | optional key |
-| crossref | unavailable (HTTPError) |
+| crossref | ok (12 matched) |
 | datacite | ok (19 matched) |
 | europe_pmc | ok (0 matched) |
 | github_projects | ok (9 matched) |
