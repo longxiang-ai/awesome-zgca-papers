@@ -798,6 +798,88 @@
     "updatedAt": "2026-08-13T12:34:14Z"
   },
   {
+    "type": "preprint",
+    "title": "AiraXiv: An AI-Driven Open-Access Platform for Human and AI Scientists",
+    "authors": [
+      {
+        "name": "Junshu Pan"
+      },
+      {
+        "name": "Panzhong Lu"
+      },
+      {
+        "name": "Yixuan Weng"
+      },
+      {
+        "name": "Qiyao Sun"
+      },
+      {
+        "name": "Fang Guo"
+      },
+      {
+        "name": "Zijie Yang"
+      },
+      {
+        "name": "Qiji Zhou"
+      },
+      {
+        "name": "Yue Zhang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Qiyao Sun 1 1 footnotemark: 1 Affiliation: Westlake University Affiliation: Zhongguancun Academy https://airaxiv.com"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-20",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Recent advances in artificial intelligence (AI) have accelerated the growth of both human-authored and AI-generated research outputs, placing increasing strain on traditional academic publishing systems and challenging the scalability of conference- and journal-centered paradigms amid rising submission volumes, reviewer workload, and venue size. To address these challenges, we explore an AI-era publishing paradigm in which both human and AI scientists participate as authors and readers, and papers evolve through continuous, feedback-driven iteration. We propose AiraXiv, an AI-driven open-access platform built on open preprints, AI-augmented analysis and review, and reader feedback. AiraXiv supports human scientists through an interactive UI and AI scientists through Model Context Protocol (MCP)-based interactions. We validate AiraXiv through real-world deployments, including serving as the submission platform for ICAIS 2025, demonstrating its potential as a fast, inclusive, and scalable research infrastructure for the AI era. AiraXiv is publicly available at https://airaxiv.com.",
+    "identifiers": {
+      "arxiv": "2605.21481",
+      "doi": "10.48550/arXiv.2605.21481"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.21481"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.21481v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.21481"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.21481v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Qiyao Sun 1 1 footnotemark: 1 Affiliation: Westlake University Affiliation: Zhongguancun Academy https://airaxiv.com",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.21481v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2605-21481",
+    "updatedAt": "2026-09-11T05:18:36Z"
+  },
+  {
     "type": "conference",
     "title": "SciCustom: A Framework for Custom Evaluation of Scientific Capabilities in Large Language Models",
     "authors": [
@@ -861,7 +943,8 @@
       "zgci"
     ],
     "rawAffiliations": [
-      "北京中关村学院与中关村人工智能研究院（中关村两院）"
+      "北京中关村学院与中关村人工智能研究院（中关村两院）",
+      "Peking University Zhongguancun Academy IDEA"
     ],
     "relationType": "official-output",
     "publishedAt": "2026-05-19",
@@ -892,6 +975,10 @@
       {
         "label": "Code",
         "url": "https://github.com/yjwtheonly/SciCustom"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.19357v1"
       }
     ],
     "versions": [
@@ -914,14 +1001,113 @@
         "matchedText": "北京中关村学院与中关村人工智能研究院（中关村两院）",
         "source": "北京中关村学院官网",
         "sourceUrl": "https://www.bza.edu.cn/detail/inews_y4wg2eznr5f9qipfzk688str4knm80bl"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Peking University Zhongguancun Academy IDEA",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.19357v1"
       }
     ],
     "sources": [
       "arXiv",
-      "北京中关村学院官网"
+      "北京中关村学院官网",
+      "arXiv HTML"
     ],
     "id": "doi-10-48550-arxiv-2605-19357",
     "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Semantic-Enriched Latent Visual Reasoning",
+    "authors": [
+      {
+        "name": "Tianrun Xu"
+      },
+      {
+        "name": "Yue Sun"
+      },
+      {
+        "name": "Qixun Wang"
+      },
+      {
+        "name": "Jingyi Lu"
+      },
+      {
+        "name": "Yuan Wang"
+      },
+      {
+        "name": "Tianren Zhang"
+      },
+      {
+        "name": "Longteng Guo"
+      },
+      {
+        "name": "Fengyun Rao"
+      },
+      {
+        "name": "Jing Lyu"
+      },
+      {
+        "name": "Feng Chen"
+      },
+      {
+        "name": "Jing Liu"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Tianrun Xu Affiliation: Department of Automation, Tsinghua University, Beijing, China Affiliation: Zhongguancun Academy, Beijing, China Affiliation: WeChat Vision, Tencent Inc, Beijing, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-19",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Multimodal latent-space reasoning aims to replace explicit thinking with images by performing visual reasoning directly in a compact latent space. However, existing approaches largely rely on visual supervision and produce latent representations that lack sufficient semantic richness, limiting their ability to support diverse region-level reasoning tasks. In this work, we introduce Semantic-Enriched Latent Visual Reasoning (SLVR), a two-stage learning framework that enriches latent representations with attribute-level visual semantics and aligns them with diverse reasoning objectives. In the first stage, SLVR learns semantically enriched region-centric latents under fine-grained attribute supervision. In the second stage, we design Multi-query Group Relative Policy Optimization (M-GRPO) to align latent representations across multiple queries grounded in the same region. To support this framework, we construct SLV-Set, comprising approximately 400K region-level attribute annotations and 800K multi-query question answering samples, and introduce SV-QA, a benchmark that evaluates latent reasoning under semantic variation. Experiments demonstrate that SLVR improves the robustness and semantic consistency of latent visual reasoning compared to existing baselines.",
+    "identifiers": {
+      "arxiv": "2605.19342",
+      "doi": "10.48550/arXiv.2605.19342"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.19342"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.19342v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.19342"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.19342v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Tianrun Xu Affiliation: Department of Automation, Tsinghua University, Beijing, China Affiliation: Zhongguancun Academy, Beijing, China Affiliation: WeChat Vision, Tencent Inc, Beijing, China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.19342v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2605-19342",
+    "updatedAt": "2026-09-11T05:18:36Z"
   },
   {
     "type": "preprint",
@@ -2596,6 +2782,73 @@
     ],
     "id": "doi-10-48550-arxiv-2605-01330",
     "updatedAt": "2026-08-20T02:19:27Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Emergence of Frontier Superposition: Möbius attractor and Cascade Supervision",
+    "authors": [
+      {
+        "name": "Hongyu Gu"
+      },
+      {
+        "name": "Jingwen Fu"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Jingwen Fu † † thanks: Corresponding author. Affiliation: Zhongguancun Academy Affiliation: Beijing, China Email: jwfu99@gmail.com"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "abstract": "Superposition allows Transformers to reason in depth, carrying an entire reasoning frontier in parallel through a bounded-depth forward pass instead of unrolling serial chain-of-thought tokens. While Zhu et al. (2025) hand-crafted an equal-weight breadth-first frontier in a single residual stream for graph reachability, it remained open whether gradient descent could ever find this target amidst permutation-symmetric saddles. We close this gap on Reachability-by-Superposition over Erdős-Rényi graphs by isolating architectural and supervisional contributions. Architecturally, we identify a Möbius attractor: under $S_n$-symmetry in the tree regime, layerwise dynamics reduce to a 1D Möbius map whose zero set is a codimension-one manifold of global optima containing the equal-weight superposition state. On the supervision side, we identify Cascade Supervision: a loss class whose backward pass simultaneously delivers (A) selectivity bootstrap, (B) gradient persistence across depth, and (C) per-step discrimination (e.g., \\mathcal{L}_{sup} and \\mathcal{L}_{node}). End-to-end supervision fails condition (B) and is provably insufficient: internal gradients at layer c decay as (np)^{-(D-c-2)/2} in the graph fan-out and stall before the manifold is reached. Our thesis: Möbius attractor + Cascade Supervision = emergence of superposition reasoning. The parameter-free decay law predicts a final-step cosine of 0.35 vs. 0.71 (end-to-end vs. cascade) at depth D=3; experiments confirm 0.37 vs. 0.69, matching within 0.02 at every step.",
+    "identifiers": {
+      "arxiv": "2605.18820",
+      "doi": "10.48550/arXiv.2605.18820"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.18820"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.18820v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.18820"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.18820v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Jingwen Fu † † thanks: Corresponding author. Affiliation: Zhongguancun Academy Affiliation: Beijing, China Email: jwfu99@gmail.com",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.18820v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2605-18820",
+    "updatedAt": "2026-09-11T05:18:36Z"
   },
   {
     "type": "preprint",
