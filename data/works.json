@@ -735,6 +735,82 @@
   },
   {
     "type": "preprint",
+    "title": "DV-SFT: Direct Vision Supervision for Fine-Grained Visual Understanding",
+    "authors": [
+      {
+        "name": "Jianfei Zhao"
+      },
+      {
+        "name": "Feng Zhang"
+      },
+      {
+        "name": "Xin Sun"
+      },
+      {
+        "name": "Chong Feng"
+      },
+      {
+        "name": "Bing Wang"
+      },
+      {
+        "name": "Zhixing Tan"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Jianfei Zhao Affiliation: School of Computer Science and Technology, Beijing Institute of Technology Affiliation: Zhongguancun Academy Email: zhqingan@bit.edu.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-26",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Multimodal large language models are typically trained end-to-end to predict ground-truth answers, yet supervision signals are applied exclusively to text tokens. Visual tokens, the core carriers of visual information, are optimized only implicitly as part of the context, leading to coarse-grained visual understanding. Prior works attempt to supervise visual inputs but inevitably rely on auxiliary components such as additional decoders or forward passes, because visual tokens lack readily interpretable labels. This limits their practical applicability. In this work, we propose \\textbf{D}irect \\textbf{V}ision \\textbf{S}upervised \\textbf{F}ine-\\textbf{T}uning (DV-SFT), which constructs explicit, token-level supervision for visual tokens and trains them through the same next-token prediction objective used for text. Specifically, we exploit the direct vision--text correspondence in OCR-related scenarios and automatically label each visual token with the word in its corresponding image patch. DV-SFT treats the MLLM as a black box, requiring no architectural modifications or additional forward passes. Extensive experiments demonstrate the superiority of direct vision supervision. DV-SFT consistently outperforms standard SFT across three in-domain and four out-of-domain benchmarks. Further analyses show that vision supervision effectively enhances fine-grained visual understanding and achieves higher multimodal alignment efficiency.",
+    "identifiers": {
+      "arxiv": "2605.26656",
+      "doi": "10.48550/arXiv.2605.26656"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.26656"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.26656v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.26656"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.26656v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Jianfei Zhao Affiliation: School of Computer Science and Technology, Beijing Institute of Technology Affiliation: Zhongguancun Academy Email: zhqingan@bit.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.26656v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2605-26656",
+    "updatedAt": "2026-09-12T05:10:53Z"
+  },
+  {
+    "type": "preprint",
     "title": "SliceWorld: A Predictive and Controllable World-State Model for CT Report Generation",
     "authors": [
       {
@@ -796,6 +872,167 @@
     ],
     "id": "doi-10-48550-arxiv-2605-24371",
     "updatedAt": "2026-08-13T12:34:14Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Observing Joinings: A Distance-Array Characterization of Furstenberg Disjointness",
+    "authors": [
+      {
+        "name": "Ao Xu"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Ao Xu Email: xuao24@mails.jlu.edu.cn Affiliation: School of Artificial Intelligence, Jilin University, No. 2699 Qianjin Street, Changchun, 130012, China Affiliation: Zhongguancun Academy, Daniufang 2nd Ring Road, Haidian District, Beijing, 100094, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-22",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Joinings are fundamental global objects in ergodic theory, yet in compact metric models one naturally observes only finite orbit-distance patterns. We bridge this gap by introducing multi-particle distance arrays, which sample finite orbit segments and record their joint metric evolution. In the anchored fixed-model setting, this framework yields a purely finite-observable characterization of Furstenberg disjointness: two systems are disjoint if and only if all their anchored multi-orbit distance-array projections are independent. The structural engine behind this criterion is a marked and colored version of the Gromov--Vershik reconstruction principle for exchangeable arrays; unanchored arrays reconstruct the intrinsic twin-free quotient, while anchors recover the actual joining in a fixed model. To quantify this independence, we introduce Wasserstein dependence coefficients, establishing an all-order zero criterion for disjointness, and show that weak neighborhoods of the product joining always admit finite distance-array certificates. Examples from compact rotations, Bernoulli and reversible Markov shifts, common factors, Kronecker factors, and weak mixing demonstrate the strict necessity of the multi-particle level and the broad scope of this approach.",
+    "identifiers": {
+      "arxiv": "2605.23349",
+      "doi": "10.48550/arXiv.2605.23349"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.23349"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.23349v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.23349"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.23349v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Ao Xu Email: xuao24@mails.jlu.edu.cn Affiliation: School of Artificial Intelligence, Jilin University, No. 2699 Qianjin Street, Changchun, 130012, China Affiliation: Zhongguancun Academy, Daniufang 2nd Ring Road, Haidian District, Beijing, 100094, China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.23349v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2605-23349",
+    "updatedAt": "2026-09-12T05:10:53Z"
+  },
+  {
+    "type": "preprint",
+    "title": "SCOPE: Simulating Cross-game Operations in Playable Environments for FPS World Models",
+    "authors": [
+      {
+        "name": "Zizhao Tong"
+      },
+      {
+        "name": "Yeying Jin"
+      },
+      {
+        "name": "Hongfeng Lai"
+      },
+      {
+        "name": "Zeqing Wang"
+      },
+      {
+        "name": "Zhaohu Xing"
+      },
+      {
+        "name": "Kexu Cheng"
+      },
+      {
+        "name": "Haoran Xu"
+      },
+      {
+        "name": "Zhao Pu"
+      },
+      {
+        "name": "Shangwen Zhu"
+      },
+      {
+        "name": "Ruili Feng"
+      },
+      {
+        "name": "Jian Zhao"
+      },
+      {
+        "name": "Yan Zhang"
+      },
+      {
+        "name": "Hao Tang"
+      },
+      {
+        "name": "Ling Shao"
+      }
+    ],
+    "institutions": [
+      "zgci"
+    ],
+    "rawAffiliations": [
+      "Jian Zhao Affiliation: Zhongguancun Institute of Artificial Intelligence"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-22",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Interactive world models for first-person shooter (FPS) games must resolve high-frequency overlapping control signals at every frame without disrupting unaffected regions. Existing methods inject actions globally and train on single titles, failing under dense FPS inputs. We observe that FPS actions are spatially selective: discrete events such as firing or reloading affect only a localized region around the weapon (the scope), while continuous camera and movement signals govern stable surroundings. We propose SCOPE, which inserts a conditioning module into each transformer block of a pretrained video diffusion model. It reshapes features into per-pixel temporal sequences so that each position computes its action response from local visual content. This separates in-scope effects from out-of-scope generation without segmentation labels. We also introduce CrossFPS, the first multi-game FPS dataset with frame-aligned action telemetry. It comprises 69K clips from 7 titles with 10-DoF controller signals, curated to remove gameplay bias. The model learns general visual-to-action mappings rather than game-specific patterns, enabling zero-shot transfer to unseen scenes. Experiments confirm strong action responsiveness, precise scope separation, and effective cross-game generalization.",
+    "identifiers": {
+      "arxiv": "2605.23345",
+      "doi": "10.48550/arXiv.2605.23345"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.23345"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.23345v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.23345"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.23345v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgci",
+        "matchedText": "Jian Zhao Affiliation: Zhongguancun Institute of Artificial Intelligence",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.23345v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2605-23345",
+    "updatedAt": "2026-09-12T05:10:53Z"
   },
   {
     "type": "preprint",
@@ -2782,6 +3019,70 @@
     ],
     "id": "doi-10-48550-arxiv-2605-01330",
     "updatedAt": "2026-08-20T02:19:27Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Targeted Remasking: Replacing Token Editing with Token-to-Mask Refinement in Discrete Diffusion Language Models",
+    "authors": [
+      {
+        "name": "Lin Yao"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Lin Yao Affiliation: School of Computer Science, Shanghai Jiao Tong University, Shanghai, 200240, China Affiliation: Zhongguancun Academy, Beijing, 100097, China Email: lin.yao@sjtu.edu.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "abstract": "Discrete masked diffusion language models such as LLaDA generate text through iterative denoising, where mask tokens are progressively replaced with predicted tokens. LLaDA2.1 introduced a Token-to-Token (T2T) editing mechanism that accelerates generation by directly replacing committed tokens suspected of being incorrect. However, we identify fundamental limitations of T2T editing: it couples error detection with replacement, pollutes the generation context with potentially incorrect tokens, and introduces a train-inference noise mismatch where systematic model-generated errors differ from the random perturbations seen during training. We propose Token-to-Mask (T2M) remasking, a training-free, drop-in replacement for T2T editing that resets suspected erroneous tokens back to the mask state, allowing the diffusion process to re-predict them under cleaner context. We design and empirically validate three complementary error detection strategies -- probability-based, trigger-mirrored, and temporal-difference-based -- and provide a unified theoretical analysis showing that T2M remasking purifies the generation context, converts systematic inference errors back to the model's native mask noise type, and enables delayed commitment for joint multi-position optimization. Comprehensive experiments across 12 benchmarks spanning knowledge, reasoning, mathematics, coding, and instruction following show that T2M generally improves performance on tasks requiring precise token-level output, with the largest gain on mathematics (+5.92% on CMATH). Error analysis on CMATH reveals that the dominant failure mode is last-mile token corruption -- where correct reasoning produces a corrupted final answer -- and that T2M repairs 59.4% of such cases.",
+    "identifiers": {
+      "arxiv": "2605.26436",
+      "doi": "10.48550/arXiv.2605.26436"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.26436"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.26436v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.26436"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.26436v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Lin Yao Affiliation: School of Computer Science, Shanghai Jiao Tong University, Shanghai, 200240, China Affiliation: Zhongguancun Academy, Beijing, 100097, China Email: lin.yao@sjtu.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.26436v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2605-26436",
+    "updatedAt": "2026-09-12T05:10:53Z"
   },
   {
     "type": "preprint",
