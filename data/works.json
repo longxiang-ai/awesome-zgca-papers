@@ -735,6 +735,225 @@
   },
   {
     "type": "preprint",
+    "title": "Decoding in Order-Agnostic Language Models: Chain-Rule Deviation and Uniform Spreading",
+    "authors": [
+      {
+        "name": "Lin Yao"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Lin Yao Affiliation: School of Computer Science, Shanghai Jiao Tong University, Shanghai, 200240, China Affiliation: Zhongguancun Academy, Beijing, 100097, China Email: lin.yao@sjtu.edu.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-31",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Order-agnostic language models (OALMs), including discrete diffusion language models (dLLMs), are trained to predict masked tokens under arbitrary conditioning sets, allowing sequences to be generated or scored under arbitrary reveal orders at inference time. In LLaDA-2.1, we report three findings. First, the learned conditionals are not exact factorizations of a coherent joint distribution: changing only the reveal order shifts target log-likelihood by up to 0.49 nats/token, so likelihood alone mixes content difficulty with path-dependent artifacts. Second, although confidence-first (CF) decoding is order-agnostic, its reveal orders are close to left-to-right (L2R) on content tokens. Third, we propose a complementary diagnostic based on the shape of the confidence trace. A uniform-spreading theorem shows that, at fixed total likelihood, target recoverability is maximized when per-step confidence is spread uniformly; the resulting deviation motivates $\\mathrm{Var}(\\log q_t)$ as a diagnostic for comparing decoding paths. Across C4 and four downstream benchmarks, low variance separates structured paths from random ordering, and variance is consistently associated with downstream correctness. These results support reporting mean confidence and confidence variance jointly when comparing OALM decoding paths.",
+    "identifiers": {
+      "arxiv": "2606.00997",
+      "doi": "10.48550/arXiv.2606.00997"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.00997"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2606.00997v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2606.00997"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2606.00997v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Lin Yao Affiliation: School of Computer Science, Shanghai Jiao Tong University, Shanghai, 200240, China Affiliation: Zhongguancun Academy, Beijing, 100097, China Email: lin.yao@sjtu.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2606.00997v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2606-00997",
+    "updatedAt": "2026-09-13T06:31:22Z"
+  },
+  {
+    "type": "preprint",
+    "title": "ForeSci: Evaluating LLM Agents for Forward-Looking AI Research Judgment",
+    "authors": [
+      {
+        "name": "Qiuyu Tian"
+      },
+      {
+        "name": "Haojie Yin"
+      },
+      {
+        "name": "Yingce Xia"
+      },
+      {
+        "name": "Youyong Kong"
+      },
+      {
+        "name": "Zequn Liu"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Qiuyu Tian 1,2 Zequn Liu 2 Yingce Xia 2 Youyong Kong 1 Haojie Yin 3 1 Southeast University, Nanjing, China 2 Beijing Zhongguancun Academy, Beijing, China 3 Duke Kunshan University, Kunshan, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-30",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "AI research often requires decisions before future evidence exists: which bottleneck to attack, which direction to pursue, or where a project should be positioned. We introduce ForeSci, a temporally controlled benchmark for evaluating whether LLM agents can make such forward-looking research judgements from historical evidence. ForeSci contains 500 tasks across four fast-moving AI domains and four decision families. Each task is paired with a cutoff-aligned offline knowledge base; post-cutoff papers are hidden during generation and used only for validation. To avoid random future-event prediction, tasks are derived from pre-cutoff taxonomy branches and evidence signals, and answer-generation backbones are selected to precede the task cutoffs. We evaluate native LLMs, Hybrid RAG, and three research-agent adaptations across four backbones. Results show that explicit evidence organization improves traceability and factual support, but gains depend strongly on the decision family. Diagnostics reveal a recurring evidence-decision decoupling: agents may cite relevant evidence while forecasting the wrong research object. ForeSci turns forward-looking AI research judgement into a controlled benchmark for evaluating research agents as decision-making systems.",
+    "identifiers": {
+      "arxiv": "2606.00644",
+      "doi": "10.48550/arXiv.2606.00644"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.00644"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2606.00644v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2606.00644"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2606.00644v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Qiuyu Tian 1,2 Zequn Liu 2 Yingce Xia 2 Youyong Kong 1 Haojie Yin 3 1 Southeast University, Nanjing, China 2 Beijing Zhongguancun Academy, Beijing, China 3 Duke Kunshan University, Kunshan, China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2606.00644v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2606-00644",
+    "updatedAt": "2026-09-13T06:31:22Z"
+  },
+  {
+    "type": "preprint",
+    "title": "SpatialAct: Probing Spatial Reasoning-to-Action Capabilities of VLM Agents in 3D Scenes",
+    "authors": [
+      {
+        "name": "Tianhui Liu"
+      },
+      {
+        "name": "Jie Feng"
+      },
+      {
+        "name": "Zhiheng Zheng"
+      },
+      {
+        "name": "Shengyuan Wang"
+      },
+      {
+        "name": "Yiming Guo"
+      },
+      {
+        "name": "Yanxin Xi"
+      },
+      {
+        "name": "Hangyu Fan"
+      },
+      {
+        "name": "Yong Li"
+      },
+      {
+        "name": "Pan Hui"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Yiming Guo Yanxin Xi Hangyu Fan Yong Li Pan Hui Affiliation: The Hong Kong University of Science and Technology (Guangzhou) Affiliation: Zhongguancun Academy Affiliation: Tsinghua University Affiliation: Helsinki University"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-29",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Humans can effortlessly perceive spatial layouts, form cognitive representations, reason about spatial relations, and translate such reasoning into actions in everyday 3D environments. Although recent vision-language models (VLMs) have shown promising performance on observation-conditioned spatial perception and reasoning tasks, it remains unclear whether they can build coherent spatial understanding, act upon it, and refine their actions through multi-turn feedback. To study this problem, we introduce \\textbf{SpatialAct}, a simulator-grounded benchmark for probing \\textit{action-conditioned spatial reasoning} in 3D scenes. Starting from the most challenging setting, Multi-turn Interactive Refinement, we further design its decomposed counterpart, Single-step Error Detection and Fix, together with five fundamental spatial ability tasks to diagnose the underlying causes of model failures. Experiments reveal a clear reasoning-to-action gap: current VLMs can perform well on isolated spatial reasoning tasks, but struggle to maintain coherent spatial beliefs and produce reliable actions during multi-turn feedback, substantially underperforming humans. These results suggest that current VLM agents still lack robust spatial state tracking under action-induced environment changes, even when low-level control is abstracted away.",
+    "identifiers": {
+      "arxiv": "2605.31148",
+      "doi": "10.48550/arXiv.2605.31148"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.31148"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.31148v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.31148"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.31148v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Yiming Guo Yanxin Xi Hangyu Fan Yong Li Pan Hui Affiliation: The Hong Kong University of Science and Technology (Guangzhou) Affiliation: Zhongguancun Academy Affiliation: Tsinghua University Affiliation: Helsinki University",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.31148v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2605-31148",
+    "updatedAt": "2026-09-13T06:31:22Z"
+  },
+  {
+    "type": "preprint",
     "title": "Mind-Omni: A Unified Multi-Task Framework for Brain-Vision-Language Modeling via Discrete Diffusion",
     "authors": [
       {
