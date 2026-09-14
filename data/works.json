@@ -735,6 +735,100 @@
   },
   {
     "type": "preprint",
+    "title": "PhotoCraft: Agentic Reasoning with Hierarchical Self-Evolving Memory for Deep Image Search",
+    "authors": [
+      {
+        "name": "Kailin Lyu"
+      },
+      {
+        "name": "Zhiqiang Yuan"
+      },
+      {
+        "name": "Jianwei He"
+      },
+      {
+        "name": "Qiwei Yan"
+      },
+      {
+        "name": "Xuanbo Su"
+      },
+      {
+        "name": "Nanxing Hu"
+      },
+      {
+        "name": "Yang Liu (4829)"
+      },
+      {
+        "name": "Ce Hao"
+      },
+      {
+        "name": "Su‐Juan Qin"
+      },
+      {
+        "name": "Lianyu Hu"
+      },
+      {
+        "name": "Jinchao Zhang"
+      },
+      {
+        "name": "Jie Zhou"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Kailin Lyu Affiliation: Pattern Recognition Center, WeChat AI, Tencent Inc. Affiliation: Institute of Automation, Chinese Academy of Sciences Affiliation: Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-06-02",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Deep Image Search requires multi-step reasoning over rich contextual cues, such as time, location, and event relations. However, most existing LLM-based agents are stateless and reactive, lacking persistent memory to maintain long-horizon context or transfer experience across tasks, which often leads to execution drift and experience isolation. To address these limitations, we propose PhotoCraft, a training-free, hierarchical memory system for photo-search agents. Inspired by human cognition, PhotoCraft equips MLLMs with working, episodic, and semantic memory, which are dynamically invoked during reasoning to preserve logical consistency and knowledge transferability throughout multi-step reasoning and answer generation. Extensive experiments on DISBench demonstrate that PhotoCraft consistently improves context-aware retrieval across diverse MLLM backbones, achieving gains of up to 18.5\\% and effectively mitigating key bottlenecks in memoryless deep image search, offering a practical path toward reliable and generalizable multimodal search agents.",
+    "identifiers": {
+      "arxiv": "2606.03099",
+      "doi": "10.48550/arXiv.2606.03099"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.03099"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2606.03099v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2606.03099"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2606.03099v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Kailin Lyu Affiliation: Pattern Recognition Center, WeChat AI, Tencent Inc. Affiliation: Institute of Automation, Chinese Academy of Sciences Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2606.03099v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2606-03099",
+    "updatedAt": "2026-09-14T05:35:39Z"
+  },
+  {
+    "type": "preprint",
     "title": "Decoding in Order-Agnostic Language Models: Chain-Rule Deviation and Uniform Spreading",
     "authors": [
       {
