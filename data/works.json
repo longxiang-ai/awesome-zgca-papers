@@ -735,6 +735,389 @@
   },
   {
     "type": "preprint",
+    "title": "DynaOD: Dynamic Origin-Destination Flow Generation with Discrete-to-Continuous Temporal Semantic Modeling",
+    "authors": [
+      {
+        "name": "Jie Zhao"
+      },
+      {
+        "name": "Xianqi Dai"
+      },
+      {
+        "name": "Jie Feng"
+      },
+      {
+        "name": "Huandong Wang"
+      },
+      {
+        "name": "Yong Li"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Jie Feng Note: Corresponding author. Affiliation: Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-06-08",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Dynamic origin-destination (OD) flow generation seeks to synthesize realistic mobility dynamics from temporal context alone, without relying on historical OD observations. A key challenge is to translate semantic temporal signals into temporally coherent OD patterns while preserving the inherent spatial heterogeneity of urban regions. We propose DynaOD, a semantic-driven framework that models temporal dynamics through two complementary perspectives: discrete directional trends that characterize qualitative shifts in urban activity patterns, and continuous temporal evolution that captures how such shifts unfold over time. By jointly encoding these temporal semantics, the framework constructs time-varying region representations that condition pretrained static OD generators in a lightweight and plug-and-play fashion. This modular design further supports scalable deployment and cross-city transferability. Extensive experiments on large-scale real-world datasets show that our method consistently outperforms representative baselines in both predictive accuracy and distributional fidelity. Code is publicly available at https://github.com/csjiezhao/DynaOD.",
+    "identifiers": {
+      "arxiv": "2606.09086",
+      "doi": "10.48550/arXiv.2606.09086"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.09086"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2606.09086v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2606.09086"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2606.09086v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Jie Feng Note: Corresponding author. Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2606.09086v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2606-09086",
+    "updatedAt": "2026-09-15T05:29:28Z"
+  },
+  {
+    "type": "preprint",
+    "title": "EgoPriMo: Egocentric Motion Generation for Interactive Humanoid Control",
+    "authors": [
+      {
+        "name": "Haoyang Ge"
+      },
+      {
+        "name": "Peng Ren"
+      },
+      {
+        "name": "Yukun Shi"
+      },
+      {
+        "name": "Cong Huang"
+      },
+      {
+        "name": "Kun Li"
+      },
+      {
+        "name": "Kai Chen"
+      }
+    ],
+    "institutions": [
+      "zgca",
+      "zgci"
+    ],
+    "rawAffiliations": [
+      "Haoyang Ge Peng Ren Yukun Shi Cong Huang Kun Li Kai Chen Email: ∗ ghy0623@tju.edu.cn † Corresponding authors: Kun Li and Kai Chen Affiliation: Tianjin University, Tianjin, China Affiliation: Zhongguancun Academy, Beijing, China Affiliation: Beihang University, Beijing, China Affiliation: Zhongguancun Institute of Artificial Intelligence, Beijing, China Affiliation: DeepCybo, Beijing, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-06-07",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Humanoid robots require whole-body motions that adapt to scene context, task requirements, and user intent. Motion tracking reproduces specified trajectories, and humanoid vision-language-action systems provide semantic interfaces, but neither offers a scalable and interactive prior for broad full-body behavior. We introduce EgoPriMo (Egocentric Motion Prior for Humanoid Robots), a unified framework that learns such priors from egocentric human demonstrations. Given egocentric observations and a text prompt, EgoPriMo reconstructs, generates, and forecasts SMPL-based full-body motion. Language is used as a high-level control signal rather than a complete motion specification. At the core of EgoPriMo is a Triple-stream DiT that jointly models body dynamics, egocentric visual context, and text; task-conditioning masks route different tasks and missing-modality data through the same checkpoint. Experiments on Nymeria and EgoExo4D show that one checkpoint improves egocentric motion generation over UniEgoMotion while supporting reconstruction and forecasting; the generated SMPL motions can also be executed by a Unitree humanoid controller. These results indicate a practical path from scalable egocentric observations to generalizable and interactive humanoid motion priors.",
+    "identifiers": {
+      "arxiv": "2606.08495",
+      "doi": "10.48550/arXiv.2606.08495"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.08495"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2606.08495v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2606.08495"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2606.08495v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Haoyang Ge Peng Ren Yukun Shi Cong Huang Kun Li Kai Chen Email: ∗ ghy0623@tju.edu.cn † Corresponding authors: Kun Li and Kai Chen Affiliation: Tianjin University, Tianjin, China Affiliation: Zhongguancun Academy, Beijing, China Affiliation: Beihang University, Beijing, China Affiliation: Zhongguancun Institute of Artificial Intelligence, Beijing, China Affiliation: DeepCybo, Beijing, China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2606.08495v1"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgci",
+        "matchedText": "Haoyang Ge Peng Ren Yukun Shi Cong Huang Kun Li Kai Chen Email: ∗ ghy0623@tju.edu.cn † Corresponding authors: Kun Li and Kai Chen Affiliation: Tianjin University, Tianjin, China Affiliation: Zhongguancun Academy, Beijing, China Affiliation: Beihang University, Beijing, China Affiliation: Zhongguancun Institute of Artificial Intelligence, Beijing, China Affiliation: DeepCybo, Beijing, China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2606.08495v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2606-08495",
+    "updatedAt": "2026-09-15T05:29:28Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Towards World Models in Biomedical Research",
+    "authors": [
+      {
+        "name": "Guangyu Wang"
+      },
+      {
+        "name": "Jingkun Yue"
+      },
+      {
+        "name": "Siqi Zhang"
+      },
+      {
+        "name": "Yu Liu (6938)"
+      },
+      {
+        "name": "Xiaoyu Wang (182979)"
+      },
+      {
+        "name": "Mingyuan Meng"
+      },
+      {
+        "name": "Changwei Ji"
+      },
+      {
+        "name": "Zongbo Han"
+      },
+      {
+        "name": "Yulin Wang"
+      },
+      {
+        "name": "Yang Yue"
+      },
+      {
+        "name": "Frank Fu"
+      },
+      {
+        "name": "Ting Chen"
+      },
+      {
+        "name": "Song Wu"
+      },
+      {
+        "name": "Ziwei Liu"
+      },
+      {
+        "name": "Jiangning Song"
+      },
+      {
+        "name": "Ming Li"
+      },
+      {
+        "name": "Gao Huang"
+      },
+      {
+        "name": "Xiaohong Liu (50816)"
+      },
+      {
+        "name": "Athanasios V. Vasilakos"
+      },
+      {
+        "name": "Xingcai Zhang"
+      },
+      {
+        "name": "Ping Zhang (86495)"
+      },
+      {
+        "name": "Yong Li"
+      }
+    ],
+    "institutions": [
+      "zgca",
+      "zgci"
+    ],
+    "rawAffiliations": [
+      "Affiliation: Zhongguancun Academy & Zhongguancun Institute of Artificial Intelligence, Beijing, China Affiliation: Beijing National Research Center for Information Science and Technology (BNRist), Tsinghua University, 100084, Beijing, China Affiliation: Department of Chemical and Nano Engineering, University of California, San Diego, La Jolla, CA, USA Affiliation: Nanyang Technological University, Singapore Affiliation: Monash Biomedicine Discovery Institute and Department of Biochemistry and Molecular Biology, Monash University, Melbourne, Victoria, Australia Affiliation: David R. Cheriton School of Computer Science, University of Waterloo, Waterloo, Ontario, Canada Affiliation: Department of ICT and Center for AI Research, University of Agder (UiA), Jon Lilletuns vei 9, Grimstad, Norway Affiliation: Corresponding authors: guangyu.wang24@gmail.com, yuejk@bupt.edu.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-06-04",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "A central goal of biomedicine is to understand, predict and ultimately control the dynamic mechanisms by which biological systems respond to perturbations, disease progression and therapeutic intervention. Although foundation models and large language models have accelerated biomedical data interpretation, most current systems remain focused on static pattern recognition rather than prospective simulation of biological futures. Here we propose biomedical world models as a paradigm for AI-driven discovery. These models learn latent representations of molecular, cellular, tissue and clinical states, together with intervention-conditioned dynamics that allow future trajectories to be simulated before actions are taken. We discuss how biomedical world models could function as data engines, environment simulators and scientific planning substrates across applications including virtual cells, organoids, virtual patients and surgical simulation. We outline the data infrastructure, evaluation benchmarks, safety constraints and governance frameworks required. Biomedical world models may provide a foundation for simulation-guided, closed-loop and experimentally actionable biomedical discovery.",
+    "identifiers": {
+      "arxiv": "2606.05925",
+      "doi": "10.48550/arXiv.2606.05925"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.05925"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2606.05925v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2606.05925"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2606.05925v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Affiliation: Zhongguancun Academy & Zhongguancun Institute of Artificial Intelligence, Beijing, China Affiliation: Beijing National Research Center for Information Science and Technology (BNRist), Tsinghua University, 100084, Beijing, China Affiliation: Department of Chemical and Nano Engineering, University of California, San Diego, La Jolla, CA, USA Affiliation: Nanyang Technological University, Singapore Affiliation: Monash Biomedicine Discovery Institute and Department of Biochemistry and Molecular Biology, Monash University, Melbourne, Victoria, Australia Affiliation: David R. Cheriton School of Computer Science, University of Waterloo, Waterloo, Ontario, Canada Affiliation: Department of ICT and Center for AI Research, University of Agder (UiA), Jon Lilletuns vei 9, Grimstad, Norway Affiliation: Corresponding authors: guangyu.wang24@gmail.com, yuejk@bupt.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2606.05925v1"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgci",
+        "matchedText": "Affiliation: Zhongguancun Academy & Zhongguancun Institute of Artificial Intelligence, Beijing, China Affiliation: Beijing National Research Center for Information Science and Technology (BNRist), Tsinghua University, 100084, Beijing, China Affiliation: Department of Chemical and Nano Engineering, University of California, San Diego, La Jolla, CA, USA Affiliation: Nanyang Technological University, Singapore Affiliation: Monash Biomedicine Discovery Institute and Department of Biochemistry and Molecular Biology, Monash University, Melbourne, Victoria, Australia Affiliation: David R. Cheriton School of Computer Science, University of Waterloo, Waterloo, Ontario, Canada Affiliation: Department of ICT and Center for AI Research, University of Agder (UiA), Jon Lilletuns vei 9, Grimstad, Norway Affiliation: Corresponding authors: guangyu.wang24@gmail.com, yuejk@bupt.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2606.05925v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2606-05925",
+    "updatedAt": "2026-09-15T05:29:28Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Narrative Knowledge Weaver: Narrative-Centric Retrieval-Augmented Reasoning for Long-Form Text Understanding",
+    "authors": [
+      {
+        "name": "Qiuyu Tian"
+      },
+      {
+        "name": "Fengyi Chen"
+      },
+      {
+        "name": "Yiding Li"
+      },
+      {
+        "name": "Youyong Kong"
+      },
+      {
+        "name": "Fan Guo"
+      },
+      {
+        "name": "Yuyao Li"
+      },
+      {
+        "name": "Jinjing Shen"
+      },
+      {
+        "name": "Zhijing Xie"
+      },
+      {
+        "name": "Yiyun Luo"
+      },
+      {
+        "name": "Xin Zhang (35492)"
+      },
+      {
+        "name": "Yingce Xia"
+      },
+      {
+        "name": "Zequn Liu"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Qiuyu Tian 1,2 Fengyi Chen 3 Yiding Li 5 Youyong Kong 1 Fan Guo 5 Yuyao Li 5 Jinjing Shen 5 Zhijing Xie 5 Yiyun Luo 5 Xin Zhang 5 Yingce Xia 2 Zequn Liu 2 1 Southeast University, Nanjing, China 2 Beijing Zhongguancun Academy, Beijing, China 3 Nanjing Normal University, Nanjing, China 5 ZhuiWen Technology Co., Ltd., Beijing, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-06-04",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Long-form narrative QA requires reasoning over evolving story worlds rather than isolated passages: answers may depend on earlier goals, changing character states, social relations, causal triggers, temporal position, and later consequences. Existing retrieval and graph-augmented generation methods improve evidence access, but their units--chunks, entities, relations, summaries, or tool actions--do not directly encode how evidence functions in a story. We introduce Narrative Knowledge Weaver(NKW), a source-grounded framework that aligns textual evidence, atomic facts, canonical graph structure, entity profiles, interactions, episodes, and storylines. At query time, NKW uses text, graph, and narrative tools with post-retrieval reading skills to assemble evidence and audit actor, scope, polarity, state, and temporal constraints. Across STAGE, FairytaleQA, and QuALITY, NKW is strongest on screenplay-level story-world QA while remaining competitive on more passage-centered benchmarks. Ablations, question-type analyses, graph-asset statistics, and case studies show complementary benefits for character, scene, temporal, causal, and narrative-progression reasoning.",
+    "identifiers": {
+      "arxiv": "2606.05724",
+      "doi": "10.48550/arXiv.2606.05724"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.05724"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2606.05724v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2606.05724"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2606.05724v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Qiuyu Tian 1,2 Fengyi Chen 3 Yiding Li 5 Youyong Kong 1 Fan Guo 5 Yuyao Li 5 Jinjing Shen 5 Zhijing Xie 5 Yiyun Luo 5 Xin Zhang 5 Yingce Xia 2 Zequn Liu 2 1 Southeast University, Nanjing, China 2 Beijing Zhongguancun Academy, Beijing, China 3 Nanjing Normal University, Nanjing, China 5 ZhuiWen Technology Co., Ltd., Beijing, China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2606.05724v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2606-05724",
+    "updatedAt": "2026-09-15T05:29:28Z"
+  },
+  {
+    "type": "preprint",
     "title": "PhotoCraft: Agentic Reasoning with Hierarchical Self-Evolving Memory for Deep Image Search",
     "authors": [
       {
@@ -11101,7 +11484,8 @@
     ],
     "rawAffiliations": [
       "Gaoling School of Artificial Intelligence, Renmin University of China, Beijing, China",
-      "Zhongguancun Academy, Beijing, China"
+      "Zhongguancun Academy, Beijing, China",
+      "Yi Duan Note: Yi Duan and Zhao Yang contributed equally to this work. This work was done while they were visiting Zhongguancun Academy. email: 2023200660@ruc.edu.cn Affiliation: Gaoling School of Artificial Intelligence , Renmin University of China , Beijing , China"
     ],
     "relationType": "affiliation",
     "publishedAt": "2026-01-01",
@@ -11109,7 +11493,7 @@
     "venue": "Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2",
     "status": "published",
     "topics": [],
-    "abstract": "",
+    "abstract": "DNA cis-regulatory elements (CREs) such as enhancers control gene expression levels. Accurately predicting regulatory activity from DNA sequences is valuable but challenging, as it requires understanding complex biological regulatory processes. Existing methods typically regress activity scores from sequences in a black-box manner, limiting both interpretability and regression performance. Meanwhile, large language models (LLMs) benefit from explicit reasoning processes, yet directly applying LLMs to raw DNA sequences performs poorly. In this paper, we bridge this gap by introducing R3LM, a framework that teaches LLMs reasoning-informed regression on regulatory DNA through structured biological knowledge. Specifically, we design a biologically grounded data format that structures DNA's regulatory information for improved LLM understanding, and construct CRE-ReasonBench, the first dataset that associates DNA sequences and activity scores with mechanistic reasoning traces. Through two-stage training that first teaches LLMs reasoning over structured biological information then performs regression, R3LM achieves state-of-the-art performance on enhancer prediction across three cell types, outperforming both LLMs with raw sequence input and specialized DNA models while providing interpretable mechanistic explanations. We expect R3LM as an interpretable reward model that can effectively assist biologists in CRE design. Code is available at https://github.com/DuanYi516/R3LM.",
     "identifiers": {
       "doi": "10.1145/3770855.3818836"
     },
@@ -11117,12 +11501,32 @@
       {
         "label": "DOI",
         "url": "https://doi.org/10.1145/3770855.3818836"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.08147"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2606.08147v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2606.08147"
       }
     ],
     "versions": [
       {
         "label": "Publisher version",
         "url": "https://doi.org/10.1145/3770855.3818836"
+      },
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2606.08147v1"
+      },
+      {
+        "label": "DOI 10.48550/arXiv.2606.08147",
+        "url": "https://doi.org/10.48550/arXiv.2606.08147"
       }
     ],
     "evidence": [
@@ -11132,10 +11536,19 @@
         "matchedText": "Zhongguancun Academy, Beijing, China",
         "source": "Crossref",
         "sourceUrl": "https://doi.org/10.1145/3770855.3818836"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Yi Duan Note: Yi Duan and Zhao Yang contributed equally to this work. This work was done while they were visiting Zhongguancun Academy. email: 2023200660@ruc.edu.cn Affiliation: Gaoling School of Artificial Intelligence , Renmin University of China , Beijing , China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2606.08147v1"
       }
     ],
     "sources": [
-      "Crossref"
+      "Crossref",
+      "arXiv",
+      "arXiv HTML"
     ],
     "id": "doi-10-1145-3770855-3818836",
     "updatedAt": "2026-08-08T11:35:31Z"
