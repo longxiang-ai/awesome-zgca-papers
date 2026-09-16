@@ -735,6 +735,182 @@
   },
   {
     "type": "preprint",
+    "title": "GraspLLM: Towards Zero-Shot Generalization on Text-Attributed Graphs with LLMs",
+    "authors": [
+      {
+        "name": "Hengyi Feng"
+      },
+      {
+        "name": "Zeang Sheng"
+      },
+      {
+        "name": "Meiyi Qiang"
+      },
+      {
+        "name": "Li Yang"
+      },
+      {
+        "name": "Wentao Zhang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Hengyi Feng 1,2* , Zeang Sheng 2* , Meiyi Qiang 2 , Yang Li 3 , Wentao Zhang 2,4 † \\dagger † † thanks: * Equal contribution. † † thanks: $†$ Corresponding author. Affiliation: Affiliation: 1 University of Electronic Science and Technology of China 2 Peking University 3 Tencent Inc 4 Zhongguancun Academy hengyi.feng@std.uestc.edu.cn, {shengzeang18, wentao.zhang}@pku.edu.cn Abstract Research on Text-Attributed Graphs (TAGs) has gained significant attention recently due to its broad applications across various real-world data scenarios, such as citation networks, e-commerce platforms, social media, and web pages. Inspired by the remarkable semantic understanding ability of Large Language Models (LLMs), there have been numerous attempts to integrate LLMs into TAGs. However, existing methods still struggle to generalize across diverse graphs and tasks, and their ability to capture transferabl"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-06-10",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Research on Text-Attributed Graphs (TAGs) has gained significant attention recently due to its broad applications across various real-world data scenarios, such as citation networks, e-commerce platforms, social media, and web pages. Inspired by the remarkable semantic understanding ability of Large Language Models (LLMs), there have been numerous attempts to integrate LLMs into TAGs. However, existing methods still struggle to generalize across diverse graphs and tasks, and their ability to capture transferable graph structural patterns remains limited. To address this, we introduce the GraspLLM, a framework that combines Graph structural comprehension with semantic understanding prowess of LLMs to enhance the cross-dataset and cross-task generalizability. Specifically, we represent node texts from different graphs in a unified semantic space with a frozen general embedding model, on top of which we perform motif-aware contrastive learning across multiple motif-induced adjacency matrices to extract dataset-agnostic structural information. Then, with our proposed optimal contextual subgraph, we extract the most contextually relevant subgraph for each target node and align these subgraphs to the token space of LLM via an alignment projector. Extensive experiments on TAG benchmark datasets spanning diverse domains reveal that GraspLLM consistently outperforms previous LLM-based methods for TAGs, especially in zero-shot scenarios, highlighting its strong generalizability across different datasets and tasks. Our code is available at https://github.com/Heinz217/GraspLLM.",
+    "identifiers": {
+      "arxiv": "2606.11898",
+      "doi": "10.48550/arXiv.2606.11898"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.11898"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2606.11898v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2606.11898"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2606.11898v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Hengyi Feng 1,2* , Zeang Sheng 2* , Meiyi Qiang 2 , Yang Li 3 , Wentao Zhang 2,4 † \\dagger † † thanks: * Equal contribution. † † thanks: $†$ Corresponding author. Affiliation: Affiliation: 1 University of Electronic Science and Technology of China 2 Peking University 3 Tencent Inc 4 Zhongguancun Academy hengyi.feng@std.uestc.edu.cn, {shengzeang18, wentao.zhang}@pku.edu.cn Abstract Research on Text-Attributed Graphs (TAGs) has gained significant attention recently due to its broad applications across various real-world data scenarios, such as citation networks, e-commerce platforms, social media, and web pages. Inspired by the remarkable semantic understanding ability of Large Language Models (LLMs), there have been numerous attempts to integrate LLMs into TAGs. However, existing methods still struggle to generalize across diverse graphs and tasks, and their ability to capture transferabl",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2606.11898v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2606-11898",
+    "updatedAt": "2026-09-16T05:23:59Z"
+  },
+  {
+    "type": "preprint",
+    "title": "TouchThinker: Scaling Tactile Commonsense Reasoning to the Open World with Large-scale Data and Action-aware Representation",
+    "authors": [
+      {
+        "name": "Kailin Lyu"
+      },
+      {
+        "name": "Di Wu"
+      },
+      {
+        "name": "Pengwei Zhang"
+      },
+      {
+        "name": "Yuhang Zheng"
+      },
+      {
+        "name": "Yingxin Lai"
+      },
+      {
+        "name": "Long Xiao"
+      },
+      {
+        "name": "Kangyi Wu"
+      },
+      {
+        "name": "Pengna Li"
+      },
+      {
+        "name": "Chen Gao"
+      },
+      {
+        "name": "Lianyu Hu"
+      },
+      {
+        "name": "Xiaobin Hu"
+      },
+      {
+        "name": "Jie Hao"
+      },
+      {
+        "name": "Ce Hao"
+      },
+      {
+        "name": "Weihao Yuan"
+      },
+      {
+        "name": "Su Yan"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Kailin Lyu Affiliation: Institute of Automation, Chinese Academy of Sciences Affiliation: Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-06-10",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Touch is a key modality for embodied agents to understand the physical world. Although recent work has incorporated tactile signals into language systems for tactile commonsense reasoning, scaling such systems to realistic open-world settings remains challenging due to two key bottlenecks: (1) current tactile reasoning datasets remain limited in format and scale, providing insufficient supervision for reasoning from tactile observations to physical commonsense and hindering the learning of transferable tactile commonsense; (2) tactile signals are inherently redundant and action-specific, yet existing methods often overlook these properties, resulting in inefficient representations with limited semantic expressiveness. To address these limitations, we propose TouchThinker, a tactile-language framework that scales tactile commonsense reasoning to the open world from both data and representation perspectives. First, we construct TouchThinker-1M, a million-scale, multi-source tactile reasoning dataset covering 415 objects, 8 scenarios, and 7 sensor types, providing a solid data foundation for open-world generalization. We further introduce TouchThinker-Bench, an open-world benchmark with more realistic and diverse tasks. Then, we propose action-aware modeling mechanism to improve tactile representation efficiency and enable efficient reasoning. Experimental results demonstrate that TouchThinker achieves competitive performance against state-of-the-art models across multiple datasets. Our code and dataset will be made available at: https://github.com/lvkailin0118/TouchThinker.",
+    "identifiers": {
+      "arxiv": "2606.11637",
+      "doi": "10.48550/arXiv.2606.11637"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.11637"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2606.11637v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2606.11637"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2606.11637v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Kailin Lyu Affiliation: Institute of Automation, Chinese Academy of Sciences Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2606.11637v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2606-11637",
+    "updatedAt": "2026-09-16T05:23:59Z"
+  },
+  {
+    "type": "preprint",
     "title": "DynaOD: Dynamic Origin-Destination Flow Generation with Discrete-to-Continuous Temporal Semantic Modeling",
     "authors": [
       {
@@ -11052,6 +11228,96 @@
     ],
     "id": "doi-10-48550-arxiv-2509-19080",
     "updatedAt": "2026-08-30T07:02:10Z"
+  },
+  {
+    "type": "article",
+    "title": "Style2Risk: A Closed-Loop Testing System for Safety Evaluation of Automated Vehicles Under Style-Conditioned Adversarial Interactions",
+    "authors": [
+      {
+        "name": "Jintao Lai"
+      },
+      {
+        "name": "Meng Wang",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Zhen Zhang"
+      },
+      {
+        "name": "Yiming Guo",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Shixingyue Hu"
+      },
+      {
+        "name": "Chengyuan Ma"
+      },
+      {
+        "name": "Sa Gao",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Sijin Liu",
+        "institutions": [
+          "zgca"
+        ]
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Department of Control Science and Engineering, Tongji University, Shanghai 201804, China",
+      "Shanghai Research Institute for Intelligent Autonomous Systems, Tongji University, Shanghai 201804, China",
+      "Beijing Zhongguancun Academy, Beijing 100094, China",
+      "Key Laboratory of Road and Traffic Engineering of the Ministry of Education, Tongji University, Shanghai 201804, China",
+      "Aerospace Information Research Institute, Chinese Academy of Sciences, Beijing 100094, China",
+      "College of Traffic & Transportation, Chongqing Jiaotong University, No. 66, Xuefu Ave., Chongqing 402247, China",
+      "Department of Civil and Environmental Engineering, University of Wisconsin–Madison, 1415 Engineering Drive, Madison, WI 53706, USA"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Systems",
+    "status": "published",
+    "topics": [],
+    "abstract": "Closed-loop safety evaluation requires traffic agents that expose planner weaknesses without producing arbitrary behavior. Existing adversarial tests often couple behavior generation, risk search, and failure counting, limiting control over how interactions are created and whether repeated events constitute new evidence. Style2Risk uses interaction style as an explicit control interface. Assertiveness and courtesy condition a Gaussian behavior prior, while a bounded residual directs the controlled participant toward the tested planner. Protocol screens retain interactions that satisfy declared action and trajectory constraints, and a style–interaction–event archive separates discovery breadth from repeated observations. We evaluate seven configurations and three planners in 31,500 WOMD–Waymax rollouts. Relative to strict no-style, Style2Risk increases protocol-valid safety-critical events from 110.0 to 258.0 per 500-scenario planner chunk and expands occupied archive cells from 28 to 33. A common trajectory evaluator that does not call the generating prior reports a 1.343 m reduction in joint displacement error, a 0.163 increase in interaction consistency, and a 0.037 reduction in collision rate. A separate 26-scenario experiment assigns style from pre-rollout information and evaluates online archive guidance. The results support style-conditioned control as a practical mechanism for targeted closed-loop testing and explicit evidence accounting.",
+    "identifiers": {
+      "doi": "10.3390/systems14091144"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.3390/systems14091144"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.3390/systems14091144"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Beijing Zhongguancun Academy, Beijing 100094, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.3390/systems14091144"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-3390-systems14091144",
+    "updatedAt": "2026-09-16T05:02:31Z"
   },
   {
     "type": "preprint",
