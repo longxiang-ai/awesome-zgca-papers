@@ -585,6 +585,237 @@
     "updatedAt": "2026-08-08T11:59:38Z"
   },
   {
+    "type": "preprint",
+    "title": "Self-Generated Error Training for Token Editing in Diffusion Language Models",
+    "authors": [
+      {
+        "name": "Lin Yao"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Lin Yao Affiliation: School of Computer Science, Shanghai Jiao Tong University, Shanghai, 200240, China Affiliation: Zhongguancun Academy, Beijing, 100097, China Email: lin.yao@sjtu.edu.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-06-15",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Token-to-token (T2T) editing lets LLaDA2.1 revise committed tokens during block-diffusion decoding. The released recipe trains this editor on random vocabulary corruptions, but at inference the editor sees the model's own fluent, high-confidence draft errors instead. We study this training-inference mismatch and propose self-generated T2T, which performs a no-gradient draft pass, fills masked positions with predicted tokens, and supervises recovery in a second pass under these self-generated corruptions. We implement the update as a short LoRA continued-pretraining pass on LLaDA2.1-mini and evaluate on several benchmarks under the official Q-Mode T2T procedure with unchanged inference parameters. The method generally improves accuracy while reducing T2T edit intensity, mitigating failure modes such as final-digit transcription errors after otherwise correct reasoning and excessive self-correction before short factual answers.",
+    "identifiers": {
+      "arxiv": "2606.17175",
+      "doi": "10.48550/arXiv.2606.17175"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.17175"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2606.17175v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2606.17175"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2606.17175v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Lin Yao Affiliation: School of Computer Science, Shanghai Jiao Tong University, Shanghai, 200240, China Affiliation: Zhongguancun Academy, Beijing, 100097, China Email: lin.yao@sjtu.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2606.17175v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2606-17175",
+    "updatedAt": "2026-09-17T05:26:52Z"
+  },
+  {
+    "type": "preprint",
+    "title": "MODE: Modality-Decomposed Expert-Level Mixed-Precision Quantization for MoE Multimodal LLMs",
+    "authors": [
+      {
+        "name": "Yuanteng Chen"
+      },
+      {
+        "name": "Nanxin Zeng"
+      },
+      {
+        "name": "Peisong Wang"
+      },
+      {
+        "name": "Zhilei Liu"
+      },
+      {
+        "name": "Yuantian Shao"
+      },
+      {
+        "name": "Shiqiang Lang"
+      },
+      {
+        "name": "T Liu"
+      },
+      {
+        "name": "Chuangyi Li"
+      },
+      {
+        "name": "Qinghao Hu"
+      },
+      {
+        "name": "Gang Li"
+      },
+      {
+        "name": "Jing Liu"
+      },
+      {
+        "name": "Jian Cheng"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Yuanteng Chen Affiliation: Institute of Automation, Chinese Academy of Sciences Affiliation: School of Artificial Intelligence, University of Chinese Academy of Sciences Affiliation: Zhongguancun Academy Email: peisong.wang@nlpr.ia.ac.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-06-15",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Mixture-of-Experts Multimodal Large Language Models (MoE-MLLMs) offer remarkable performance but incur prohibitive GPU memory costs, making compression essential. Among PTQ methods, expert-level mixed-precision quantization has proven effective for MoE-LLMs, yet suffers notable degradation on MoE-MLLMs due to two overlooked biases in expert importance estimation. (1) At the cross-modal level, the numerical dominance of vision tokens causes expert selection frequency to be dominated by vision tokens, masking experts that are critical to the text modality; (2) at the intra-vision level, the large proportion of redundant vision tokens further skew frequency statistics, obscuring experts critical for informative visual content. To bridge gaps, we propose MODE, a modality-decomposed expert-level mixed-precision quantization framework for MoE-MLLMs that decomposes expert selection frequency by modality, filters redundant vision tokens to obtain denoised visual frequency, and further evaluates quantization sensitivity per modality as a complementary signal to frequency-based estimation. These signals are integrated into an Integer Linear Programming formulation to assign per-expert bit-widths under a given budget. Extensive experiments show that MODE is particularly well-suited for MoE-MLLMs, limiting average performance loss to within 2.9% at W3A16, with larger gains at the extreme 2-bit setting.",
+    "identifiers": {
+      "arxiv": "2606.17118",
+      "doi": "10.48550/arXiv.2606.17118"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.17118"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2606.17118v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2606.17118"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2606.17118v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Yuanteng Chen Affiliation: Institute of Automation, Chinese Academy of Sciences Affiliation: School of Artificial Intelligence, University of Chinese Academy of Sciences Affiliation: Zhongguancun Academy Email: peisong.wang@nlpr.ia.ac.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2606.17118v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2606-17118",
+    "updatedAt": "2026-09-17T05:26:52Z"
+  },
+  {
+    "type": "preprint",
+    "title": "DEEPRUBRIC: Evidence-Tree Rubric Supervision for Efficient Reinforcement Learning of Deep Research Agents",
+    "authors": [
+      {
+        "name": "Minghang Zhu"
+      },
+      {
+        "name": "Chuyang Wei"
+      },
+      {
+        "name": "Junhao Xu"
+      },
+      {
+        "name": "Yilin Cheng"
+      },
+      {
+        "name": "Zhumin Chen"
+      },
+      {
+        "name": "Jiyan He"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Minghang Zhu Chuyang Wei Junhao Xu Yilin Cheng Affiliation: Shandong University, Qingdao, China Affiliation: Zhongguancun Academy, Beijing, China Affiliation: Fudan University, Shanghai, China Email: mhzhu@mail.sdu.edu.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-06-15",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Deep research agents synthesize long-form reports by searching and reasoning over retrieved evidence. Reinforcement learning with rubric-based rewards improves these agents by optimizing them against checkable criteria that translate report quality into reward signals, but its efficiency depends on whether those criteria reliably capture the task scope and evidence needs. Most existing studies ask an LLM to generate rubrics for a given query, but when the model fails to infer the underlying information needs, the generated rubrics may be incomplete and reduce RL efficiency. To obtain more reliable query--rubric supervision, we introduce DeepRubric, a data construction framework that reverses this process: instead of inferring evaluation criteria for a given query, it first determines what an evidence-backed report should be evaluated on and then synthesizes aligned query--rubric pairs from those evaluation targets. Starting from a sampled seed topic, DeepRubric builds an evidence tree by recursively expanding evidence-backed sub-questions, whose leaves serve as atomic and verifiable evaluation targets. It then uses the evidence tree to synthesize the training query and rubrics, ensuring that the reward evaluates exactly the information requested by the query. Using DeepRubric, we construct 9K query--rubric supervision examples and train DeepRubric-8B with rubric-based GRPO, achieving comparable performance to prior open state-of-the-art deep research models across three benchmarks with roughly 13x fewer RL GPU-hours.",
+    "identifiers": {
+      "arxiv": "2606.17029",
+      "doi": "10.48550/arXiv.2606.17029"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.17029"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2606.17029v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2606.17029"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2606.17029v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Minghang Zhu Chuyang Wei Junhao Xu Yilin Cheng Affiliation: Shandong University, Qingdao, China Affiliation: Zhongguancun Academy, Beijing, China Affiliation: Fudan University, Shanghai, China Email: mhzhu@mail.sdu.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2606.17029v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2606-17029",
+    "updatedAt": "2026-09-17T05:26:52Z"
+  },
+  {
     "type": "conference",
     "title": "UrbanWell: Benchmarking Multimodal Large Language Models for Spatio-Temporal Urban Wellbeing Analytics",
     "authors": [
@@ -732,6 +963,91 @@
     ],
     "id": "doi-10-48550-arxiv-2607-22599",
     "updatedAt": "2026-08-13T13:11:50Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Position: The Systemic Lack of Agency in Visual Reasoning",
+    "authors": [
+      {
+        "name": "Yizhao Huang"
+      },
+      {
+        "name": "Haoyang Chen"
+      },
+      {
+        "name": "Shiqin Wang"
+      },
+      {
+        "name": "Pohsun Huang"
+      },
+      {
+        "name": "Jiayuan Li"
+      },
+      {
+        "name": "Haoyuan Du"
+      },
+      {
+        "name": "Yandong Shi"
+      },
+      {
+        "name": "Zheng Wang"
+      },
+      {
+        "name": "Zhixiang Wang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Haoyang Chen Affiliation: National Engineering Research Center for Multimedia Software, Institute of Artificial Intelligence, School of Computer Science, Wuhan University Affiliation: Hubei Key Laboratory of Multimedia and Network Communication Engineering Affiliation: Zhongguancun Academy, Beijing, China. 100094"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-06-11",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "This paper argues that a systemic lack of Agency constrains the implicit reasoning capabilities of current Vision-Language Models (VLMs). Implicit reasoning refers to the ability to autonomously discover and utilize hidden visual evidence to bridge information gaps, rather than merely relying on explicitly specified targets. This capacity underlies human visual understanding and everyday reasoning. We argue that this limitation arises from a tendency to approach visual reasoning primarily as passive semantic retrieval, rather than as active, situated reasoning that depends on autonomous visual exploration. As a result, most existing benchmarks primarily assess Passive Capacity, leaving this aspect of reasoning largely unmeasured. To address this gap, we introduce the Visual Implicit Reasoning Diagnosing Benchmark (V-IRD), which targets this missing quadrant by requiring models to derive answers strictly through autonomous visual analysis. Our results show that, despite strong retrieval abilities, prominent VLMs struggle to utilize reference objects and to attend to visual evidence that requires self-directed inquiry. Simply put, strong semantic recognition does not equate to active visual exploration, revealing a critical gap in current VLMs. More information can be found at https://haoychen.github.io/Implicit-Reasoning/",
+    "identifiers": {
+      "arxiv": "2606.14795",
+      "doi": "10.48550/arXiv.2606.14795"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.14795"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2606.14795v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2606.14795"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2606.14795v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Haoyang Chen Affiliation: National Engineering Research Center for Multimedia Software, Institute of Artificial Intelligence, School of Computer Science, Wuhan University Affiliation: Hubei Key Laboratory of Multimedia and Network Communication Engineering Affiliation: Zhongguancun Academy, Beijing, China. 100094",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2606.14795v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2606-14795",
+    "updatedAt": "2026-09-17T05:26:52Z"
   },
   {
     "type": "preprint",
@@ -11396,6 +11712,67 @@
     ],
     "id": "doi-10-26434-chemrxiv-15005431-v1",
     "updatedAt": "2026-08-08T11:35:31Z"
+  },
+  {
+    "type": "conference",
+    "title": "Adaptive TD-Lambda for Cooperative Multi-agent Reinforcement Learning",
+    "authors": [
+      {
+        "name": "Yue Deng",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Zirui Wang"
+      },
+      {
+        "name": "Yin Zhang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Zhongguancun Academy",
+      "Zhejiang University"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Proceedings of the Thirty-Fifth International Joint Conference on Artificial Intelligence",
+    "status": "published",
+    "topics": [],
+    "abstract": "TD(λ) in value-based MARL algorithms or the Temporal Difference critic learning in Actor-Critic-based (AC-based) algorithms synergistically integrate elements from Monte-Carlo simulation and Q function bootstrapping via dynamic programming, which effectively addresses the inherent bias-variance trade-off in value estimation. Based on that, some recent works link the adaptive λ value to the policy distribution in the single-agent reinforcement learning area. However, because of the large joint action space from multiple agents and the limited transition data in Multi-agent Reinforcement Learning, the policy distribution is infeasible to calculate statistically. To solve the policy distribution calculation problem in MARL settings, we employ a parametric likelihood-free density ratio estimator with two replay buffers instead of calculating statistically. The two replay buffers of different sizes respectively store the historical trajectories that represent the data distribution of the past and current policies. Based on the estimator, we assign Adaptive TD(λ), ATD(λ), values to state-action pairs based on their likelihood under the stationary distribution of the current policy. We apply the proposed method on two competitive baseline methods, QMIX for value-based algorithms, and MAPPO for AC-based algorithms, over SMAC benchmarks and Gfootball academy scenarios, and demonstrate consistently competitive or superior performance compared to other baseline approaches with static λ values.",
+    "identifiers": {
+      "doi": "10.24963/ijcai.2026/10"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.24963/ijcai.2026/10"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.24963/ijcai.2026/10"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.24963/ijcai.2026/10"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-24963-ijcai-2026-10",
+    "updatedAt": "2026-09-17T05:05:28Z"
   },
   {
     "type": "preprint",

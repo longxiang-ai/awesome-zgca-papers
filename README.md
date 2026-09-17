@@ -23,20 +23,20 @@ A bilingual, traceable index of research outputs from **Zhongguancun Academy (�
 - [Looking Beyond Visible Cues: Implicit Video Question Answering via Dual-Clue Reasoning](https://arxiv.org/abs/2506.07811) — arXiv (2026)
 - [TacReasoner: A Dynamic Tactile-Language Framework for Interactive Reasoning in Real-World Scenarios](https://arxiv.org/abs/2607.05131) — IROS 2026 (2026)
 - [Feeling the Unexpected: ResTacVLA for Contact-Rich Manipulation via Residual Tactile Representation](https://arxiv.org/abs/2607.03387) — IROS 2026 (2026)
-- [UrbanWell: Benchmarking Multimodal Large Language Models for Spatio-Temporal Urban Wellbeing Analytics](https://arxiv.org/abs/2606.15890) — KDD Datasets and Benchmarks Track 2026 (2026)
+- [Self-Generated Error Training for Token Editing in Diffusion Language Models](https://arxiv.org/abs/2606.17175) — arXiv (2026)
 
 ## Data sources
 
 | Source | Status |
 | --- | --- |
-| arxiv | ok (0 matched) |
-| arxiv_html_backfill | checked 20612/24275; 107 exact affiliation matches; 3287 pending; 376 retry; last check 2026-09-16T05:04:44Z; discovery ok |
-| bza_official | ok (22 matched) |
+| arxiv | unavailable (HTTPError) |
+| arxiv_html_backfill | checked 20912/24297; 111 exact affiliation matches; 3009 pending; 376 retry; last check 2026-09-17T05:07:32Z; discovery ok |
+| bza_official | unavailable (HTTPError) |
 | core | optional key |
 | crossref | ok (5 matched) |
 | datacite | ok (19 matched) |
 | europe_pmc | ok (0 matched) |
-| github_projects | ok (9 matched) |
+| github_projects | unavailable (HTTPError) |
 | lens | optional key |
 | openalex | ok (0 matched) |
 | semantic_scholar | optional key |
