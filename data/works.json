@@ -16163,6 +16163,135 @@
   },
   {
     "type": "article",
+    "title": "Neuromorphic spike-based large language model",
+    "authors": [
+      {
+        "name": "Han Xu"
+      },
+      {
+        "name": "Xuerui Qiu",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Yunhui Xu"
+      },
+      {
+        "name": "Mohammed E Elbtity"
+      },
+      {
+        "name": "Peng Zhou"
+      },
+      {
+        "name": "Yang Tian"
+      },
+      {
+        "name": "Rui-Jie Zhu"
+      },
+      {
+        "name": "Jiahong Zhang"
+      },
+      {
+        "name": "Shaowei Gu",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Yuqi Pan"
+      },
+      {
+        "name": "Yuhong Chou"
+      },
+      {
+        "name": "Qinghao Wen"
+      },
+      {
+        "name": "Man Yao"
+      },
+      {
+        "name": "Jiangbo Qian"
+      },
+      {
+        "name": "Yonghong Tian"
+      },
+      {
+        "name": "Lei Ma"
+      },
+      {
+        "name": "Tiejun Huang"
+      },
+      {
+        "name": "Jason K Eshraghian"
+      },
+      {
+        "name": "Bo Xu"
+      },
+      {
+        "name": "Guoqi Li"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Institute of Automation, Chinese Academy of Sciences , Beijing 100190 ,",
+      "School of Artificial Intelligence, University of Chinese Academy of Sciences , Beijing 100049 ,",
+      "Brain-Inspired Models Group, Beijing Academy of Artificial Intelligence , Beijing 100862 ,",
+      "School of Future Technology, University of Chinese Academy of Sciences , Beijing 101408 ,",
+      "Zhongguancun Academy , Beijing 100094 ,",
+      "Department of Psychology, Tsinghua University , Beijing 100084 ,",
+      "Advanced Micro Devices Inc , Santa Clara 95054 ,",
+      "Department of Research, LuxiTech , Shenzhen 518055 ,",
+      "Faculty of Data Science, City University of Macau , Macau 999078 ,",
+      "Department of Electrical and Computer Engineering, University of California , Santa Cruz 95064 ,",
+      "Department of Data Science and Artificial Intelligence, The Hong Kong Polytechnic University , Hong Kong 999077 ,",
+      "School of Aerospace, Mechanical and Mechatronic Engineering, The University of Sydney , Sydney 2006 ,",
+      "Faculty of Electrical Engineering and Computer Science, Ningbo University , Ningbo 315211 ,",
+      "School of Computer Science, Peking University , Beijing 100871 ,",
+      "Key Laboratory of Brain Cognition and Brain-inspired Intelligence Technology , Beijing 100190 ,",
+      "Spiking Intelligence Lab, Tianqiao & Chirssy Chen Institute , Shanghai 201203 ,"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2025-01-01",
+    "year": 2025,
+    "venue": "National Science Review",
+    "status": "published",
+    "topics": [],
+    "abstract": "ABSTRACT This work proposes a unified neuromorphic spike-based large-language-model (NSLLM) framework to simultaneously address the challenges of high energy consumption and low interpretability in LLMs. Our framework transforms LLMs into efficient NSLLMs by converting their behaviors into neural dynamics—such as spike trains—through rigorous mathematical modeling and complemented by advanced techniques including quantization and sparsification. This transformation also enables the analysis of information encoding processes using computational neuroscience tools, thereby offering a novel neuroscientific perspective that conceptualizes LLMs as neural populations to enhance their interpretability. Leveraging a hardware-algorithm co-design paradigm, an NSLLM can completely eliminate matrix multiplication (MatMul) while maintaining high performance. We designed a custom MatMul-free hardware core on the VCK190 field-programmable gate array to validate the 1.5-billion-parameter NSLLM, achieving a dynamic power consumption of only 13.849 W and an inference throughput of 161.8 tokens per second. Compared with the A800 GPU, this implementation improves energy efficiency, memory usage and inference throughput by 19.8$\\times$, 21.3$\\times$ and 2.2$\\times$, respectively. This work provides a novel perspective within a unified framework to enhance both the energy efficiency and interpretability of LLMs, offering valuable insights for future neuromorphic chip designs tailored for large models.",
+    "identifiers": {
+      "doi": "10.1093/nsr/nwaf551"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1093/nsr/nwaf551"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1093/nsr/nwaf551"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy , Beijing 100094 ,",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1093/nsr/nwaf551"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1093-nsr-nwaf551",
+    "updatedAt": "2026-09-18T04:57:17Z"
+  },
+  {
+    "type": "article",
     "title": "AI-Driven Accelerated Discovery of High-Performance Perovskite Quantum Dots Via Predictive LightGBM Modeling",
     "authors": [
       {

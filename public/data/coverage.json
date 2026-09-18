@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T05:26:52Z",
+  "generatedAt": "2026-09-18T04:57:17Z",
   "mode": "automatic",
   "sources": {
     "crossref": "ok (5 matched)",
@@ -12,6 +12,6 @@
     "semantic_scholar": "optional key",
     "core": "optional key",
     "lens": "optional key",
-    "arxiv_html_backfill": "checked 20912/24297; 111 exact affiliation matches; 3009 pending; 376 retry; last check 2026-09-17T05:07:32Z; discovery ok"
+    "arxiv_html_backfill": "checked 21212/24497; 111 exact affiliation matches; 2909 pending; 376 retry; last check 2026-09-18T04:58:42Z; discovery ok"
   }
 }
