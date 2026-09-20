@@ -586,6 +586,85 @@
   },
   {
     "type": "preprint",
+    "title": "FlowAWR: Online Adaptive Flow Reinforcement via Advantage-Weighted Rectification",
+    "authors": [
+      {
+        "name": "Zheming Fu"
+      },
+      {
+        "name": "Ruizhe He"
+      },
+      {
+        "name": "Wei Shang"
+      },
+      {
+        "name": "Xiaoxiao Ma"
+      },
+      {
+        "name": "Lei Wang"
+      },
+      {
+        "name": "Chang Liu"
+      },
+      {
+        "name": "Siming Fu"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-06-29",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Aligning generative flow models on continuous spaces via online reinforcement learning is constrained by intractable trajectory likelihoods. Existing density-approximated policy gradient methods rely on stochastic SDE samplers to construct tractable transition kernels, which introduce training-inference inconsistencies and necessitates Classifier-Free Guidance (CFG). While implicit frameworks such as DiffusionNFT directly optimize forward-process velocity fields, its heuristic fixed-magnitude corrections prevent optimization strength from relative intra-group quality. We propose \\textit{Flow Advantage-Weighted Rectification} (\\textbf{FlowAWR}), a paradigm that recasts continuous generative policy optimization as supervised regression toward a theoretically optimal velocity field. Starting from the optimal policy of a KL-constrained reward maximization, FlowAWR derives the optimal velocity field that admits a magnitude-aware, advantage-weighted rectification form, yielding SDE-free optimization and CFG-free generation. In comparative evaluations on SD3.5-Medium, FlowAWR achieves improved alignment performance alongside a 2$\\times$ to 5$\\times$ convergence acceleration over DiffusionNFT (e.g., reaching a 24.12 PickScore in 1.2k steps, versus 23.82 in 2.0k steps for DiffusionNFT and 23.50 in $>$4k steps for FlowGRPO). Under multi-reward constraints, FlowAWR sustains generation quality, satisfying structural rules while maintaining stable out-of-domain performance.",
+    "identifiers": {
+      "arxiv": "2606.30376",
+      "doi": "10.48550/arXiv.2606.30376"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2606.30376"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2606.30376v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2606.30376"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2606.30376v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2606.30376v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2606-30376",
+    "updatedAt": "2026-09-20T05:28:00Z"
+  },
+  {
+    "type": "preprint",
     "title": "Self-Generated Error Training for Token Editing in Diffusion Language Models",
     "authors": [
       {
@@ -13035,7 +13114,11 @@
       "Zhongguancun Academy , Beijing 100094,",
       "Jilin University School of Artificial Intelligence, , Jilin 130012,",
       "Lomonosov Moscow State University Department of Biology, , Moscow, Russia",
-      "SMBU-MSU-BIT Joint Laboratory on Bioinformatics and Engineering Biology, Shenzhen MSU-BIT University , Shenzhen, Guangdong 518172,"
+      "SMBU-MSU-BIT Joint Laboratory on Bioinformatics and Engineering Biology, Shenzhen MSU-BIT University , Shenzhen, Guangdong 518172,",
+      "School of Computer Science and Technology, Beijing Institute of Technology , Beijing 100081,",
+      "School of Artificial Intelligence, Jilin University , Jilin 130012,",
+      "Department of Biology, Lomonosov Moscow State University , Moscow 119991, Russia",
+      "SMBU-MSU-BIT Joint Laboratory on Bioinformatics and Engineering Biology, Shenzhen MSU-BIT University , Shenzhen 518172,"
     ],
     "relationType": "affiliation",
     "publishedAt": "2026-01-01",

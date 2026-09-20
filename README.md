@@ -23,17 +23,17 @@ A bilingual, traceable index of research outputs from **Zhongguancun Academy (�
 - [Looking Beyond Visible Cues: Implicit Video Question Answering via Dual-Clue Reasoning](https://arxiv.org/abs/2506.07811) — arXiv (2026)
 - [TacReasoner: A Dynamic Tactile-Language Framework for Interactive Reasoning in Real-World Scenarios](https://arxiv.org/abs/2607.05131) — IROS 2026 (2026)
 - [Feeling the Unexpected: ResTacVLA for Contact-Rich Manipulation via Residual Tactile Representation](https://arxiv.org/abs/2607.03387) — IROS 2026 (2026)
-- [Self-Generated Error Training for Token Editing in Diffusion Language Models](https://arxiv.org/abs/2606.17175) — arXiv (2026)
+- [FlowAWR: Online Adaptive Flow Reinforcement via Advantage-Weighted Rectification](https://arxiv.org/abs/2606.30376) — arXiv (2026)
 
 ## Data sources
 
 | Source | Status |
 | --- | --- |
 | arxiv | unavailable (HTTPError) |
-| arxiv_html_backfill | checked 21512/24506; 111 exact affiliation matches; 2618 pending; 376 retry; last check 2026-09-19T04:51:30Z; discovery ok |
+| arxiv_html_backfill | checked 21812/24506; 112 exact affiliation matches; 2318 pending; 376 retry; last check 2026-09-20T05:09:01Z; discovery ok |
 | bza_official | unavailable (HTTPError) |
 | core | optional key |
-| crossref | unavailable (HTTPError) |
+| crossref | ok (7 matched) |
 | datacite | ok (19 matched) |
 | europe_pmc | ok (0 matched) |
 | github_projects | unavailable (HTTPError) |
