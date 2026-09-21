@@ -22,20 +22,20 @@ A bilingual, traceable index of research outputs from **Zhongguancun Academy (�
 - [RSVideo: Are Your Vision-Language Models Ready for Remote Sensing Videos?](https://arxiv.org/abs/2608.02039) — arXiv (2026)
 - [Looking Beyond Visible Cues: Implicit Video Question Answering via Dual-Clue Reasoning](https://arxiv.org/abs/2506.07811) — arXiv (2026)
 - [TacReasoner: A Dynamic Tactile-Language Framework for Interactive Reasoning in Real-World Scenarios](https://arxiv.org/abs/2607.05131) — IROS 2026 (2026)
-- [Feeling the Unexpected: ResTacVLA for Contact-Rich Manipulation via Residual Tactile Representation](https://arxiv.org/abs/2607.03387) — IROS 2026 (2026)
-- [FlowAWR: Online Adaptive Flow Reinforcement via Advantage-Weighted Rectification](https://arxiv.org/abs/2606.30376) — arXiv (2026)
+- [Don't Commit Alone: Joint Token Commitment in Diffusion Language Models](https://arxiv.org/abs/2607.04469) — arXiv (2026)
+- [RL Forgets! Towards Continual Policy Optimization](https://arxiv.org/abs/2607.04364) — arXiv (2026)
 
 ## Data sources
 
 | Source | Status |
 | --- | --- |
 | arxiv | unavailable (HTTPError) |
-| arxiv_html_backfill | checked 22108/24683; 112 exact affiliation matches; 2195 pending; 380 retry; last check 2026-09-20T06:18:10Z; discovery ok |
+| arxiv_html_backfill | checked 22408/24688; 117 exact affiliation matches; 1900 pending; 380 retry; last check 2026-09-21T05:14:28Z; discovery ok |
 | bza_official | unavailable (HTTPError) |
 | core | optional key |
-| crossref | ok (36 matched) |
+| crossref | ok (6 matched) |
 | datacite | ok (19 matched) |
-| europe_pmc | ok (0 matched) |
+| europe_pmc | unavailable (HTTPError) |
 | github_projects | unavailable (HTTPError) |
 | lens | optional key |
 | openalex | ok (0 matched) |

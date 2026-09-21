@@ -501,6 +501,400 @@
     "updatedAt": "2026-08-08T11:59:38Z"
   },
   {
+    "type": "preprint",
+    "title": "Don't Commit Alone: Joint Token Commitment in Diffusion Language Models",
+    "authors": [
+      {
+        "name": "L. Yao"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Lin Yao Affiliation: School of Computer Science, Shanghai Jiao Tong University, Shanghai, 200240, China Affiliation: Zhongguancun Academy, Beijing, 100097, China Email: lin.yao@sjtu.edu.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-07-05",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Diffusion language models (dLLMs) commit multiple tokens per denoising step by decoding each selected position independently from a shared context. When these positions are dependent, this factorization introduces an error captured by conditional total correlation, which confidence-based selection cannot infer from marginal probabilities alone. We propose CoCommit, a marker-gated coordination pass that delays commitment. After the usual bundle selection, a learned marker identifies the commit set, and the backbone's last n layers are re-applied to coordinate the marked positions before greedy argmax writes the tokens. This approximates joint-mode decoding while reusing existing weights, requiring only one partial forward pass and no auxiliary model. On LLaDA 2.1 with LoRA adapters and greedy inference, joint commitment improves five of the seven evaluated benchmarks over the released factorized decoder. The largest gains occur on code and reasoning tasks, while the remaining tasks are near parity.",
+    "identifiers": {
+      "arxiv": "2607.04469",
+      "doi": "10.48550/arXiv.2607.04469"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2607.04469"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2607.04469v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2607.04469"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2607.04469v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Lin Yao Affiliation: School of Computer Science, Shanghai Jiao Tong University, Shanghai, 200240, China Affiliation: Zhongguancun Academy, Beijing, 100097, China Email: lin.yao@sjtu.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2607.04469v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2607-04469",
+    "updatedAt": "2026-09-21T05:33:39Z"
+  },
+  {
+    "type": "preprint",
+    "title": "RL Forgets! Towards Continual Policy Optimization",
+    "authors": [
+      {
+        "name": "Mao-Lin Luo"
+      },
+      {
+        "name": "Zhe-Xu Wang"
+      },
+      {
+        "name": "Zi-Hao Zhou"
+      },
+      {
+        "name": "Bo Ye"
+      },
+      {
+        "name": "Jian Zhao"
+      },
+      {
+        "name": "Min-Ling Zhang"
+      },
+      {
+        "name": "Tong Wei"
+      }
+    ],
+    "institutions": [
+      "zgca",
+      "zgci"
+    ],
+    "rawAffiliations": [
+      "Mao-Lin Luo 1 1 1 Equal contribution. , Zhe-Xu Wang 1 1 1 Equal contribution. , Zi-Hao Zhou 1 1 1 Equal contribution. , Bo Ye, Jian Zhao Affiliation: School of Computer Science and Engineering, Southeast University, Nanjing 210096, China Affiliation: Key Laboratory of Computer Network and Information Integration (Southeast University) Ministry of Education, China Affiliation: Zhongguancun Academy Affiliation: Zhongguancun Institute of Artificial Intelligence"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-07-05",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Continual post-training is becoming a central paradigm for adapting vision-language models to evolving tasks. Recent work has increasingly favored reinforcement learning over supervised fine-tuning, driven by the belief that reinforcement learning is inherently less prone to forgetting. However, the belief remains insufficiently validated, as existing evidence is largely drawn from outdated or homogeneous benchmarks. We revisit this assumption under recent and diverse multimodal reasoning tasks. To this end, we introduce MRCL, a Multimodal Reasoning Continual Learning benchmark. Experiments on MRCL show that standard reinforcement learning still suffers from severe catastrophic forgetting during continual post-training. We trace this failure to an objective mismatch: the KL regularization used in common policy optimization methods is evaluated on current-task data, whereas forgetting is caused by behavioral drift on prior-task distributions. To address this problem, we propose Continual Policy Optimization (CPO), a replay-free framework grounded in a prior-task behavioral KL objective. CPO relaxes the intractable historical KL constraint into sparse parameter-movement regularization, limiting policy drift without storing old data. Extensive experiments across multiple model scales show that CPO consistently reduces forgetting while preserving, and in some cases improving, pretrained model capabilities. On Qwen3-VL-8B, CPO reduces forgetting by 13.7% and improves pretrained capability by 7.0%. The implementation code is available at https://github.com/MaolinLuo/CPO.",
+    "identifiers": {
+      "arxiv": "2607.04364",
+      "doi": "10.48550/arXiv.2607.04364"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2607.04364"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2607.04364v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2607.04364"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2607.04364v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Mao-Lin Luo 1 1 1 Equal contribution. , Zhe-Xu Wang 1 1 1 Equal contribution. , Zi-Hao Zhou 1 1 1 Equal contribution. , Bo Ye, Jian Zhao Affiliation: School of Computer Science and Engineering, Southeast University, Nanjing 210096, China Affiliation: Key Laboratory of Computer Network and Information Integration (Southeast University) Ministry of Education, China Affiliation: Zhongguancun Academy Affiliation: Zhongguancun Institute of Artificial Intelligence",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2607.04364v1"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgci",
+        "matchedText": "Mao-Lin Luo 1 1 1 Equal contribution. , Zhe-Xu Wang 1 1 1 Equal contribution. , Zi-Hao Zhou 1 1 1 Equal contribution. , Bo Ye, Jian Zhao Affiliation: School of Computer Science and Engineering, Southeast University, Nanjing 210096, China Affiliation: Key Laboratory of Computer Network and Information Integration (Southeast University) Ministry of Education, China Affiliation: Zhongguancun Academy Affiliation: Zhongguancun Institute of Artificial Intelligence",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2607.04364v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2607-04364",
+    "updatedAt": "2026-09-21T05:33:39Z"
+  },
+  {
+    "type": "preprint",
+    "title": "WPG-MoE: Weak-Prior-Guided Dense Mixture-of-Experts for User-Level Social Media Depression Detection",
+    "authors": [
+      {
+        "name": "Xian Li"
+      },
+      {
+        "name": "Yuanhe Tian"
+      },
+      {
+        "name": "Yang Yang"
+      },
+      {
+        "name": "Guoqing Wang"
+      },
+      {
+        "name": "Y Song"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Xian Li Affiliation: University of Electronic Science and Technology of China Affiliation: Zhongguancun Academy Email: xianli@stu.uestc.edu.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-07-05",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Online social media posts provide scalable signals for early depression screening, and recent studies mainly improve pre-classification evidence through risk-post selection, symptom grounding, and clinically informed feature construction. However, these screening-stage designs often leave final decisions to a single detector, overlooking how users heterogeneously express depressive risk after screening. A monolithic classifier must average across heterogeneous users, which may dilute localized evidence and cause misclassification, especially for non-self-disclosing users. To address this issue, we propose WPG-MoE, a weak-prior-guided dense mixture-of-experts framework built on a shared large language model (LLM) backbone. WPG-MoE derives user-level weak semantic priors to softly route users to experts matched to different evidence layouts. We formulate this process as learning using privileged information (LUPI): rich LLM-extracted structured evidence guides training-time routing, while inference retains only Patient Health Questionnaire-9 (PHQ-9) template screening and the deployable backbone. Experiments on Chinese and English datasets show that WPG-MoE outperforms strong baselines with interpretable routing behavior.",
+    "identifiers": {
+      "arxiv": "2607.04350",
+      "doi": "10.48550/arXiv.2607.04350"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2607.04350"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2607.04350v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2607.04350"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2607.04350v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Xian Li Affiliation: University of Electronic Science and Technology of China Affiliation: Zhongguancun Academy Email: xianli@stu.uestc.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2607.04350v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2607-04350",
+    "updatedAt": "2026-09-21T05:33:39Z"
+  },
+  {
+    "type": "preprint",
+    "title": "InfraNet: Quality-Aware RGB Guidance for Efficient Infrared Object Detection",
+    "authors": [
+      {
+        "name": "Zichao Feng"
+      },
+      {
+        "name": "Hao Zhu"
+      },
+      {
+        "name": "Jingying Yang"
+      },
+      {
+        "name": "S Xu"
+      },
+      {
+        "name": "Yi Ren"
+      },
+      {
+        "name": "Yuguang Yang"
+      },
+      {
+        "name": "Xuhui Liu"
+      },
+      {
+        "name": "Juan Zhang"
+      },
+      {
+        "name": "Tian Wang"
+      },
+      {
+        "name": "L Yang"
+      },
+      {
+        "name": "Baochang Zhang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Yangyang Ren 1,2 Affiliation: Zhongguancun Academy, Beijing, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-07-04",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Robust object detection under adverse visual conditions remains a long-standing challenge for multi-modal perception systems. Existing fusion-based methods typically require both RGB and infrared (IR) inputs, and treat them equally during both training and inference, which compromises their robustness when the RGB modality becomes unreliable or unavailable. In this case, we propose \\textbf{InfraNet}, an IR-centric quality-aware framework that regulates RGB guidance during training and supports flexible RGB--IR or IR-only deployment. InfraNet employs an asymmetric architecture where the primary IR pathway extracts multi-scale infrared features for predictions, while the auxiliary RGB pathway provides reliability-controlled supervisory signals. The core of InfraNet is \\textbf{QualGate}, a quality-aware fusion module that learns a task-oriented control signal to suppress unreliable RGB guidance and compensate IR features during cross-modal training. Built upon InfraNet, we design two architectural variants: a lightweight IR-only architecture InfraNet-IR and an RGB--IR architecture InfraNet-RGB-IR. Our method is evaluated through extensive experiments on four benchmark datasets (LLVIP, FLIR-Aligned, M$^3$FD, and DroneVehicle), showing strong or competitive accuracy in challenging low-light and adverse weather conditions. Notably, InfraNet maintains high efficiency in IR-only inference, making it both accurate and computationally efficient.",
+    "identifiers": {
+      "arxiv": "2607.03795",
+      "doi": "10.48550/arXiv.2607.03795"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2607.03795"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2607.03795v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2607.03795"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2607.03795v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Yangyang Ren 1,2 Affiliation: Zhongguancun Academy, Beijing, China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2607.03795v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2607-03795",
+    "updatedAt": "2026-09-21T05:33:39Z"
+  },
+  {
+    "type": "preprint",
+    "title": "SkillFab: An Agent-Native Skill Production Platform",
+    "authors": [
+      {
+        "name": "Anjie Xu"
+      },
+      {
+        "name": "Yifeng Cai"
+      },
+      {
+        "name": "Yi Li"
+      },
+      {
+        "name": "Zixing Wang"
+      },
+      {
+        "name": "Zhiyu Zhang"
+      },
+      {
+        "name": "Jingfan Chen"
+      },
+      {
+        "name": "Ruohan Xu"
+      },
+      {
+        "name": "Leye Wang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Anjie Xu Affiliation: Peking University Affiliation: Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-07-04",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "SkillFab is an agent-native platform for turning missing capabilities into reviewed, reusable Agent Skills. At runtime, agents first search for reusable skills; when no adequate skill exists, the unmet capability becomes a demand-first issue before any repository or implementation branch needs to exist. Development then proceeds through a SkillFab-managed repository, Git-ingested commit evidence, maintainer review, and registry publication. The same lifecycle is exposed through web, REST, and MCP surfaces, so humans, scripts, and external agents operate on shared state rather than separate task logs. The current system uses scoped Git push URLs, native range commit ingestion, workflow-state reads, and workflow-event histories to make long-running agent work reviewable and recoverable. We document the platform model, architecture, implemented capabilities, and three case studies: an end-to-end OS-detect skill run, a Docker research package that converts operational practice into reusable skill knowledge, and an external optimization case showing how improved skill artifacts can enter SkillFab as reviewable, versioned submissions. Deployment: https://skillfab.ai.",
+    "identifiers": {
+      "arxiv": "2607.03780",
+      "doi": "10.48550/arXiv.2607.03780"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2607.03780"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2607.03780v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2607.03780"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2607.03780v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Anjie Xu Affiliation: Peking University Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2607.03780v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2607-03780",
+    "updatedAt": "2026-09-21T05:33:39Z"
+  },
+  {
     "type": "conference",
     "title": "Feeling the Unexpected: ResTacVLA for Contact-Rich Manipulation via Residual Tactile Representation",
     "authors": [
