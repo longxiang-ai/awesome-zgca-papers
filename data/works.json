@@ -411,6 +411,112 @@
     "updatedAt": "2026-08-08T18:30:46Z"
   },
   {
+    "type": "preprint",
+    "title": "Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents",
+    "authors": [
+      {
+        "name": "Yixian Zhang"
+      },
+      {
+        "name": "Huanming Zhang"
+      },
+      {
+        "name": "Feng Gao"
+      },
+      {
+        "name": "Xiao Li"
+      },
+      {
+        "name": "Zhihao Liu"
+      },
+      {
+        "name": "Chunyang Zhu"
+      },
+      {
+        "name": "Jiaxing Qiu"
+      },
+      {
+        "name": "Yuchen Yan"
+      },
+      {
+        "name": "Jiyuan Liu"
+      },
+      {
+        "name": "Wenhao Tang"
+      },
+      {
+        "name": "Zhengru Fang"
+      },
+      {
+        "name": "Yi Nie"
+      },
+      {
+        "name": "Changxu Wei"
+      },
+      {
+        "name": "Yu Wang"
+      },
+      {
+        "name": "Wenbo Ding"
+      },
+      {
+        "name": "C Shijia Yu"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Yixian Zhang 1,∗ Huanming Zhang 1,∗ Feng Gao 2 Xiao Li 3 Zhihao Liu 4 Chunyang Zhu 5 Jiaxing Qiu 5 Yuchen Yan 5 Jiyuan Liu 6 Wenhao Tang 1 Zhengru Fang 7 Yi Nie 1,2 Changxu Wei 1 Yu Wang 1 Wenbo Ding 1 Chao Yu 1,† 1 Tsinghua University 2 Striding AI 3 Purdue University 4 Institute of Automation, Chinese Academy of Sciences 5 Infinigence AI 6 Zhongguancun Academy 7 Hong Kong University of Science and Technology * Equal contribution. † Corresponding author: zoeyuchao@gmail.com Website: https://harnessvla.github.io/"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-07-09",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Language-conditioned manipulation requires both precise contact-rich control and robust reasoning over language, scenes, and long horizons. End-to-end Vision-Language-Action (VLA) models provide strong local visuomotor skills, but they are trained on in-distribution task trajectories and often fail under deployment perturbations such as semantic retargeting, goal re-binding, spatial-layout shifts, and unstable local contacts. LLM coding agents provide complementary semantic and compositional reasoning, but purely analytic primitives struggle with irregular grasping, constrained placement, and articulated-object interaction. We present Harness VLA, a memory-augmented agentic framework that exposes a frozen VLA as a retryable contact-rich primitive and composes it with a small fixed library of analytic primitives for grounding, staging, transport, navigation, and release. Rather than expanding the skill library, the harness learns the operating range of these fixed primitives from task-specific execution traces, global success rules, and failure models. By lifting semantic re-grounding, non-contact execution, and VLA re-staging to the planner while reserving the frozen VLA for local contact-rich phases, Harness VLA extends pretrained VLAs beyond their original trajectory distribution without finetuning. Across perturbed tabletop, household kitchen, and clean-to-randomized bimanual manipulation, Harness VLA improves over the strongest relevant baselines by 38.6 and 25.4 percentage points on LIBERO-Pro and RoboCasa365, respectively, and reaches 58.4% on RoboTwin C2R. Code is available at https://github.com/RLinf/RPent.",
+    "identifiers": {
+      "arxiv": "2607.08448",
+      "doi": "10.48550/arXiv.2607.08448"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2607.08448"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2607.08448v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2607.08448"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2607.08448v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Yixian Zhang 1,∗ Huanming Zhang 1,∗ Feng Gao 2 Xiao Li 3 Zhihao Liu 4 Chunyang Zhu 5 Jiaxing Qiu 5 Yuchen Yan 5 Jiyuan Liu 6 Wenhao Tang 1 Zhengru Fang 7 Yi Nie 1,2 Changxu Wei 1 Yu Wang 1 Wenbo Ding 1 Chao Yu 1,† 1 Tsinghua University 2 Striding AI 3 Purdue University 4 Institute of Automation, Chinese Academy of Sciences 5 Infinigence AI 6 Zhongguancun Academy 7 Hong Kong University of Science and Technology * Equal contribution. † Corresponding author: zoeyuchao@gmail.com Website: https://harnessvla.github.io/",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2607.08448v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2607-08448",
+    "updatedAt": "2026-09-22T05:34:24Z"
+  },
+  {
     "type": "conference",
     "title": "TacReasoner: A Dynamic Tactile-Language Framework for Interactive Reasoning in Real-World Scenarios",
     "authors": [
