@@ -320,6 +320,85 @@
   },
   {
     "type": "preprint",
+    "title": "Distilled Reinforcement Learning for LLM Post-training",
+    "authors": [
+      {
+        "name": "Chen Wang"
+      },
+      {
+        "name": "Zhaochun Li"
+      },
+      {
+        "name": "Jionghao Bai"
+      },
+      {
+        "name": "Yining Zhang"
+      },
+      {
+        "name": "Hexuan Deng"
+      },
+      {
+        "name": "Ge Lan"
+      },
+      {
+        "name": "Yue Wang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Chen Wang † † thanks: s-wc25@bza.edu.cn Affiliation: College of Elite Engineers, Nankai University Affiliation: Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-07-19",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Large language model (LLM) post-training is essential for improving reasoning, adaptation, and alignment. Existing methods mainly follow two paradigms: reinforcement learning (RL) and on-policy distillation (OPD). However, RL relies on coarse-grained outcome supervision, resulting in difficult credit assignment and limited capability to acquire new knowledge. OPD, meanwhile, unconditionally matches teacher logits through KL divergence, which creates a dilemma: similar teachers provide little new knowledge, while substantially different teachers often yield ineffective guidance, largely restricting OPD to within-family distillation. We propose Distilled Reinforcement Learning (Distilled RL), which integrates teacher supervision into the RL objective to provide fine-grained guidance, selectively transfer new knowledge and avoid unconditional imitation. Distilled RL contains three components: reverse importance sampling with clipping, negative sample reset, and sequence-level geometric normalization. Through a concise and interpretable case study, we demonstrate that Distilled RL can effectively transfer previously unavailable knowledge from a teacher model to a student model. Extensive experiments across both within-family and cross-family distillation settings show that Distilled RL substantially outperforms standard RL and OPD in terms of both pass@1 and pass@k. Our code is available at https://github.com/597358816/Distilled-RL.",
+    "identifiers": {
+      "arxiv": "2607.17247",
+      "doi": "10.48550/arXiv.2607.17247"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2607.17247"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2607.17247v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2607.17247"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2607.17247v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Chen Wang † † thanks: s-wc25@bza.edu.cn Affiliation: College of Elite Engineers, Nankai University Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2607.17247v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2607-17247",
+    "updatedAt": "2026-09-23T05:18:13Z"
+  },
+  {
+    "type": "preprint",
     "title": "Looking Beyond Visible Cues: Implicit Video Question Answering via Dual-Clue Reasoning",
     "authors": [
       {
@@ -409,6 +488,82 @@
     ],
     "id": "doi-10-48550-arxiv-2506-07811",
     "updatedAt": "2026-08-08T18:30:46Z"
+  },
+  {
+    "type": "preprint",
+    "title": "VQ-Touch: A Data-Efficient Tactile Generation Framework Across Sensors and Scenarios",
+    "authors": [
+      {
+        "name": "Kailin Lyu"
+      },
+      {
+        "name": "Long Xiao"
+      },
+      {
+        "name": "Jianing Zeng"
+      },
+      {
+        "name": "Di Wu"
+      },
+      {
+        "name": "Lin Shu"
+      },
+      {
+        "name": "Jie Hao"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Kailin Lyu Affiliation: Institute of Automation, Chinese Academy of Sciences Affiliation: Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-07-16",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Tactile image generation significantly reduces the dependency on expensive and wear-prone sensors by synthesizing high-fidelity tactile data, offering an efficient solution for tactile information acquisition in robotic perception and human-machine interaction systems. However, existing methods depend on large-scale, diverse datasets from specific sensors and lack efficient data utilization and robust generalization capabilities, struggling in vision-limited environments. To address this, we introduce VQ-Touch, a tactile generation framework that supports both cross-sensor and multi-scenario applications. Specifically, to efficiently extract complex deformation and texture features from the data, we propose DM-VQGAN, an effective tactile representation learner. Furthermore, we introduce a discrete diffusion decoder with a unified conditioning interface, supporting multimodal generation tasks such as images and labels, and enhances the model's generalization capability through few-shot mixed training, thus achieving compatibility with current mainstream sensors and their variants. Experiments show that VQ-Touch surpasses state-of-the-art methods in multiple tasks.",
+    "identifiers": {
+      "arxiv": "2607.14728",
+      "doi": "10.48550/arXiv.2607.14728"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2607.14728"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2607.14728v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2607.14728"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2607.14728v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Kailin Lyu Affiliation: Institute of Automation, Chinese Academy of Sciences Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2607.14728v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2607-14728",
+    "updatedAt": "2026-09-23T05:18:13Z"
   },
   {
     "type": "preprint",

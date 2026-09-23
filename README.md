@@ -20,21 +20,21 @@ A bilingual, traceable index of research outputs from **Zhongguancun Academy (�
 - [Trace, Verify, and Correct: A Training-Free Framework for Spatial Reasoning in Multimodal LLMs](https://arxiv.org/abs/2608.04759) — arXiv (2026)
 - [EmbodiedVAE: Disentangled Video VAE for Efficient and Controllable Embodied Manipulation](https://arxiv.org/abs/2608.02990) — arXiv (2026)
 - [RSVideo: Are Your Vision-Language Models Ready for Remote Sensing Videos?](https://arxiv.org/abs/2608.02039) — arXiv (2026)
+- [Distilled Reinforcement Learning for LLM Post-training](https://arxiv.org/abs/2607.17247) — arXiv (2026)
 - [Looking Beyond Visible Cues: Implicit Video Question Answering via Dual-Clue Reasoning](https://arxiv.org/abs/2506.07811) — arXiv (2026)
+- [VQ-Touch: A Data-Efficient Tactile Generation Framework Across Sensors and Scenarios](https://arxiv.org/abs/2607.14728) — arXiv (2026)
 - [Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents](https://arxiv.org/abs/2607.08448) — arXiv (2026)
-- [TacReasoner: A Dynamic Tactile-Language Framework for Interactive Reasoning in Real-World Scenarios](https://arxiv.org/abs/2607.05131) — IROS 2026 (2026)
-- [Don't Commit Alone: Joint Token Commitment in Diffusion Language Models](https://arxiv.org/abs/2607.04469) — arXiv (2026)
 
 ## Data sources
 
 | Source | Status |
 | --- | --- |
 | arxiv | unavailable (HTTPError) |
-| arxiv_html_backfill | checked 22708/24694; 118 exact affiliation matches; 1606 pending; 380 retry; last check 2026-09-22T05:15:03Z; discovery ok |
+| arxiv_html_backfill | checked 23008/24726; 120 exact affiliation matches; 1338 pending; 380 retry; last check 2026-09-23T04:58:56Z; discovery ok |
 | bza_official | unavailable (HTTPError) |
 | core | optional key |
-| crossref | unavailable (HTTPError) |
-| datacite | ok (19 matched) |
+| crossref | ok (9 matched) |
+| datacite | ok (17 matched) |
 | europe_pmc | ok (0 matched) |
 | github_projects | unavailable (HTTPError) |
 | lens | optional key |
