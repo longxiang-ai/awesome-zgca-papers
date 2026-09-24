@@ -2344,6 +2344,88 @@
   },
   {
     "type": "preprint",
+    "title": "OPTScientist: Multi-Agent Discovery of Typed Optimizer Programs for Transformer Pretraining",
+    "authors": [
+      {
+        "name": "Zhongzheng Li"
+      },
+      {
+        "name": "Tiancan Feng"
+      },
+      {
+        "name": "Wenhao Li"
+      },
+      {
+        "name": "Qingsong Ran"
+      },
+      {
+        "name": "Feng S"
+      },
+      {
+        "name": "Xiaoyuan Zhang"
+      },
+      {
+        "name": "Yue Wang"
+      },
+      {
+        "name": "X Zhao"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Zhongzheng Li Affiliation: Institute of Automation, Chinese Academy of Sciences Affiliation: University of Chinese Academy of Sciences Affiliation: Zhongguancun Academy Email: zhangxiaoyuan@bza.edu.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-06-02",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Designing optimizers for modern deep learning remains a challenging scientific problem, requiring the joint consideration of optimization geometry, state dynamics, numerical stability, implementation constraints, and empirical generalization. Existing automated optimizer discovery methods typically search either over unconstrained code spaces or within narrowly parameterized optimizer families. The former is flexible but often produces invalid or uninterpretable programs, while the latter is stable but limits novelty. We introduce OPTScientist, a theory-guided multi-agent framework for optimizer discovery in a typed domain-specific language (DSL). OPTScientist formulates optimizer design as a constrained scientific search process, where candidate updates are expressed through direction, scaling, preconditioning, regularization, state, and grouping modules. Four role agents, Theorist, Designer, Engineer, and Reviewer, collaborate within a single orchestration loop to propose hypotheses, synthesize DSL candidates, compile and evaluate optimizers, and critique results. To overcome the limitations of a fixed search space, OPTScientist combines evolutionary search over optimizer programs with a second-stage mechanism that proposes small DSL extensions when repeated failures reveal representational bottlenecks. Using this framework, we discover RS-MR, a reduced-state matrix optimizer that improves transformer pretraining over strong baselines under our native evaluation protocol. Our results suggest a path toward automated optimizer science grounded in theory, typed programs, compiler validation, and closed-loop experimentation.",
+    "identifiers": {
+      "arxiv": "2607.20486",
+      "doi": "10.48550/arXiv.2607.20486"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2607.20486"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2607.20486v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2607.20486"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2607.20486v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongzheng Li Affiliation: Institute of Automation, Chinese Academy of Sciences Affiliation: University of Chinese Academy of Sciences Affiliation: Zhongguancun Academy Email: zhangxiaoyuan@bza.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2607.20486v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2607-20486",
+    "updatedAt": "2026-09-24T05:29:54Z"
+  },
+  {
+    "type": "preprint",
     "title": "PhotoCraft: Agentic Reasoning with Hierarchical Self-Evolving Memory for Deep Image Search",
     "authors": [
       {
@@ -2654,6 +2736,88 @@
     ],
     "id": "doi-10-48550-arxiv-2605-31148",
     "updatedAt": "2026-09-13T06:31:22Z"
+  },
+  {
+    "type": "preprint",
+    "title": "VLAConf: Calibrated Task-Success Confidence for Vision-Language-Action Models",
+    "authors": [
+      {
+        "name": "Dehao Huang"
+      },
+      {
+        "name": "Aoxiang Gu"
+      },
+      {
+        "name": "Chengjie Zhang"
+      },
+      {
+        "name": "Bolin Zou"
+      },
+      {
+        "name": "Wenlong Dong"
+      },
+      {
+        "name": "Zilang Cen"
+      },
+      {
+        "name": "Yue Wang"
+      },
+      {
+        "name": "Hong Zhang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Dehao Huang Affiliation: Department of Electronic and Electrical Engineering, Southern University of Science and Technology, Shenzhen, China. Affiliation: Zhongguancun Academy, Beijing, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-05-28",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Task-success confidence estimation for Vision-Language-Action (VLA) models provides a crucial task-level signal for monitoring manipulation in open-world environments and supporting downstream decision-making. Existing methods typically construct task-success confidence from action-token probabilities. However, such probabilities are not naturally available in flow-matching policies, limiting their applicability to mainstream flow-matching VLAs. To address this issue, we propose VLAConf, a two-stage representation-level confidence framework that operates on frozen pretrained VLA representations. A step-conditioned Coin-Flip Network learns an uncalibrated inverse success-support score from successful demonstrations, while a low-capacity calibrator fitted on outcome-labeled successful and failed rollouts maps the aggregated score to task-success probability. Experimental results on the LIBERO benchmark demonstrate that VLAConf improves online task-success confidence estimation over alternative approaches. We further demonstrate its utility in selective expert assistance, where confidence-triggered handoffs improve task success over no intervention. Its applicability is also evaluated in real-robot experiments. To access the source code and supplementary videos, visit https://sites.google.com/view/vlaconf.",
+    "identifiers": {
+      "arxiv": "2605.29605",
+      "doi": "10.48550/arXiv.2605.29605"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.29605"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.29605v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.29605"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.29605v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Dehao Huang Affiliation: Department of Electronic and Electrical Engineering, Southern University of Science and Technology, Shenzhen, China. Affiliation: Zhongguancun Academy, Beijing, China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.29605v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2605-29605",
+    "updatedAt": "2026-09-24T05:29:54Z"
   },
   {
     "type": "preprint",
@@ -12507,6 +12671,141 @@
     ],
     "id": "doi-10-24963-ijcai-2026-10",
     "updatedAt": "2026-09-17T05:05:28Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Reconstructing sequence-grammar trajectories enables interpretable and tunable cis-regulatory element design",
+    "authors": [
+      {
+        "name": "Mingqian Ma"
+      },
+      {
+        "name": "Wanjuan Bu"
+      },
+      {
+        "name": "Guoqing Liu"
+      },
+      {
+        "name": "Yuxuan Liu"
+      },
+      {
+        "name": "Sizhen Liu"
+      },
+      {
+        "name": "Zhen Zhao"
+      },
+      {
+        "name": "Shijie Yao"
+      },
+      {
+        "name": "Qingru Hua"
+      },
+      {
+        "name": "Yujie Zhang"
+      },
+      {
+        "name": "Cuiting Zhong"
+      },
+      {
+        "name": "Haitao Huang"
+      },
+      {
+        "name": "Pan Deng",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Peiran Jin",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Qijin Yin",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Chuan Cao",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Haiguang Liu",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Mo Xu"
+      },
+      {
+        "name": "Yuan He",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Tao Qin",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Zeyu Chen"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Carnegie Mellon University",
+      "Peking University",
+      "Microsoft Research (United Kingdom)",
+      "National Institute of Biological Sciences, Beijing",
+      "University of Rochester",
+      "Hunan University",
+      "Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Crossref",
+    "status": "published",
+    "topics": [],
+    "abstract": "Abstract Background Designing cis -regulatory elements (CREs) with cell-type-specific activity is critical for precise gene and cell therapies. Genomic language models (gLMs) have shown potential for CRE generation, but their optimization is often treated as a black box, limiting understanding of how regulatory grammar emerges and how unsuccessful generation trajectories can be corrected. Results We present Guided Optimization of C is -Regulatory Elements (GO-CRE), an interpretable deep learning framework for cell-type-specific CRE generation. GO-CRE is built on HybriDNA, a hybrid Transformer-Mamba2 gLM that supports iterative sequence optimization under practical computational constraints. GO-CRE then runs reinforcement learning (RL) and reconstructs sequence-grammar trajectories using deconvolved k-mer and motif features. The trajectories exhibit three phases - search, commitment, and optimization - each associated with the acquisition of distinct biological features. In HepG2, trajectory analysis identified a low-complexity polyG trap that motivated an updated reinforcement learning policy, and redirected optimization toward higher activity and specificity. In HepG2 and K562, GO-CRE generated diverse, cell-type-specific CREs with compact lineage-associated grammars, including HNF1B-FOXA1-HNF4A programs in HepG2 and GATA/RUNX-associated programs in K562. Lentiviral massively parallel reporter assays validated the cell-type-specific activity of the generated CREs in both cell types, and showed that HepG2 designs had higher average activity than endogenous CREs. Conclusions GO-CRE integrates efficient gLM-based generation, sequence grammar trajectory reconstruction, and biologically guided reward shaping. It links iterative sequence changes to regulatory grammar and feeds interpretable features back into reward design, and thus enables the design of diverse, experimentally validated, cell-type-specific CREs.",
+    "identifiers": {
+      "doi": "10.21203/rs.3.rs-10913378/v1"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.21203/rs.3.rs-10913378/v1"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.21203/rs.3.rs-10913378/v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.21203/rs.3.rs-10913378/v1"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-21203-rs-3-rs-10913378-v1",
+    "updatedAt": "2026-09-24T05:08:05Z"
   },
   {
     "type": "preprint",
