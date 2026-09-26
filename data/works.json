@@ -1317,6 +1317,277 @@
   },
   {
     "type": "preprint",
+    "title": "Flux-OPD: On-Policy Distillation with Evolving Contexts",
+    "authors": [
+      {
+        "name": "Yuran Wang"
+      },
+      {
+        "name": "Zekun Wang"
+      },
+      {
+        "name": "Bohan Zeng"
+      },
+      {
+        "name": "Ruixu Zhang"
+      },
+      {
+        "name": "Wenxuan Liu"
+      },
+      {
+        "name": "Liu Yang"
+      },
+      {
+        "name": "Yifan Dai"
+      },
+      {
+        "name": "Yang Shi"
+      },
+      {
+        "name": "Bozhou Li"
+      },
+      {
+        "name": "Chengzhuo Tong"
+      },
+      {
+        "name": "Daili Hua"
+      },
+      {
+        "name": "Yuanxing Zhang"
+      },
+      {
+        "name": "Wentao Zhang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Yuran Wang 1,2 , Zekun Wang 2 , Bohan Zeng 1 , Ruixu Zhang 3 , Wenxuan Liu 1 , Liu Yang 4 , Yifan Dai 4 , Yang Shi 1 , Bozhou Li 1 , Chengzhuo Tong 1 , Daili Hua 1 , Yuanxing Zhang 2 , Wentao Zhang 1,5,6 1 Peking University, 2 Kling Team, 3 Tsinghua University, 4 Shanghai Jiao Tong University, 5 Zhongguancun Academy, 6 Beijing Key Laboratory of Data Intelligence and Security (Peking University) † † thanks: Corresponding Author: wentao.zhang@pku.edu.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-07-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "abstract": "Large language model training in open-ended domains lacks verifiable rewards, making task preferences difficult to formalize as effective supervision. Contexts can convey such preferences, yet provide little additional supervision once distilled into the student, motivating contexts that evolve with student performance. However, directly using evolving contexts as in-training supervision results in an unstable distillation target and conflicting distributions, requiring mechanisms to stabilize target and downweight conflicts. In this paper, we analyze the effect of contexts through a decomposition of the reverse KL objective, revealing two findings: the student is distilled toward the geometric mean of context-conditioned teachers, and the objective contains a conflict term that measures conflicts among these teachers. Based on this decomposition, we propose Flux-OPD, an OPD paradigm that uses evolving contexts as in-training supervision to capture task preferences in open-ended domains. Flux-OPD treats the differences between context-conditioned and context-free teachers as contextual difference signals, injects them as contextual corrections into the context-free teacher anchor, and weights their correction strength using the conflict term as an indicator. Experiments on open-ended tasks show that Flux-OPD outperforms existing OPD paradigms, highlighting the potential to combine teacher supervision with evolving contexts.",
+    "identifiers": {
+      "arxiv": "2607.28022",
+      "doi": "10.48550/arXiv.2607.28022"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2607.28022"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2607.28022v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2607.28022"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2607.28022v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Yuran Wang 1,2 , Zekun Wang 2 , Bohan Zeng 1 , Ruixu Zhang 3 , Wenxuan Liu 1 , Liu Yang 4 , Yifan Dai 4 , Yang Shi 1 , Bozhou Li 1 , Chengzhuo Tong 1 , Daili Hua 1 , Yuanxing Zhang 2 , Wentao Zhang 1,5,6 1 Peking University, 2 Kling Team, 3 Tsinghua University, 4 Shanghai Jiao Tong University, 5 Zhongguancun Academy, 6 Beijing Key Laboratory of Data Intelligence and Security (Peking University) † † thanks: Corresponding Author: wentao.zhang@pku.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2607.28022v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2607-28022",
+    "updatedAt": "2026-09-26T05:53:46Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Kalman Meets Curriculum: Efficient Dynamic Prompt Selection for Adaptive RL Finetuning",
+    "authors": [
+      {
+        "name": "Haodong Zhu"
+      },
+      {
+        "name": "Yangyang Ren"
+      },
+      {
+        "name": "Yanjing Li"
+      },
+      {
+        "name": "Sheng Xu"
+      },
+      {
+        "name": "Haiguang Liu"
+      },
+      {
+        "name": "Linlin Yang"
+      },
+      {
+        "name": "Baochang Zhang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Haodong Zhu † † thanks: Equal contribution. Affiliation: Beihang University Affiliation: Zhongguancun Academy Email: HaodongZhu@buaa.edu.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-07-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.LG"
+    ],
+    "abstract": "Reinforcement learning (RL) finetuning significantly enhances the reasoning capabilities of large language models (LLMs), yet its effectiveness critically depends on selecting prompts of appropriate difficulty for the current policy. This is challenging because prompt difficulty evolves throughout training. Existing online methods therefore face a trade-off: evaluation-based approaches are accurate but expensive, while prediction-based approaches are efficient but typically assume stationary difficulty, making them ill-suited to RL's non-stationary training dynamics. To address these issues, we propose a Kalman-Guided Prompt Selection method (KGPS), which reformulates prompt selection as a dynamic state estimation problem rather than static difficulty prediction. KGPS models each prompt's latent success rate in logit space using a linear-Gaussian state-space model, with process noise coupled to the magnitude of policy updates so that uncertainty increases when the policy changes more substantially. A Kalman filter then maintains a calibrated Gaussian posterior over prompt difficulty, and prompts are selected by maximizing a posterior-expected training utility that favors intermediate-difficulty prompts while naturally revisiting uncertain ones. The resulting procedure is adaptive to policy drift and requires no additional rollouts beyond standard policy training. Extensive experiments across mathematics, planning, and geometry reasoning benchmarks, as well as multiple RL algorithms, show that KGPS consistently improves both final accuracy and rollout efficiency over strong baselines, establishing state-of-the-art performance among online prompt selection methods. For example, on DeepSeek-R1-Distill-7B, KGPS uses 83% fewer rollouts than DS while even improving the average performance by 0.12 point across six math reasoning benchmarks.",
+    "identifiers": {
+      "arxiv": "2607.27610",
+      "doi": "10.48550/arXiv.2607.27610"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2607.27610"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2607.27610v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2607.27610"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2607.27610v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Haodong Zhu † † thanks: Equal contribution. Affiliation: Beihang University Affiliation: Zhongguancun Academy Email: HaodongZhu@buaa.edu.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2607.27610v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2607-27610",
+    "updatedAt": "2026-09-26T05:53:46Z"
+  },
+  {
+    "type": "preprint",
+    "title": "PRISM-Net: Patient-specific reference-guided inter-breast symmetry matching for three-class breast DCE-MRI classification",
+    "authors": [
+      {
+        "name": "Boya Zhang"
+      },
+      {
+        "name": "Shuaiwen Zhou"
+      },
+      {
+        "name": "Di Kong"
+      },
+      {
+        "name": "Mingxu Wang"
+      },
+      {
+        "name": "Wenbiao Du"
+      },
+      {
+        "name": "Yiman Zhong"
+      },
+      {
+        "name": "Yuexin Duan"
+      },
+      {
+        "name": "Xiawei Yue"
+      },
+      {
+        "name": "Liuquan Cheng"
+      },
+      {
+        "name": "Xiru Li"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Xiru Li 2468li@sina.com organization=Nankai University, addressline=No. 94 Weijin Road, Nankai District, city=Tianjin, postcode=300071, country=China organization=Zhongguancun Academy, city=Beijing, country=China organization=The First Medical Center of Chinese PLA General Hospital, city=Beijing, country=China organization=Beijing University of Posts and Telecommunications, city=Beijing, country=China organization=The Six Medical Center of Chinese PLA General Hospital, city=Beijing, country=China organization=Tsinghua University, city=Beijing, country=China organization=Beijing Institute of Technology, city=Beijing, country=China organization=Beihang University, city=Beijing, country=China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-07-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.CV"
+    ],
+    "abstract": "Breast DCE-MRI AI is increasingly being explored for breast-level classification of no-lesion, benign, and malignant findings, beyond conventional lesion-centered diagnosis. Within this broader diagnostic scope, however, patient-specific background variability remains a major source of imaging confounding across classification tasks. Existing approaches predominantly focus on unilateral or lesion-centric analysis, whereas bilateral methods offer limited explicit modeling of spatially adaptive cross-breast correspondence. We propose PRISM-Net, a registration-free bilateral framework that leverages contralateral breast features as patient-specific references for background-aware representation learning. PRISM-Net integrates bilateral feature matching and asymmetry-aware attention to establish adaptive inter-breast correspondence and enhance representations of discriminative asymmetric patterns. On ODELIA, Macro AUC, Micro AUC, and quadratic weighted kappa were $84.11 \\pm 2.33$, $90.64 \\pm 1.61$, and $60.94 \\pm 5.64$ on the in-distribution test set, and $68.51 \\pm 4.54$, $80.74 \\pm 2.68$, and $43.45 \\pm 7.10$ on the held-out institution, respectively, outperforming the evaluated baseline methods across the primary evaluation metrics. PRISM-Net further demonstrated performance on independent institutional and background-complexity evaluations. Ablation experiments revealed that both bilateral relation modeling and asymmetry-aware reweighting contributed to improved classification performance. These findings highlight patient-specific bilateral reference modeling as a clinically grounded strategy for DCE-MRI interpretation, improving asymmetric pattern discrimination through explicit modeling of background complexity.",
+    "identifiers": {
+      "arxiv": "2607.26799",
+      "doi": "10.48550/arXiv.2607.26799"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2607.26799"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2607.26799v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2607.26799"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2607.26799v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Xiru Li 2468li@sina.com organization=Nankai University, addressline=No. 94 Weijin Road, Nankai District, city=Tianjin, postcode=300071, country=China organization=Zhongguancun Academy, city=Beijing, country=China organization=The First Medical Center of Chinese PLA General Hospital, city=Beijing, country=China organization=Beijing University of Posts and Telecommunications, city=Beijing, country=China organization=The Six Medical Center of Chinese PLA General Hospital, city=Beijing, country=China organization=Tsinghua University, city=Beijing, country=China organization=Beijing Institute of Technology, city=Beijing, country=China organization=Beihang University, city=Beijing, country=China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2607.26799v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2607-26799",
+    "updatedAt": "2026-09-26T05:53:46Z"
+  },
+  {
+    "type": "preprint",
     "title": "FlowAWR: Online Adaptive Flow Reinforcement via Advantage-Weighted Rectification",
     "authors": [
       {
@@ -12785,7 +13056,8 @@
     ],
     "rawAffiliations": [
       "Zhongguancun Academy",
-      "Zhejiang University"
+      "Zhejiang University",
+      "Yue Deng Affiliation: Zhongguancun Academy, Beijing, China Email: dengyue@zgci.ac.cn"
     ],
     "relationType": "affiliation",
     "publishedAt": "2026-01-01",
@@ -12801,12 +13073,32 @@
       {
         "label": "DOI",
         "url": "https://doi.org/10.24963/ijcai.2026/10"
+      },
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2605.11880"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2605.11880v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2605.11880"
       }
     ],
     "versions": [
       {
         "label": "Publisher version",
         "url": "https://doi.org/10.24963/ijcai.2026/10"
+      },
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2605.11880v1"
+      },
+      {
+        "label": "DOI 10.48550/arXiv.2605.11880",
+        "url": "https://doi.org/10.48550/arXiv.2605.11880"
       }
     ],
     "evidence": [
@@ -12816,10 +13108,19 @@
         "matchedText": "Zhongguancun Academy",
         "source": "Crossref",
         "sourceUrl": "https://doi.org/10.24963/ijcai.2026/10"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Yue Deng Affiliation: Zhongguancun Academy, Beijing, China Email: dengyue@zgci.ac.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2605.11880v1"
       }
     ],
     "sources": [
-      "Crossref"
+      "Crossref",
+      "arXiv",
+      "arXiv HTML"
     ],
     "id": "doi-10-24963-ijcai-2026-10",
     "updatedAt": "2026-09-17T05:05:28Z"
