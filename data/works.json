@@ -12958,6 +12958,108 @@
   },
   {
     "type": "preprint",
+    "title": "Bridging the Training–Application Gap in Kohn–Sham Hamiltonian Learning through Dual-Space Supervision",
+    "authors": [
+      {
+        "name": "Yifei Wang"
+      },
+      {
+        "name": "He Zhang",
+        "institutions": [
+          "zgca",
+          "zgci"
+        ]
+      },
+      {
+        "name": "Xinran Wei",
+        "institutions": [
+          "zgca",
+          "zgci"
+        ]
+      },
+      {
+        "name": "Jingwen Fu",
+        "institutions": [
+          "zgca",
+          "zgci"
+        ]
+      },
+      {
+        "name": "Yongqiang Ma"
+      },
+      {
+        "name": "Miao Kang"
+      },
+      {
+        "name": "Jianji Wang"
+      },
+      {
+        "name": "Chang Liu",
+        "institutions": [
+          "zgca",
+          "zgci"
+        ]
+      },
+      {
+        "name": "Nanning Zheng"
+      }
+    ],
+    "institutions": [
+      "zgca",
+      "zgci"
+    ],
+    "rawAffiliations": [
+      "State Key Laboratory of Human-Machine Hybrid Augmented Intelligence",
+      "Institute of Artificial Intelligence and Robotics, Xi’an Jiaotong University",
+      "Zhongguancun Academy",
+      "Zhongguancun Institute of Artificial Intelligence"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Crossref",
+    "status": "published",
+    "topics": [],
+    "abstract": "Predicting the Kohn–Sham Hamiltonian in density functional theory (DFT) via machine learning offers a promising pathway toward efficient electronic structure modeling. Existing models are typically trained by directly minimizing element-wise Hamiltonian matrix errors, yet a significant trainingapplication gap has been observed between Hamiltonian-space loss and errors in derived electronic properties, limiting their utility in practical applications. Noting that these properties are functions on the state space obtained by solving the Hamiltonian eigenvalue problem, this gap can be traced to a misalignment of the error metrics on the Hamiltonian space and its induced state space. The operator-tostate mapping is highly anisotropic, such that Hamiltonian errors of comparable numerical magnitude can induce markedly different downstream property errors. Motivated by the Hamiltonian–state variational duality rooted in Lieb’s convex formulation of DFT, we introduce Dual-Space Loss (DSLoss) to bridge this training–application gap. By leveraging error metrics in both spaces, DSLoss allows Hamiltonian optimization to account for errors in both the predicted operator and its induced state. Across molecular benchmarks, DSLoss consistently improves a broad range of derived properties over conventional element-wise supervision. On the challenging ∇2DFT benchmark, electron density and total energy errors are reduced by factors of 40 and 500, respectively, relative to the strongest competing method. The resulting model also extrapolates robustly to molecules containing up to twice as many heavy atoms as those encountered during training, achieving more than an order-of-magnitude lower errors for multiple properties and substantially outperforming direct density prediction models and endto-end property predictors. Moreover, the model enables stable molecular dynamics simulations with accurate energetics, forces, and vibrational dynamics. These results show that DSLoss addresses an unrecognized bottleneck limiting operator-prediction models across diverse downstream tasks, thereby advancing scalable and reliable electronic structure modeling.",
+    "identifiers": {
+      "doi": "10.26434/chemrxiv.15009467/v1"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.26434/chemrxiv.15009467/v1"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.26434/chemrxiv.15009467/v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.26434/chemrxiv.15009467/v1"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgci",
+        "matchedText": "Zhongguancun Institute of Artificial Intelligence",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.26434/chemrxiv.15009467/v1"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-26434-chemrxiv-15009467-v1",
+    "updatedAt": "2026-09-27T05:30:19Z"
+  },
+  {
+    "type": "preprint",
     "title": "Accelerated Stable Structure Prediction of Li-Intercalated Bilayer Graphene Using a Data-Efficient Deep Learning Framework",
     "authors": [
       {
@@ -13419,6 +13521,93 @@
     ],
     "id": "doi-10-1145-3799719",
     "updatedAt": "2026-08-12T03:04:08Z"
+  },
+  {
+    "type": "conference",
+    "title": "LoVR: A Benchmark for Long Video Retrieval in Multimodal Contexts",
+    "authors": [
+      {
+        "name": "Hao Liang",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Qifeng Cai"
+      },
+      {
+        "name": "Zhaoyang Han"
+      },
+      {
+        "name": "Hejun Dong"
+      },
+      {
+        "name": "Meiyi Qiang"
+      },
+      {
+        "name": "Ruichuan An"
+      },
+      {
+        "name": "Quanqing Xu"
+      },
+      {
+        "name": "Bin Cui"
+      },
+      {
+        "name": "Wentao Zhang",
+        "institutions": [
+          "zgca"
+        ]
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Peking University, Beijing, China and Zhongguancun Academy, Beijing, China",
+      "East China Normal University, Shanghai, China",
+      "Huazhong University of Science and Technology, Wuhan, China",
+      "Beihang University, Beijing, China",
+      "Peking University, Beijing, China",
+      "OceanBase, Ant Group, Beijing, China",
+      "Peking University, Beijing, China and Zhongguancun Academy, Beijing, Beijing, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Proceedings of the ACM Web Conference 2026",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1145/3774904.3792099"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1145/3774904.3792099"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1145/3774904.3792099"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Peking University, Beijing, China and Zhongguancun Academy, Beijing, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1145/3774904.3792099"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1145-3774904-3792099",
+    "updatedAt": "2026-09-27T05:30:19Z"
   },
   {
     "type": "conference",
@@ -14200,6 +14389,74 @@
     ],
     "id": "doi-10-1109-tnnls-2025-3622470",
     "updatedAt": "2026-08-08T11:35:31Z"
+  },
+  {
+    "type": "article",
+    "title": "Reinforced Context Augmentation for Multimodal Emotion Analysis",
+    "authors": [
+      {
+        "name": "Ruyi Gan"
+      },
+      {
+        "name": "Yuanhe Tian",
+        "institutions": [
+          "zgci"
+        ]
+      },
+      {
+        "name": "Kunhao Pan"
+      },
+      {
+        "name": "Yan Song"
+      },
+      {
+        "name": "Yongdong Zhang"
+      }
+    ],
+    "institutions": [
+      "zgci"
+    ],
+    "rawAffiliations": [
+      "School of Information Science and Technology, University of Science and Technology of China",
+      "Zhongguancun Institute of Artificial Intelligence",
+      "International Digital Economics Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "IEEE Transactions on Multimedia",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1109/tmm.2026.3673543"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/tmm.2026.3673543"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1109/tmm.2026.3673543"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgci",
+        "matchedText": "Zhongguancun Institute of Artificial Intelligence",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1109/tmm.2026.3673543"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1109-tmm-2026-3673543",
+    "updatedAt": "2026-09-27T05:30:19Z"
   },
   {
     "type": "article",
