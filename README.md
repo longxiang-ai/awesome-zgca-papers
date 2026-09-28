@@ -17,23 +17,23 @@ A bilingual, traceable index of research outputs from **Zhongguancun Academy (�
 ## Latest outputs
 
 - [TransNormal-2: Geometry-Grounded Rectified Flow with Edge-Aware Decoding for Precise Normal Estimation](https://arxiv.org/abs/2609.06665) — ICML 2026 (2026)
+- [How Many Thoughts Can a Vector Hold? The Capacity of Reasoning by Superposition](https://arxiv.org/abs/2609.13747) — arXiv (2026)
 - [Trace, Verify, and Correct: A Training-Free Framework for Spatial Reasoning in Multimodal LLMs](https://arxiv.org/abs/2608.04759) — arXiv (2026)
 - [EmbodiedVAE: Disentangled Video VAE for Efficient and Controllable Embodied Manipulation](https://arxiv.org/abs/2608.02990) — arXiv (2026)
 - [RSVideo: Are Your Vision-Language Models Ready for Remote Sensing Videos?](https://arxiv.org/abs/2608.02039) — arXiv (2026)
 - [CLBench-V: Evaluating Multimodal Context Learning from Grounding to Knowledge Acquisition](https://arxiv.org/abs/2607.25294) — arXiv (2026)
 - [Distilled Reinforcement Learning for LLM Post-training](https://arxiv.org/abs/2607.17247) — arXiv (2026)
 - [Looking Beyond Visible Cues: Implicit Video Question Answering via Dual-Clue Reasoning](https://arxiv.org/abs/2506.07811) — arXiv (2026)
-- [VQ-Touch: A Data-Efficient Tactile Generation Framework Across Sensors and Scenarios](https://arxiv.org/abs/2607.14728) — arXiv (2026)
 
 ## Data sources
 
 | Source | Status |
 | --- | --- |
 | arxiv | unavailable (HTTPError) |
-| arxiv_html_backfill | checked 24195/24943; 128 exact affiliation matches; 355 pending; 393 retry; last check 2026-09-27T05:30:58Z; discovery ok |
+| arxiv_html_backfill | checked 24479/24963; 129 exact affiliation matches; 75 pending; 409 retry; last check 2026-09-28T05:40:42Z; discovery ok |
 | bza_official | unavailable (HTTPError) |
 | core | optional key |
-| crossref | ok (12 matched) |
+| crossref | unavailable (HTTPError) |
 | datacite | ok (17 matched) |
 | europe_pmc | ok (0 matched) |
 | github_projects | unavailable (HTTPError) |

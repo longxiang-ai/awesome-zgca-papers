@@ -86,6 +86,75 @@
   },
   {
     "type": "preprint",
+    "title": "How Many Thoughts Can a Vector Hold? The Capacity of Reasoning by Superposition",
+    "authors": [
+      {
+        "name": "Hongyu Gu"
+      },
+      {
+        "name": "Chang Liu"
+      },
+      {
+        "name": "Jingwen Fu"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Hongyu Gu University of Science and Technology of China Hefei, China ustc_23ghy@mail.ustc.edu.cn Chang Liu Zhongguancun Academy and Technology of China Beijing, China liuchang@bza.edu.cn Jingwen Fu Zhongguancun Academy and Technology of China Beijing, China jwfu99@gmail.com † † thanks: Corresponding author. Abstract Large language models solve difficult problems by carrying intermediate computation across many reasoning steps. Conventional chain-of-thought writes this computation as tokens; recent continuous and recurrent approaches instead move part of it into fixed-dimensional latent states, where one thought can superpose several alternatives. This shift raises a basic design question: as reasoning proceeds, what should a continuous thought preserve? The natural strategy is to discard earlier computation and keep only the current frontier: storing more objects appears to dilute the st"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-09-01",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.AI"
+    ],
+    "abstract": "Large language models solve hard problems through intermediate computations across multi-step reasoning. Traditional chain-of-thought encodes these computations as tokens. Recent continuous and recurrent methods instead move partial computations into fixed-dimensional latent states, where a single thought can superpose multiple alternatives. This raises a fundamental design question:what should continuous thoughts preserve as reasoning proceeds? An intuitive approach discards past computations and keeps only the current reasoning frontier. Storing more items seems to dilute states and waste limited representational capacity. We show this intuition can be incorrect. Under identical downstream computations, cumulative superposition retaining full reasoning history can require lower representational dimensions than frontier-only superposition holding only current alternatives. At fixed hidden width, this advantage allows latent reasoners to retain more valid evidence, distinguish more plausible downstream outcomes, and delay the point where compressed states turn unreliable. This counter-intuitive effect emerges because informative historical components coherently reinforce each other, while unrelated alternatives bring random interference. This perspective also answers a practical design question: how should models weight memories accumulated inside latent states when their future use is unknown? Across reusable weighted superpositions, prioritizing a small set of recent or salient items produces weakly-represented memories that bottleneck subsequent attention. Uniform cumulative weighting avoids this flaw, and we prove it is minimax-optimal for robust future reasoning. Our results turn superposition from an observed latent-space effect into a design principle: balanced cumulative memory lets a fixed representational budget support more reliable, reusable computations.",
+    "identifiers": {
+      "arxiv": "2609.13747",
+      "doi": "10.48550/arXiv.2609.13747"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2609.13747"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2609.13747v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2609.13747"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2609.13747v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Hongyu Gu University of Science and Technology of China Hefei, China ustc_23ghy@mail.ustc.edu.cn Chang Liu Zhongguancun Academy and Technology of China Beijing, China liuchang@bza.edu.cn Jingwen Fu Zhongguancun Academy and Technology of China Beijing, China jwfu99@gmail.com † † thanks: Corresponding author. Abstract Large language models solve difficult problems by carrying intermediate computation across many reasoning steps. Conventional chain-of-thought writes this computation as tokens; recent continuous and recurrent approaches instead move part of it into fixed-dimensional latent states, where one thought can superpose several alternatives. This shift raises a basic design question: as reasoning proceeds, what should a continuous thought preserve? The natural strategy is to discard earlier computation and keep only the current frontier: storing more objects appears to dilute the st",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2609.13747v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2609-13747",
+    "updatedAt": "2026-09-28T06:11:42Z"
+  },
+  {
+    "type": "preprint",
     "title": "Trace, Verify, and Correct: A Training-Free Framework for Spatial Reasoning in Multimodal LLMs",
     "authors": [
       {
