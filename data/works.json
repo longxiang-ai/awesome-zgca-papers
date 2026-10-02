@@ -855,7 +855,8 @@
       "zgca"
     ],
     "rawAffiliations": [
-      "北京中关村学院官网科研创新页面"
+      "北京中关村学院官网科研创新页面",
+      "Kailin Lyu Affiliation: Institute of Automation, Chinese Academy of Sciences, Beijing, China. Affiliation: Beijing Zhongguancun Academy, Beijing, China."
     ],
     "relationType": "official-output",
     "publishedAt": "2026-07-06",
@@ -882,6 +883,10 @@
       {
         "label": "Official",
         "url": "https://www.bza.edu.cn/detail/inews_9ag0vqmqfhud5uic6gwle37bsg2yz9hh"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2607.05131v1"
       }
     ],
     "versions": [
@@ -897,11 +902,19 @@
         "matchedText": "北京中关村学院官网科研创新页面",
         "source": "北京中关村学院官网",
         "sourceUrl": "https://www.bza.edu.cn/detail/inews_9ag0vqmqfhud5uic6gwle37bsg2yz9hh"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Kailin Lyu Affiliation: Institute of Automation, Chinese Academy of Sciences, Beijing, China. Affiliation: Beijing Zhongguancun Academy, Beijing, China.",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2607.05131v1"
       }
     ],
     "sources": [
       "arXiv",
-      "北京中关村学院官网"
+      "北京中关村学院官网",
+      "arXiv HTML"
     ],
     "id": "doi-10-48550-arxiv-2607-05131",
     "updatedAt": "2026-08-08T11:59:38Z"
