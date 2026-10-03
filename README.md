@@ -18,19 +18,19 @@ A bilingual, traceable index of research outputs from **Zhongguancun Academy (�
 
 - [TransNormal-2: Geometry-Grounded Rectified Flow with Edge-Aware Decoding for Precise Normal Estimation](https://arxiv.org/abs/2609.06665) — ICML 2026 (2026)
 - [How Many Thoughts Can a Vector Hold? The Capacity of Reasoning by Superposition](https://arxiv.org/abs/2609.13747) — arXiv (2026)
+- [NeuPAT: Neuron-aware Plasticity Allocation Tuning for Language-Preserving MLLMs](https://arxiv.org/abs/2608.08107) — arXiv (2026)
 - [Trace, Verify, and Correct: A Training-Free Framework for Spatial Reasoning in Multimodal LLMs](https://arxiv.org/abs/2608.04759) — arXiv (2026)
 - [EmbodiedVAE: Disentangled Video VAE for Efficient and Controllable Embodied Manipulation](https://arxiv.org/abs/2608.02990) — arXiv (2026)
 - [RSVideo: Are Your Vision-Language Models Ready for Remote Sensing Videos?](https://arxiv.org/abs/2608.02039) — arXiv (2026)
 - [CLBench-V: Evaluating Multimodal Context Learning from Grounding to Knowledge Acquisition](https://arxiv.org/abs/2607.25294) — arXiv (2026)
 - [Distilled Reinforcement Learning for LLM Post-training](https://arxiv.org/abs/2607.17247) — arXiv (2026)
-- [Looking Beyond Visible Cues: Implicit Video Question Answering via Dual-Clue Reasoning](https://arxiv.org/abs/2506.07811) — arXiv (2026)
 
 ## Data sources
 
 | Source | Status |
 | --- | --- |
 | arxiv | ok (0 matched) |
-| arxiv_html_backfill | checked 25632/29682; 133 exact affiliation matches; 3804 pending; 246 retry; last check 2026-10-02T06:00:01Z; discovery ok |
+| arxiv_html_backfill | checked 25921/29732; 134 exact affiliation matches; 3554 pending; 257 retry; last check 2026-10-03T05:35:06Z; discovery ok |
 | bza_official | ok (22 matched) |
 | core | optional key |
 | crossref | unavailable (HTTPError) |

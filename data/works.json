@@ -155,6 +155,80 @@
   },
   {
     "type": "preprint",
+    "title": "NeuPAT: Neuron-aware Plasticity Allocation Tuning for Language-Preserving MLLMs",
+    "authors": [
+      {
+        "name": "Jiayue Jin"
+      },
+      {
+        "name": "Jingwei Zhang"
+      },
+      {
+        "name": "Chen Wang"
+      },
+      {
+        "name": "Jing Liu"
+      },
+      {
+        "name": "Longteng Guo"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Jiayue Jin Affiliation: College of Intelligent Robotics and Advanced Manufacturing, Fudan University Affiliation: Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-08-08",
+    "year": 2026,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Multimodal expansion of large language models (LLMs) enables new perceptual capabilities but often compromises the language intelligence acquired during pretraining. In this work, we investigate this phenomenon from the perspective of internal adaptation dynamics and discover that neurons in pretrained LLMs exhibit heterogeneous plasticity during multimodal learning: some neurons are critical for preserving language capabilities, while others are more adaptive to multimodal knowledge. Based on this insight, we propose NeuPAT (Neuron-aware Plasticity Allocation Tuning), a lightweight and architecture-agnostic framework that allocates neuron-wise update constraints during multimodal instruction tuning. NeuPAT uses a small-scale probing stage to estimate neuron adaptation patterns and selectively protects language-sensitive neurons while promoting multimodal adaptation through more plastic neurons. Experiments across diverse LLM families demonstrate that NeuPAT recovers 94.5\\% of the language capability degradation caused by vanilla tuning on 11 language benchmarks while maintaining comparable multimodal performance, providing an effective approach for capability-preserving multimodal expansion.",
+    "identifiers": {
+      "arxiv": "2608.08107",
+      "doi": "10.48550/arXiv.2608.08107",
+      "publishedDoi": "10.48550/arxiv.2608.08107"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2608.08107"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2608.08107v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2608.08107"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2608.08107v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Jiayue Jin Affiliation: College of Intelligent Robotics and Advanced Manufacturing, Fudan University Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2608.08107v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2608-08107",
+    "updatedAt": "2026-10-03T05:53:59Z"
+  },
+  {
+    "type": "preprint",
     "title": "Trace, Verify, and Correct: A Training-Free Framework for Spatial Reasoning in Multimodal LLMs",
     "authors": [
       {
