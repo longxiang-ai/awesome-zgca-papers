@@ -9521,102 +9521,6 @@
   },
   {
     "type": "preprint",
-    "title": "Swimming Under Constraints: A Safe Reinforcement Learning Framework for Quadrupedal Bio-Inspired Propulsion",
-    "authors": [
-      {
-        "name": "Xinyu Cui"
-      },
-      {
-        "name": "Fei Han"
-      },
-      {
-        "name": "Hang Xu"
-      },
-      {
-        "name": "Yongcheng Zeng"
-      },
-      {
-        "name": "Luoyang Sun"
-      },
-      {
-        "name": "Ruizhi Zhang"
-      },
-      {
-        "name": "Jian Zhao"
-      },
-      {
-        "name": "Haifeng Zhang"
-      },
-      {
-        "name": "Weikun Li"
-      },
-      {
-        "name": "Hao Chen"
-      },
-      {
-        "name": "Jun Wang"
-      },
-      {
-        "name": "Dixia Fan"
-      }
-    ],
-    "institutions": [
-      "zgca"
-    ],
-    "rawAffiliations": [
-      "Jian Zhao Affiliation: Zhongguancun Academy, Beijing, 100094, China"
-    ],
-    "relationType": "affiliation",
-    "publishedAt": "2026-03-01",
-    "year": 2026,
-    "venue": "arXiv",
-    "status": "preprint",
-    "topics": [
-      "cs.RO"
-    ],
-    "abstract": "Bio-inspired aquatic propulsion offers high thrust and maneuverability but is prone to destabilizing forces such as lift fluctuations, which are further amplified by six-degree-of-freedom (6-DoF) fluid coupling. We formulate quadrupedal swimming as a constrained optimization problem that maximizes forward thrust while minimizing destabilizing fluctuations. Our proposed framework, Accelerated Constrained Proximal Policy Optimization with a PID-regulated Lagrange multiplier (ACPPO-PID), enforces constraints with a PID-regulated Lagrange multiplier, accelerates learning via conditional asymmetric clipping, and stabilizes updates through cycle-wise geometric aggregation. Initialized with imitation learning and refined through on-hardware towing-tank experiments, ACPPO-PID produces control policies that transfer effectively to quadrupedal free-swimming trials. Results demonstrate improved thrust efficiency, reduced destabilizing forces, and faster convergence compared with state-of-the-art baselines, underscoring the importance of constraint-aware safe RL for robust and generalizable bio-inspired locomotion in complex fluid environments.",
-    "identifiers": {
-      "arxiv": "2603.04073",
-      "doi": "10.48550/arXiv.2603.04073"
-    },
-    "links": [
-      {
-        "label": "arXiv",
-        "url": "https://arxiv.org/abs/2603.04073"
-      },
-      {
-        "label": "HTML",
-        "url": "https://arxiv.org/html/2603.04073v1"
-      },
-      {
-        "label": "PDF",
-        "url": "https://arxiv.org/pdf/2603.04073"
-      }
-    ],
-    "versions": [
-      {
-        "label": "arXiv v1",
-        "url": "https://arxiv.org/abs/2603.04073v1"
-      }
-    ],
-    "evidence": [
-      {
-        "level": "exact-affiliation",
-        "institution": "zgca",
-        "matchedText": "Jian Zhao Affiliation: Zhongguancun Academy, Beijing, 100094, China",
-        "source": "arXiv HTML v1",
-        "sourceUrl": "https://arxiv.org/html/2603.04073v1"
-      }
-    ],
-    "sources": [
-      "arXiv",
-      "arXiv HTML"
-    ],
-    "id": "doi-10-48550-arxiv-2603-04073",
-    "updatedAt": "2026-09-01T06:09:06Z"
-  },
-  {
-    "type": "preprint",
     "title": "SkillVLA: Tackling Combinatorial Diversity in Dual-Arm Manipulation via Skill Reuse",
     "authors": [
       {
@@ -12380,6 +12284,125 @@
     "updatedAt": "2026-08-08T11:35:31Z"
   },
   {
+    "type": "conference",
+    "title": "Swimming Under Constraints: A Safe Reinforcement Learning Framework for Quadrupedal Bio-Inspired Propulsion",
+    "authors": [
+      {
+        "name": "Xinyu Cui"
+      },
+      {
+        "name": "Fei Han"
+      },
+      {
+        "name": "Hang Xu"
+      },
+      {
+        "name": "Yongcheng Zeng"
+      },
+      {
+        "name": "Luoyang Sun"
+      },
+      {
+        "name": "Ruizhi Zhang"
+      },
+      {
+        "name": "Jian Zhao"
+      },
+      {
+        "name": "Haifeng Zhang"
+      },
+      {
+        "name": "Weikun Li"
+      },
+      {
+        "name": "Hao Chen"
+      },
+      {
+        "name": "Jun Wang"
+      },
+      {
+        "name": "Dixia Fan"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Jian Zhao Affiliation: Zhongguancun Academy, Beijing, 100094, China",
+      "Westlake University",
+      "Chinese Academy of Sciences",
+      "Zhongguancun Academy",
+      "University College London"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "2026 IEEE International Conference on Robotics and Automation (ICRA)",
+    "status": "published",
+    "topics": [
+      "cs.RO"
+    ],
+    "abstract": "Bio-inspired aquatic propulsion offers high thrust and maneuverability but is prone to destabilizing forces such as lift fluctuations, which are further amplified by six-degree-of-freedom (6-DoF) fluid coupling. We formulate quadrupedal swimming as a constrained optimization problem that maximizes forward thrust while minimizing destabilizing fluctuations. Our proposed framework, Accelerated Constrained Proximal Policy Optimization with a PID-regulated Lagrange multiplier (ACPPO-PID), enforces constraints with a PID-regulated Lagrange multiplier, accelerates learning via conditional asymmetric clipping, and stabilizes updates through cycle-wise geometric aggregation. Initialized with imitation learning and refined through on-hardware towing-tank experiments, ACPPO-PID produces control policies that transfer effectively to quadrupedal free-swimming trials. Results demonstrate improved thrust efficiency, reduced destabilizing forces, and faster convergence compared with state-of-the-art baselines, underscoring the importance of constraint-aware safe RL for robust and generalizable bio-inspired locomotion in complex fluid environments.",
+    "identifiers": {
+      "doi": "10.1109/icra57385.2026.11696476"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2603.04073"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2603.04073v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2603.04073"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/icra57385.2026.11696476"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2603.04073v1"
+      },
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1109/icra57385.2026.11696476"
+      },
+      {
+        "label": "DOI 10.1109/icra57385.2026.11696476",
+        "url": "https://doi.org/10.1109/icra57385.2026.11696476"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Jian Zhao Affiliation: Zhongguancun Academy, Beijing, 100094, China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2603.04073v1"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1109/icra57385.2026.11696476"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML",
+      "Crossref"
+    ],
+    "id": "doi-10-48550-arxiv-2603-04073",
+    "updatedAt": "2026-09-01T06:09:06Z"
+  },
+  {
     "type": "preprint",
     "title": "Can a Lightweight Automated AI Pipeline Solve Research-Level Mathematical Problems?",
     "authors": [
@@ -13773,6 +13796,75 @@
     "updatedAt": "2026-09-08T04:58:29Z"
   },
   {
+    "type": "conference",
+    "title": "Harnessing Uncertainty in Code Language Models: Lessons from Vulnerability Detection",
+    "authors": [
+      {
+        "name": "Haodong Li"
+      },
+      {
+        "name": "Xiao Cheng"
+      },
+      {
+        "name": "Xudong Wang",
+        "institutions": [
+          "zgci"
+        ]
+      },
+      {
+        "name": "Zhihao Guo"
+      },
+      {
+        "name": "Haoyu Wang"
+      }
+    ],
+    "institutions": [
+      "zgci"
+    ],
+    "rawAffiliations": [
+      "Huazhong University of Science and Technology, Wuhan, China",
+      "Macquarie University, Sydney, Australia",
+      "Zhongguancun Institute of Artificial Intelligence, Beijing, China",
+      "University of Technology Sydney, Sydney, Australia"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1145/3832783.3837465"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1145/3832783.3837465"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1145/3832783.3837465"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgci",
+        "matchedText": "Zhongguancun Institute of Artificial Intelligence, Beijing, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1145/3832783.3837465"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1145-3832783-3837465",
+    "updatedAt": "2026-10-09T06:26:10Z"
+  },
+  {
     "type": "article",
     "title": "SwipeWell: A Multi-Agent System for Short-Video-Based Mobile Psychological Self-Assessment among Older Adults",
     "authors": [
@@ -15011,6 +15103,81 @@
   },
   {
     "type": "article",
+    "title": "Neural-Adaptive Fault-Tolerant Control for Resilient Robot Manipulation Under Actuator Failures",
+    "authors": [
+      {
+        "name": "Tawei Chou"
+      },
+      {
+        "name": "Fengshuo Bai",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Yuwan Liu"
+      },
+      {
+        "name": "Yufeng Li",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Yaodong Yang"
+      },
+      {
+        "name": "Xiaoshan Ma"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Peking University",
+      "Zhongguancun Academy",
+      "Chinese Academy of Sciences",
+      "Academy of Military Science, PLA"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "IEEE Transactions on Automation Science and Engineering",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1109/tase.2026.3738776"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/tase.2026.3738776"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1109/tase.2026.3738776"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1109/tase.2026.3738776"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1109-tase-2026-3738776",
+    "updatedAt": "2026-10-09T06:26:10Z"
+  },
+  {
+    "type": "article",
     "title": "Hybrid-CMLP: Hybrid CNN-MLP Networks for Low-to-standard-dose PET Synthesis",
     "authors": [
       {
@@ -15082,6 +15249,70 @@
     ],
     "id": "doi-10-1109-jbhi-2026-3701924",
     "updatedAt": "2026-08-08T11:35:31Z"
+  },
+  {
+    "type": "article",
+    "title": "Emergent bifurcation and robust decision-making in neurodynamic swarms",
+    "authors": [
+      {
+        "name": "Peng Ren",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Jiang Zhao"
+      },
+      {
+        "name": "Pei Chi"
+      },
+      {
+        "name": "Yingxun Wang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Beihang University",
+      "Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Physical Review Research",
+    "status": "published",
+    "topics": [],
+    "abstract": "Collective motion is typically modeled by local velocity-alignment rules. However, these models do not fully capture recent evidence for complex decision-making in biological swarms and are fragile to structured, adversarial perturbations. Here, we introduce a neurodynamic swarm model where collective behavior emerges not from alignment, but from nonlinear competition within Hopfield-type ring attractors. We show that this mechanism naturally gives rise to emergent decision bifurcations that reproduce sophisticated animal behaviors. Crucially, the inherent stability of the attractors provides the swarm with remarkable resilience, allowing it to maintain coherence against adversarial perturbations that shatter alignment-based models.",
+    "identifiers": {
+      "doi": "10.1103/xwdd-hjhn"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1103/xwdd-hjhn"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1103/xwdd-hjhn"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1103/xwdd-hjhn"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1103-xwdd-hjhn",
+    "updatedAt": "2026-10-09T06:26:10Z"
   },
   {
     "type": "article",
@@ -15246,6 +15477,75 @@
     ],
     "id": "doi-10-1093-bioinformatics-btag662",
     "updatedAt": "2026-09-08T04:58:29Z"
+  },
+  {
+    "type": "article",
+    "title": "Mass-conserved hierarchical multi-resolution deep learning for long-term global atmospheric pollutant transport prediction",
+    "authors": [
+      {
+        "name": "Haodong Feng",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Wenhao Deng"
+      },
+      {
+        "name": "Yuzhong Zhang"
+      },
+      {
+        "name": "Dixia Fan"
+      },
+      {
+        "name": "Tailin Wu"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Zhejiang University",
+      "Zhongguancun Academy",
+      "Westlake University",
+      "University of Glasgow"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Machine Learning: Science and Technology",
+    "status": "published",
+    "topics": [],
+    "abstract": "Abstract Long-term predictive capability of deep learning models has always been a bottleneck, as errors gradually accumulate along with autoregressive iterations, ultimately deviating significantly from the real data distribution. However, the long-term predictive capability of deep learning is crucial in practical applications, especially for complex real-world physical systems, where modeling requires forecasting the system’s long-term evolution. A representative system is atmospheric pollutant transport. Simulating the spatiotemporal evolution of long-lived atmospheric pollutants under realistic meteorology is a basic requirement in Earth system analysis. Such simulations span from the minute scale to the monthly scale. However, traditional high-resolution numerical models are too costly, and existing deep learning models suffer from the long-term prediction bottleneck. To overcome these issues, this study proposes a mass-conserved H ierarchical M ulti- R esolution Trans port Model (HMR-Trans) for global atmospheric methane (CH 4 ) pollutant transport simulation based on deep learning. The model is inspired by the multi-scale coupling characteristics of atmospheric transport to design a hierarchical multi-resolution architecture with a coarse-resolution layer capturing macro-scale evolution and a fine-resolution layer recovering high-frequency details. Moreover, HMR-Trans decouples transport from the whole process and independently models the physical transport process to improve the physical interpretability and provide a necessary precondition for imposing strict mass conservation constraints. Then, the conservation constraint is derived through the mass conservation law using the Lagrange multiplier method. The study achieves, for the first time, long-sequence and mass-conserved global atmospheric pollutant transport simulation at high temporal resolution based on deep learning, with monthly-scale average relative error as low as 0.0198 and mass change controlled at the hardware precision, demonstrating its potential to replace high-computation-load transport operators in traditional numerical methods.",
+    "identifiers": {
+      "doi": "10.1088/2632-2153/aeabf8"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1088/2632-2153/aeabf8"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1088/2632-2153/aeabf8"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1088/2632-2153/aeabf8"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1088-2632-2153-aeabf8",
+    "updatedAt": "2026-10-09T06:26:10Z"
   },
   {
     "type": "article",
@@ -18032,6 +18332,68 @@
     ],
     "id": "doi-10-1145-3746027-3755394",
     "updatedAt": "2026-08-08T11:35:31Z"
+  },
+  {
+    "type": "conference",
+    "title": "DARTer: Dynamic Adaptive Representation Tracker for Nighttime UAV Tracking",
+    "authors": [
+      {
+        "name": "Xuzhao Li"
+      },
+      {
+        "name": "Xuchen Li",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Shiyu Hu"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Beijing Institute of Technology, Beijing, China",
+      "Zhongguancun Academy, Beijing, China",
+      "Nanyang Technological University, Singapore, Singapore"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2025-01-01",
+    "year": 2025,
+    "venue": "Proceedings of the 2025 International Conference on Multimedia Retrieval",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1145/3731715.3733473"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1145/3731715.3733473"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1145/3731715.3733473"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy, Beijing, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1145/3731715.3733473"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1145-3731715-3733473",
+    "updatedAt": "2026-10-09T06:26:10Z"
   },
   {
     "type": "conference",
