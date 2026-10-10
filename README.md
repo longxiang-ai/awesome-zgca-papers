@@ -16,6 +16,7 @@ A bilingual, traceable index of research outputs from **Zhongguancun Academy (�
 
 ## Latest outputs
 
+- [Train for Accuracy, Execute at Scale: Architecture-Preserving Inference for Equivariant Atomistic Foundation Models](https://arxiv.org/abs/2610.01036) — arXiv (2026)
 - [TransNormal-2: Geometry-Grounded Rectified Flow with Edge-Aware Decoding for Precise Normal Estimation](https://arxiv.org/abs/2609.06665) — ICML 2026 (2026)
 - [How Many Thoughts Can a Vector Hold? The Capacity of Reasoning by Superposition](https://arxiv.org/abs/2609.13747) — arXiv (2026)
 - [NeuPAT: Neuron-aware Plasticity Allocation Tuning for Language-Preserving MLLMs](https://arxiv.org/abs/2608.08107) — arXiv (2026)
@@ -23,17 +24,16 @@ A bilingual, traceable index of research outputs from **Zhongguancun Academy (�
 - [EmbodiedVAE: Disentangled Video VAE for Efficient and Controllable Embodied Manipulation](https://arxiv.org/abs/2608.02990) — arXiv (2026)
 - [RSVideo: Are Your Vision-Language Models Ready for Remote Sensing Videos?](https://arxiv.org/abs/2608.02039) — arXiv (2026)
 - [CLBench-V: Evaluating Multimodal Context Learning from Grounding to Knowledge Acquisition](https://arxiv.org/abs/2607.25294) — arXiv (2026)
-- [Distilled Reinforcement Learning for LLM Post-training](https://arxiv.org/abs/2607.17247) — arXiv (2026)
 
 ## Data sources
 
 | Source | Status |
 | --- | --- |
 | arxiv | ok (0 matched) |
-| arxiv_html_backfill | checked 27897/52724; 134 exact affiliation matches; 24446 pending; 381 retry; last check 2026-10-09T06:29:17Z; discovery ok |
-| bza_official | ok (22 matched) |
+| arxiv_html_backfill | checked 28174/52864; 134 exact affiliation matches; 24286 pending; 404 retry; last check 2026-10-10T06:11:15Z; discovery ok |
+| bza_official | ok (23 matched) |
 | core | optional key |
-| crossref | ok (11 matched) |
+| crossref | unavailable (HTTPError) |
 | datacite | ok (17 matched) |
 | europe_pmc | ok (0 matched) |
 | github_projects | ok (9 matched) |
