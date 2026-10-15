@@ -11574,7 +11574,7 @@
     "updatedAt": "2026-08-08T11:35:31Z"
   },
   {
-    "type": "preprint",
+    "type": "article",
     "title": "Dynamic Graph Prior-Guided Latent Adaptation for Generalizable Single-Cell Perturbation Response Prediction",
     "authors": [
       {
@@ -11595,17 +11595,19 @@
     ],
     "rawAffiliations": [
       "Beijing University of Posts and Telecommunications",
-      "Beijing Zhongguancun Academy"
+      "Beijing Zhongguancun Academy",
+      "Beijing University of Posts and Telecommunications , School of Artificial Intelligence, Beijing, 100876,",
+      "Zhongguancun Academy , Beijing, 100094,"
     ],
     "relationType": "affiliation",
     "publishedAt": "2026-01-01",
     "year": 2026,
-    "venue": "Zenodo",
-    "status": "preprint",
+    "venue": "Bioinformatics",
+    "status": "published",
     "topics": [],
-    "abstract": "DGP-LA is a dynamic graph prior-guided latent adaptation framework for generalizable single-cell drug perturbation response prediction. It combines a cell-state-conditioned transition model with perturbation-specific refinement of drug-target interaction and protein-protein interaction priors, topology-aware propagation, and support-aware latent adaptation. This software archive contains the DGP-LA implementation, final configurations, preprocessing and prior-construction utilities, split specifications, inference and evaluation code, and tests supporting the associated manuscript.",
+    "abstract": "Abstract Motivation Predicting transcriptional responses to drug perturbations in unseen cellular contexts is a central challenge in single-cell perturbation modeling. This challenge creates a need for models that combine flexible state transitions with structured biological prior knowledge. Existing data-driven models often struggle to generalize across unseen cell types, while many prior-based models rely on static biological graphs without explicitly conditioning prior influence on perturbation-specific target support. Results We propose DGP-LA, a dynamic graph-prior latent adaptation framework that refines biological priors and injects them as gated latent corrections within a cell-state-conditioned transition model. DGP-LA couples a transition backbone with perturbation-conditioned sparse graph refinement. It propagates gene-aligned target support over the refined graph and selectively injects the resulting topology-aware signal into the hidden representation. On Tahoe and NeurIPS, DGP-LA improves Pearson Delta relative to State by 8.7% and 35.8% for generalization across unseen cell types. In zero-shot drug perturbation response prediction on unseen cell types, it improves Pearson Delta relative to CRISP by 79.1% and 67.6%. The model also improves DE-gene recovery, response discrimination, and Hallmark pathway recovery, supporting adaptive latent integration of biological priors for more generalizable and biologically interpretable perturbation modeling. Availability DGP-LA’s source code and reproducibility materials are available at https://github.com/bieyl/DGP-LA and archived on Zenodo at https://doi.org/10.5281/zenodo.22155398. Supplementary information Supplementary data are available at Bioinformatics online.",
     "identifiers": {
-      "doi": "10.5281/zenodo.22155397"
+      "doi": "10.1093/bioinformatics/btag747"
     },
     "links": [
       {
@@ -11617,6 +11619,18 @@
       {
         "label": "DOI 10.5281/zenodo.22155398",
         "url": "https://doi.org/10.5281/zenodo.22155398"
+      },
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1093/bioinformatics/btag747"
+      },
+      {
+        "label": "DOI 10.1093/bioinformatics/btag747",
+        "url": "https://doi.org/10.1093/bioinformatics/btag747"
+      },
+      {
+        "label": "DOI 10.5281/zenodo.22155397",
+        "url": "https://doi.org/10.5281/zenodo.22155397"
       }
     ],
     "evidence": [
@@ -11633,10 +11647,18 @@
         "matchedText": "Beijing Zhongguancun Academy",
         "source": "DataCite",
         "sourceUrl": "https://zenodo.org/doi/10.5281/zenodo.22155398"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy , Beijing, 100094,",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1093/bioinformatics/btag747"
       }
     ],
     "sources": [
-      "DataCite"
+      "DataCite",
+      "Crossref"
     ],
     "id": "doi-10-5281-zenodo-22155397",
     "updatedAt": "2026-08-29T07:14:00Z"
@@ -15460,7 +15482,10 @@
       "Ministry of Education Key Laboratory of Image Processing and Intelligent Control, School of Artificial Intelligence and Automation, Huazhong University of Science and Technology , Wuhan, 430074",
       "Zhongguancun Academy , Beijing, 100094 ,",
       "Ministry of Education Key Laboratory of Image Processing and Intelligent Control, School of Artificial Intelligence and Automation, Huazhong University of Science and Technology 1 , Wuhan, 430074",
-      "State Key Laboratory of Brain Cognition and Brain-inspired Intelligence Technology, Institute of Automation, Chinese Academy of Sciences , Beijing, 100190 ,"
+      "State Key Laboratory of Brain Cognition and Brain-inspired Intelligence Technology, Institute of Automation, Chinese Academy of Sciences , Beijing, 100190 ,",
+      "Ministry of Education Key Laboratory of Image Processing and Intelligent Control, School of Artificial Intelligence and Automation, Huazhong University of Science and Technology , Wuhan 430074 ,",
+      "Zhongguancun Academy , Beijing 100094 ,",
+      "State Key Laboratory of Brain Cognition and Brain-inspired Intelligence Technology, Institute of Automation, Chinese Academy of Sciences , Beijing 100190 ,"
     ],
     "relationType": "affiliation",
     "publishedAt": "2026-01-01",
@@ -15488,7 +15513,7 @@
       {
         "level": "exact-affiliation",
         "institution": "zgca",
-        "matchedText": "Zhongguancun Academy , Beijing, 100094 ,",
+        "matchedText": "Zhongguancun Academy , Beijing 100094 ,",
         "source": "Crossref",
         "sourceUrl": "https://doi.org/10.1093/nsr/nwag466"
       }
@@ -15498,6 +15523,180 @@
     ],
     "id": "doi-10-1093-nsr-nwag466",
     "updatedAt": "2026-08-08T11:35:31Z"
+  },
+  {
+    "type": "article",
+    "title": "Microenvironment Awareness Pragmatic Analysis for Generative Enzyme Function Reasoning",
+    "authors": [
+      {
+        "name": "Jing Hao",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Ke Yan",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Bin Liu",
+        "institutions": [
+          "zgca"
+        ]
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Beijing Institute of Technology School of Computer Science and Technology, , Beijing 100081,",
+      "Zhongguancun Academy , Beijing, 100094,"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Bioinformatics",
+    "status": "published",
+    "topics": [],
+    "abstract": "Abstract Motivation Accurate enzyme function annotation is critical for interpreting rapidly expanding sequence data, yet experimental methods are costly and low-throughput, while computational approaches face two key limitations. Most existing methods are discriminative models confined to known EC labels, making it difficult to generalize to emerging enzymatic activities under cold-start conditions. Moreover, they typically treat enzymes as isolated molecular entities and overlook microenvironment factors such as optimal pH and temperature, which provide important contextual clues for functional annotation. Results This study proposes MPA-EC, a generative framework that integrates microenvironment as pragmatic context into enzyme function reasoning. By fine-tuning the large language model on a newly constructed Enzyme Microenvironment Database, the model learns to infer microenvironment from sequence and then reason function within that context, generating EC labels with explicit reasoning chains. MEMP imputes missing pH and temperature values to complete the Enzyme Microenvironment Database. On public benchmark dataset, MPA-EC achieves an absolute F1 improvement of 0.1068 over the state-of-the-art GraphEC model. Under cold-start conditions, the model generates reference-worthy function labels, demonstrating its practical utility for emerging enzymatic activities. Availability The source code and data of MPA-EC can be accessed at https://bliulab.net/MPA-EC, https://zenodo.org/records/22152329 and https://github.com/bliulab/MPA-EC.",
+    "identifiers": {
+      "doi": "10.1093/bioinformatics/btag769"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1093/bioinformatics/btag769"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1093/bioinformatics/btag769"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy , Beijing, 100094,",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1093/bioinformatics/btag769"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1093-bioinformatics-btag769",
+    "updatedAt": "2026-10-15T04:57:45Z"
+  },
+  {
+    "type": "article",
+    "title": "Polypharmacological Target-Aware Molecule Generation",
+    "authors": [
+      {
+        "name": "Kehan Wu",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Wei Zhang",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Han Guo"
+      },
+      {
+        "name": "Renhe Liu"
+      },
+      {
+        "name": "Yu Shi",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Peiran Jin",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Haiguang Liu",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Enhong Chen"
+      },
+      {
+        "name": "Tao Qin",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Zequn Liu",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Yingce Xia",
+        "institutions": [
+          "zgca"
+        ]
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "University of Science and Technology of China , Hefei, Anhui China",
+      "Zhongguancun Academy , Beijing, 100094, China",
+      "Global Health Drug Discovery Institute , Beijing, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Bioinformatics",
+    "status": "published",
+    "topics": [],
+    "abstract": "Abstract Motivation Designing compounds capable of modulating multiple target proteins simultaneously (i.e., polypharmacology) is critical for treating complex diseases like cancer and neurodegenerative disorders. However, AI-driven multi-target drug design remains severely hindered by the scarcity of multi-target 3D structural data and the inefficiency of traditional “generate-then-filter” pipelines. There is a pressing need for scalable methods that can satisfy diverse binding constraints across multiple proteins without relying on scarce structural priors. Results To overcome these bottlenecks, we reformulate multi-target drug design as a sequence-based generation task and introduce PolyTamGen, an end-to-end autoregressive framework. We first curate a large-scale ligand-centric bioactivity dataset from ChEMBL and BindingDB, comprising 1.6 million unique ligands and 4.9 million bioactivity entries. PolyTamGen encodes target protein sets using ESM3, compresses these high-dimensional features into compact tokens via an attention module, and feeds them into a sequence-based compound generator to produce the final multi-target ligands. We further apply Direct Preference Optimization (DPO) to improve docking-based affinity proxies and drug-likeness. Extensive experiments on dual- and triple-target benchmarks demonstrate that PolyTamGen improves joint success rates over representative baselines while maintaining high chemical validity and diversity. Availability and implementation The code is available at https://github.com/bjzgcai/PolyTamGen. The processed data, model checkpoints, and benchmark results are available at Zenodo: https://doi.org/10.5281/zenodo.20594128. Supplementary information Supplementary data are available at Bioinformatics online.",
+    "identifiers": {
+      "doi": "10.1093/bioinformatics/btag766"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1093/bioinformatics/btag766"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1093/bioinformatics/btag766"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy , Beijing, 100094, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1093/bioinformatics/btag766"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1093-bioinformatics-btag766",
+    "updatedAt": "2026-10-15T04:57:45Z"
   },
   {
     "type": "article",

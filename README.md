@@ -30,10 +30,10 @@ A bilingual, traceable index of research outputs from **Zhongguancun Academy (åŒ
 | Source | Status |
 | --- | --- |
 | arxiv | ok (0 matched) |
-| arxiv_html_backfill | checked 29521/55164; 134 exact affiliation matches; 25086 pending; 557 retry; last check 2026-10-14T05:12:53Z; discovery ok |
+| arxiv_html_backfill | checked 29787/55164; 134 exact affiliation matches; 24786 pending; 591 retry; last check 2026-10-15T04:57:49Z; discovery unavailable (HTTPError) |
 | bza_official | ok (23 matched) |
 | core | optional key |
-| crossref | unavailable (HTTPError) |
+| crossref | ok (13 matched) |
 | datacite | ok (17 matched) |
 | europe_pmc | ok (0 matched) |
 | github_projects | ok (9 matched) |
