@@ -11903,7 +11903,7 @@
       "SMILES generation",
       "protein-conditioned generation"
     ],
-    "abstract": "This record contains release artifacts for PolyTamGen, a sequence-based multi-target molecule generation framework for polypharmacological target-aware molecular design. The record contains four release files: polytamgen_data.tar.gzProcessed training, benchmark, and feature-store data assets used by the released PolyTamGen code. base-llm_NLM-1b.tarBase NatureLM/NLM language-model directory required for real PolyTamGen checkpoint inference. Extract this archive under source/pp2d/models/ so that it materializes source/pp2d/models/base-llm/NLM-1b/. polytamgen-dpo.pthFinal PolyTamGen-DPO checkpoint used for the main benchmark generation. This slim checkpoint omits optimizer/scheduler states and duplicated base-LLM weights; it requires base-llm_NLM-1b.tar. Place it at source/pp2d/models/polytamgen-dpo/polytamgen-dpo.pth. polytamgen_full_results.tar.gzBenchmark results bundle, including molecule-level scored results, raw-generation outputs, supplement materials, figures, and analysis inputs used to reproduce the reported paper metrics. PolyTamGen conditions a NatureLM SMILES generator on sets of protein targets. The released DPO workflow uses ESM3-derived protein features, a Q-Former-style protein adapter, set-wise target interaction, and direct preference optimization with docking/QED preferences. After downloading the companion source repository, materialize the archives under source/pp2d/ and follow the setup, inference, and paper-alignment instructions in the repository README files. DPO inference uses configs/polytamgen_dpo.yaml, models/base-llm/NLM-1b/, and models/polytamgen-dpo/polytamgen-dpo.pth. The record does not include SFT, ablation, adapter-ablation, or exploratory training checkpoints.",
+    "abstract": "Release artifacts for PolyTamGen, a sequence-based molecule generator conditioned on multiple protein targets. The companion paper is Polypharmacological Target-Aware Molecule Generation (Bioinformatics, 2026). Code and release notes: PolyTamGen v2026.10.16. Version 2026.10.16 updates only the full results archive. It uses AvgDock 0.25 and normalized SA > 0.59 for the main strict-success metric, with finite docking scores in the denominator and equal weighting across target contexts. The earlier -7.0 cutoff remains a labelled sensitivity analysis. Rank-matched target-conditioning outputs replace the earlier score-selected cross-target top-k summaries. polytamgen_data.tar.gz: processed training, benchmark, and protein-feature data; unchanged from version 2026.06.11. base-llm_NLM-1b.tar: base NatureLM/NLM model; unchanged. polytamgen-dpo.pth: slim DPO checkpoint, without optimizer or scheduler state; unchanged and requires the separate base model. polytamgen_full_results.tar.xz.part01 through .part04: four volumes containing raw generations, molecule-level scores, revised derived tables, rank-matched conditioning outputs, figures, release notes and the full verification report. Raw generations and docking scores are unchanged. No training, generation, docking or bootstrap was rerun for this release. Extract the assets under source/pp2d/ as described in the repository. The DPO checkpoint belongs at models/polytamgen-dpo/polytamgen-dpo.pth and the base model at models/base-llm/NLM-1b/ relative to that directory. SFT, ablation, and exploratory training checkpoints are not included. The results archive uses xz compression and is distributed in four volumes of at most 8 MiB. Concatenate all four in numeric order before extraction, following the repository instructions. The assembled archive is 31,759,928 bytes with MD5 5a07bb5fb4bad69b6fcde3350eb25f60. The logical results layout and its contents are unchanged by splitting.",
     "identifiers": {
       "doi": "10.5281/zenodo.20594128"
     },
@@ -11917,6 +11917,10 @@
       {
         "label": "DOI 10.5281/zenodo.20594127",
         "url": "https://doi.org/10.5281/zenodo.20594127"
+      },
+      {
+        "label": "DOI 10.5281/zenodo.23417382",
+        "url": "https://doi.org/10.5281/zenodo.23417382"
       }
     ],
     "evidence": [
@@ -11933,6 +11937,13 @@
         "matchedText": "University of Science and Technology of China, Hefei, Anhui, China; Zhongguancun Academy, Beijing, China",
         "source": "DataCite",
         "sourceUrl": "https://zenodo.org/doi/10.5281/zenodo.20594127"
+      },
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "University of Science and Technology of China, Hefei, Anhui, China; Zhongguancun Academy, Beijing, China",
+        "source": "DataCite",
+        "sourceUrl": "https://zenodo.org/doi/10.5281/zenodo.23417382"
       }
     ],
     "sources": [
