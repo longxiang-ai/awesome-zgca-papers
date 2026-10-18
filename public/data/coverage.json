@@ -12,6 +12,6 @@
     "semantic_scholar": "optional key",
     "core": "optional key",
     "lens": "optional key",
-    "arxiv_html_backfill": "checked 30611/55164; 134 exact affiliation matches; 23886 pending; 667 retry; last check 2026-10-18T04:52:44Z; discovery unavailable (HTTPError)"
+    "arxiv_html_backfill": "checked 30881/55180; 134 exact affiliation matches; 23602 pending; 697 retry; last check 2026-10-18T05:51:37Z; discovery unavailable (HTTPError)"
   }
 }
