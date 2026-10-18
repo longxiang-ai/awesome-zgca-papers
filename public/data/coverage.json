@@ -5,13 +5,13 @@
     "crossref": "unavailable (HTTPError)",
     "openalex": "ok (0 matched)",
     "europe_pmc": "ok (0 matched)",
-    "arxiv": "unavailable (HTTPError)",
+    "arxiv": "ok (0 matched)",
     "datacite": "ok (18 matched)",
-    "bza_official": "unavailable (HTTPError)",
-    "github_projects": "unavailable (HTTPError)",
+    "bza_official": "ok (23 matched)",
+    "github_projects": "ok (9 matched)",
     "semantic_scholar": "optional key",
     "core": "optional key",
     "lens": "optional key",
-    "arxiv_html_backfill": "checked 30334/55164; 134 exact affiliation matches; 24186 pending; 644 retry; last check 2026-10-17T04:46:21Z; discovery unavailable (HTTPError)"
+    "arxiv_html_backfill": "checked 30611/55164; 134 exact affiliation matches; 23886 pending; 667 retry; last check 2026-10-18T04:52:44Z; discovery unavailable (HTTPError)"
   }
 }
