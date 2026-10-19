@@ -15312,6 +15312,76 @@
   },
   {
     "type": "article",
+    "title": "GraMeRL: A Graph-Aware Meta-Reinforcement Learning Framework for Restoration in Multi-Band Optical Networks",
+    "authors": [
+      {
+        "name": "Shan Yin"
+      },
+      {
+        "name": "Jinbiao Nie"
+      },
+      {
+        "name": "Xiaodong Liu"
+      },
+      {
+        "name": "Mengru Cai"
+      },
+      {
+        "name": "Xiaoyuan Zhang",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Shanguo Huang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Beijing University of Posts and Telecommunications",
+      "Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "IEEE Internet of Things Journal",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1109/jiot.2026.3739320"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/jiot.2026.3739320"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1109/jiot.2026.3739320"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1109/jiot.2026.3739320"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1109-jiot-2026-3739320",
+    "updatedAt": "2026-10-19T05:01:37Z"
+  },
+  {
+    "type": "article",
     "title": "Hybrid-CMLP: Hybrid CNN-MLP Networks for Low-to-standard-dose PET Synthesis",
     "authors": [
       {
