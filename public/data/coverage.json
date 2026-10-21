@@ -6,12 +6,12 @@
     "openalex": "ok (0 matched)",
     "europe_pmc": "ok (0 matched)",
     "arxiv": "ok (0 matched)",
-    "datacite": "ok (18 matched)",
+    "datacite": "ok (19 matched)",
     "bza_official": "ok (23 matched)",
     "github_projects": "ok (9 matched)",
     "semantic_scholar": "optional key",
     "core": "optional key",
     "lens": "optional key",
-    "arxiv_html_backfill": "checked 31475/55180; 134 exact affiliation matches; 23002 pending; 703 retry; last check 2026-10-20T05:04:56Z; discovery unavailable (HTTPError)"
+    "arxiv_html_backfill": "checked 31773/55180; 134 exact affiliation matches; 22702 pending; 705 retry; last check 2026-10-21T05:06:00Z; discovery unavailable (HTTPError)"
   }
 }

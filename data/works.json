@@ -7985,17 +7985,23 @@
       "zgca"
     ],
     "rawAffiliations": [
-      "Chen Wang Affiliation: College of Software, Nankai University Affiliation: Zhongguancun Academy"
+      "Chen Wang Affiliation: College of Software, Nankai University Affiliation: Zhongguancun Academy",
+      "Zhongguancun Academy",
+      "Shanghai Jiao Tong University"
     ],
     "relationType": "affiliation",
     "publishedAt": "2026-04-01",
     "year": 2026,
-    "venue": "arXiv",
+    "venue": "Underline Science Inc.",
     "status": "preprint",
     "topics": [
-      "cs.AI"
+      "cs.AI",
+      "Computational Linguistics",
+      "Natural Language Processing",
+      "Artificial Intelligence",
+      "Language Models"
     ],
-    "abstract": "Recent advances in reinforcement learning (RL) have improved the reasoning capabilities of large language models (LLMs) and vision-language models (VLMs). However, the widely used Group Relative Policy Optimization (GRPO) consistently suffers from entropy collapse, causing the policy to converge prematurely and lose diversity. Existing exploration methods introduce additional bias or variance during exploration, making it difficult to maintain optimization stability. We propose Unified Entropy Control for Reinforcement Learning (UEC-RL), a framework that provides targeted mechanisms for exploration and stabilization. UEC-RL activates more exploration on difficult prompts to search for potential and valuable reasoning trajectories. In parallel, a stabilizer prevents entropy from growing uncontrollably, thereby keeping training stable as the model consolidates reliable behaviors. Together, these components expand the search space when needed while maintaining robust optimization throughout training. Experiments on both LLM and VLM reasoning tasks show consistent gains over RL baselines on both Pass@1 and Pass@$k$. On Geometry3K, UEC-RL achieves a 37.9\\% relative improvement over GRPO, indicating that it sustains effective exploration without compromising convergence and underscoring UEC-RL as a key for scaling RL-based reasoning in large models. Our code is available at https://github.com/597358816/UEC-RL.",
+    "abstract": "Recent advances in reinforcement learning (RL) have improved the reasoning capabilities of large language models (LLMs) and vision-language models (VLMs). However, the widely used Group Relative Policy Optimization (GRPO) consistently suffers from entropy collapse, causing the policy to converge prematurely and lose diversity. Existing exploration methods introduce additional bias or variance during exploration, making it difficult to maintain optimization stability. We propose Unified Entropy Control for Reinforcement Learning (UEC-RL), a framework that provides targeted mechanisms for exploration and stabilization. UEC-RL activates more exploration on difficult prompts to search for potential and valuable reasoning trajectories. In parallel, a stabilizer prevents entropy from growing uncontrollably, thereby keeping training stable as the model consolidates reliable behaviors. Together, these components expand the search space when needed while maintaining robust optimization throughout training. Experiments on both LLM and VLM reasoning tasks show consistent gains over RL baselines on both Pass@1 and Pass@$k$. On Geometry3K, UEC-RL achieves a 37.9\\% relative improvement over GRPO, indicating that it sustains effective exploration without compromising convergence and underscoring UEC-RL as a key for scaling RL-based reasoning in large models. Our code is available at \\url{https://github.com/597358816/UEC-RL}.",
     "identifiers": {
       "arxiv": "2604.14646",
       "doi": "10.48550/arXiv.2604.14646"
@@ -8012,12 +8018,20 @@
       {
         "label": "PDF",
         "url": "https://arxiv.org/pdf/2604.14646"
+      },
+      {
+        "label": "DOI",
+        "url": "https://underline.io/lecture/152235-targeted-exploration-via-unified-entropy-control-for-reinforcement-learning"
       }
     ],
     "versions": [
       {
         "label": "arXiv v1",
         "url": "https://arxiv.org/abs/2604.14646v1"
+      },
+      {
+        "label": "DOI 10.48448/tft5-9393",
+        "url": "https://doi.org/10.48448/tft5-9393"
       }
     ],
     "evidence": [
@@ -8027,11 +8041,19 @@
         "matchedText": "Chen Wang Affiliation: College of Software, Nankai University Affiliation: Zhongguancun Academy",
         "source": "arXiv HTML v1",
         "sourceUrl": "https://arxiv.org/html/2604.14646v1"
+      },
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy",
+        "source": "DataCite",
+        "sourceUrl": "https://underline.io/lecture/152235-targeted-exploration-via-unified-entropy-control-for-reinforcement-learning"
       }
     ],
     "sources": [
       "arXiv",
-      "arXiv HTML"
+      "arXiv HTML",
+      "DataCite"
     ],
     "id": "doi-10-48550-arxiv-2604-14646",
     "updatedAt": "2026-09-08T05:43:11Z"
