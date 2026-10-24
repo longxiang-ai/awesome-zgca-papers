@@ -2,16 +2,16 @@
   "generatedAt": "2026-10-23T05:09:40Z",
   "mode": "automatic",
   "sources": {
-    "crossref": "ok (24 matched)",
+    "crossref": "unavailable (HTTPError)",
     "openalex": "ok (0 matched)",
     "europe_pmc": "ok (0 matched)",
-    "arxiv": "unavailable (TimeoutError)",
+    "arxiv": "ok (0 matched)",
     "datacite": "ok (19 matched)",
-    "bza_official": "unavailable (HTTPError)",
-    "github_projects": "unavailable (TimeoutError)",
+    "bza_official": "ok (23 matched)",
+    "github_projects": "ok (9 matched)",
     "semantic_scholar": "optional key",
     "core": "optional key",
     "lens": "optional key",
-    "arxiv_html_backfill": "checked 32368/55180; 134 exact affiliation matches; 22102 pending; 710 retry; last check 2026-10-23T05:09:44Z; discovery unavailable (HTTPError)"
+    "arxiv_html_backfill": "checked 32667/55180; 134 exact affiliation matches; 21802 pending; 711 retry; last check 2026-10-24T04:52:03Z; discovery unavailable (HTTPError)"
   }
 }
