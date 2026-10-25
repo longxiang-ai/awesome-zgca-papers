@@ -11928,6 +11928,168 @@
     "updatedAt": "2026-08-08T11:35:31Z"
   },
   {
+    "type": "preprint",
+    "title": "GSS-mol: Generative Structure Search for molecular conformers",
+    "authors": [
+      {
+        "name": "Qin, Yifang"
+      },
+      {
+        "name": "Shi, Yu"
+      },
+      {
+        "name": "Tan, Junfu"
+      },
+      {
+        "name": "Liu, Chang"
+      },
+      {
+        "name": "Zhang, Ming"
+      },
+      {
+        "name": "Lu, Ziheng"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "School of Computer Science, Peking University, Beijing, China",
+      "Zhongguancun Academy, Beijing, China",
+      "School of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta, GA, USA",
+      "Zhongguancun Academy, Beijing, China; Kairos Materials, Beijing, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Zenodo",
+    "status": "preprint",
+    "topics": [
+      "conformer search",
+      "diffusion models",
+      "machine-learning force fields",
+      "structure search"
+    ],
+    "abstract": "Code for the molecular case study of Generative Structure Search (GSS), which applies energy-guided diffusion sampling to the conformational search of aspirin. It accompanies the article \"Generative structure search for efficient and diverse discovery of molecular and crystal structures\". The pretrained aspirin checkpoint is archived at https://doi.org/10.5281/zenodo.19651875. The crystal structure search code is in https://github.com/Yifang-Qin/Generative-Structure-Search.",
+    "identifiers": {
+      "doi": "10.5281/zenodo.23633743"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://zenodo.org/doi/10.5281/zenodo.23633743"
+      }
+    ],
+    "versions": [
+      {
+        "label": "DOI 10.5281/zenodo.23633742",
+        "url": "https://doi.org/10.5281/zenodo.23633742"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy, Beijing, China",
+        "source": "DataCite",
+        "sourceUrl": "https://zenodo.org/doi/10.5281/zenodo.23633743"
+      },
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy, Beijing, China",
+        "source": "DataCite",
+        "sourceUrl": "https://zenodo.org/doi/10.5281/zenodo.23633742"
+      }
+    ],
+    "sources": [
+      "DataCite"
+    ],
+    "id": "doi-10-5281-zenodo-23633743",
+    "updatedAt": "2026-10-25T06:03:46Z"
+  },
+  {
+    "type": "preprint",
+    "title": "GSS: Generative Structure Search for crystal structures",
+    "authors": [
+      {
+        "name": "Qin, Yifang"
+      },
+      {
+        "name": "Shi, Yu"
+      },
+      {
+        "name": "Tan, Junfu"
+      },
+      {
+        "name": "Liu, Chang"
+      },
+      {
+        "name": "Zhang, Ming"
+      },
+      {
+        "name": "Lu, Ziheng"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "School of Computer Science, Peking University, Beijing, China",
+      "Zhongguancun Academy, Beijing, China",
+      "School of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta, GA, USA",
+      "Zhongguancun Academy, Beijing, China; Kairos Materials, Beijing, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Zenodo",
+    "status": "preprint",
+    "topics": [
+      "crystal structure prediction",
+      "diffusion models",
+      "machine-learning force fields",
+      "structure search"
+    ],
+    "abstract": "Code for crystal structure search with Generative Structure Search (GSS), which guides a diffusion generative model with energy gradients from a machine-learning force field during sampling. It accompanies the article \"Generative structure search for efficient and diverse discovery of molecular and crystal structures\" and contains the sampling, random structure search, relaxation and evaluation pipelines used for the periodic-system experiments. Pretrained checkpoints and reference structures are archived separately at https://doi.org/10.5281/zenodo.19651875. The molecular case study is in GSS-mol (https://github.com/Yifang-Qin/GSS-mol).",
+    "identifiers": {
+      "doi": "10.5281/zenodo.23633740"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://zenodo.org/doi/10.5281/zenodo.23633740"
+      }
+    ],
+    "versions": [
+      {
+        "label": "DOI 10.5281/zenodo.23633741",
+        "url": "https://doi.org/10.5281/zenodo.23633741"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy, Beijing, China",
+        "source": "DataCite",
+        "sourceUrl": "https://zenodo.org/doi/10.5281/zenodo.23633740"
+      },
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy, Beijing, China",
+        "source": "DataCite",
+        "sourceUrl": "https://zenodo.org/doi/10.5281/zenodo.23633741"
+      }
+    ],
+    "sources": [
+      "DataCite"
+    ],
+    "id": "doi-10-5281-zenodo-23633740",
+    "updatedAt": "2026-10-25T06:03:46Z"
+  },
+  {
     "type": "article",
     "title": "Dynamic Graph Prior-Guided Latent Adaptation for Generalizable Single-Cell Perturbation Response Prediction",
     "authors": [
