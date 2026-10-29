@@ -14803,7 +14803,8 @@
       "Zhongguancun Institute of Artificial Intelligence, Beijing, China",
       "State Key Lab. of VR System and Technology, Beihang University, Beijing, China",
       "Beijing Normal University, Beijing, China",
-      "Zhongguancun Academy, Beijing, China and Zhongguancun Institute of Artificial Intelligence, Beijing, China"
+      "Zhongguancun Academy, Beijing, China and Zhongguancun Institute of Artificial Intelligence, Beijing, China",
+      "北京中关村学院与中关村人工智能研究院（中关村两院）"
     ],
     "relationType": "affiliation",
     "publishedAt": "2026-01-01",
@@ -14819,6 +14820,10 @@
       {
         "label": "DOI",
         "url": "https://doi.org/10.1145/3832031"
+      },
+      {
+        "label": "Official",
+        "url": "https://www.bza.edu.cn/detail/inews_9w7zf4nyfr4krpjjpbzbz29a0yfdrdqq"
       }
     ],
     "versions": [
@@ -14841,10 +14846,25 @@
         "matchedText": "Zhongguancun Institute of Artificial Intelligence, Beijing, China",
         "source": "Crossref",
         "sourceUrl": "https://doi.org/10.1145/3832031"
+      },
+      {
+        "level": "official-listing",
+        "institution": "zgca",
+        "matchedText": "北京中关村学院与中关村人工智能研究院（中关村两院）",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_9w7zf4nyfr4krpjjpbzbz29a0yfdrdqq"
+      },
+      {
+        "level": "official-listing",
+        "institution": "zgci",
+        "matchedText": "北京中关村学院与中关村人工智能研究院（中关村两院）",
+        "source": "北京中关村学院官网",
+        "sourceUrl": "https://www.bza.edu.cn/detail/inews_9w7zf4nyfr4krpjjpbzbz29a0yfdrdqq"
       }
     ],
     "sources": [
-      "Crossref"
+      "Crossref",
+      "北京中关村学院官网"
     ],
     "id": "doi-10-1145-3832031",
     "updatedAt": "2026-10-01T06:16:42Z"

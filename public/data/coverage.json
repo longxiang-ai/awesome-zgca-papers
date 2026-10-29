@@ -7,11 +7,11 @@
     "europe_pmc": "ok (0 matched)",
     "arxiv": "ok (0 matched)",
     "datacite": "ok (23 matched)",
-    "bza_official": "ok (23 matched)",
+    "bza_official": "ok (24 matched)",
     "github_projects": "ok (9 matched)",
     "semantic_scholar": "optional key",
     "core": "optional key",
     "lens": "optional key",
-    "arxiv_html_backfill": "checked 34079/55180; 134 exact affiliation matches; 20302 pending; 799 retry; last check 2026-10-28T06:00:09Z; discovery unavailable (HTTPError)"
+    "arxiv_html_backfill": "checked 34379/55180; 134 exact affiliation matches; 20002 pending; 799 retry; last check 2026-10-29T06:07:33Z; discovery unavailable (HTTPError)"
   }
 }
