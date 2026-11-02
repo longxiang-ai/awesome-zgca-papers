@@ -16752,7 +16752,10 @@
     "rawAffiliations": [
       "University of Science and Technology of China , Hefei, Anhui China",
       "Zhongguancun Academy , Beijing, 100094, China",
-      "Global Health Drug Discovery Institute , Beijing, China"
+      "Global Health Drug Discovery Institute , Beijing, China",
+      "University of Science and Technology of China School of Computer Science and Technology, , Hefei, 230027,",
+      "Zhongguancun Academy , Beijing, 100094,",
+      "Global Health Drug Discovery Institute , Beijing, 100192,"
     ],
     "relationType": "affiliation",
     "publishedAt": "2026-01-01",
@@ -16780,7 +16783,7 @@
       {
         "level": "exact-affiliation",
         "institution": "zgca",
-        "matchedText": "Zhongguancun Academy , Beijing, 100094, China",
+        "matchedText": "Zhongguancun Academy , Beijing, 100094,",
         "source": "Crossref",
         "sourceUrl": "https://doi.org/10.1093/bioinformatics/btag766"
       }
@@ -16942,6 +16945,87 @@
   },
   {
     "type": "article",
+    "title": "Work-Function Induced Gradient-Driven Charge Steering in Pt Nanoparticles on Modified B/S/Cu-Doped g-C3N4 for Highly Selective Nitrate Photoreduction to Ammonia",
+    "authors": [
+      {
+        "name": "Wenli Xu"
+      },
+      {
+        "name": "Yuying Zhang"
+      },
+      {
+        "name": "Liping Zhao"
+      },
+      {
+        "name": "Tengshuo Hou"
+      },
+      {
+        "name": "Shinuo Guo"
+      },
+      {
+        "name": "Jiayuan Sun",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Guancheng Wu"
+      },
+      {
+        "name": "Yi Liu"
+      },
+      {
+        "name": "Yaxiao Guo"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Tiangong University , , ,",
+      "Tianjin University , , ,",
+      "Zhongguancun Academy , ,",
+      "Cangzhou Institute of Tiangong University , ,"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "ACS Applied Nano Materials",
+    "status": "published",
+    "topics": [],
+    "abstract": "Abstract Photocatalytic nitrate reduction to ammonia (NO3−RR) represents an appealing approach for simultaneous aqueous remediation and sustainable ammonia synthesis. However, its practical efficacy is limited by sluggish multi-electron-transfer kinetics and the competitive hydrogen evolution reaction. Herein, we report a synergistic nanostructured catalytic architecture comprising B/S/Cu-co-doped polymeric carbon nitride (g-C3N4) nanosheets decorated with Pt nanoparticles (B/S/Cu−CN + Pt). Structural characterizations indicate that B/S/Cu co-doping narrows the bandgap of g-C3N4 and significantly increases the specific surface area. Kinetic investigations demonstrate high interfacial charge separation and migration efficiencies. Ultraviolet photoelectron spectroscopy elucidates a substantial chemical potential gradient between B/S/Cu−CN nanosheets (work function = 3.27 eV) and Pt nanoparticles (work function ≈ 5.7 eV). This potential gradient drives spontaneous electron transfer from the B/S/Cu−CN conduction band to the Pt active centers to achieve Fermi-level equilibration, thereby constructing a highly efficient interfacial charge-steering channel. Spectroscopic analyses support the metallic Pt0 nature of the anchored Pt nanoparticles. Under optimal conditions, the B/S/Cu−CN + Pt nanostructured catalyst achieves a remarkable ammonia yield rate of 2231.7 μmol h−1 g−1 with high product selectivity. This work presents a work function-induced charge-steering mechanism, providing valuable insights into designing high-performance, multi-component synergistic photocatalytic systems for nitrogen cycling.",
+    "identifiers": {
+      "doi": "10.1021/acsanm.6c03734"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1021/acsanm.6c03734"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1021/acsanm.6c03734"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy , ,",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1021/acsanm.6c03734"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1021-acsanm-6c03734",
+    "updatedAt": "2026-11-02T06:34:35Z"
+  },
+  {
+    "type": "article",
     "title": "Competing Sn–O and Sn–C Bond Cleavage Pathways Control Cross-Linking in Tin-Oxo Clusters",
     "authors": [
       {
@@ -17006,6 +17090,70 @@
     ],
     "id": "doi-10-1021-acs-jpclett-6c01438",
     "updatedAt": "2026-08-12T03:04:08Z"
+  },
+  {
+    "type": "article",
+    "title": "Topological Difference between Bound and Decoupled States Correlates with Protein–Ligand Binding Affinity",
+    "authors": [
+      {
+        "name": "Xinwei Liu"
+      },
+      {
+        "name": "Ning An"
+      },
+      {
+        "name": "Zhanchun Tu"
+      },
+      {
+        "name": "Haiguang Liu",
+        "institutions": [
+          "zgca"
+        ]
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Beijing Normal University , , ,",
+      "Beijing Zhongguancun Academy , , ,"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "The Journal of Physical Chemistry B",
+    "status": "published",
+    "topics": [],
+    "abstract": "Abstract Accurate prediction of protein–ligand binding affinity is essential for drug discovery, yet understanding the underlying physical mechanisms remains a challenge. In this study, we employ persistent homology to compare experimental protein–ligand complexes with their hypothetical decoupled states, where intermolecular contacts are removed, and quantify the global topological difference between the two states by the Wasserstein distance. Analysis of nearly 20,000 complexes from the PDBbind v2020 dataset reveals that this single metric is negatively correlated with the experimental binding free energy, with the strongest Spearman correlation of approximately −0.37. Expanded into an element-specific feature vector, these topological difference features enhance the performance of a baseline model built on protein sequence embeddings and ligand descriptors. On the CASF-2016 benchmark, this increases the Pearson correlation coefficient from 0.844 to 0.866 and decreases the root mean square error from 1.643 to 1.556 kcal/mol, with permutation controls confirming that the gain reflects genuine structural information beyond added dimensionality. These results show that the bound-decoupled difference provides a topological perspective on protein–ligand binding affinity.",
+    "identifiers": {
+      "doi": "10.1021/acs.jpcb.6c03840"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1021/acs.jpcb.6c03840"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1021/acs.jpcb.6c03840"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Beijing Zhongguancun Academy , , ,",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1021/acs.jpcb.6c03840"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1021-acs-jpcb-6c03840",
+    "updatedAt": "2026-11-02T06:34:35Z"
   },
   {
     "type": "article",
