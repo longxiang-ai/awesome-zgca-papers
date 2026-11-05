@@ -14165,7 +14165,8 @@
       "State Key Laboratory of Human-Machine Hybrid Augmented Intelligence",
       "Institute of Artificial Intelligence and Robotics, Xi’an Jiaotong University",
       "Zhongguancun Academy",
-      "Zhongguancun Institute of Artificial Intelligence"
+      "Zhongguancun Institute of Artificial Intelligence",
+      "Xi'an Jiaotong University"
     ],
     "relationType": "affiliation",
     "publishedAt": "2026-01-01",
@@ -14173,7 +14174,7 @@
     "venue": "Crossref",
     "status": "published",
     "topics": [],
-    "abstract": "Predicting the Kohn–Sham Hamiltonian in density functional theory (DFT) via machine learning offers a promising pathway toward efficient electronic structure modeling. Existing models are typically trained by directly minimizing element-wise Hamiltonian matrix errors, yet a significant trainingapplication gap has been observed between Hamiltonian-space loss and errors in derived electronic properties, limiting their utility in practical applications. Noting that these properties are functions on the state space obtained by solving the Hamiltonian eigenvalue problem, this gap can be traced to a misalignment of the error metrics on the Hamiltonian space and its induced state space. The operator-tostate mapping is highly anisotropic, such that Hamiltonian errors of comparable numerical magnitude can induce markedly different downstream property errors. Motivated by the Hamiltonian–state variational duality rooted in Lieb’s convex formulation of DFT, we introduce Dual-Space Loss (DSLoss) to bridge this training–application gap. By leveraging error metrics in both spaces, DSLoss allows Hamiltonian optimization to account for errors in both the predicted operator and its induced state. Across molecular benchmarks, DSLoss consistently improves a broad range of derived properties over conventional element-wise supervision. On the challenging ∇2DFT benchmark, electron density and total energy errors are reduced by factors of 40 and 500, respectively, relative to the strongest competing method. The resulting model also extrapolates robustly to molecules containing up to twice as many heavy atoms as those encountered during training, achieving more than an order-of-magnitude lower errors for multiple properties and substantially outperforming direct density prediction models and endto-end property predictors. Moreover, the model enables stable molecular dynamics simulations with accurate energetics, forces, and vibrational dynamics. These results show that DSLoss addresses an unrecognized bottleneck limiting operator-prediction models across diverse downstream tasks, thereby advancing scalable and reliable electronic structure modeling.",
+    "abstract": "Abstract Predicting the Kohn--Sham Hamiltonian in density functional theory (DFT) via machine learning offers a promising pathway toward efficient electronic structure modeling. Existing models are typically trained by directly minimizing element-wise Hamiltonian matrix errors, yet a significant training--application gap has been observed between Hamiltonian-space loss and errors in derived electronic properties, limiting their utility in practical applications. Noting that these properties are functions on the state space obtained by solving the Hamiltonian eigenvalue problem, this gap can be traced to a misalignment of the error metrics on the Hamiltonian space and its induced state space. The operator-to-state mapping is highly anisotropic, such that Hamiltonian errors of comparable numerical magnitude can induce markedly different downstream property errors. Motivated by the Hamiltonian--state variational duality rooted in Lieb's convex formulation of DFT, we introduce Dual-Space Loss (DSLoss) to bridge this training--application gap. By leveraging error metrics in both spaces, DSLoss allows Hamiltonian optimization to account for errors in both the predicted operator and its induced state. Across molecular benchmarks, DSLoss consistently improves a broad range of derived properties over conventional element-wise supervision. On the challenging $\\nabla^2$DFT benchmark, electron density and total energy errors are reduced by factors of 40 and 500, respectively, relative to the strongest competing method. The resulting model also extrapolates robustly to molecules containing up to twice as many heavy atoms as those encountered during training, achieving more than an order-of-magnitude lower errors for multiple properties and substantially outperforming direct density prediction models and end-to-end property predictors. Moreover, the model enables stable molecular dynamics simulations with accurate energetics, forces, and vibrational dynamics. These results show that DSLoss addresses an unrecognized bottleneck limiting operator-prediction models across diverse downstream tasks, thereby advancing scalable and reliable electronic structure modeling.",
     "identifiers": {
       "doi": "10.26434/chemrxiv.15009467/v1"
     },
@@ -14187,6 +14188,14 @@
       {
         "label": "Publisher version",
         "url": "https://doi.org/10.26434/chemrxiv.15009467/v1"
+      },
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.21203/rs.3.rs-11240155/v1"
+      },
+      {
+        "label": "DOI 10.21203/rs.3.rs-11240155/v1",
+        "url": "https://doi.org/10.21203/rs.3.rs-11240155/v1"
       }
     ],
     "evidence": [
@@ -14203,6 +14212,13 @@
         "matchedText": "Zhongguancun Institute of Artificial Intelligence",
         "source": "Crossref",
         "sourceUrl": "https://doi.org/10.26434/chemrxiv.15009467/v1"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.21203/rs.3.rs-11240155/v1"
       }
     ],
     "sources": [
@@ -14379,6 +14395,205 @@
     ],
     "id": "doi-10-24963-ijcai-2026-10",
     "updatedAt": "2026-09-17T05:05:28Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Inverse design of chemical perturbations for desired cellular state transitions with GEMGen",
+    "authors": [
+      {
+        "name": "Sida Shao"
+      },
+      {
+        "name": "Qun Jiang"
+      },
+      {
+        "name": "Xing Ye"
+      },
+      {
+        "name": "Zekun Guo",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Yingce Xia",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Zequn Liu",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Jiaying Xu",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Peiran Jin",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Fusong Ju",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Huanhuan Xia",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Shangya Feng"
+      },
+      {
+        "name": "Haiguang Liu",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Tao Qin",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Pan Deng",
+        "institutions": [
+          "zgca"
+        ]
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Westlake University",
+      "Tsinghua University",
+      "Beijing Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Crossref",
+    "status": "published",
+    "topics": [],
+    "abstract": "Abstract Perturbation biology links interventions to resulting cellular changes, providing a basis for understanding and manipulating biological processes. Recent advances in computational modelling have enabled prediction of cellular responses to diverse perturbations. However, many biomedical applications require going beyond response prediction to identify perturbations capable of inducing desired responses, an inverse design problem that remains largely underexplored compared to the forward prediction task. Here we introduce GEMGen, a large language model-based framework for the inverse design of chemical perturbations conditioned on desired cellular state transitions. GEMGen represents transitions as text-based, rank-ordered differential-gene instructions, generates molecular structures autoregressively, and uses a compound-response scorer to prioritize candidates for experimental testing. Across multiple benchmarks, GEMGen recovered small molecules structurally or mechanistically relevant to ground-truth compounds, and also generalized across perturbation modalities by generating chemical interventions from genetic perturbation signatures, outperforming existing perturbation design approaches. Beyond in silico evaluation, when conditioned on transcriptional signatures related to tissue fibrosis, GEMGen yielded eight novel antifibrotic structures from 17 de novo synthesized candidates. Notably, one lead candidate, GEMGen-010, exhibited strong antifibrotic activity in animal models of liver fibrosis without any structural optimization. Together, these results establish GEMGen as an effective approach extending perturbation modeling toward intervention design, broadening the methodology and application scope of perturbation biology.",
+    "identifiers": {
+      "doi": "10.21203/rs.3.rs-11151710/v1"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.21203/rs.3.rs-11151710/v1"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.21203/rs.3.rs-11151710/v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Beijing Zhongguancun Academy",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.21203/rs.3.rs-11151710/v1"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-21203-rs-3-rs-11151710-v1",
+    "updatedAt": "2026-11-05T07:08:54Z"
+  },
+  {
+    "type": "preprint",
+    "title": "The semantic geometry of action: convergence across foundation models, human behaviour and the brain",
+    "authors": [
+      {
+        "name": "Huiguang He"
+      },
+      {
+        "name": "Changde Du"
+      },
+      {
+        "name": "Yi Sun"
+      },
+      {
+        "name": "Yizhuo Lu"
+      },
+      {
+        "name": "Shuang Qiu"
+      },
+      {
+        "name": "Kun Zhao"
+      },
+      {
+        "name": "Yaozhi Wen"
+      },
+      {
+        "name": "Chen Hu",
+        "institutions": [
+          "zgca"
+        ]
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Institute of Automation, Chinese Academy of Sciences",
+      "Institute of Automation Chinese Academy of Science",
+      "Zhongguancun Academy, Beijing, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Crossref",
+    "status": "published",
+    "topics": [],
+    "abstract": "Abstract Interpreting dynamic human actions is central to biological intelligence and essential for embodied artificial intelligence. Although foundation models achieve robust accuracy in action recognition, it remains unclear whether they organize naturalistic actions within a representational geometry aligned with human perception. Here, we evaluated the semantic organization of action representations across foundation models, human behaviour, and the human cortex. By analyzing over two million triplet similarity judgements, we extracted stable, low-dimensional semantic spaces from both text-only large language models and multimodal models. These model-derived spaces predicted human behavioral judgements of action similarity more accurately than baseline spatiotemporal video encoders. To evaluate the functional relevance of these extracted spaces, we demonstrated that modulating individual dimensions within a generative pipeline produced predictable, corresponding semantic shifts in synthesized video content. Furthermore, when transferred without retraining to an independent, large-scale video-fMRI dataset, these model-derived action dimensions successfully predicted stimulus-evoked cortical responses across higher-order visual, temporal, and sensorimotor networks. Together, these findings demonstrate a convergent semantic organization for naturalistic actions across artificial foundation models, human cognitive judgements, and cortical representations.",
+    "identifiers": {
+      "doi": "10.21203/rs.3.rs-10930847/v1"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.21203/rs.3.rs-10930847/v1"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.21203/rs.3.rs-10930847/v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy, Beijing, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.21203/rs.3.rs-10930847/v1"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-21203-rs-3-rs-10930847-v1",
+    "updatedAt": "2026-11-05T07:08:54Z"
   },
   {
     "type": "preprint",
@@ -16645,7 +16860,9 @@
     ],
     "rawAffiliations": [
       "Beijing Institute of Technology School of Computer Science and Technology, , Beijing 100081,",
-      "Zhongguancun Academy , Beijing, 100094,"
+      "Zhongguancun Academy , Beijing, 100094,",
+      "School of Computer Science and Technology, Beijing Institute of Technology , Beijing 100081,",
+      "Zhongguancun Academy , Beijing 100094,"
     ],
     "relationType": "affiliation",
     "publishedAt": "2026-01-01",
@@ -16653,7 +16870,7 @@
     "venue": "Bioinformatics",
     "status": "published",
     "topics": [],
-    "abstract": "Abstract Motivation Accurate enzyme function annotation is critical for interpreting rapidly expanding sequence data, yet experimental methods are costly and low-throughput, while computational approaches face two key limitations. Most existing methods are discriminative models confined to known EC labels, making it difficult to generalize to emerging enzymatic activities under cold-start conditions. Moreover, they typically treat enzymes as isolated molecular entities and overlook microenvironment factors such as optimal pH and temperature, which provide important contextual clues for functional annotation. Results This study proposes MPA-EC, a generative framework that integrates microenvironment as pragmatic context into enzyme function reasoning. By fine-tuning the large language model on a newly constructed Enzyme Microenvironment Database, the model learns to infer microenvironment from sequence and then reason function within that context, generating EC labels with explicit reasoning chains. MEMP imputes missing pH and temperature values to complete the Enzyme Microenvironment Database. On public benchmark dataset, MPA-EC achieves an absolute F1 improvement of 0.1068 over the state-of-the-art GraphEC model. Under cold-start conditions, the model generates reference-worthy function labels, demonstrating its practical utility for emerging enzymatic activities. Availability The source code and data of MPA-EC can be accessed at https://bliulab.net/MPA-EC, https://zenodo.org/records/22152329 and https://github.com/bliulab/MPA-EC.",
+    "abstract": "Abstract Motivation Accurate enzyme function annotation is critical for interpreting rapidly expanding sequence data, yet experimental methods are costly and low-throughput, while computational approaches face two key limitations. Most existing methods are discriminative models confined to known EC labels, making it difficult to generalize to emerging enzymatic activities under cold-start conditions. Moreover, they typically treat enzymes as isolated molecular entities and overlook microenvironment factors such as optimal pH and temperature, which provide important contextual clues for functional annotation. Results This study proposes Microenvironment awareness pragmatic analysis for generative enzyme function reasoning, a generative framework that integrates microenvironment as pragmatic context into enzyme function reasoning. By fine-tuning the large language model on a newly constructed Enzyme Microenvironment Database, the model learns to infer microenvironment from sequence and then reason function within that context, generating EC labels with explicit reasoning chains. Multi-task enzyme microenvironment prediction imputes missing pH and temperature values to complete the Enzyme Microenvironment Database. On public benchmark dataset, Microenvironment Awareness Pragmatic Analysis for Generative Enzyme Function Reasoning achieves an absolute F1 improvement of 0.1068 over the state-of-the-art GraphEC model. Under cold-start conditions, the model generates reference-worthy function labels, demonstrating its practical utility for emerging enzymatic activities. Availability and implementation The source code and data of MPA-EC can be accessed at https://bliulab.net/MPA-EC, https://zenodo.org/records/22152329 and https://github.com/bliulab/MPA-EC.",
     "identifiers": {
       "doi": "10.1093/bioinformatics/btag769"
     },
@@ -16673,7 +16890,7 @@
       {
         "level": "exact-affiliation",
         "institution": "zgca",
-        "matchedText": "Zhongguancun Academy , Beijing, 100094,",
+        "matchedText": "Zhongguancun Academy , Beijing 100094,",
         "source": "Crossref",
         "sourceUrl": "https://doi.org/10.1093/bioinformatics/btag769"
       }
