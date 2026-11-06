@@ -11956,6 +11956,84 @@
     "updatedAt": "2026-08-08T11:35:31Z"
   },
   {
+    "type": "dataset",
+    "title": "Trajectory data and analysis scripts for \"TDDFT Gradients and Nonadiabatic Couplings with Minimal Auxiliary Basis Set Approximation for Fewest-Switches Surface Hopping Dynamics\"",
+    "authors": [
+      {
+        "name": "Fan, Cheng"
+      },
+      {
+        "name": "Pu, Zhichen"
+      },
+      {
+        "name": "Zhou, Zehao"
+      },
+      {
+        "name": "Wang, Yuanheng"
+      },
+      {
+        "name": "Sun, Qiming"
+      },
+      {
+        "name": "Gao, Yi Qin"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Westlake University",
+      "ByteDance Seed",
+      "Zhongguancun Academy",
+      "Peking University"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Zenodo",
+    "status": "released",
+    "topics": [
+      "Nonadiabatic molecular dynamics"
+    ],
+    "abstract": "This dataset contains the FSSH trajectory data and analysis scripts supporting the accompanying study. It includes 1,755 trajectories across 11 simulation ensembles for benzene, trans-azobenzene, PM650, and TMARh, covering canonical TDA and the ris and ris-Z approximations. The accompanying scripts analyze electronic-state populations, internal-conversion timescales, photoisomerization yields, hopping geometries, and total-energy deviations.",
+    "identifiers": {
+      "doi": "10.5281/zenodo.23935817"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://zenodo.org/doi/10.5281/zenodo.23935817"
+      }
+    ],
+    "versions": [
+      {
+        "label": "DOI 10.5281/zenodo.23935818",
+        "url": "https://doi.org/10.5281/zenodo.23935818"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy",
+        "source": "DataCite",
+        "sourceUrl": "https://zenodo.org/doi/10.5281/zenodo.23935817"
+      },
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy",
+        "source": "DataCite",
+        "sourceUrl": "https://zenodo.org/doi/10.5281/zenodo.23935818"
+      }
+    ],
+    "sources": [
+      "DataCite"
+    ],
+    "id": "doi-10-5281-zenodo-23935817",
+    "updatedAt": "2026-11-06T07:07:50Z"
+  },
+  {
     "type": "preprint",
     "title": "GSS-mol: Generative Structure Search for molecular conformers",
     "authors": [
