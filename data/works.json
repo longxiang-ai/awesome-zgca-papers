@@ -16043,6 +16043,900 @@
     "updatedAt": "2026-08-08T11:35:31Z"
   },
   {
+    "type": "conference",
+    "title": "S3OD: Bridging Segment Anything Model and Semi-Supervised Learning for Salient Object Detection in Aerial Imagery",
+    "authors": [
+      {
+        "name": "Yanfeng Liu",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Xingyu Chen",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Lefei Zhang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "National Engineering Research Center for Multimedia Software, School of Computer Science,, Wuhan University, Wuhan, China and Zhongguancun Academy, Beijing, China",
+      "Zhongguancun Academy, Beijing, China",
+      "National Engineering Research Center for Multimedia Software, School of Computer Science,, Wuhan University, Wuhan, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Proceedings of the 34th ACM International Conference on Multimedia",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1145/3767308.3836228"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1145/3767308.3836228"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1145/3767308.3836228"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "National Engineering Research Center for Multimedia Software, School of Computer Science,, Wuhan University, Wuhan, China and Zhongguancun Academy, Beijing, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1145/3767308.3836228"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1145-3767308-3836228",
+    "updatedAt": "2026-11-08T06:26:45Z"
+  },
+  {
+    "type": "conference",
+    "title": "GeoHand: Unlocking Prior Geometry Knowledge for Monocular 3D Hand Reconstruction",
+    "authors": [
+      {
+        "name": "Weiquan Lin",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Yaoqing Hu",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Liangchen Dai",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Xu Tang"
+      },
+      {
+        "name": "Xingyu Chen",
+        "institutions": [
+          "zgca"
+        ]
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Xidian University, Xi'an, China and Zhongguancun Academy, Beijing, China",
+      "Zhongguancun Academy, Beijing, China",
+      "Beijing Institute of Technology, Beijing, China and Zhongguancun Academy, Beijing, China",
+      "Xidian University, Xi'an, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Proceedings of the 34th ACM International Conference on Multimedia",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1145/3767308.3836207"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1145/3767308.3836207"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1145/3767308.3836207"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Xidian University, Xi'an, China and Zhongguancun Academy, Beijing, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1145/3767308.3836207"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1145-3767308-3836207",
+    "updatedAt": "2026-11-08T06:26:45Z"
+  },
+  {
+    "type": "conference",
+    "title": "A2-LLM: An End-to-end Conversational Audio Avatar Large Language Model",
+    "authors": [
+      {
+        "name": "Xiaolin Hu",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Hang Yuan",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Xinzhu Sang"
+      },
+      {
+        "name": "Binbin Yan"
+      },
+      {
+        "name": "Zhou Yu"
+      },
+      {
+        "name": "Cong Huang",
+        "institutions": [
+          "zgci"
+        ]
+      },
+      {
+        "name": "Yuanyi Zhen",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Kai Chen",
+        "institutions": [
+          "zgci"
+        ]
+      }
+    ],
+    "institutions": [
+      "zgca",
+      "zgci"
+    ],
+    "rawAffiliations": [
+      "Beijing University of Posts and Telecommunications, Beijing, China and Zhongguancun Academy, Beijing, China",
+      "East China Normal University, Shanghai, China and Zhongguancun Academy, Beijing, China",
+      "Beijing University of Posts and Telecommunications, Beijing, China",
+      "East China Normal University, Shanghai, China",
+      "Zhongguancun Institute of Artificial Intelligence, Beijing, China",
+      "Zhongguancun Academy, Beijing, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Proceedings of the 34th ACM International Conference on Multimedia",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1145/3767308.3836075"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1145/3767308.3836075"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1145/3767308.3836075"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Beijing University of Posts and Telecommunications, Beijing, China and Zhongguancun Academy, Beijing, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1145/3767308.3836075"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgci",
+        "matchedText": "Zhongguancun Institute of Artificial Intelligence, Beijing, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1145/3767308.3836075"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1145-3767308-3836075",
+    "updatedAt": "2026-11-08T06:26:45Z"
+  },
+  {
+    "type": "conference",
+    "title": "Speech-Aware Multimodal Video Slicing for Automated Video Trimming",
+    "authors": [
+      {
+        "name": "Yandong Liu",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Yutao Yang",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Shengjiao Dong",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Wenqiang Zhang"
+      },
+      {
+        "name": "Xiang Li"
+      },
+      {
+        "name": "Mengli Yu"
+      },
+      {
+        "name": "Zhaomin Chen"
+      },
+      {
+        "name": "Lingfeng Yang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Fudan University, Shanghai, China and Zhongguancun Academy, Beijing, China",
+      "Nankai University, Tianjin, China and Zhongguancun Academy, Beijing, China",
+      "Fudan University, Shanghai, China",
+      "NKIARI, Shenzhen, China and VCIP, CS, AAIS, Nankai University, Tianjin, China",
+      "AAIS, School of information and communication, Nankai University, Tianjin, China",
+      "Wenzhou University, Wenzhou, China",
+      "WIZYELAB PTE. LTD., MIDVIEW, Singapore"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Proceedings of the 34th ACM International Conference on Multimedia",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1145/3767308.3836006"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1145/3767308.3836006"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1145/3767308.3836006"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Fudan University, Shanghai, China and Zhongguancun Academy, Beijing, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1145/3767308.3836006"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1145-3767308-3836006",
+    "updatedAt": "2026-11-08T06:26:45Z"
+  },
+  {
+    "type": "conference",
+    "title": "Latent-WAM: Latent World Action Modeling for End-to-End Autonomous Driving",
+    "authors": [
+      {
+        "name": "Linbo Wang",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Yupeng Zheng"
+      },
+      {
+        "name": "Qiang Chen"
+      },
+      {
+        "name": "Shiwei Li"
+      },
+      {
+        "name": "Yichen Zhang"
+      },
+      {
+        "name": "Zebin Xing"
+      },
+      {
+        "name": "Qichao Zhang"
+      },
+      {
+        "name": "Xiang Li"
+      },
+      {
+        "name": "Deheng Qian"
+      },
+      {
+        "name": "Pengxuan Yang"
+      },
+      {
+        "name": "Yihang Dong",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Ce Hao",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Xiaoqing Ye"
+      },
+      {
+        "name": "Junyu Han"
+      },
+      {
+        "name": "Yifeng Pan"
+      },
+      {
+        "name": "Dongbin Zhao",
+        "institutions": [
+          "zgca"
+        ]
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "MAIS-SKL, CASIA, Beijing, China, Chongqing Chang'an Technology Co., Ltd., Beijing, China, and Zhongguancun Academy, Beijing, China",
+      "MAIS-SKL, CASIA, Beijing, China",
+      "Chongqing Chang'an Technology Co., Ltd., Beijing, China",
+      "Tsinghua University, Beijing, China",
+      "Zhongguancun Academy, Beijing, China",
+      "Wuhan University, Wuhan, China",
+      "MAIS-SKL, CASIA, Beijing, China and Zhongguancun Academy, Beijing, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Proceedings of the 34th ACM International Conference on Multimedia",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1145/3767308.3835210"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1145/3767308.3835210"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1145/3767308.3835210"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "MAIS-SKL, CASIA, Beijing, China, Chongqing Chang'an Technology Co., Ltd., Beijing, China, and Zhongguancun Academy, Beijing, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1145/3767308.3835210"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1145-3767308-3835210",
+    "updatedAt": "2026-11-08T06:26:45Z"
+  },
+  {
+    "type": "conference",
+    "title": "Synergizing Multi-Turn Chain-of-Thought Reasoning and Reinforcement Fine-Tuning for Detecting and Grounding Multi-Modal Manipulation",
+    "authors": [
+      {
+        "name": "Saijie Hou"
+      },
+      {
+        "name": "Yuan Liu"
+      },
+      {
+        "name": "Zikang Li",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Saihui Hou"
+      },
+      {
+        "name": "Jian Zhao",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Zhaofeng He"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Beijing University of Posts and Telecommunications, Beijing, China",
+      "Beijing Normal University, Beijing, China",
+      "Beijing University of Posts and Telecommunications, Beijing, China and Zhongguancun Academy, Beijing, China",
+      "Zhongguancun Academy, Beijing, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Proceedings of the 34th ACM International Conference on Multimedia",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1145/3767308.3835139"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1145/3767308.3835139"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1145/3767308.3835139"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Beijing University of Posts and Telecommunications, Beijing, China and Zhongguancun Academy, Beijing, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1145/3767308.3835139"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1145-3767308-3835139",
+    "updatedAt": "2026-11-08T06:26:45Z"
+  },
+  {
+    "type": "conference",
+    "title": "Tex3D: Objects as Attack Surfaces via Adversarial 3D Textures for Vision-Language-Action Models",
+    "authors": [
+      {
+        "name": "Jiawei Chen",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Simin Huang"
+      },
+      {
+        "name": "Jiawei Du"
+      },
+      {
+        "name": "Shuaihang Chen",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Yu Tian"
+      },
+      {
+        "name": "Mingjie Wei",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Chao Yu"
+      },
+      {
+        "name": "Zhaoxia Yin"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Shanghai Key Lab. of Multidimensional Info. Processing, ECNU, Shanghai, China and Zhongguancun Academy, Beijing, China",
+      "Shanghai Key Lab. of Multidimensional Info. Processing, ECNU, Shanghai, China",
+      "CFAR, A*STAR, Singapore, Singapore",
+      "Zhongguancun Academy, Beijing, China, China and Harbin Institute of Technology, Harbin, China",
+      "Tsinghua University, Beijing, China, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Proceedings of the 34th ACM International Conference on Multimedia",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1145/3767308.3835133"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1145/3767308.3835133"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1145/3767308.3835133"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Shanghai Key Lab. of Multidimensional Info. Processing, ECNU, Shanghai, China and Zhongguancun Academy, Beijing, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1145/3767308.3835133"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1145-3767308-3835133",
+    "updatedAt": "2026-11-08T06:26:45Z"
+  },
+  {
+    "type": "conference",
+    "title": "ScalSelect: Scalable Training-Free Multimodal Data Selection for Efficient Visual Instruction Tuning",
+    "authors": [
+      {
+        "name": "Changti Wu",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Lulu Wang"
+      },
+      {
+        "name": "Yuzhuo Miao",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Shijie Lian",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Bin Yu",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Xiaopeng Lin",
+        "institutions": [
+          "zgci"
+        ]
+      },
+      {
+        "name": "Cong Huang",
+        "institutions": [
+          "zgci"
+        ]
+      },
+      {
+        "name": "Lei Zhang"
+      },
+      {
+        "name": "Kai Chen",
+        "institutions": [
+          "zgca",
+          "zgci"
+        ]
+      }
+    ],
+    "institutions": [
+      "zgca",
+      "zgci"
+    ],
+    "rawAffiliations": [
+      "East China Normal University, Shanghai, China and Zhongguancun Academy, Beijing, China",
+      "The Hong Kong Polytechnic University, Hong Kong, China",
+      "Harbin Institute of Technology, Harbin, China and Zhongguancun Academy, Beijing, China",
+      "Huazhong University of Science and Technology, Wuhan, China and Zhongguancun Academy, Beijing, China",
+      "The Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China and Zhongguancun Institute of Artificial Intelligence, Beijing, China",
+      "Zhongguancun Institute of Artificial Intelligence, Beijing, China",
+      "East China Normal University, Shanghai, China",
+      "Zhongguancun Academy, Beijing, China and Zhongguancun Institute of Artificial Intelligence, Beijing, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Proceedings of the 34th ACM International Conference on Multimedia",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1145/3767308.3835069"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1145/3767308.3835069"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1145/3767308.3835069"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "East China Normal University, Shanghai, China and Zhongguancun Academy, Beijing, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1145/3767308.3835069"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgci",
+        "matchedText": "The Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China and Zhongguancun Institute of Artificial Intelligence, Beijing, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1145/3767308.3835069"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1145-3767308-3835069",
+    "updatedAt": "2026-11-08T06:26:45Z"
+  },
+  {
+    "type": "conference",
+    "title": "DanceCrafter: Fine-Grained Text-Driven Controllable Dance Generation via Choreographic Syntax",
+    "authors": [
+      {
+        "name": "Hang Yuan",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Xiaolin Hu",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Yan Wan"
+      },
+      {
+        "name": "Menglin Gao"
+      },
+      {
+        "name": "Wenzhe Yu"
+      },
+      {
+        "name": "Cong Huang",
+        "institutions": [
+          "zgci"
+        ]
+      },
+      {
+        "name": "Fei Xu"
+      },
+      {
+        "name": "Qing Li"
+      },
+      {
+        "name": "Christina Dan Wang"
+      },
+      {
+        "name": "Zhou Yu"
+      },
+      {
+        "name": "Kai Chen",
+        "institutions": [
+          "zgci"
+        ]
+      }
+    ],
+    "institutions": [
+      "zgca",
+      "zgci"
+    ],
+    "rawAffiliations": [
+      "East China Normal University, Shanghai, China and Zhongguancun Academy, Beijing, China",
+      "Beijing University of Posts and Telecommunications, Beijing, China and Zhongguancun Academy, Beijing, China",
+      "Beijing Dance Academy, Beijing, China",
+      "Zhongguancun Institute of Artificial Intelligence, Beijing, China",
+      "NYU Shanghai, Shanghai, China",
+      "East China Normal University, Shanghai, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Proceedings of the 34th ACM International Conference on Multimedia",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1145/3767308.3835051"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1145/3767308.3835051"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1145/3767308.3835051"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "East China Normal University, Shanghai, China and Zhongguancun Academy, Beijing, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1145/3767308.3835051"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgci",
+        "matchedText": "Zhongguancun Institute of Artificial Intelligence, Beijing, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1145/3767308.3835051"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1145-3767308-3835051",
+    "updatedAt": "2026-11-08T06:26:45Z"
+  },
+  {
+    "type": "conference",
+    "title": "Efficient Spiking Neural Networks with Autapse-Enhanced Temporal Coding?",
+    "authors": [
+      {
+        "name": "Yan Wang"
+      },
+      {
+        "name": "Yongqiang Ma"
+      },
+      {
+        "name": "Man Yao"
+      },
+      {
+        "name": "Jingwen Fu",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Guoqi Li"
+      },
+      {
+        "name": "Xuetao Zhang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "State Key Laboratory of Human-Machine Hybrid Augmented Intelligence, Institute of Artificial Intelligence and Robotics, Xi'an Jiaotong University, Xi'an, Shaanxi, China",
+      "Institute of Automation, Chinese Academy of Sciences, Beijing, China",
+      "Zhongguancun Academy, Beijing, China",
+      "State Key Laboratory of Human-Machine Hybrid Augmented Intelligence，Institute of Artificial Intelligence and Robotics, Xi'an Jiaotong University, Xi'an, Shaanxi, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Proceedings of the 34th ACM International Conference on Multimedia",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1145/3767308.3834986"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1145/3767308.3834986"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1145/3767308.3834986"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy, Beijing, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1145/3767308.3834986"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1145-3767308-3834986",
+    "updatedAt": "2026-11-08T06:26:45Z"
+  },
+  {
     "type": "article",
     "title": "Multimodal Aspect-Based Sentiment Analysis With Plugin-Enhanced Large Language Models",
     "authors": [
@@ -17237,6 +18131,70 @@
     ],
     "id": "doi-10-1088-2632-2153-aeabf8",
     "updatedAt": "2026-10-09T06:26:10Z"
+  },
+  {
+    "type": "article",
+    "title": "Physical-field reconstruction from sparse observations: when are diffusion models preferable to deterministic regression?",
+    "authors": [
+      {
+        "name": "Hao Zhou"
+      },
+      {
+        "name": "Rui Zhang"
+      },
+      {
+        "name": "Qi Wang",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Hao Sun"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Gaoling School of Artificial Intelligence, Renmin University of China",
+      "Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Intelligent Computing for Engineering",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1080/31428878.2026.2758431"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1080/31428878.2026.2758431"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1080/31428878.2026.2758431"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1080/31428878.2026.2758431"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1080-31428878-2026-2758431",
+    "updatedAt": "2026-11-08T06:26:45Z"
   },
   {
     "type": "article",
