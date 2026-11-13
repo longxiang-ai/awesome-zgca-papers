@@ -17719,6 +17719,79 @@
   },
   {
     "type": "article",
+    "title": "Balancing Gene Ontology annotation specificity in protein function prediction based on the protein sequence large graph",
+    "authors": [
+      {
+        "name": "Jiangyi Shao",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Shutao Chen"
+      },
+      {
+        "name": "Ziwen Wang"
+      },
+      {
+        "name": "Zixu Chen",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Bin Liu",
+        "institutions": [
+          "zgca"
+        ]
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "School of Computer Science and Technology, Beijing Institute of Technology, Beijing 100081, China;",
+      "Zhongguancun Academy, Beijing 100094, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Genome Research",
+    "status": "published",
+    "topics": [],
+    "abstract": "Accurate protein function prediction is fundamental to advancing drug discovery and precision medicine and understanding complex biological systems. Although Gene Ontology (GO) provides a standardized framework for protein annotation, a critical challenge persists: the imbalance between low-specificity GO terms and high-specificity GO terms. This imbalance creates blind spots in our understanding of protein function landscapes, particularly in clinically relevant pathways. Here, we present ProGO-PSL, a novel large graph architecture designed to resolve this imbalance. ProGO-PSL simultaneously leverages explicit domain identifiers from InterPro and implicit evolutionary contexts from multiple sequence alignments, fusing these complementary data sources within a powerful imbalance learning framework. Our model consistently outperforms state-of-the-art methods by 5%–15% across all specificity levels and on both a benchmark data set and an independent test set, demonstrating robust generalization. Furthermore, ProGO-PSL generates interpretable representations that clarify relationships between low- and high-specificity GO terms, enabling a more complete functional characterization of the proteome. This work accelerates the identification of therapeutic targets in previously uncharacterized biological pathways.",
+    "identifiers": {
+      "doi": "10.1101/gr.280816.125"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1101/gr.280816.125"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1101/gr.280816.125"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy, Beijing 100094, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1101/gr.280816.125"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1101-gr-280816-125",
+    "updatedAt": "2026-11-13T07:01:35Z"
+  },
+  {
+    "type": "article",
     "title": "EEG-FM-Compass: Progress, Benchmarking, and Future Directions for EEG Foundation Models",
     "authors": [
       {
