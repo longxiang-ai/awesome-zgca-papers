@@ -17654,6 +17654,141 @@
     "updatedAt": "2026-10-23T05:09:40Z"
   },
   {
+    "type": "conference",
+    "title": "Scene-Modular LLM-Driven Procedural Level Generation for Anomaly-Detection Games",
+    "authors": [
+      {
+        "name": "Kaijie Xu"
+      },
+      {
+        "name": "Fandi Meng",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Clark Verbrugge"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "School of Computer Science, McGill University",
+      "Beijing Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "2026 IEEE Conference on Games (CoG)",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1109/cog67430.2026.11778806"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/cog67430.2026.11778806"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1109/cog67430.2026.11778806"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Beijing Zhongguancun Academy",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1109/cog67430.2026.11778806"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1109-cog67430-2026-11778806",
+    "updatedAt": "2026-11-17T08:15:23Z"
+  },
+  {
+    "type": "conference",
+    "title": "Action Selection in Multiplayer Hidden-Information Games with Expected Target Entropy",
+    "authors": [
+      {
+        "name": "Kaijie Xu"
+      },
+      {
+        "name": "Fandi Meng",
+        "institutions": [
+          "zgca",
+          "zgci"
+        ]
+      },
+      {
+        "name": "Clark Verbrugge"
+      },
+      {
+        "name": "Simon Lucas"
+      }
+    ],
+    "institutions": [
+      "zgca",
+      "zgci"
+    ],
+    "rawAffiliations": [
+      "School of Computer Science, McGill University",
+      "Zhongguancun Academy and Zhongguancun Institute of Artificial Intelligence",
+      "Game AI Research Group, Queen Mary University of London"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "2026 IEEE Conference on Games (CoG)",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1109/cog67430.2026.11778730"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/cog67430.2026.11778730"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1109/cog67430.2026.11778730"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy and Zhongguancun Institute of Artificial Intelligence",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1109/cog67430.2026.11778730"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgci",
+        "matchedText": "Zhongguancun Academy and Zhongguancun Institute of Artificial Intelligence",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1109/cog67430.2026.11778730"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1109-cog67430-2026-11778730",
+    "updatedAt": "2026-11-17T08:15:23Z"
+  },
+  {
     "type": "article",
     "title": "Emergent bifurcation and robust decision-making in neurodynamic swarms",
     "authors": [
