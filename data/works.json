@@ -20289,6 +20289,86 @@
     "updatedAt": "2026-08-08T12:09:53Z"
   },
   {
+    "type": "preprint",
+    "title": "AED: Automatic Discovery of Effective and Diverse Vulnerabilities for Autonomous Driving Policy with Large Language Models",
+    "authors": [
+      {
+        "name": "Le Qiu"
+      },
+      {
+        "name": "Zelai Xu"
+      },
+      {
+        "name": "Qixin Tan"
+      },
+      {
+        "name": "Wenhao Tang"
+      },
+      {
+        "name": "Chao Yu"
+      },
+      {
+        "name": "Yu Wang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Affiliation: Chao Yu is also with Beijing Zhongguancun Academy, Beijing, China."
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2025-03-01",
+    "year": 2025,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.CR",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "abstract": "Assessing the safety of autonomous driving policy is of great importance, and reinforcement learning (RL) has emerged as a powerful method for discovering critical vulnerabilities in driving policies. However, existing RL-based approaches often struggle to identify vulnerabilities that are both effective-meaning the autonomous vehicle is genuinely responsible for the accidents-and diverse-meaning they span various failure types. To address these challenges, we propose AED, a framework that uses large language models (LLMs) to automatically discover effective and diverse vulnerabilities in autonomous driving policies. We first utilize an LLM to automatically design reward functions for RL training. Then we let the LLM consider a diverse set of accident types and train adversarial policies for different accident types in parallel. Finally, we use preference-based learning to filter ineffective accidents and enhance the effectiveness of each vulnerability. Experiments across multiple simulated traffic scenarios and tested policies show that AED uncovers a broader range of vulnerabilities and achieves higher attack success rates compared with expert-designed rewards, thereby reducing the need for manual reward engineering and improving the diversity and effectiveness of vulnerability discovery. The implementation can be found on: https://github.com/thu-nics/AED .",
+    "identifiers": {
+      "arxiv": "2503.20804",
+      "doi": "10.48550/arXiv.2503.20804"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2503.20804"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2503.20804v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2503.20804"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2503.20804v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Affiliation: Chao Yu is also with Beijing Zhongguancun Academy, Beijing, China.",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2503.20804v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2503-20804",
+    "updatedAt": "2026-11-19T08:26:45Z"
+  },
+  {
     "id": "doi-10-1109-tkde-2025-3545948",
     "type": "article",
     "title": "A Universal Pre-Training and Prompting Framework for General Urban Spatio-Temporal Prediction",

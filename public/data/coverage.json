@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-17T08:15:23Z",
+  "generatedAt": "2026-11-19T08:26:45Z",
   "mode": "automatic",
   "sources": {
-    "crossref": "ok (35 matched)",
+    "crossref": "unavailable (HTTPError)",
     "openalex": "ok (0 matched)",
-    "europe_pmc": "ok (0 matched)",
+    "europe_pmc": "unavailable (TimeoutError)",
     "arxiv": "ok (0 matched)",
     "datacite": "ok (25 matched)",
     "bza_official": "ok (24 matched)",
@@ -12,6 +12,6 @@
     "semantic_scholar": "optional key",
     "core": "optional key",
     "lens": "optional key",
-    "arxiv_html_backfill": "checked 38024/55184; 134 exact affiliation matches; 14306 pending; 2854 retry; last check 2026-11-17T08:15:26Z; discovery unavailable (HTTPError)"
+    "arxiv_html_backfill": "checked 38324/55184; 135 exact affiliation matches; 14006 pending; 2854 retry; last check 2026-11-19T07:44:15Z; discovery unavailable (HTTPError)"
   }
 }
