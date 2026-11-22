@@ -4632,12 +4632,14 @@
       "zgci"
     ],
     "rawAffiliations": [
-      "北京中关村学院与中关村人工智能研究院（中关村两院）"
+      "北京中关村学院与中关村人工智能研究院（中关村两院）",
+      "Huazhong University of Science and Technology & Zhongguancun Academy",
+      "Harbin Institute of Technology"
     ],
     "relationType": "official-output",
     "publishedAt": "2026-05-14",
     "year": 2026,
-    "venue": "EMNLP 2026",
+    "venue": "Underline Science Inc.",
     "status": "published",
     "topics": [
       "cs.RO",
@@ -4645,7 +4647,7 @@
       "cs.CL",
       "cs.CV"
     ],
-    "abstract": "Robot imitation data are often multimodal: similar visual-language observations may be followed by different action chunks because human demonstrators act with different short-horizon intents, task phases, or recent context. Existing frame-conditioned VLA policies infer each chunk from the current observation and instruction alone, so under partial observability they may resample different intents across adjacent replanning steps, leading to inter-chunk conflict and unstable execution. We introduce IntentVLA, a history-conditioned VLA framework that encodes recent visual observations into a compact short-horizon intent representation and uses it to condition chunk generation. We further introduce AliasBench, a 12-task ambiguity-aware benchmark on RoboTwin2 with matched training data and evaluation environments that isolate short-horizon observation aliasing. Across AliasBench, SimplerEnv, LIBERO, and RoboCasa, IntentVLA improves rollout stability and outperforms strong VLA baselines",
+    "abstract": "Robot imitation data are often multimodal: similar visual-language observations may be followed by different action chunks because human demonstrators act with different short-horizon intents, task phases, or recent context. Existing frame-conditioned VLA policies infer each chunk from the current observation and instruction alone, so under partial observability they may resample different intents across adjacent replanning steps, leading to inter-chunk conflict and unstable execution. We introduce IntentVLA, a history-conditioned VLA framework that encodes recent visual observations into a compact short-horizon intent representation and uses it to condition chunk generation. We further introduce AliasBench, a 12-task ambiguity-aware benchmark on RoboTwin2 with matched training data and evaluation environments that isolate short-horizon observation aliasing. Across AliasBench, SimplerEnv, LIBERO, and RoboCasa, IntentVLA improves rollout stability and outperforms strong VLA baselines.",
     "identifiers": {
       "arxiv": "2605.14712",
       "doi": "10.48550/arXiv.2605.14712"
@@ -4662,12 +4664,20 @@
       {
         "label": "Official",
         "url": "https://www.bza.edu.cn/detail/inews_jsml7c2h0u3f1xzkexdvtf9i5fpjwpaq"
+      },
+      {
+        "label": "DOI",
+        "url": "https://underline.io/lecture/165917-intentvla-short-horizon-intent-modeling-for-aliased-robot-manipulation"
       }
     ],
     "versions": [
       {
         "label": "arXiv v1",
         "url": "https://arxiv.org/abs/2605.14712v1"
+      },
+      {
+        "label": "DOI 10.48448/6aqk-7065",
+        "url": "https://doi.org/10.48448/6aqk-7065"
       }
     ],
     "evidence": [
@@ -4684,11 +4694,19 @@
         "matchedText": "北京中关村学院与中关村人工智能研究院（中关村两院）",
         "source": "北京中关村学院官网",
         "sourceUrl": "https://www.bza.edu.cn/detail/inews_jsml7c2h0u3f1xzkexdvtf9i5fpjwpaq"
+      },
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "Huazhong University of Science and Technology & Zhongguancun Academy",
+        "source": "DataCite",
+        "sourceUrl": "https://underline.io/lecture/165917-intentvla-short-horizon-intent-modeling-for-aliased-robot-manipulation"
       }
     ],
     "sources": [
       "arXiv",
-      "北京中关村学院官网"
+      "北京中关村学院官网",
+      "DataCite"
     ],
     "id": "doi-10-48550-arxiv-2605-14712",
     "updatedAt": "2026-08-08T11:59:38Z"
@@ -4807,12 +4825,14 @@
     ],
     "rawAffiliations": [
       "Bin Yu Affiliation: Harbin Institute of Technology Affiliation: Zhongguancun Academy",
-      "Xiaopeng Lin Affiliation: Zhongguancun Institute of Artificial Intelligence Affiliation: The Hong Kong University of Science and Technology (Guangzhou)"
+      "Xiaopeng Lin Affiliation: Zhongguancun Institute of Artificial Intelligence Affiliation: The Hong Kong University of Science and Technology (Guangzhou)",
+      "Huazhong University of Science and Technology & Zhongguancun Academy",
+      "Harbin Institute of Technology"
     ],
     "relationType": "affiliation",
     "publishedAt": "2026-05-13",
     "year": 2026,
-    "venue": "arXiv",
+    "venue": "Underline Science Inc.",
     "status": "preprint",
     "topics": [],
     "abstract": "Vision-Language-Action (VLA) policies are commonly trained from dense robot demonstration trajectories, often collected through teleoperation, by sampling every recorded frame as if it provided equally useful supervision. We argue that this convention creates a temporal supervision imbalance: long low-change segments dominate the training stream, while manipulation-critical transitions such as alignment, contact, grasping, and release appear only sparsely. We introduce FrameSkip, a data-layer frame selection framework that scores trajectory frames using action variation, visual-action coherence, task-progress priors, and gripper-transition preservation, then remaps training samples toward high-importance frames under a target retention ratio. Because FrameSkip operates only in the dataloader, it leaves the VLA architecture, action head, training objective, and inference procedure unchanged. Across RoboCasa-GR1, SimplerEnv, and LIBERO, FrameSkip improves the success-retention trade-off over full-frame training and simpler frame selection variants, achieving a macro-average success rate of 76.15% across the three benchmarks compared with 66.50% for full-frame training while using a compressed trajectory view that retains 20% of unique frames in the main setting.",
@@ -4832,12 +4852,20 @@
       {
         "label": "PDF",
         "url": "https://arxiv.org/pdf/2605.13757"
+      },
+      {
+        "label": "DOI",
+        "url": "https://underline.io/lecture/166826-frameskip-learning-from-fewer-but-more-informative-frames-in-vla-training"
       }
     ],
     "versions": [
       {
         "label": "arXiv v1",
         "url": "https://arxiv.org/abs/2605.13757v1"
+      },
+      {
+        "label": "DOI 10.48448/a7ys-c233",
+        "url": "https://doi.org/10.48448/a7ys-c233"
       }
     ],
     "evidence": [
@@ -4854,11 +4882,19 @@
         "matchedText": "Xiaopeng Lin Affiliation: Zhongguancun Institute of Artificial Intelligence Affiliation: The Hong Kong University of Science and Technology (Guangzhou)",
         "source": "arXiv HTML v1",
         "sourceUrl": "https://arxiv.org/html/2605.13757v1"
+      },
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "Huazhong University of Science and Technology & Zhongguancun Academy",
+        "source": "DataCite",
+        "sourceUrl": "https://underline.io/lecture/166826-frameskip-learning-from-fewer-but-more-informative-frames-in-vla-training"
       }
     ],
     "sources": [
       "arXiv",
-      "arXiv HTML"
+      "arXiv HTML",
+      "DataCite"
     ],
     "id": "doi-10-48550-arxiv-2605-13757",
     "updatedAt": "2026-09-10T05:23:07Z"
@@ -13992,6 +14028,663 @@
     ],
     "id": "doi-10-48550-arxiv-2509-19080",
     "updatedAt": "2026-08-30T07:02:10Z"
+  },
+  {
+    "type": "preprint",
+    "title": "TrajSelector: Harnessing Latent Representations for Effective and Robust Best-of-N Selection in Large Reasoning Models",
+    "authors": [
+      {
+        "name": "Association for Computational Linguistics 2026"
+      },
+      {
+        "name": "Chen, Kai"
+      },
+      {
+        "name": "Hu, Ruina"
+      },
+      {
+        "name": "Li, Haotian"
+      },
+      {
+        "name": "Lian, Shijie"
+      },
+      {
+        "name": "Wang, Xinming"
+      },
+      {
+        "name": "Wang, Bailing"
+      },
+      {
+        "name": "Wei, Yuliang"
+      },
+      {
+        "name": "Wu, Changti"
+      },
+      {
+        "name": "Yu, Bin"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Huazhong University of Science and Technology & Zhongguancun Academy",
+      "Institute of Automation, Chinese Academy of Sciences",
+      "Harbin Institute of Technology"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Underline Science Inc.",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Test-time scaling (TTS) has emerged as a powerful paradigm for enhancing large language model (LLM) reasoning by allocating additional compute during inference. External TTS, particularly Best-of- selection, generates multiple reasoning trajectories and selects the optimal candidate. However, existing process reward models (PRMs) for Best-of-N selection face a critical limitation: they were not originally designed for this task and instead rely on human-designed evaluation criteria (e.g., readability, coherence, formatting) that often misalign with actual answer correctness, leading to unstable and oscillatory performance as N increases. We introduce TrajSelector a framework specifically designed for robust and effective Best-of-N selection. Our key insight is to leverage the sampler LLM's intrinsic hidden states as self-reflective signals, which naturally align with correctness rather than human-imposed stylistic preferences. A lightweight verifier (0.6B–4B parameters) scores reasoning steps using these hidden states, trained via outcome supervision to eliminate reliance on step-level human annotations. Experiments across six mathematical reasoning benchmarks demonstrate that TrajSelector achieves robust monotonic improvements: in Best-of-32 settings, even our smallest 0.6B verifier outperforms majority voting by 4.61% and existing 7B PRMs by 4.31–12.21%, while our 4B verifier reaches 64.05% accuracy with stable scaling behavior as N increases from 1 to 64.",
+    "identifiers": {
+      "doi": "10.48448/ycmn-0a38"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://underline.io/lecture/166282-trajselector-harnessing-latent-representations-for-effective-and-robust-best-of-n-selection-in-large-reasoning-models"
+      }
+    ],
+    "versions": [],
+    "evidence": [
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "Huazhong University of Science and Technology & Zhongguancun Academy",
+        "source": "DataCite",
+        "sourceUrl": "https://underline.io/lecture/166282-trajselector-harnessing-latent-representations-for-effective-and-robust-best-of-n-selection-in-large-reasoning-models"
+      }
+    ],
+    "sources": [
+      "DataCite"
+    ],
+    "id": "doi-10-48448-ycmn-0a38",
+    "updatedAt": "2026-11-22T07:13:15Z"
+  },
+  {
+    "type": "preprint",
+    "title": "TwinBrainVLA: Unleashing the Potential of Generalist VLMs for Embodied Tasks via Asymmetric Mixture-of-Transformers",
+    "authors": [
+      {
+        "name": "Association for Computational Linguistics 2026"
+      },
+      {
+        "name": "Chen, Kai"
+      },
+      {
+        "name": "Huang, Cong"
+      },
+      {
+        "name": "Lian, Shijie"
+      },
+      {
+        "name": "LIN, Xiaopeng"
+      },
+      {
+        "name": "Miao, Yuzhuo"
+      },
+      {
+        "name": "Shen, Zhaolong"
+      },
+      {
+        "name": "Wang, Xinming"
+      },
+      {
+        "name": "Wang, Bailing"
+      },
+      {
+        "name": "Wu, Changti"
+      },
+      {
+        "name": "Yu, Bin"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Huazhong University of Science and Technology & Zhongguancun Academy",
+      "Institute of Automation, Chinese Academy of Sciences",
+      "Harbin Institute of Technology"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Underline Science Inc.",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Vision-Language-Action (VLA) models are built on the premise that pre-trained Vision-Language Models (VLMs) can supply general semantic understanding ability for embodied tasks. However, we find that robotic fine-tuning can severely erode this capability: VQA benchmarks and layer-wise CKA analysis reveal rapid representational drift, and co-training with general vision-language data does not prevent the collapse. We propose TwinBrainVLA, an asymmetric dual-stream VLA that keeps a pre-trained \"Left Brain\" strictly frozen as a semantic generalist while training a \"Right Brain\" as an embodied control specialist. Its Asymmetric Mixture-of-Transformers (AsyMoT) mechanism lets the Right Brain query frozen Left-Brain key-value representations at every transformer layer, integrating intact semantic knowledge without corrupting it. Across SimplerEnv, RoboCasa, LIBERO, and real-robot experiments, TwinBrainVLA outperforms strong baselines and large-scale embodied models, achieving a 14.3% improvement on SimplerEnv and a 2.7× gain in physical-robot instruction generalization.",
+    "identifiers": {
+      "doi": "10.48448/xm10-pr13"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://underline.io/lecture/166819-twinbrainvla-unleashing-the-potential-of-generalist-vlms-for-embodied-tasks-via-asymmetric-mixture-of-transformers"
+      }
+    ],
+    "versions": [],
+    "evidence": [
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "Huazhong University of Science and Technology & Zhongguancun Academy",
+        "source": "DataCite",
+        "sourceUrl": "https://underline.io/lecture/166819-twinbrainvla-unleashing-the-potential-of-generalist-vlms-for-embodied-tasks-via-asymmetric-mixture-of-transformers"
+      }
+    ],
+    "sources": [
+      "DataCite"
+    ],
+    "id": "doi-10-48448-xm10-pr13",
+    "updatedAt": "2026-11-22T07:13:15Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Attend to Evidence: Evidence-Anchored Spatial Attention Supervision for Multimodal RLVR",
+    "authors": [
+      {
+        "name": "Association for Computational Linguistics 2026"
+      },
+      {
+        "name": "Hu, Ruina"
+      },
+      {
+        "name": "Huang, Weiran"
+      },
+      {
+        "name": "Jionghao, Bai"
+      },
+      {
+        "name": "Wang, Kai"
+      },
+      {
+        "name": "Wang, Chen"
+      },
+      {
+        "name": "Wang, Yue"
+      },
+      {
+        "name": "Wei, Lai"
+      },
+      {
+        "name": "Yu, Bin"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Zhongguancun Academy",
+      "Shanghai Jiao Tong University",
+      "Harbin Institute of Technology"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Underline Science Inc.",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Reinforcement learning with verifiable rewards (RLVR) improves vision-language models (VLMs) by optimizing outcome rewards derived from final answers. However, such outcome-only rewards do not tell the model which image regions justify an answer. For questions that require visual grounding, these rewards cannot distinguish responses supported by relevant visual evidence from those produced by language-prior shortcuts or lucky guesses. We introduce EASE (Evidence-Anchored Spatial Attention), which augments multimodal RLVR with visual-evidence process supervision. EASE converts annotated evidence regions into a smoothed visual-token target and uses it to guide response-to-image attention during RL training, but only on high-reward trajectories. The annotations are used solely as privileged training labels, while inference requires only the original image and question. Across Qwen2.5-VL-7B, Qwen3-VL-4B, and Qwen3-VL-8B, EASE raises average scores over DAPO by 2.5 to 3.1 points on perception, hallucination, visual math, and multimodal reasoning benchmarks. Diagnostics and ablations show that EASE better aligns visual attention with annotated evidence regions. Code are available at https://github.com/Nrich-sunny/Attend-to-Evidence/.",
+    "identifiers": {
+      "doi": "10.48448/rj2d-5y66"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://underline.io/lecture/165769-attend-to-evidence-evidence-anchored-spatial-attention-supervision-for-multimodal-rlvr"
+      }
+    ],
+    "versions": [],
+    "evidence": [
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy",
+        "source": "DataCite",
+        "sourceUrl": "https://underline.io/lecture/165769-attend-to-evidence-evidence-anchored-spatial-attention-supervision-for-multimodal-rlvr"
+      }
+    ],
+    "sources": [
+      "DataCite"
+    ],
+    "id": "doi-10-48448-rj2d-5y66",
+    "updatedAt": "2026-11-22T07:13:15Z"
+  },
+  {
+    "type": "preprint",
+    "title": "EnterpriseBench: Benchmarking LLM Agents on Enterprise-Level Strategic Reasoning and Decision-Making",
+    "authors": [
+      {
+        "name": "Association for Computational Linguistics 2026"
+      },
+      {
+        "name": "Gong, Yongshun"
+      },
+      {
+        "name": "Li, Yong"
+      },
+      {
+        "name": "Pan, Yichen"
+      },
+      {
+        "name": "Piao, Jinghua"
+      },
+      {
+        "name": "Song, Dandan"
+      },
+      {
+        "name": "Yang, Min"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Tsinghua University",
+      "Zhongguancun Academy ; Shandong University"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Underline Science Inc.",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "LLM agents are increasingly expected to support enterprise workflows, where tasks often involve missing information, uncertainty, feedback, and long-term trade-offs. However, existing enterprise and financial benchmarks mainly test static capabilities such as information extraction, numerical calculation, domain knowledge, and financial QA, leaving interactive and long-horizon decision-making underexplored. To bridge this gap, we introduce EnterpriseBench, a benchmark that evaluates LLM agents across this spectrum, from static question answering to dynamic decision-making. Specifically, EnterpriseBench reorganizes existing enterprise and financial QA datasets into a unified foundational suite annotated by capability and difficulty, and introduces three professional interactive settings: Consulting, based on management-consulting-style business cases for client problem diagnosis through multi-turn information seeking; the Beer Game, adapted from a classic supply-chain management simulation for inventory control under delayed feedback; and Enterprise Digital Twin, a project-based business simulator for workforce, risk, and project planning. Experiments with nine agent methods under two backbone models show that current agents have not yet achieved stable, comprehensive, and cross-task reliability in enterprise scenarios. These results show that EnterpriseBench provides a practical benchmark for evaluating LLM agents in realistic enterprise strategic reasoning and decision-making. Our codes and benchmark implementation are publicly available at https://github.com/sduyangmin/FirmBench.",
+    "identifiers": {
+      "doi": "10.48448/qjhd-4x96"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://underline.io/lecture/164447-enterprisebench-benchmarking-llm-agents-on-enterprise-level-strategic-reasoning-and-decision-making"
+      }
+    ],
+    "versions": [],
+    "evidence": [
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy ; Shandong University",
+        "source": "DataCite",
+        "sourceUrl": "https://underline.io/lecture/164447-enterprisebench-benchmarking-llm-agents-on-enterprise-level-strategic-reasoning-and-decision-making"
+      }
+    ],
+    "sources": [
+      "DataCite"
+    ],
+    "id": "doi-10-48448-qjhd-4x96",
+    "updatedAt": "2026-11-22T07:13:15Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Cognition on Graph: Navigating Massive Knowledge Space via Cognitive Cycles and Bidirectional Graph-Text Synergy",
+    "authors": [
+      {
+        "name": "Association for Computational Linguistics 2026"
+      },
+      {
+        "name": "E, Haihong"
+      },
+      {
+        "name": "Liu, Cheng-Lin"
+      },
+      {
+        "name": "Tang, Zichen"
+      },
+      {
+        "name": "Xiang, Shiming"
+      },
+      {
+        "name": "Xu, Jian"
+      },
+      {
+        "name": "Zhou, Gengxian"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "School of Computer Science, Beijing University of Posts and Telecommunications",
+      "Beijing University of Posts and Telecommunications",
+      "Beijing University of Posts and Telecommunications; Zhongguancun Academy, Beijing"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Underline Science Inc.",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Retrieval-Augmented Generation (RAG) has empowered Large Language Models (LLMs) to tackle knowledge-intensive tasks. However, navigating global, heterogeneous knowledge bases (large-scale knowledge graphs and text corpora) for complex reasoning remains a challenge. Existing methods typically employ reactive, graph-driven exploration strategies, which blindly follow graph topology without adapting to the question context or evolving exploration progress, and lack deep bidirectional synergy between graph and text. To address these limitations, we propose CoG (Cognition on Graph), a cognitive-inspired, training-free framework for adaptive knowledge exploration. Drawing inspiration from human problem-solving, CoG performs a continuous plan-explore-reflect cycle, where it proactively formulates investigation plans, performs dual-source retrieval, and dynamically reflects on progress to adjust strategies. Crucially, it establishes deep bidirectional synergy between structured graph and unstructured text, where entities extracted from text dynamically guide graph exploration to bridge knowledge gaps. Extensive experiments on seven multi-hop QA benchmarks demonstrate that CoG significantly outperforms state-of-the-art methods while achieving superior exploration efficiency. Our code and datasets are available at https://github.com/zhougengxian/CoG.",
+    "identifiers": {
+      "doi": "10.48448/ne1a-pe35"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://underline.io/lecture/165849-cognition-on-graph-navigating-massive-knowledge-space-via-cognitive-cycles-and-bidirectional-graph-text-synergy"
+      }
+    ],
+    "versions": [],
+    "evidence": [
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "Beijing University of Posts and Telecommunications; Zhongguancun Academy, Beijing",
+        "source": "DataCite",
+        "sourceUrl": "https://underline.io/lecture/165849-cognition-on-graph-navigating-massive-knowledge-space-via-cognitive-cycles-and-bidirectional-graph-text-synergy"
+      }
+    ],
+    "sources": [
+      "DataCite"
+    ],
+    "id": "doi-10-48448-ne1a-pe35",
+    "updatedAt": "2026-11-22T07:13:15Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Ideation Arena: Evaluating LLM-driven Research Ideation with Battle-style Human Expert Annotation",
+    "authors": [
+      {
+        "name": "Association for Computational Linguistics 2026"
+      },
+      {
+        "name": "Chen, Zhiyu"
+      },
+      {
+        "name": "Fu, Jigao"
+      },
+      {
+        "name": "Li, Yong"
+      },
+      {
+        "name": "Li, Jiaoyang"
+      },
+      {
+        "name": "Liang, Dong"
+      },
+      {
+        "name": "Xu, Fengli"
+      },
+      {
+        "name": "Xue, Haidong"
+      },
+      {
+        "name": "YanBiao, Wu"
+      },
+      {
+        "name": "Zeng, Xinhua"
+      },
+      {
+        "name": "Zhao, Keyu"
+      },
+      {
+        "name": "Zhen, Yuanyi"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Fudan University",
+      "Tsinghua University",
+      "Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Underline Science Inc.",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Evaluating research ideas generated by LLMs is difficult because their scientific value cannot be fully determined by objective criteria, and no single reference answer specifies what counts as a good idea. To address this challenge, we introduce Ideation Arena, a battle style platform that evaluates research ideas through pairwise human assessment. Ideation Arena evaluates ideas generated by 14 frontier LLMs and 5 research agent architectures built on 2 base models. To ensure a common starting point, Ideation Arena builds shared literature contexts from papers familiar to the participating researchers and provides the same contexts to all LLMs and agents. We collect over 6,000 double blind pairwise comparisons from 105 active computer science researchers and construct an Elo rating leaderboard for research ideation. We validate the rankings through interrater agreement and robustness analyses, showing that the leaderboard remains stable under changes in annotator composition and domain coverage. Our results show substantial variation in agent effectiveness, with some frameworks improving ideation quality over their backbones and others offering little benefit or even underperforming their base models. We further construct Ideation Arena Eval, a benchmark for assessing whether automated evaluators align with human preferences in research ideation. Experiments with current LLM judges show that they remain far from reliable human level assessment, with the best model reaching only 72.56% agreement on overall quality. Our code, data, and leaderboards are available at https://anonymous.4open.science/r/Ideation-Arena-2C21.",
+    "identifiers": {
+      "doi": "10.48448/m1pj-vf06"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://underline.io/lecture/163128-ideation-arena-evaluating-llm-driven-research-ideation-with-battle-style-human-expert-annotation"
+      }
+    ],
+    "versions": [],
+    "evidence": [
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy",
+        "source": "DataCite",
+        "sourceUrl": "https://underline.io/lecture/163128-ideation-arena-evaluating-llm-driven-research-ideation-with-battle-style-human-expert-annotation"
+      }
+    ],
+    "sources": [
+      "DataCite"
+    ],
+    "id": "doi-10-48448-m1pj-vf06",
+    "updatedAt": "2026-11-22T07:13:15Z"
+  },
+  {
+    "type": "preprint",
+    "title": "After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents",
+    "authors": [
+      {
+        "name": "Association for Computational Linguistics 2026"
+      },
+      {
+        "name": "Huang, Zhiyuan"
+      },
+      {
+        "name": "Wang, Xukai"
+      },
+      {
+        "name": "Xu, Zhiyue"
+      },
+      {
+        "name": "Zhan, Mingjie"
+      },
+      {
+        "name": "Zhang, Xu-Yao"
+      },
+      {
+        "name": "Zhao, Jian"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Institute of Automation, University of Chinese Academy of Sciences, Zhongguancun Academy",
+      "SenseTime",
+      "University of Science and Technology of China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Underline Science Inc.",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Modern LLM agents persist state across sessions via two channels: long-lived memory files silently prepended to the system prompt, and scheduled tasks waking the agent without user input. A one-time indirect prompt injection committed to either channel can re-fire across sessions long after the attacker leaves, threats we term carryover attacks. Existing prompt-injection benchmarks evaluate attacks only in the session where malicious content is first observed, leaving the gate governing when and how often a planted payload later re-fires unmeasured. We present CarryoverBench: 12 personal-assistant scenarios and 101 attack tasks across three trigger channels: Instant, same-turn IPI; Autonomous, heartbeat-scheduled; and Latent, memory-resurfaced. A rule-based verifier scores planting and triggering as independent stages. Across five frontier models, planted payloads re-fire without measurable decay over five rounds; conditional on successful planting, the trigger stage often provides little additional protection. Porting the Latent channel to a second runtime, Hermes, attenuates but does not eliminate the effect, suggesting that carryover defense requires runtime-layer controls in addition to prompt-level interventions.",
+    "identifiers": {
+      "doi": "10.48448/crg0-0a87"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://underline.io/lecture/164888-after-the-attacker-leaves-benchmarking-carryover-attacks-on-llm-agents"
+      }
+    ],
+    "versions": [],
+    "evidence": [
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "Institute of Automation, University of Chinese Academy of Sciences, Zhongguancun Academy",
+        "source": "DataCite",
+        "sourceUrl": "https://underline.io/lecture/164888-after-the-attacker-leaves-benchmarking-carryover-attacks-on-llm-agents"
+      }
+    ],
+    "sources": [
+      "DataCite"
+    ],
+    "id": "doi-10-48448-crg0-0a87",
+    "updatedAt": "2026-11-22T07:13:15Z"
+  },
+  {
+    "type": "preprint",
+    "title": "RoboSemanticBench: Diagnosing Semantic Grounding in Action Prediction for VLA Models",
+    "authors": [
+      {
+        "name": "Association for Computational Linguistics 2026"
+      },
+      {
+        "name": "Chen, Kai"
+      },
+      {
+        "name": "Hu, Ruina"
+      },
+      {
+        "name": "Huang, Cong"
+      },
+      {
+        "name": "Lian, Shijie"
+      },
+      {
+        "name": "LIN, Xiaopeng"
+      },
+      {
+        "name": "Liu, Haishan"
+      },
+      {
+        "name": "Shen, Zhaolong"
+      },
+      {
+        "name": "Wang, Bailing"
+      },
+      {
+        "name": "Wei, Yuliang"
+      },
+      {
+        "name": "Wu, Changti"
+      },
+      {
+        "name": "Yu, Bin"
+      },
+      {
+        "name": "Zhang, Yao"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Huazhong University of Science and Technology & Zhongguancun Academy",
+      "Harbin Institute of Technology"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Underline Science Inc.",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "Vision-language-action (VLA) models are built on the premise that semantic understanding from pretrained language or vision-language backbones should guide robot action prediction. Yet robot fine-tuning is optimized as imitation over task-specific action distributions, and many evaluations can be solved through visual or instruction-action shortcuts. We introduce RoboSemanticBench (RSB), an embodied benchmark for diagnosing semantic grounding in action prediction: whether post-trained VLA models can use complex instruction semantics to select and manipulate the correct physical target. In each episode, a robot receives a multiple-choice math or general-knowledge question, observes candidate answer blocks, and must grasp the block corresponding to the correct answer. RSB covers controlled arithmetic, grade-school mathematical understanding, and commonsense or factual understanding under four-choice and ten-choice suites. Across representative VLA models, we find that many policies learn to grasp candidate blocks but select the semantically correct block at near-random or below-random rates after controlling for grasp success, revealing a persistent gap between backbone-level semantic competence and action prediction.",
+    "identifiers": {
+      "doi": "10.48448/advw-es83"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://underline.io/lecture/166820-robosemanticbench-diagnosing-semantic-grounding-in-action-prediction-for-vla-models"
+      }
+    ],
+    "versions": [],
+    "evidence": [
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "Huazhong University of Science and Technology & Zhongguancun Academy",
+        "source": "DataCite",
+        "sourceUrl": "https://underline.io/lecture/166820-robosemanticbench-diagnosing-semantic-grounding-in-action-prediction-for-vla-models"
+      }
+    ],
+    "sources": [
+      "DataCite"
+    ],
+    "id": "doi-10-48448-advw-es83",
+    "updatedAt": "2026-11-22T07:13:15Z"
+  },
+  {
+    "type": "preprint",
+    "title": "HTAM: Hierarchical Transition-Attended Memory for Operator Optimization",
+    "authors": [
+      {
+        "name": "Association for Computational Linguistics 2026"
+      },
+      {
+        "name": "Dan, Zedong"
+      },
+      {
+        "name": "Jia, Tianhe"
+      },
+      {
+        "name": "Wang, Chen"
+      },
+      {
+        "name": "Wang, Yue"
+      },
+      {
+        "name": "Xiang, Xuwen"
+      },
+      {
+        "name": "Yi, Mingyang"
+      },
+      {
+        "name": "Zhang, Yining"
+      },
+      {
+        "name": "Zong, Chengqing"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Zhongguancun Academy",
+      "Institute of Automation, Chinese Academy of Sciences"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "Underline Science Inc.",
+    "status": "preprint",
+    "topics": [],
+    "abstract": "High-performance GPU kernels are essential for efficient LLM deployment, yet optimizing them remains expertise-intensive. Recent LLM-based code generation makes automatic GPU operator generation promising, but operator optimization remains a hardware-aware search problem. Existing LLM-based methods face a granularity mismatch: coarse hints are reusable but hard to execute, whereas detailed memories are actionable but enlarge the search space and obscure optimization bottlenecks. The key challenge is therefore to organize optimization experience at an appropriate granularity. To address this issue, this paper proposes HTAM (Hierarchical Transition-Attended Memory), a coarse-to-fine framework for LLM-based operator optimization. HTAM builds a two-level Hierarchical Transition Graph (HTG) to organize coarse global directions, detailed local strategies, and transition experience between optimization steps. During each evolution step, HTAM selects a global direction from the current state and recent optimization history, retrieves the corresponding local strategy memory, and uses it to guide concrete CUDA code generation. Experiments on the full KernelBench suite demonstrate that HTAM consistently improves correctness, fast-solution rate, and speedup over LLM-based baselines, while backend and Robust-KBench studies indicate transferable benefits from structured memory.",
+    "identifiers": {
+      "doi": "10.48448/0cn1-an25"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://underline.io/lecture/163427-htam-hierarchical-transition-attended-memory-for-operator-optimization"
+      }
+    ],
+    "versions": [],
+    "evidence": [
+      {
+        "level": "structured",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy",
+        "source": "DataCite",
+        "sourceUrl": "https://underline.io/lecture/163427-htam-hierarchical-transition-attended-memory-for-operator-optimization"
+      }
+    ],
+    "sources": [
+      "DataCite"
+    ],
+    "id": "doi-10-48448-0cn1-an25",
+    "updatedAt": "2026-11-22T07:13:15Z"
   },
   {
     "type": "article",
