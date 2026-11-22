@@ -20823,6 +20823,99 @@
     "updatedAt": "2026-08-08T11:59:38Z"
   },
   {
+    "type": "preprint",
+    "title": "Long-Short Chain-of-Thought Mixture Supervised Fine-Tuning Eliciting Efficient Reasoning in Large Language Models",
+    "authors": [
+      {
+        "name": "Bin Yu"
+      },
+      {
+        "name": "Hang Yuan"
+      },
+      {
+        "name": "Haotian Li"
+      },
+      {
+        "name": "Xueyin Xu"
+      },
+      {
+        "name": "Yuliang Wei"
+      },
+      {
+        "name": "Bailing Wang"
+      },
+      {
+        "name": "Weizhen Qi"
+      },
+      {
+        "name": "Kai Chen"
+      }
+    ],
+    "institutions": [
+      "zgca",
+      "zgci"
+    ],
+    "rawAffiliations": [
+      "Bin Yu Affiliation: Harbin Institute of Technology Affiliation: Zhongguancun Academy",
+      "Weizhen Qi Affiliation: Zhongguancun Academy Affiliation: Zhongguancun Institute of Artificial Intelligence Correspondence: weizhenqi@zgci.ac.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2025-05-01",
+    "year": 2025,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.CL"
+    ],
+    "abstract": "Recent advances in large language models have demonstrated that Supervised Fine-Tuning (SFT) with Chain-of-Thought (CoT) reasoning data distilled from large reasoning models (e.g., DeepSeek R1) can effectively transfer reasoning capabilities to non-reasoning models. However, models fine-tuned with this approach inherit the \"overthinking\" problem from teacher models, producing verbose and redundant reasoning chains during inference. To address this challenge, we propose Long-Short Chain-of-Thought Mixture Supervised Fine-Tuning (LS-Mixture SFT), which combines long CoT reasoning dataset with their short counterparts obtained through structure-preserved rewriting. Our experiments demonstrate that models trained using the LS-Mixture SFT method, compared to those trained with direct SFT, achieved an average accuracy improvement of 2.3% across various benchmarks while substantially reducing model response length by approximately 47.61%. This work offers an approach to endow non-reasoning models with reasoning capabilities through supervised fine-tuning while avoiding the inherent overthinking problems inherited from teacher models, thereby enabling efficient reasoning in the fine-tuned models.",
+    "identifiers": {
+      "arxiv": "2505.03469",
+      "doi": "10.48550/arXiv.2505.03469"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2505.03469"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2505.03469v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2505.03469"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2505.03469v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Bin Yu Affiliation: Harbin Institute of Technology Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2505.03469v1"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgci",
+        "matchedText": "Weizhen Qi Affiliation: Zhongguancun Academy Affiliation: Zhongguancun Institute of Artificial Intelligence Correspondence: weizhenqi@zgci.ac.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2505.03469v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2505-03469",
+    "updatedAt": "2026-11-22T08:40:46Z"
+  },
+  {
     "type": "dataset",
     "title": "TransLab",
     "authors": [
