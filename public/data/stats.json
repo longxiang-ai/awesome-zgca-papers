@@ -1,19 +1,19 @@
 {
-  "total": 265,
+  "total": 266,
   "thisYear": 227,
   "institutions": {
-    "zgca": 255,
+    "zgca": 256,
     "zgci": 42
   },
   "byType": {
     "article": 32,
     "conference": 57,
-    "preprint": 170,
+    "preprint": 171,
     "dataset": 5,
     "report": 0,
     "whitepaper": 1,
     "patent": 0
   },
-  "lastUpdated": "2026-11-22T08:40:46Z",
+  "lastUpdated": "2026-11-23T08:47:55Z",
   "sourceCount": 11
 }
