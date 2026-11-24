@@ -28,11 +28,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  update-build-deploy:
+  update-build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -130,6 +127,31 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: pages-dist
+
+  deploy:
+    needs: update-build
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Wait for the Pages artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          endpoint="repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/artifacts?name=github-pages"
+          for attempt in {1..6}; do
+            if count=$(gh api "$endpoint" --jq '[.artifacts[] | select(.expired == false and .size_in_bytes > 0)] | length') && [[ "$count" == 1 ]]; then
+              exit 0
+            fi
+            if [[ "$attempt" != 6 ]]; then sleep 10; fi
+          done
+          echo "::error::Pages artifact unavailable for run $GITHUB_RUN_ID (last count: ${count:-unknown})"
+          exit 1
 
       - name: Deploy GitHub Pages
         id: deployment
