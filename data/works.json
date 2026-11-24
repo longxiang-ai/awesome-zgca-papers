@@ -4645,7 +4645,11 @@
       "cs.RO",
       "cs.AI",
       "cs.CL",
-      "cs.CV"
+      "cs.CV",
+      "Artificial Intelligence",
+      "Natural Language Processing",
+      "Computational Linguistics",
+      "Information and Knowledge Engineering"
     ],
     "abstract": "Robot imitation data are often multimodal: similar visual-language observations may be followed by different action chunks because human demonstrators act with different short-horizon intents, task phases, or recent context. Existing frame-conditioned VLA policies infer each chunk from the current observation and instruction alone, so under partial observability they may resample different intents across adjacent replanning steps, leading to inter-chunk conflict and unstable execution. We introduce IntentVLA, a history-conditioned VLA framework that encodes recent visual observations into a compact short-horizon intent representation and uses it to condition chunk generation. We further introduce AliasBench, a 12-task ambiguity-aware benchmark on RoboTwin2 with matched training data and evaluation environments that isolate short-horizon observation aliasing. Across AliasBench, SimplerEnv, LIBERO, and RoboCasa, IntentVLA improves rollout stability and outperforms strong VLA baselines.",
     "identifiers": {
@@ -4834,7 +4838,12 @@
     "year": 2026,
     "venue": "Underline Science Inc.",
     "status": "preprint",
-    "topics": [],
+    "topics": [
+      "Artificial Intelligence",
+      "Natural Language Processing",
+      "Computational Linguistics",
+      "Information and Knowledge Engineering"
+    ],
     "abstract": "Vision-Language-Action (VLA) policies are commonly trained from dense robot demonstration trajectories, often collected through teleoperation, by sampling every recorded frame as if it provided equally useful supervision. We argue that this convention creates a temporal supervision imbalance: long low-change segments dominate the training stream, while manipulation-critical transitions such as alignment, contact, grasping, and release appear only sparsely. We introduce FrameSkip, a data-layer frame selection framework that scores trajectory frames using action variation, visual-action coherence, task-progress priors, and gripper-transition preservation, then remaps training samples toward high-importance frames under a target retention ratio. Because FrameSkip operates only in the dataloader, it leaves the VLA architecture, action head, training objective, and inference procedure unchanged. Across RoboCasa-GR1, SimplerEnv, and LIBERO, FrameSkip improves the success-retention trade-off over full-frame training and simpler frame selection variants, achieving a macro-average success rate of 76.15% across the three benchmarks compared with 66.50% for full-frame training while using a compressed trajectory view that retains 20% of unique frames in the main setting.",
     "identifiers": {
       "arxiv": "2605.13757",
@@ -14077,7 +14086,12 @@
     "year": 2026,
     "venue": "Underline Science Inc.",
     "status": "preprint",
-    "topics": [],
+    "topics": [
+      "Artificial Intelligence",
+      "Natural Language Processing",
+      "Computational Linguistics",
+      "Question-Answering Systems"
+    ],
     "abstract": "Test-time scaling (TTS) has emerged as a powerful paradigm for enhancing large language model (LLM) reasoning by allocating additional compute during inference. External TTS, particularly Best-of- selection, generates multiple reasoning trajectories and selects the optimal candidate. However, existing process reward models (PRMs) for Best-of-N selection face a critical limitation: they were not originally designed for this task and instead rely on human-designed evaluation criteria (e.g., readability, coherence, formatting) that often misalign with actual answer correctness, leading to unstable and oscillatory performance as N increases. We introduce TrajSelector a framework specifically designed for robust and effective Best-of-N selection. Our key insight is to leverage the sampler LLM's intrinsic hidden states as self-reflective signals, which naturally align with correctness rather than human-imposed stylistic preferences. A lightweight verifier (0.6B–4B parameters) scores reasoning steps using these hidden states, trained via outcome supervision to eliminate reliance on step-level human annotations. Experiments across six mathematical reasoning benchmarks demonstrate that TrajSelector achieves robust monotonic improvements: in Best-of-32 settings, even our smallest 0.6B verifier outperforms majority voting by 4.61% and existing 7B PRMs by 4.31–12.21%, while our 4B verifier reaches 64.05% accuracy with stable scaling behavior as N increases from 1 to 64.",
     "identifiers": {
       "doi": "10.48448/ycmn-0a38"
@@ -14155,7 +14169,12 @@
     "year": 2026,
     "venue": "Underline Science Inc.",
     "status": "preprint",
-    "topics": [],
+    "topics": [
+      "Artificial Intelligence",
+      "Natural Language Processing",
+      "Computational Linguistics",
+      "Information and Knowledge Engineering"
+    ],
     "abstract": "Vision-Language-Action (VLA) models are built on the premise that pre-trained Vision-Language Models (VLMs) can supply general semantic understanding ability for embodied tasks. However, we find that robotic fine-tuning can severely erode this capability: VQA benchmarks and layer-wise CKA analysis reveal rapid representational drift, and co-training with general vision-language data does not prevent the collapse. We propose TwinBrainVLA, an asymmetric dual-stream VLA that keeps a pre-trained \"Left Brain\" strictly frozen as a semantic generalist while training a \"Right Brain\" as an embodied control specialist. Its Asymmetric Mixture-of-Transformers (AsyMoT) mechanism lets the Right Brain query frozen Left-Brain key-value representations at every transformer layer, integrating intact semantic knowledge without corrupting it. Across SimplerEnv, RoboCasa, LIBERO, and real-robot experiments, TwinBrainVLA outperforms strong baselines and large-scale embodied models, achieving a 14.3% improvement on SimplerEnv and a 2.7× gain in physical-robot instruction generalization.",
     "identifiers": {
       "doi": "10.48448/xm10-pr13"
@@ -14227,7 +14246,12 @@
     "year": 2026,
     "venue": "Underline Science Inc.",
     "status": "preprint",
-    "topics": [],
+    "topics": [
+      "Artificial Intelligence",
+      "Natural Language Processing",
+      "Computational Linguistics",
+      "Information and Knowledge Engineering"
+    ],
     "abstract": "Reinforcement learning with verifiable rewards (RLVR) improves vision-language models (VLMs) by optimizing outcome rewards derived from final answers. However, such outcome-only rewards do not tell the model which image regions justify an answer. For questions that require visual grounding, these rewards cannot distinguish responses supported by relevant visual evidence from those produced by language-prior shortcuts or lucky guesses. We introduce EASE (Evidence-Anchored Spatial Attention), which augments multimodal RLVR with visual-evidence process supervision. EASE converts annotated evidence regions into a smoothed visual-token target and uses it to guide response-to-image attention during RL training, but only on high-reward trajectories. The annotations are used solely as privileged training labels, while inference requires only the original image and question. Across Qwen2.5-VL-7B, Qwen3-VL-4B, and Qwen3-VL-8B, EASE raises average scores over DAPO by 2.5 to 3.1 points on perception, hallucination, visual math, and multimodal reasoning benchmarks. Diagnostics and ablations show that EASE better aligns visual attention with annotated evidence regions. Code are available at https://github.com/Nrich-sunny/Attend-to-Evidence/.",
     "identifiers": {
       "doi": "10.48448/rj2d-5y66"
@@ -14292,7 +14316,12 @@
     "year": 2026,
     "venue": "Underline Science Inc.",
     "status": "preprint",
-    "topics": [],
+    "topics": [
+      "Artificial Intelligence",
+      "Natural Language Processing",
+      "Computational Linguistics",
+      "Software Intelligent Agents"
+    ],
     "abstract": "LLM agents are increasingly expected to support enterprise workflows, where tasks often involve missing information, uncertainty, feedback, and long-term trade-offs. However, existing enterprise and financial benchmarks mainly test static capabilities such as information extraction, numerical calculation, domain knowledge, and financial QA, leaving interactive and long-horizon decision-making underexplored. To bridge this gap, we introduce EnterpriseBench, a benchmark that evaluates LLM agents across this spectrum, from static question answering to dynamic decision-making. Specifically, EnterpriseBench reorganizes existing enterprise and financial QA datasets into a unified foundational suite annotated by capability and difficulty, and introduces three professional interactive settings: Consulting, based on management-consulting-style business cases for client problem diagnosis through multi-turn information seeking; the Beer Game, adapted from a classic supply-chain management simulation for inventory control under delayed feedback; and Enterprise Digital Twin, a project-based business simulator for workforce, risk, and project planning. Experiments with nine agent methods under two backbone models show that current agents have not yet achieved stable, comprehensive, and cross-task reliability in enterprise scenarios. These results show that EnterpriseBench provides a practical benchmark for evaluating LLM agents in realistic enterprise strategic reasoning and decision-making. Our codes and benchmark implementation are publicly available at https://github.com/sduyangmin/FirmBench.",
     "identifiers": {
       "doi": "10.48448/qjhd-4x96"
@@ -14358,7 +14387,12 @@
     "year": 2026,
     "venue": "Underline Science Inc.",
     "status": "preprint",
-    "topics": [],
+    "topics": [
+      "Artificial Intelligence",
+      "Natural Language Processing",
+      "Computational Linguistics",
+      "Question-Answering Systems"
+    ],
     "abstract": "Retrieval-Augmented Generation (RAG) has empowered Large Language Models (LLMs) to tackle knowledge-intensive tasks. However, navigating global, heterogeneous knowledge bases (large-scale knowledge graphs and text corpora) for complex reasoning remains a challenge. Existing methods typically employ reactive, graph-driven exploration strategies, which blindly follow graph topology without adapting to the question context or evolving exploration progress, and lack deep bidirectional synergy between graph and text. To address these limitations, we propose CoG (Cognition on Graph), a cognitive-inspired, training-free framework for adaptive knowledge exploration. Drawing inspiration from human problem-solving, CoG performs a continuous plan-explore-reflect cycle, where it proactively formulates investigation plans, performs dual-source retrieval, and dynamically reflects on progress to adjust strategies. Crucially, it establishes deep bidirectional synergy between structured graph and unstructured text, where entities extracted from text dynamically guide graph exploration to bridge knowledge gaps. Extensive experiments on seven multi-hop QA benchmarks demonstrate that CoG significantly outperforms state-of-the-art methods while achieving superior exploration efficiency. Our code and datasets are available at https://github.com/zhougengxian/CoG.",
     "identifiers": {
       "doi": "10.48448/ne1a-pe35"
@@ -14439,7 +14473,12 @@
     "year": 2026,
     "venue": "Underline Science Inc.",
     "status": "preprint",
-    "topics": [],
+    "topics": [
+      "Artificial Intelligence",
+      "Natural Language Processing",
+      "Computational Linguistics",
+      "Semantic Evaluation"
+    ],
     "abstract": "Evaluating research ideas generated by LLMs is difficult because their scientific value cannot be fully determined by objective criteria, and no single reference answer specifies what counts as a good idea. To address this challenge, we introduce Ideation Arena, a battle style platform that evaluates research ideas through pairwise human assessment. Ideation Arena evaluates ideas generated by 14 frontier LLMs and 5 research agent architectures built on 2 base models. To ensure a common starting point, Ideation Arena builds shared literature contexts from papers familiar to the participating researchers and provides the same contexts to all LLMs and agents. We collect over 6,000 double blind pairwise comparisons from 105 active computer science researchers and construct an Elo rating leaderboard for research ideation. We validate the rankings through interrater agreement and robustness analyses, showing that the leaderboard remains stable under changes in annotator composition and domain coverage. Our results show substantial variation in agent effectiveness, with some frameworks improving ideation quality over their backbones and others offering little benefit or even underperforming their base models. We further construct Ideation Arena Eval, a benchmark for assessing whether automated evaluators align with human preferences in research ideation. Experiments with current LLM judges show that they remain far from reliable human level assessment, with the best model reaching only 72.56% agreement on overall quality. Our code, data, and leaderboards are available at https://anonymous.4open.science/r/Ideation-Arena-2C21.",
     "identifiers": {
       "doi": "10.48448/m1pj-vf06"
@@ -14505,7 +14544,12 @@
     "year": 2026,
     "venue": "Underline Science Inc.",
     "status": "preprint",
-    "topics": [],
+    "topics": [
+      "Artificial Intelligence",
+      "Natural Language Processing",
+      "Computational Linguistics",
+      "Information and Knowledge Engineering"
+    ],
     "abstract": "Modern LLM agents persist state across sessions via two channels: long-lived memory files silently prepended to the system prompt, and scheduled tasks waking the agent without user input. A one-time indirect prompt injection committed to either channel can re-fire across sessions long after the attacker leaves, threats we term carryover attacks. Existing prompt-injection benchmarks evaluate attacks only in the session where malicious content is first observed, leaving the gate governing when and how often a planted payload later re-fires unmeasured. We present CarryoverBench: 12 personal-assistant scenarios and 101 attack tasks across three trigger channels: Instant, same-turn IPI; Autonomous, heartbeat-scheduled; and Latent, memory-resurfaced. A rule-based verifier scores planting and triggering as independent stages. Across five frontier models, planted payloads re-fire without measurable decay over five rounds; conditional on successful planting, the trigger stage often provides little additional protection. Porting the Latent channel to a second runtime, Hermes, attenuates but does not eliminate the effect, suggesting that carryover defense requires runtime-layer controls in addition to prompt-level interventions.",
     "identifiers": {
       "doi": "10.48448/crg0-0a87"
@@ -14588,7 +14632,12 @@
     "year": 2026,
     "venue": "Underline Science Inc.",
     "status": "preprint",
-    "topics": [],
+    "topics": [
+      "Artificial Intelligence",
+      "Natural Language Processing",
+      "Computational Linguistics",
+      "Semantic Evaluation"
+    ],
     "abstract": "Vision-language-action (VLA) models are built on the premise that semantic understanding from pretrained language or vision-language backbones should guide robot action prediction. Yet robot fine-tuning is optimized as imitation over task-specific action distributions, and many evaluations can be solved through visual or instruction-action shortcuts. We introduce RoboSemanticBench (RSB), an embodied benchmark for diagnosing semantic grounding in action prediction: whether post-trained VLA models can use complex instruction semantics to select and manipulate the correct physical target. In each episode, a robot receives a multiple-choice math or general-knowledge question, observes candidate answer blocks, and must grasp the block corresponding to the correct answer. RSB covers controlled arithmetic, grade-school mathematical understanding, and commonsense or factual understanding under four-choice and ten-choice suites. Across representative VLA models, we find that many policies learn to grasp candidate blocks but select the semantically correct block at near-random or below-random rates after controlling for grasp success, revealing a persistent gap between backbone-level semantic competence and action prediction.",
     "identifiers": {
       "doi": "10.48448/advw-es83"
@@ -14659,7 +14708,11 @@
     "year": 2026,
     "venue": "Underline Science Inc.",
     "status": "preprint",
-    "topics": [],
+    "topics": [
+      "Computational Linguistics",
+      "Artificial Intelligence",
+      "Natural Language Processing"
+    ],
     "abstract": "High-performance GPU kernels are essential for efficient LLM deployment, yet optimizing them remains expertise-intensive. Recent LLM-based code generation makes automatic GPU operator generation promising, but operator optimization remains a hardware-aware search problem. Existing LLM-based methods face a granularity mismatch: coarse hints are reusable but hard to execute, whereas detailed memories are actionable but enlarge the search space and obscure optimization bottlenecks. The key challenge is therefore to organize optimization experience at an appropriate granularity. To address this issue, this paper proposes HTAM (Hierarchical Transition-Attended Memory), a coarse-to-fine framework for LLM-based operator optimization. HTAM builds a two-level Hierarchical Transition Graph (HTG) to organize coarse global directions, detailed local strategies, and transition experience between optimization steps. During each evolution step, HTAM selects a global direction from the current state and recent optimization history, retrieves the corresponding local strategy memory, and uses it to guide concrete CUDA code generation. Experiments on the full KernelBench suite demonstrate that HTAM consistently improves correctness, fast-solution rate, and speedup over LLM-based baselines, while backend and Robust-KBench studies indicate transferable benefits from structured memory.",
     "identifiers": {
       "doi": "10.48448/0cn1-an25"
@@ -20821,6 +20874,240 @@
     ],
     "id": "doi-10-48550-arxiv-2506-00530",
     "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Four Eyes Are Better Than Two: Harnessing the Collaborative Potential of Large Models via Differentiated Thinking and Complementary Ensembles",
+    "authors": [
+      {
+        "name": "Jun Xie"
+      },
+      {
+        "name": "Xiongjun Guan"
+      },
+      {
+        "name": "Yingjian Zhu"
+      },
+      {
+        "name": "Zhaoran Zhao"
+      },
+      {
+        "name": "Xinming Wang"
+      },
+      {
+        "name": "Hongzhu Yi"
+      },
+      {
+        "name": "Feng Chen"
+      },
+      {
+        "name": "Zhepeng Wang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Xinming Wang Affiliation: Institute of Automation, Chinese Academy of Sciences(CAS) Affiliation: Zhongguancun Academy Email: zhuyingjian24@mails.ucas.ac.cn"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2025-05-01",
+    "year": 2025,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.CV"
+    ],
+    "abstract": "In this paper, we present the runner-up solution for the Ego4D EgoSchema Challenge at CVPR 2025 (Confirmed on May 20, 2025). Inspired by the success of large models, we evaluate and leverage leading accessible multimodal large models and adapt them to video understanding tasks via few-shot learning and model ensemble strategies. Specifically, diversified prompt styles and process paradigms are systematically explored and evaluated to effectively guide the attention of large models, fully unleashing their powerful generalization and adaptability abilities. Experimental results demonstrate that, with our carefully designed approach, directly utilizing an individual multimodal model already outperforms the previous state-of-the-art (SOTA) method which includes several additional processes. Besides, an additional stage is further introduced that facilitates the cooperation and ensemble of periodic results, which achieves impressive performance improvements. We hope this work serves as a valuable reference for the practical application of large models and inspires future research in the field. Our Code is available at https://github.com/XiongjunGuan/EgoSchema-CVPR25.",
+    "identifiers": {
+      "arxiv": "2505.16784",
+      "doi": "10.48550/arXiv.2505.16784"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2505.16784"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2505.16784v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2505.16784"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2505.16784v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Xinming Wang Affiliation: Institute of Automation, Chinese Academy of Sciences(CAS) Affiliation: Zhongguancun Academy Email: zhuyingjian24@mails.ucas.ac.cn",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2505.16784v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2505-16784",
+    "updatedAt": "2026-11-24T10:55:39Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Mitigating Hallucination in Large Vision-Language Models through Aligning Attention Distribution to Information Flow",
+    "authors": [
+      {
+        "name": "Jianfei Zhao"
+      },
+      {
+        "name": "Feng Zhang"
+      },
+      {
+        "name": "Xin Sun"
+      },
+      {
+        "name": "Chong Feng"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Jianfei Zhao Affiliation: School of Computer Science and Technology, Beijing Institute of Technology, Beijing, China Affiliation: Zhongguancun Academy, Beijing, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2025-05-01",
+    "year": 2025,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.CV"
+    ],
+    "abstract": "Due to the unidirectional masking mechanism, Decoder-Only models propagate information from left to right. LVLMs (Large Vision-Language Models) follow the same architecture, with visual information gradually integrated into semantic representations during forward propagation. Through systematic analysis, we observe that the majority of the visual information is absorbed into the semantic representations. However, the model's attention distribution does not exhibit sufficient emphasis on semantic representations. This misalignment between the attention distribution and the actual information flow undermines the model's visual understanding ability and contributes to hallucinations. To address this issue, we enhance the model's visual understanding by leveraging the core information embedded in semantic representations. Specifically, we identify attention heads that focus on core semantic representations based on their attention distributions. Then, through a two-stage optimization paradigm, we propagate the advantages of these attention heads across the entire model, aligning the attention distribution with the actual information flow. We evaluate our method on three image captioning benchmarks using five different LVLMs, demonstrating its effectiveness in significantly reducing hallucinations. Further experiments reveal a trade-off between reduced hallucinations and richer details. Notably, our method allows for manual adjustment of the model's conservativeness, enabling flexible control to meet diverse real-world requirements.",
+    "identifiers": {
+      "arxiv": "2505.14257",
+      "doi": "10.48550/arXiv.2505.14257"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2505.14257"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2505.14257v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2505.14257"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2505.14257v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Jianfei Zhao Affiliation: School of Computer Science and Technology, Beijing Institute of Technology, Beijing, China Affiliation: Zhongguancun Academy, Beijing, China",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2505.14257v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2505-14257",
+    "updatedAt": "2026-11-24T10:55:39Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Unlocking the Potential of Difficulty Prior in RL-based Multimodal Reasoning",
+    "authors": [
+      {
+        "name": "Mingrui Chen"
+      },
+      {
+        "name": "Haogeng Liu"
+      },
+      {
+        "name": "Hao Liang"
+      },
+      {
+        "name": "Huaibo Huang"
+      },
+      {
+        "name": "Wentao Zhang"
+      },
+      {
+        "name": "Ran He"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Mingrui Chen Haogeng Liu Hao Liang Huaibo Huang Wentao Zhang Ran He Email: charmier2003@gmail.com, liuhaogeng22@mails.ucas.ac.cn Email: hao.liang@stu.pku.edu.cn, huaibo.huang@cripac.ia.ac.cn Email: wentao.zhang@pku.edu.cn, rhe@nlpr.ia.ac.cn Affiliation: School of Artificial Intelligence, University of Chinese Academy of Sciences Affiliation: NLPR&MAIS, Institute of Automation, Chinese Academy of Sciences Affiliation: Peking University Affiliation: Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2025-05-01",
+    "year": 2025,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.CV"
+    ],
+    "abstract": "In this work, we investigate how explicitly modeling problem's difficulty prior information shapes the effectiveness of reinforcement learning based fine-tuning for multimodal reasoning. Our exploration mainly comprises of following three perspective: First, through offline data curation, we analyze the U-shaped difficulty distribution of two given datasets using the base model by multi-round sampling, and then filter out prompts that are either too simple or extremely difficult to provide meaningful gradients and perform subsequent two-stage training. Second, we implement an online advantage differentiation, computing group-wise empirical accuracy as a difficulty proxy to adaptively reweight advantages estimation, providing stronger learning signals for more challenging problems. Finally, we introduce difficulty hints as explicit prompts for more complex samples in the second training stage, encouraging the model to calibrate its reasoning depth and perform reflective validation checks. Our comprehensive approach demonstrates significant performances across various multi-modal mathematical reasoning benchmarks with only 2K+0.6K two-stage training data.",
+    "identifiers": {
+      "arxiv": "2505.13261",
+      "doi": "10.48550/arXiv.2505.13261"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2505.13261"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2505.13261v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2505.13261"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2505.13261v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Mingrui Chen Haogeng Liu Hao Liang Huaibo Huang Wentao Zhang Ran He Email: charmier2003@gmail.com, liuhaogeng22@mails.ucas.ac.cn Email: hao.liang@stu.pku.edu.cn, huaibo.huang@cripac.ia.ac.cn Email: wentao.zhang@pku.edu.cn, rhe@nlpr.ia.ac.cn Affiliation: School of Artificial Intelligence, University of Chinese Academy of Sciences Affiliation: NLPR&MAIS, Institute of Automation, Chinese Academy of Sciences Affiliation: Peking University Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2505.13261v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2505-13261",
+    "updatedAt": "2026-11-24T10:55:39Z"
   },
   {
     "type": "preprint",
