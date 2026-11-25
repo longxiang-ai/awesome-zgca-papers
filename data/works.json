@@ -21007,6 +21007,93 @@
   },
   {
     "type": "preprint",
+    "title": "Advancing Multimodal Reasoning via Reinforcement Learning with Cold Start",
+    "authors": [
+      {
+        "name": "Lai Wei"
+      },
+      {
+        "name": "Yuting Li"
+      },
+      {
+        "name": "Kaipeng Zheng"
+      },
+      {
+        "name": "Chen Wang"
+      },
+      {
+        "name": "Yue Wang"
+      },
+      {
+        "name": "Linghe Kong"
+      },
+      {
+        "name": "Lichao Sun"
+      },
+      {
+        "name": "Weiran Huang"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Lai Wei Affiliation: School of Computer Science, Shanghai Jiao Tong University Affiliation: Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2025-05-01",
+    "year": 2025,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.CL",
+      "cs.AI",
+      "cs.CV",
+      "cs.LG"
+    ],
+    "abstract": "Recent advancements in large language models (LLMs) have demonstrated impressive chain-of-thought reasoning capabilities, with reinforcement learning (RL) playing a crucial role in this progress. While \"aha moment\" patterns--where models exhibit self-correction through reflection--are often attributed to emergent properties from RL, we first demonstrate that these patterns exist in multimodal LLMs (MLLMs) prior to RL training but may not necessarily correlate with improved reasoning performance. Building on these insights, we present a comprehensive study on enhancing multimodal reasoning through a two-stage approach: (1) supervised fine-tuning (SFT) as a cold start with structured chain-of-thought reasoning patterns, followed by (2) reinforcement learning via GRPO to further refine these capabilities. Our extensive experiments show that this combined approach consistently outperforms both SFT-only and RL-only methods across challenging multimodal reasoning benchmarks. The resulting models achieve state-of-the-art performance among open-source MLLMs at both 3B and 7B scales, with our 7B model showing substantial improvements over base models (e.g., 66.3 %$\\rightarrow$73.4 % on MathVista, 62.9 %$\\rightarrow$70.4 % on We-Math) and our 3B model achieving performance competitive with several 7B models. Overall, this work provides practical guidance for building advanced multimodal reasoning models. Our code is available at https://github.com/waltonfuture/RL-with-Cold-Start.",
+    "identifiers": {
+      "arxiv": "2505.22334",
+      "doi": "10.48550/arXiv.2505.22334"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2505.22334"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2505.22334v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2505.22334"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2505.22334v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Lai Wei Affiliation: School of Computer Science, Shanghai Jiao Tong University Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2505.22334v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2505-22334",
+    "updatedAt": "2026-11-25T16:24:48Z"
+  },
+  {
+    "type": "preprint",
     "title": "HAD: Hybrid Architecture Distillation Outperforms Teacher in Genomic Sequence Modeling",
     "authors": [
       {
