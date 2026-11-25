@@ -1031,12 +1031,15 @@
     ],
     "rawAffiliations": [
       "北京中关村学院官网科研创新页面",
-      "Kailin Lyu Affiliation: Institute of Automation, Chinese Academy of Sciences, Beijing, China. Affiliation: Beijing Zhongguancun Academy, Beijing, China."
+      "Kailin Lyu Affiliation: Institute of Automation, Chinese Academy of Sciences, Beijing, China. Affiliation: Beijing Zhongguancun Academy, Beijing, China.",
+      "Chinese Academy of Sciences",
+      "Nanyang Technological University",
+      "Beijing Zhongguancun Academy"
     ],
     "relationType": "official-output",
     "publishedAt": "2026-07-06",
     "year": 2026,
-    "venue": "IROS 2026",
+    "venue": "2026 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
     "status": "published",
     "topics": [
       "cs.AI"
@@ -1062,12 +1065,24 @@
       {
         "label": "HTML",
         "url": "https://arxiv.org/html/2607.05131v1"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/iros61738.2026.11776494"
       }
     ],
     "versions": [
       {
         "label": "arXiv v1",
         "url": "https://arxiv.org/abs/2607.05131v1"
+      },
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1109/iros61738.2026.11776494"
+      },
+      {
+        "label": "DOI 10.1109/iros61738.2026.11776494",
+        "url": "https://doi.org/10.1109/iros61738.2026.11776494"
       }
     ],
     "evidence": [
@@ -1084,12 +1099,20 @@
         "matchedText": "Kailin Lyu Affiliation: Institute of Automation, Chinese Academy of Sciences, Beijing, China. Affiliation: Beijing Zhongguancun Academy, Beijing, China.",
         "source": "arXiv HTML v1",
         "sourceUrl": "https://arxiv.org/html/2607.05131v1"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Beijing Zhongguancun Academy",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1109/iros61738.2026.11776494"
       }
     ],
     "sources": [
       "arXiv",
       "北京中关村学院官网",
-      "arXiv HTML"
+      "arXiv HTML",
+      "Crossref"
     ],
     "id": "doi-10-48550-arxiv-2607-05131",
     "updatedAt": "2026-08-08T11:59:38Z"
@@ -1522,12 +1545,15 @@
     ],
     "rawAffiliations": [
       "北京中关村学院官网科研创新页面",
-      "Pengwei Zhang Affiliation: Pengwei Zhang, Xinpan Meng, and Long Cheng are with the School of Artificial Intelligence, University of Chinese Academy of Sciences, Beijing 100049, China, and are also with the Institute of Automation, Chinese Academy of Sciences, Beijing 100190, China. Affiliation: Pengwei Zhang, Ce Hao, Xinyu Guo, and Fang Deng are with Zhongguancun Academy, Beijing 100094, China."
+      "Pengwei Zhang Affiliation: Pengwei Zhang, Xinpan Meng, and Long Cheng are with the School of Artificial Intelligence, University of Chinese Academy of Sciences, Beijing 100049, China, and are also with the Institute of Automation, Chinese Academy of Sciences, Beijing 100190, China. Affiliation: Pengwei Zhang, Ce Hao, Xinyu Guo, and Fang Deng are with Zhongguancun Academy, Beijing 100094, China.",
+      "University of Chinese Academy of Sciences",
+      "Dexmal",
+      "Zhongguancun Academy"
     ],
     "relationType": "official-output",
     "publishedAt": "2026-07-03",
     "year": 2026,
-    "venue": "IROS 2026",
+    "venue": "2026 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
     "status": "published",
     "topics": [
       "cs.RO"
@@ -1553,12 +1579,24 @@
       {
         "label": "HTML",
         "url": "https://arxiv.org/html/2607.03387v1"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/iros61738.2026.11777310"
       }
     ],
     "versions": [
       {
         "label": "arXiv v1",
         "url": "https://arxiv.org/abs/2607.03387v1"
+      },
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1109/iros61738.2026.11777310"
+      },
+      {
+        "label": "DOI 10.1109/iros61738.2026.11777310",
+        "url": "https://doi.org/10.1109/iros61738.2026.11777310"
       }
     ],
     "evidence": [
@@ -1575,12 +1613,20 @@
         "matchedText": "Pengwei Zhang Affiliation: Pengwei Zhang, Xinpan Meng, and Long Cheng are with the School of Artificial Intelligence, University of Chinese Academy of Sciences, Beijing 100049, China, and are also with the Institute of Automation, Chinese Academy of Sciences, Beijing 100190, China. Affiliation: Pengwei Zhang, Ce Hao, Xinyu Guo, and Fang Deng are with Zhongguancun Academy, Beijing 100094, China.",
         "source": "arXiv HTML v1",
         "sourceUrl": "https://arxiv.org/html/2607.03387v1"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1109/iros61738.2026.11777310"
       }
     ],
     "sources": [
       "arXiv",
       "北京中关村学院官网",
-      "arXiv HTML"
+      "arXiv HTML",
+      "Crossref"
     ],
     "id": "doi-10-48550-arxiv-2607-03387",
     "updatedAt": "2026-08-08T11:59:38Z"
@@ -6927,7 +6973,8 @@
       "zgca"
     ],
     "rawAffiliations": [
-      "Zhongguancun Academy"
+      "Zhongguancun Academy",
+      "Fengshuo Bai Affiliation: Shanghai Jiao Tong University Affiliation: Zhongguancun Academy zowiezhang.github.io/projects/EuroCon"
     ],
     "relationType": "affiliation",
     "publishedAt": "2026-04-24",
@@ -6938,9 +6985,11 @@
       "Large Language Models",
       "Political Consensus",
       "AI Evaluation",
-      "Social Choice"
+      "Social Choice",
+      "cs.CY",
+      "cs.LG"
     ],
-    "abstract": "PoliCon evaluates whether large language models can draft consensus resolutions from divergent political party positions. It contains 2,225 European Parliament deliberation records and uses a social-choice-based evaluation framework to test multiple consensus objectives.",
+    "abstract": "Achieving political consensus is crucial yet challenging for the effective functioning of social governance. However, although frontier AI systems represented by large language models (LLMs) have developed rapidly in recent years, their capabilities in this scope are still understudied. In this paper, we introduce PoliCon, a novel benchmark constructed from 2,225 high-quality deliberation records of the European Parliament over 13 years, ranging from 2009 to 2022, to evaluate the ability of LLMs to draft consensus resolutions based on divergent party positions under varying collective decision-making contexts and political requirements. Specifically, PoliCon incorporates four factors to build each task environment for finding different political consensus: specific political issues, political goals, participating parties, and power structures based on seat distribution. We also developed an evaluation framework based on social choice theory for PoliCon, which simulates the real voting outcomes of different political parties to assess whether LLM-generated resolutions meet the requirements of the predetermined political consensus. Our experimental results demonstrate that even state-of-the-art models remain undersatisfied with complex tasks like passing resolutions by a two-thirds majority and addressing security issues, while uncovering their inherent partisan biases and revealing some behaviors LLMs show to achieve the consensus, such as prioritizing the stance of the dominant party instead of uniting smaller parties, which highlights PoliCon's promise as an effective platform for studying LLMs' ability to promote political consensus. The code and dataset are released at https://zowiezhang.github.io/projects/PoliCon.",
     "identifiers": {
       "arxiv": "2505.19558",
       "doi": "10.48550/arXiv.2505.19558"
@@ -6957,12 +7006,20 @@
       {
         "label": "Project",
         "url": "https://zowiezhang.github.io/PoliCon/"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2505.19558v1"
       }
     ],
     "versions": [
       {
         "label": "arXiv v3",
         "url": "https://arxiv.org/abs/2505.19558v3"
+      },
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2505.19558v1"
       }
     ],
     "evidence": [
@@ -6972,11 +7029,19 @@
         "matchedText": "Zhongguancun Academy",
         "source": "ICLR paper PDF",
         "sourceUrl": "https://arxiv.org/pdf/2505.19558"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Fengshuo Bai Affiliation: Shanghai Jiao Tong University Affiliation: Zhongguancun Academy zowiezhang.github.io/projects/EuroCon",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2505.19558v1"
       }
     ],
     "sources": [
       "arXiv",
-      "OpenReview"
+      "OpenReview",
+      "arXiv HTML"
     ],
     "updatedAt": "2026-08-08T00:00:00Z"
   },
@@ -17813,6 +17878,71 @@
   },
   {
     "type": "article",
+    "title": "Extractive Radiology Reporting With Memory-Based Cross-Modal Representations",
+    "authors": [
+      {
+        "name": "Yuanhe Tian",
+        "institutions": [
+          "zgci"
+        ]
+      },
+      {
+        "name": "Zexuan Yan"
+      },
+      {
+        "name": "Nenan Lyu"
+      },
+      {
+        "name": "Yan Song"
+      }
+    ],
+    "institutions": [
+      "zgci"
+    ],
+    "rawAffiliations": [
+      "Zhongguancun Institute of Artificial Intelligence, Beijing, China",
+      "University of Science and Technology of China, Hefei, China",
+      "Chinese Academy of Medical Sciences, National Cancer Center, National Clinical Research Center for Cancer, Cancer Hospital, Beijing, China"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "IEEE Transactions on Medical Imaging",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1109/tmi.2025.3636868"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/tmi.2025.3636868"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1109/tmi.2025.3636868"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgci",
+        "matchedText": "Zhongguancun Institute of Artificial Intelligence, Beijing, China",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1109/tmi.2025.3636868"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1109-tmi-2025-3636868",
+    "updatedAt": "2026-11-25T08:59:32Z"
+  },
+  {
+    "type": "article",
     "title": "Feature Decomposition via Shared Low-Rank Matrix Recovery for CT Report Generation",
     "authors": [
       {
@@ -20874,6 +21004,88 @@
     ],
     "id": "doi-10-48550-arxiv-2506-00530",
     "updatedAt": "2026-08-08T11:59:38Z"
+  },
+  {
+    "type": "preprint",
+    "title": "HAD: Hybrid Architecture Distillation Outperforms Teacher in Genomic Sequence Modeling",
+    "authors": [
+      {
+        "name": "Hexiong Yang"
+      },
+      {
+        "name": "Mingrui Chen"
+      },
+      {
+        "name": "Huaibo Huang"
+      },
+      {
+        "name": "Junxian Duan"
+      },
+      {
+        "name": "Jie Cao"
+      },
+      {
+        "name": "Zhen Zhou"
+      },
+      {
+        "name": "Ran He"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Hexiong Yang Mingrui Chen Affiliation: School of Advanced Interdisciplinary Science, University of Chinese Academy of Sciences Affiliation: School of Artificial Intelligence, University of Chinese Academy of Sciences Affiliation: NLPR&MAIS, Institute of Automation, Chinese Academy of Sciences Affiliation: Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2025-05-01",
+    "year": 2025,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.LG",
+      "q-bio.GN"
+    ],
+    "abstract": "Inspired by the great success of Masked Language Modeling (MLM) in the natural language domain, the paradigm of self-supervised pre-training and fine-tuning has also achieved remarkable progress in the field of DNA sequence modeling. However, previous methods often relied on massive pre-training data or large-scale base models with huge parameters, imposing a significant computational burden. To address this, many works attempted to use more compact models to achieve similar outcomes but still fell short by a considerable margin. In this work, we propose a Hybrid Architecture Distillation (HAD) approach, leveraging both distillation and reconstruction tasks for more efficient and effective pre-training. Specifically, we employ the NTv2-500M as the teacher model and devise a grouping masking strategy to align the feature embeddings of visible tokens while concurrently reconstructing the invisible tokens during MLM pre-training. To validate the effectiveness of our proposed method, we conducted comprehensive experiments on the Nucleotide Transformer Benchmark and Genomic Benchmark. Compared to models with similar parameters, our model achieved excellent performance. More surprisingly, it even surpassed the distillation ceiling-teacher model on some sub-tasks, which is more than 500 $\\times$ larger. Lastly, we utilize t-SNE for more intuitive visualization, which shows that our model can gain a sophisticated understanding of the intrinsic representation pattern in genomic sequences.",
+    "identifiers": {
+      "arxiv": "2505.20836",
+      "doi": "10.48550/arXiv.2505.20836"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2505.20836"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2505.20836v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2505.20836"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2505.20836v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Hexiong Yang Mingrui Chen Affiliation: School of Advanced Interdisciplinary Science, University of Chinese Academy of Sciences Affiliation: School of Artificial Intelligence, University of Chinese Academy of Sciences Affiliation: NLPR&MAIS, Institute of Automation, Chinese Academy of Sciences Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2505.20836v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2505-20836",
+    "updatedAt": "2026-11-25T09:42:00Z"
   },
   {
     "type": "preprint",
