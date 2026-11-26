@@ -20921,6 +20921,201 @@
     "updatedAt": "2026-08-08T00:00:00Z"
   },
   {
+    "type": "preprint",
+    "title": "Exploring the Secondary Risks of Large Language Models",
+    "authors": [
+      {
+        "name": "Jiawei Chen"
+      },
+      {
+        "name": "Zhengwei Fang"
+      },
+      {
+        "name": "Yu Tian"
+      },
+      {
+        "name": "Jiawei Du"
+      },
+      {
+        "name": "Chao Yu"
+      },
+      {
+        "name": "Zhaoxia Yin"
+      },
+      {
+        "name": "Hang Su"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Jiawei Chen Affiliation: Shanghai Key Laboratory of Multidimensional Information Processing, East China Normal University Affiliation: Beijing Zhongguancun Academy"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2025-06-01",
+    "year": 2025,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CR"
+    ],
+    "abstract": "Ensuring the safety and alignment of Large Language Models is a significant challenge with their growing integration into critical applications and societal functions. While prior research has primarily focused on jailbreak attacks, less attention has been given to non-adversarial failures that subtly emerge during benign interactions. We introduce secondary risks a novel class of failure modes marked by harmful or misleading behaviors during benign prompts. Unlike adversarial attacks, these risks stem from imperfect generalization and often evade standard safety mechanisms. To enable systematic evaluation, we introduce two risk primitives verbose response and speculative advice that capture the core failure patterns. Building on these definitions, we propose SecLens, a black-box, multi-objective search framework that efficiently elicits secondary risk behaviors by optimizing task relevance, risk activation, and linguistic plausibility. To support reproducible evaluation, we release SecRiskBench, a benchmark dataset of 650 prompts covering eight diverse real-world risk categories. Experimental results from extensive evaluations on 16 popular models demonstrate that secondary risks are widespread, transferable across models, and modality independent, emphasizing the urgent need for enhanced safety mechanisms to address benign yet harmful LLM behaviors in real-world deployments.",
+    "identifiers": {
+      "arxiv": "2506.12382",
+      "doi": "10.48550/arXiv.2506.12382"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2506.12382"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2506.12382v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2506.12382"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2506.12382v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Jiawei Chen Affiliation: Shanghai Key Laboratory of Multidimensional Information Processing, East China Normal University Affiliation: Beijing Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2506.12382v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2506-12382",
+    "updatedAt": "2026-11-26T09:25:57Z"
+  },
+  {
+    "type": "preprint",
+    "title": "Modeling Earth-Scale Human-Like Societies with One Billion Agents",
+    "authors": [
+      {
+        "name": "Haoxiang Guan"
+      },
+      {
+        "name": "Jiyan He"
+      },
+      {
+        "name": "Liyang Fan"
+      },
+      {
+        "name": "Zhenzhen Ren"
+      },
+      {
+        "name": "Shaobin He"
+      },
+      {
+        "name": "Xin Yu"
+      },
+      {
+        "name": "Yuan Chen"
+      },
+      {
+        "name": "Xueyin Xu"
+      },
+      {
+        "name": "Shuxin Zheng"
+      },
+      {
+        "name": "Yan Gao"
+      },
+      {
+        "name": "Enhong Chen"
+      },
+      {
+        "name": "Tie-Yan Liu"
+      },
+      {
+        "name": "Zhen Liu"
+      }
+    ],
+    "institutions": [
+      "zgca",
+      "zgci"
+    ],
+    "rawAffiliations": [
+      "Haoxiang Guan † † thanks: Equal Contribution Affiliation: Zhongguancun Academy",
+      "Jiyan He 1 1 footnotemark: 1 Affiliation: Zhongguancun Academy Affiliation: Zhongguancun Institute of Artificial Intelligence"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2025-06-01",
+    "year": 2025,
+    "venue": "arXiv",
+    "status": "preprint",
+    "topics": [
+      "cs.MA",
+      "cs.AI",
+      "cs.CL",
+      "cs.CY",
+      "cs.SI"
+    ],
+    "abstract": "Understanding the dynamic evolution of complex social phenomena requires both high-fidelity modeling of human behavior and large-scale simulations. Traditional agent-based models (ABMs) have been employed to study these dynamics, but are constrained by simplified agent behaviors. Recent advances in large language models (LLMs) enable agents to exhibit sophisticated social behaviors, yet face significant scaling challenges. We present Light Society, an agent-based simulation framework that advances both fronts. Light Society formalizes social processes as structured transitions of agent and environment states, governed by a set of LLM-powered simulation operations. Joint algorithmic and system optimizations, particularly a mixture-of-models engine that combines full LLMs with distilled surrogates, enable Light Society to efficiently simulate societies with over one billion agents. Grounded in real-world demographic profiles from the World Values Survey, simulations of Trust Games and opinion diffusion at up to one billion agents demonstrate Light Society's high fidelity and efficiency in modeling diverse social phenomena, providing researchers with a practical foundation for hypothesis testing and the study of emergent collective behaviors at planetary scale.",
+    "identifiers": {
+      "arxiv": "2506.12078",
+      "doi": "10.48550/arXiv.2506.12078"
+    },
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2506.12078"
+      },
+      {
+        "label": "HTML",
+        "url": "https://arxiv.org/html/2506.12078v1"
+      },
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2506.12078"
+      }
+    ],
+    "versions": [
+      {
+        "label": "arXiv v1",
+        "url": "https://arxiv.org/abs/2506.12078v1"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Haoxiang Guan † † thanks: Equal Contribution Affiliation: Zhongguancun Academy",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2506.12078v1"
+      },
+      {
+        "level": "exact-affiliation",
+        "institution": "zgci",
+        "matchedText": "Jiyan He 1 1 footnotemark: 1 Affiliation: Zhongguancun Academy Affiliation: Zhongguancun Institute of Artificial Intelligence",
+        "source": "arXiv HTML v1",
+        "sourceUrl": "https://arxiv.org/html/2506.12078v1"
+      }
+    ],
+    "sources": [
+      "arXiv",
+      "arXiv HTML"
+    ],
+    "id": "doi-10-48550-arxiv-2506-12078",
+    "updatedAt": "2026-11-26T09:25:57Z"
+  },
+  {
     "type": "conference",
     "title": "CityLens: Evaluating Large Vision-Language Models for Urban Socioeconomic Sensing",
     "authors": [
