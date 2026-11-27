@@ -18001,6 +18001,78 @@
   },
   {
     "type": "article",
+    "title": "SLVC-DIDA: Signature-Less Verifiable Credential-Based Issuer-Hiding Authentication for Decentralized Identity",
+    "authors": [
+      {
+        "name": "Tianxiu Xie"
+      },
+      {
+        "name": "Keke Gai"
+      },
+      {
+        "name": "Jing Yu",
+        "institutions": [
+          "zgca"
+        ]
+      },
+      {
+        "name": "Yuan Lu"
+      },
+      {
+        "name": "Liehuang Zhu"
+      },
+      {
+        "name": "Bin Xiao"
+      }
+    ],
+    "institutions": [
+      "zgca"
+    ],
+    "rawAffiliations": [
+      "Beijing Institute of Technology",
+      "Zhongguancun Academy, Haidian",
+      "resides",
+      "The Hong Kong Polytechnic University"
+    ],
+    "relationType": "affiliation",
+    "publishedAt": "2026-01-01",
+    "year": 2026,
+    "venue": "IEEE Transactions on Information Forensics and Security",
+    "status": "published",
+    "topics": [],
+    "abstract": "",
+    "identifiers": {
+      "doi": "10.1109/tifs.2026.3750727"
+    },
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1109/tifs.2026.3750727"
+      }
+    ],
+    "versions": [
+      {
+        "label": "Publisher version",
+        "url": "https://doi.org/10.1109/tifs.2026.3750727"
+      }
+    ],
+    "evidence": [
+      {
+        "level": "exact-affiliation",
+        "institution": "zgca",
+        "matchedText": "Zhongguancun Academy, Haidian",
+        "source": "Crossref",
+        "sourceUrl": "https://doi.org/10.1109/tifs.2026.3750727"
+      }
+    ],
+    "sources": [
+      "Crossref"
+    ],
+    "id": "doi-10-1109-tifs-2026-3750727",
+    "updatedAt": "2026-11-27T08:55:05Z"
+  },
+  {
+    "type": "article",
     "title": "A Physical-Informed Super-Resolution Method for Electric Camera Inspired by Active Electric Sense",
     "authors": [
       {
